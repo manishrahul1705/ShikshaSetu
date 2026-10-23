@@ -30,7 +30,11 @@ AICTE Smart India Hackathon solution for Problem Statement 26264: **Integrated I
    ```bash
    cp .env.example .env
    ```
-   Edit `.env` if your MongoDB connection string or session secret differs.
+   Set `SESSION_SECRET`, `VAULT_KEY` and `DOCS_KEY` to three independently generated values. Generate each value with:
+   ```bash
+   node -e "console.log(require('node:crypto').randomBytes(32).toString('hex'))"
+   ```
+   Keep the encryption keys stable across restarts; changing them makes previously encrypted records unreadable. Never commit `.env` or `.env.showcase`. Update the MongoDB URI if your local server differs.
 
 3. **Reset and Seed Demo Database**
    ```bash

@@ -29,3 +29,6 @@ Thumbs.db
 
 # Local ML model files
 **/server/src/modules/benchmark/models/Xenova/
+
+# Track only the documented template, never local environment values.
+!**/.env.example
