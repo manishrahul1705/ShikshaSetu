@@ -17,6 +17,8 @@ export default defineConfig({
   ],
   test: {
     globals: true,
+    // Each worker starts a MongoDB instance; bound concurrency without relaxing assertions or timeouts.
+    maxWorkers: 2,
     setupFiles: ['./tests/setup.js'],
     testTimeout: 60000,
     hookTimeout: 120000,

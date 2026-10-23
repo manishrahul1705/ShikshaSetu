@@ -52,6 +52,18 @@ export function record(params) {
 
 export const recordAudit = record;
 
+// A demo reset must share the append queue: a login completion can still be
+// recording after its HTTP response has finished. Deleting outside this queue
+// can remove the predecessor of an event whose hash has already been computed.
+export async function resetDemoAuditChain() {
+  if (process.env.APP_MODE === 'production' || !/(^|_)(demo|test)$/.test(AuditEvent.db.name || '')) {
+    throw new Error('DEMO_DATABASE_REQUIRED');
+  }
+  const next = queue.then(() => AuditEvent.deleteMany({}));
+  queue = next.catch(() => {});
+  return next;
+}
+
 async function append({ actorId, actorRole, action, targetType, targetId, meta = {} }) {
   // Normalize meta to plain JSON so the stored copy hashes exactly like this one.
   const cleanMeta = JSON.parse(JSON.stringify(meta ?? {}));

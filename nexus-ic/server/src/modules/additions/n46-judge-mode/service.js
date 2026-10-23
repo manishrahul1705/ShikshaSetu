@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import User from '../../auth/User.js';
 import Case from '../../cases/Case.js';
 import Institution from '../../institutions/Institution.js';
-import { recordAudit } from '../../audit/audit.js';
+import { recordAudit, resetDemoAuditChain } from '../../audit/audit.js';
 import { getReporterId, getVerifiedInstitutionPid } from '../../identity/index.js';
 import { generateMasterCaseId } from '../../cases/caseService.js';
 import { checkAction, proceedAction } from '../../prevent/stage2.js';
@@ -99,7 +99,10 @@ export async function seedOverlapScenario() {
 export async function resetAndSeed(user = { id: 'judge-mode', role: 'system' }) {
   assertDemo();
   assertDemoDatabase();
-  for (const collection of Object.values(mongoose.connection.collections)) await collection.deleteMany({});
+  for (const collection of Object.values(mongoose.connection.collections)) {
+    if (collection.name !== 'auditevents') await collection.deleteMany({});
+  }
+  await resetDemoAuditChain();
   await (await import('../../auth/seed.js')).seedDemoAccounts();
   await (await import('../../identity/seed.js')).seedIdentityReporters();
   await (await import('../../institutions/seed.js')).seedInstitutionsAndRegions();

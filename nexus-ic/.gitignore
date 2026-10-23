@@ -2,6 +2,14 @@ node_modules/
 dist/
 build/
 .env
+.env.showcase
 test-results/
 *.log
 .DS_Store
+
+# Ephemeral test runner state and local reporter output.
+docs/screenshots/**/artifacts/
+docs/screenshots/**/runner-artifacts/
+server/vitest-full.json
+server/vitest-report.json
+server/vitest-verify.json
