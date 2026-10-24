@@ -35,18 +35,31 @@ it('[N01] /verify renders the exact USER VERIFICATION (NEXUS TRUST) title', () =
   handler = async () => ({ status: 404, body: { error: 'REPORTER_NOT_FOUND' } });
   show(<Verify />);
   expect(screen.getByRole('heading', { name: 'USER VERIFICATION (NEXUS TRUST)' })).toBeInTheDocument();
-  expect(screen.getByLabelText(en.userType)).toBeInTheDocument();
+  expect(screen.getByRole('region', { name: 'Student ID verification' })).toBeInTheDocument();
+  expect(screen.getByRole('radio', { name: 'ABC ID' })).toBeChecked();
+  expect(screen.getByLabelText('Student ID number')).toBeInTheDocument();
 });
-it('[N07] verification requires consent and displays the exact verified badge and pseudonym', async () => {
-  let status = 'unverified';
-  handler = async (url) => {
-    if (url.endsWith('/auth/verify/student')) { status = 'verified'; return { status: 200, body: { reporterId: 'RP-7K2Q', status } }; }
-    return { status: 200, body: { reporterId: 'RP-7K2Q', status } };
+it('[N07] student verification requires consent and OTP before displaying the verified badge and pseudonym', async () => {
+  let status='unverified';
+  handler=async(url,options={})=>{
+    if(url.endsWith('/student/lookup'))return {status:200,body:{status:'confirm_details',last4:'3001',details:{name:'Test Student',institutionPid:'1-7734299133',programme:'B.Tech',enrolment:'Active'},channels:{email:'st***@example.invalid',sms:'Phone ending 0001'}}};
+    if(url.endsWith('/student/send-otp'))return {status:200,body:{status:'otp_pending',channel:'email',destination:'st***@example.invalid',expiresAt:'2026-10-28T10:00:00Z'}};
+    if(url.endsWith('/student/confirm-otp')){expect(JSON.parse(options.body)).toEqual({code:'271828'});status='verified';}
+    return {status:200,body:{reporterId:'RP-7K2Q',status,channel:'email'}};
   };
-  show(<Verify />);
-  expect(screen.getByRole('button', { name: en.begin })).toBeDisabled();
-  fireEvent.click(screen.getByLabelText(en.consentLabel)); fireEvent.click(screen.getByRole('button', { name: en.begin }));
-  expect(await screen.findByText('No proxy / verified reporter')).toBeInTheDocument(); expect(screen.getByText('RP-7K2Q')).toBeInTheDocument();
+  show(<Verify/>);
+  fireEvent.change(screen.getByLabelText('Student ID number'),{target:{value:'100020003001'}});
+  expect(screen.getByRole('button',{name:'Fetch linked details'})).toBeDisabled();
+  expect(screen.queryByText('No proxy / verified reporter')).toBeNull();
+  fireEvent.click(screen.getByLabelText(/I consent to checking/));fireEvent.click(screen.getByRole('button',{name:'Fetch linked details'}));
+  await screen.findByText('Test Student');expect(screen.queryByText('No proxy / verified reporter')).toBeNull();
+  fireEvent.click(screen.getByLabelText('These details belong to me.'));fireEvent.click(screen.getByRole('button',{name:'Send verification code'}));
+  await screen.findByLabelText('One-time code');expect(screen.queryByText('No proxy / verified reporter')).toBeNull();
+  fireEvent.change(screen.getByLabelText('One-time code'),{target:{value:'271828'}});fireEvent.click(screen.getByRole('button',{name:'Verify and complete'}));
+  expect(await screen.findByText('No proxy / verified reporter')).toBeInTheDocument();expect(screen.getByText('RP-7K2Q')).toBeInTheDocument();
+  await screen.findByRole('heading',{name:'Student verification completed'});
+  expect(screen.getByText('No proxy / verified reporter')).toBeInTheDocument();expect(screen.getByText('RP-7K2Q')).toBeInTheDocument();
+  expect(fetch.mock.calls.some(([url])=>url.endsWith('/auth/verify/student'))).toBe(false);
 });
 it('[S26] consent withdrawal updates the displayed state and includes the legal review note', async () => {
   let state = 'granted';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext.jsx';
 import InstitutionPicker from '../../components/InstitutionPicker.jsx';
-import SelfCheckPanel from './SelfCheckPanel.jsx';
+import StudentVerificationPanel from './StudentVerificationPanel.jsx';
 import { api, useText, useData, useAction, Frame, Button, ErrorNote, Field, inputClass } from './TrustUI.jsx';
 
 export default function Verify() {
@@ -43,18 +43,20 @@ export default function Verify() {
   const confirm = useAction(() => api('/identity/otp/confirm', { code }));
   const result = current.data;
 
+  if (user?.role === 'student') return <Frame ui={ui} title="title">
+    {result?.status === 'verified' ? <section className="rounded-xl border border-bharat-200 bg-bharat-50 p-6 text-bharat-900"><h2 className="text-xl font-bold">Student verification completed</h2><p className="mt-2 font-bold">{t('badge')}</p>{result.reporterId && <p className="mt-2">{t('reporterId')}: <strong className="font-mono">{result.reporterId}</strong></p>}<p className="mt-2 text-sm">Your account is verified. You can submit and track grievances.</p></section>
+      : <StudentVerificationPanel onVerified={() => current.refetch?.()} />}
+  </Frame>;
+
   return (
     <Frame ui={ui} title="title">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-lg bg-saffron-50 border border-saffron-200 p-4">
         <p className="text-sm text-saffron-900 font-medium">{t('syntheticNote')}</p>
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-saffron-100 text-saffron-800 border border-saffron-300 whitespace-nowrap">
-          <span className="w-2 h-2 rounded-full bg-saffron-600 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-saffron-600 status-pulse" />
           {t('simulatedCheckBadge')}
         </span>
       </div>
-
-      {/* N99: instant simulated self-check, added beside the existing paths below */}
-      {user?.role === 'student' && result?.status !== 'verified' && <SelfCheckPanel onVerified={() => current.refetch?.()} />}
 
       <form className="space-y-5 bg-white rounded-xl border border-slate-200 p-6 shadow-sm" onSubmit={(e) => { e.preventDefault(); begin.mutate(); }}>
         <Field label={t('userType')}>
@@ -97,8 +99,8 @@ export default function Verify() {
                 onChange={(e) => setReference(e.target.value)}
                 required
               />
-              <span className="text-xs text-slate-500">12 digits without spaces or dashes. Validated against the local synthetic ABC/APAAR registry. A valid match is self-service; only the OTP confirmation is required.</span>
-              <span className="block text-xs text-amber-800">Aadhaar numbers are not accepted in this form. Without an ABC/APAAR ID, use the instant self-check above (synthetic test numbers only) or the manual-review path.</span>
+              <span className="text-xs text-slate-500">12 digits without spaces or dashes. Validated against the local ABC/APAAR test registry. A valid match is self-service; only the OTP confirmation is required.</span>
+              <span className="block text-xs text-amber-800">Aadhaar numbers are not accepted in this form. Without an ABC/APAAR ID, use the instant self-check above (test numbers only) or the manual-review path.</span>
             </Field>
 
             <div className="space-y-1.5 pt-1">
@@ -135,7 +137,7 @@ export default function Verify() {
                 onChange={(e) => setReference(e.target.value)}
                 required
               />
-              <span className="text-xs text-slate-500">Alphanumeric Faculty Staff ID. Validated against local synthetic faculty registry.</span>
+              <span className="text-xs text-slate-500">Alphanumeric Faculty Staff ID. Validated against local faculty test registry.</span>
             </Field>
 
             <div className="space-y-1.5 pt-1">
@@ -189,7 +191,7 @@ export default function Verify() {
           <p>{t('status')}: <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-slate-100 text-slate-800">{t(result.status)}</span></p>
           {result.status === 'verified' && <p className="text-green-800 font-bold">{t('badge')}</p>}
           {result.status === 'pending_otp' && result.verificationMethod === 'AbcApaarSimulator' && (
-            <p className="text-sm text-emerald-800 font-semibold">ABC/APAAR matched in the simulated registry. No officer review is required; confirm the one-time code to finish verification.</p>
+            <p className="text-sm text-emerald-800 font-semibold">ABC/APAAR matched in the local verification registry. No officer review is required; confirm the one-time code to finish verification.</p>
           )}
           {result.status === 'manual_review' && (
             <p className="text-sm text-amber-800">This record needs officer review because it is disputed or requires manual evidence. Valid ABC/APAAR matches do not use this path.</p>

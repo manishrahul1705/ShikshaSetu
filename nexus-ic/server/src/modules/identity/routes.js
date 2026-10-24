@@ -5,13 +5,14 @@ import { serial, fields, fail, audit } from './support.js';
 import { ensureReporter, ownReporter, toOfficerView } from './reporters.js';
 import { limiter } from './rateLimit.js';
 import { start, issueOtp, confirmOtp, readInbox, manualQueue, decideManual } from './service.js';
-import { selfCheckLookup, selfCheckConfirm, selfCheckMine } from './selfCheck.js';
+import { selfCheckMine } from './selfCheck.js';
 import { SYNTHETIC_STUDENT_REGISTRY, SYNTHETIC_FACULTY_REGISTRY } from './simulators.js';
 import * as consent from '../consent/service.js';
 import * as reveal from '../vault/service.js';
 import * as admin from '../sysadmin/service.js';
 import { checkEligibility } from './index.js';
 import { Reporter } from './models.js';
+import { lookupStudent, sendStudentOtp, confirmStudentOtp, readStudentDelivery } from './studentVerification.js';
 const router = Router();
 const officers = ['bureau_officer', 'regional_officer', 'supervisor', 'competent_authority'];
 // Every route has authorize() on its own layer for S0's route walker.
@@ -57,9 +58,13 @@ router.get('/identity/me', authorize(), handle([], async (req) => {
 }));
 // N99 self-service check (simulated). Added beside the existing OTP and officer paths.
 const selfCheckFields = ['kind', 'number', 'consent', 'institutionPid', 'detailsAreMine'];
-router.post('/identity/self-check/lookup', authorize('student'), limiter('verification'), handle(selfCheckFields, (req) => selfCheckLookup(req.user, req.body)));
-router.post('/identity/self-check/confirm', authorize('student'), limiter('verification'), handle(selfCheckFields, (req) => selfCheckConfirm(req.user, req.body)));
+router.post('/identity/self-check/lookup', authorize('student'), limiter('verification'), handle(selfCheckFields, (req) => lookupStudent(req.user, req.body)));
+router.post('/identity/self-check/confirm', authorize('student'), limiter('verification'), handle(selfCheckFields, () => { throw fail(409, 'OTP_REQUIRED_USE_STUDENT_FLOW'); }));
 router.get('/identity/self-check/me', authorize('student'), handle([], (req) => selfCheckMine(req.user)));
+router.post('/identity/student/lookup', authorize('student'), limiter('verification'), handle(['kind', 'number', 'consent', 'institutionPid'], req => lookupStudent(req.user, req.body)));
+router.post('/identity/student/send-otp', authorize('student'), limiter('otp'), handle(['channel', 'consent', 'detailsAreMine'], req => sendStudentOtp(req.user, req.body)));
+router.post('/identity/student/confirm-otp', authorize('student'), limiter('otp'), handle(['code'], req => confirmStudentOtp(req.user, req.body)));
+router.get('/identity/student/local-delivery', authorize('student'), handle([], req => readStudentDelivery(req.user)));
 router.post('/identity/otp', authorize(), limiter('otp'), handle(['consent'], (req) => issueOtp(req.user, req.body.consent)));
 router.post('/identity/otp/confirm', authorize(), limiter('otp'), handle(['code'], (req) => confirmOtp(req.user, req.body.code)));
 router.get('/dev/otp-inbox', authorize(), handle([], (req) => readInbox(req.user)));

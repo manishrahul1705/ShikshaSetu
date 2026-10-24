@@ -130,37 +130,48 @@ it('[A-N100] the map is labelled illustrative and pins at city level only when t
   expect(screen.getByTestId('map-pin-caption')).toHaveTextContent('city location from the college record');
 });
 
-it('[A-N99] the self-check panel is labelled simulated, never shows the full number back and confirms instantly', async () => {
-  const { default: SelfCheckPanel } = await import('../src/pages/trust/SelfCheckPanel.jsx');
-  const calls = [];
-  vi.stubGlobal('fetch', vi.fn(async (url, options) => {
-    calls.push({ url: String(url), body: JSON.parse(options.body) });
-    const data = String(url).endsWith('/lookup')
-      ? { status: 'confirm_details', last4: '3001', details: { name: 'Aarav Sharma', institutionPid: '1-7734299133', programme: 'B.Tech Computer Science (synthetic)', enrolment: 'Active' } }
-      : { status: 'verified', last4: '3001', selfService: true };
-    return { ok: true, json: async () => data };
+it('[A-N99] student verification discloses local delivery, masks the ID and completes only after linked OTP', async () => {
+  const { default: StudentVerificationPanel } = await import('../src/pages/trust/SelfCheckPanel.jsx');
+  const calls=[];
+  vi.stubGlobal('fetch',vi.fn(async(url,options={})=>{
+    const body=options.body?JSON.parse(options.body):undefined;calls.push({url:String(url),body});
+    const action=String(url).split('/').pop();
+    const data=action==='lookup'?{status:'confirm_details',last4:'3001',details:{name:'Aarav Sharma',institutionPid:'1-7734299133',programme:'B.Tech Computer Science',enrolment:'Active'},channels:{email:'st***@example.invalid',sms:'Phone ending 0001'}}
+      : action==='send-otp'?{status:'otp_pending',channel:'email',destination:'st***@example.invalid',expiresAt:'2026-10-28T10:00:00Z'}
+      : {status:'verified',last4:'3001',selfService:true,channel:'email',reporterId:'RP-7K2Q'};
+    return {ok:true,json:async()=>data};
   }));
-  const onVerified = vi.fn();
-  render(<SelfCheckPanel onVerified={onVerified} />);
-  expect(screen.getByTestId('simulated-label')).toHaveTextContent('Simulated check, not a government verification');
-  fireEvent.change(screen.getByLabelText(/Your ABC ID/), { target: { value: '1000-2000-3001' } });
-  fireEvent.click(screen.getByRole('checkbox'));
-  fireEvent.click(screen.getByRole('button', { name: 'Fetch my details' }));
-  expect(await screen.findByText('B.Tech Computer Science (synthetic)')).toBeInTheDocument();
+  const onVerified=vi.fn();render(<StudentVerificationPanel onVerified={onVerified}/>);
+  expect(screen.getByText(/No government service is contacted/)).toBeInTheDocument();
+  fireEvent.change(screen.getByLabelText('Student ID number'),{target:{value:'1000-2000-3001'}});
+  fireEvent.click(screen.getByLabelText(/I consent to checking/));
+  fireEvent.click(screen.getByRole('button',{name:'Fetch linked details'}));
+  await screen.findByText('B.Tech Computer Science');
   expect(document.body.textContent).not.toContain('1000-2000-3001');
-  expect(document.body.textContent).toContain('••••3001');
-  fireEvent.click(screen.getByRole('button', { name: 'Yes, these are my details' }));
-  expect(await screen.findByText(/Verified instantly \(simulated\)/)).toBeInTheDocument();
-  expect(onVerified).toHaveBeenCalled();
-  expect(calls[1].body).toMatchObject({ kind: 'abc', detailsAreMine: true });
-  fireEvent.click(screen.queryByRole('tab', { name: /ABC/ }) || document.body);
+  expect(document.body.textContent).not.toContain('100020003001');
+  expect(screen.getByText(/ending 3001/)).toBeInTheDocument();
+  expect(onVerified).not.toHaveBeenCalled();
+  expect(screen.getByRole('button',{name:'Send verification code'})).toBeDisabled();
+  fireEvent.click(screen.getByLabelText('These details belong to me.'));
+  fireEvent.click(screen.getByRole('button',{name:'Send verification code'}));
+  await screen.findByLabelText('One-time code');expect(onVerified).not.toHaveBeenCalled();
+  fireEvent.change(screen.getByLabelText('One-time code'),{target:{value:'271828'}});
+  fireEvent.click(screen.getByRole('button',{name:'Verify and complete'}));
+  await screen.findByText('Verification completed');
+  expect(screen.getByText('No proxy / verified reporter')).toBeInTheDocument();expect(screen.getByText('RP-7K2Q')).toBeInTheDocument();
+  expect(onVerified).toHaveBeenCalledTimes(1);
+  expect(calls.find(call=>call.url.endsWith('/send-otp')).body).toEqual({channel:'email',consent:true,detailsAreMine:true});
+  expect(calls.find(call=>call.url.endsWith('/confirm-otp')).body).toEqual({code:'271828'});
+  expect(calls.some(call=>call.url.endsWith('/self-check/confirm'))).toBe(false);
 });
 
-it('[A-N99] a student without an ABC ID can switch to the synthetic Aadhaar check', async () => {
-  const { default: SelfCheckPanel } = await import('../src/pages/trust/SelfCheckPanel.jsx');
-  render(<SelfCheckPanel />);
-  fireEvent.click(screen.getByRole('tab', { name: 'I don’t have an ABC ID' }));
-  expect(screen.getByLabelText(/Aadhaar number \(synthetic test number only/)).toBeInTheDocument();
-  expect(screen.getByText(/Verhoeff checksum/)).toBeInTheDocument();
-  expect(screen.getByRole('button', { name: 'Fetch my details' })).toBeDisabled();
+it('[A-N99] a student without an ABC ID can select an Aadhaar-format test ID with consent required', async () => {
+  const { default: StudentVerificationPanel } = await import('../src/pages/trust/SelfCheckPanel.jsx');
+  render(<StudentVerificationPanel/>);
+  fireEvent.click(screen.getByRole('radio',{name:'Aadhaar-format test ID'}));
+  expect(screen.getByRole('radio',{name:'Aadhaar-format test ID'})).toBeChecked();
+  expect(screen.getByText(/Never enter a real Aadhaar number/)).toBeInTheDocument();
+  expect(screen.getByLabelText('Student ID number')).toHaveAttribute('maxLength','16');
+  fireEvent.change(screen.getByLabelText('Student ID number'),{target:{value:'100000000015'}});
+  expect(screen.getByRole('button',{name:'Fetch linked details'})).toBeDisabled();
 });

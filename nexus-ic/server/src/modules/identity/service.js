@@ -126,7 +126,7 @@ export function readInbox(user) {
   if (!row || row.expiresAt <= new Date()) { inbox.delete(user.id); return { entries: [] }; }
   return { entries: [{ ...row }] };
 }
-export async function claim(user, reporter) {
+export async function claim(user, reporter, { duplicateMode = 'review' } = {}) {
   const row = await Vault.findOne({ reporterId: reporter.pseudonymousReporterId });
   if (!row) throw fail(409, 'EVIDENCE_REQUIRED');
   const identity = open(row, row.reporterId);
@@ -135,6 +135,7 @@ export async function claim(user, reporter) {
     await Vault.updateOne({ _id: row._id }, { $set: { claimedFingerprint: fingerprint(identity.personRef) } });
   } catch (err) {
     if (err.code !== 11000) throw err;
+    if (duplicateMode === 'reject') throw fail(409, 'ID_ALREADY_LINKED');
     await fraud(row.reporterId, 'proxy_attempt', {}, user);
     throw fail(409, 'PROXY_ATTEMPT');
   }
