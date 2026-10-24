@@ -9,6 +9,8 @@ import { applyFieldPolicy } from '../../middleware/abac.js';
 import logger from '../../config/logger.js';
 import OfficialInstitution from '../registry/OfficialInstitution.js';
 import { toRegistryResult } from '../registry/adapters.js';
+import ResearchInstitution from '../researchRegistry/ResearchInstitution.js';
+import { publicResearchResult, sourcePid } from '../researchRegistry/service.js';
 
 /**
  * Touchpoints 6, 9, 10 helper:
@@ -65,6 +67,10 @@ export async function resolveIdentity(pid, icid) {
  * Never fuzzy-links.
  */
 export async function getInstitutionByPid(pid) {
+  if (sourcePid(pid)) {
+    const research = await ResearchInstitution.findOne({ pid }).lean();
+    if (research) return { found: true, institution: publicResearchResult(research) };
+  }
   if (!pid || !/^1-\d{10}$/.test(pid)) {
     return { found: false, reason: 'INVALID_PID_FORMAT' };
   }

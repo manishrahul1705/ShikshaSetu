@@ -4,6 +4,7 @@ import { searchWords } from './catalogue.js';
 import { officialSearch, toRegistryResult } from './adapters.js';
 import OfficialInstitution from './OfficialInstitution.js';
 import { matchTier, rankInstitutions } from './smartSearch.js';
+import { researchSearch } from '../researchRegistry/service.js';
 
 const PICKER_FIELDS = 'pid name city district state region type approvalStatus icid aliases campuses intake establishedYear approvalValidUntil registrySnapshot';
 // N97: whole-list candidates for acronym, short-form and close-spelling matches.
@@ -26,6 +27,7 @@ function parameter(value) {
 /** Public institution metadata only. An ICID resolves to a PID, never a link/merge. */
 export async function searchInstitutions(input = {}) {
   const q = parameter(input.q), state = parameter(input.state), region = parameter(input.region);
+  const research = await researchSearch({ q, state, region });
   const officialRows = q ? [...await officialSearch(q)] : [];
   const filter = {};
   if (state) filter.state = state;
@@ -69,12 +71,12 @@ export async function searchInstitutions(input = {}) {
   });
   return {
     authoritativeKey: 'pid', limit: 20,
-    institutions: [...official, ...rows.map(row => {
+    institutions: [...research, ...official.filter(row => (!state || row.state === state) && (!region || row.region === region)), ...rows.map(row => {
       const icid = row.icid || identifiers.find(mapping => mapping.pid === row.pid)?.icid || null;
       const matches = identifiers.filter(mapping => mapping.icid === icid);
       const icidCheck = !icid ? 'NOT_AVAILABLE' : matches.length === 1 && matches[0].pid === row.pid ? 'MATCH' : 'IDENTITY_REVIEW';
       return { pid: row.pid, icid, name: row.name, city: row.city || row.registrySnapshot?.city || null,
         state: row.state, region: row.region, type: row.type, approvalStatus: row.approvalStatus, icidCheck };
-    })].map((row, index) => ({ row, index })).sort((a, b) => (q ? tiers.get(a.row.pid) - tiers.get(b.row.pid) : 0) || a.index - b.index).map(item => item.row).slice(0, 20),
+    })].map((row, index) => ({ row, index })).sort((a, b) => (q ? (a.row.matchTier ?? tiers.get(a.row.pid) ?? 2.5) - (b.row.matchTier ?? tiers.get(b.row.pid) ?? 2.5) : 0) || a.index - b.index).map(item => item.row).slice(0, 20),
   };
 }
