@@ -35,7 +35,7 @@ it('[N33] channels explains installable PWA, no offline queue, and native apps r
 });
 it('[N15] manifest is installable and bootstrap registers the same-origin worker without storing session data',async()=>{
   const manifest=JSON.parse(readFileSync(resolve('public/manifest.webmanifest'),'utf8'));
-  expect(manifest.name).toBe('AWAAZ DASTAK'); expect(manifest.display).toBe('standalone');
+  expect(manifest.name).toBe('ShikshaSetu'); expect(manifest.display).toBe('standalone'); expect(manifest.short_name).toBe('ShikshaSetu'); expect(manifest.description).toBe('Connecting Institutions. Coordinating Action. Resolving Grievances.');
   for(const size of [192,512]) {
     const icon=manifest.icons.find(icon=>icon.sizes===`${size}x${size}`); expect(icon).toBeTruthy();
     const bytes=readFileSync(resolve(`public${icon.src}`)); expect(bytes.readUInt32BE(16)).toBe(size); expect(bytes.readUInt32BE(20)).toBe(size);
@@ -51,7 +51,7 @@ it('[N15] service worker caches only static shell assets, uses network-only for 
  const context={URL,Response:class{constructor(body){this.body=body;}},self:{location:{origin:'https://synthetic.invalid'},addEventListener:(name,fn)=>{listeners[name]=fn;},skipWaiting:async()=>{},clients:{claim:async()=>{}}},caches:{open:async()=>({addAll,put}),keys:async()=>['awaaz-s6a-static-v2','awaaz-s6a-offline-v1','other-app'],match,delete:remove},fetch:network};
  vm.runInNewContext(readFileSync(resolve('public/sw.js'),'utf8'),context);
  let pending;listeners.install({waitUntil:p=>{pending=p;}});await pending;
- expect(addAll.mock.calls.flatMap(([urls])=>urls)).toEqual(['/pwa/offline.html','/pwa/icon-192.png','/pwa/icon-512.png','/assets/app-123.js','/assets/style-123.css']);
+ expect(addAll.mock.calls.flatMap(([urls])=>urls)).toEqual(['/pwa/offline.html','/brand/shikshasetu-logo.png','/brand/shikshasetu-icon.png','/brand/shikshasetu-icon-192.png','/brand/shikshasetu-icon-512.png','/assets/app-123.js','/assets/style-123.css']);
  for(const request of [{url:'https://synthetic.invalid/api/v1/cases',method:'GET',mode:'navigate'},{url:'https://synthetic.invalid/api/v1/documents/secret/download',method:'GET',mode:'navigate'},{url:'https://synthetic.invalid/api/v1/grievances',method:'POST',mode:'cors'}]) {
   match.mockClear();listeners.fetch({request,respondWith:p=>{pending=p;}});expect((await pending).body).toBe('ephemeral network response');expect(match).not.toHaveBeenCalled();expect(network).toHaveBeenLastCalledWith(request);
  }

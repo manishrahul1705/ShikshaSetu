@@ -12,7 +12,7 @@ beforeEach(async () => {
   ctx = await setupS5();
 });
 
-const TEMPLATE = /^AWAAZ DASTAK: case NX-\d{4}-\d{6} status is now "[A-Za-z_ /]+"\. Log in to view details\.$/;
+const TEMPLATE = /^ShikshaSetu: case NX-\d{4}-\d{6} status is now "[A-Za-z_ /]+"\. Log in to view details\.$/;
 
 describe('S5 minimal status notices (N35, S27)', () => {
   it('[N35] every status change sends one minimal email and one SMS notice through the simulators', async () => {
@@ -24,7 +24,7 @@ describe('S5 minimal status notices (N35, S27)', () => {
     expect(notices.every((n) => n.state === 'SENT' && n.status === 'Under Process')).toBe(true);
     const sink = await NoticeSink.find({}).lean();
     expect(sink.map((s) => s.simulator).sort()).toEqual(['EmailSimulator', 'SmsSimulator']);
-    expect(sink[0].body).toBe(`AWAAZ DASTAK: case ${c.masterCaseId} status is now "Under Process". Log in to view details.`);
+    expect(sink[0].body).toBe(`ShikshaSetu: case ${c.masterCaseId} status is now "Under Process". Log in to view details.`);
   });
 
   it('[S27] the outbox is idempotent and email and SMS carry no narrative or PII', async () => {

@@ -14,7 +14,7 @@ async function start() {
   const app = createApp();
   app.listen(env.PORT, () => {
     logger.info({ action: 'server_started', port: env.PORT, mode: env.APP_MODE });
-    console.log(`AWAAZ DASTAK server listening on http://localhost:${env.PORT}`);
+    console.log(`ShikshaSetu server listening on http://localhost:${env.PORT}`);
   });
 }
 

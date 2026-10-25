@@ -30,7 +30,10 @@ function LangToggle({ dark }) {
 }
 
 function Sidebar({ user, open, onClose }) {
-  const groups = navFor(user.role);
+  const [navigationQuery, setNavigationQuery] = useState('');
+  const location = useLocation();
+  useEffect(() => { setNavigationQuery(''); }, [location.pathname]);
+  const groups = navFor(user.role).map(group => ({ ...group, items: group.items.filter(item => !navigationQuery.trim() || `${item.label} ${group.title}`.toLowerCase().includes(navigationQuery.trim().toLowerCase())) })).filter(group => group.items.length);
   return (
     <>
       <div className={`fixed inset-0 z-40 bg-ink-950/50 backdrop-blur-sm lg:hidden ${open ? '' : 'hidden'}`} onClick={onClose} />
@@ -42,7 +45,9 @@ function Sidebar({ user, open, onClose }) {
           <Link to="/" className="no-underline" onClick={onClose}><Logo dark /></Link>
           <button className="rounded-lg p-1.5 text-ink-300 hover:bg-white/10 lg:hidden" onClick={onClose} aria-label="Close menu"><Icon name="x" className="h-5 w-5" /></button>
         </div>
+        <div className="px-4 pb-4"><label className="sr-only" htmlFor="workspace-navigation-search">Find a page</label><div className="relative"><input id="workspace-navigation-search" placeholder="Find a page..." value={navigationQuery} onChange={e => setNavigationQuery(e.target.value)} className="min-h-10 w-full rounded-xl border border-white/15 bg-white/5 py-2 pl-3 pr-9 text-xs text-white placeholder:text-ink-400 focus:border-saffron-400 focus:outline-none focus:ring-2 focus:ring-saffron-400/30"/>{navigationQuery && <button type="button" aria-label="Clear page search" className="absolute right-1 top-1 rounded-lg p-2 text-ink-300 hover:bg-white/10" onClick={() => setNavigationQuery('')}><Icon name="x" className="h-3 w-3"/></button>}</div></div>
         <nav className="flex-1 space-y-5 overflow-y-auto px-3 pb-6">
+          {groups.length === 0 && <p className="px-3 text-xs leading-5 text-ink-300">No matching pages in your workspace. Try another name.</p>}
           {groups.map((g) => (
             <div key={g.title}>
               <p className="px-3 pb-1.5 text-[10px] font-bold uppercase tracking-[.16em] text-ink-400">{g.title}</p>
@@ -60,7 +65,7 @@ function Sidebar({ user, open, onClose }) {
           ))}
         </nav>
         <div className="border-t border-white/10 p-4 text-[11px] leading-relaxed text-ink-400">
-          <p className="font-semibold text-ink-200">Every voice, at the right door.</p>
+          <p className="font-semibold text-ink-200">Connecting Institutions. Coordinating Action. Resolving Grievances.</p>
           <p>AICTE PS 26264</p>
         </div>
       </aside>
@@ -121,7 +126,7 @@ function AppShell({ user }) {
           <Outlet />
         </main>
         <footer className="border-t border-slate-200 px-6 py-2 text-center text-[11px] text-slate-500">
-          AWAAZ DASTAK — powered by NEXUS-IC <SyntheticDataBadge className="ml-2 align-middle" />
+          ShikshaSetu — powered by NEXUS-IC <SyntheticDataBadge className="ml-2 align-middle" />
         </footer>
       </div>
       <TourDock />
@@ -134,15 +139,15 @@ function PublicShell() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          <Link to="/" className="no-underline"><Logo /></Link>
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-4 py-2 sm:px-6 lg:px-8">
+          <Link to="/" className="no-underline"><Logo header /></Link>
           <nav className="flex items-center gap-2 text-sm font-medium sm:gap-4">
             <Link to="/" className="hidden text-slate-600 no-underline hover:text-ink-900 sm:inline">Home</Link>
             <Link to="/institutions/lookup" className="hidden text-slate-600 no-underline hover:text-ink-900 sm:inline">Institution registry</Link>
             <LangToggle />
             {user
-              ? <Link to="/dashboard" className="btn-primary py-1.5">Open workspace <Icon name="arrow" className="h-4 w-4" /></Link>
-              : <Link to="/login" className="btn-primary py-1.5">Login</Link>}
+              ? <Link to="/dashboard" aria-label="Open workspace" className="btn-primary whitespace-nowrap py-1.5"><span className="sm:hidden">Workspace</span><span className="hidden sm:inline">Open workspace</span><Icon name="arrow" className="hidden h-4 w-4 sm:block" /></Link>
+              : <Link to="/login" className="btn-primary whitespace-nowrap py-1.5">Sign In</Link>}
           </nav>
         </div>
       </header>
@@ -150,7 +155,7 @@ function PublicShell() {
         <Outlet />
       </main>
       <footer className="bg-ink-950 px-4 py-3 text-center text-[11px] text-ink-300">
-        <span className="font-semibold text-white">AWAAZ DASTAK — powered by NEXUS-IC</span> · <span className="italic">Every voice, at the right door.</span> <SyntheticDataBadge className="ml-2 border-saffron-400 bg-saffron-500/20 text-saffron-100" />
+        <span className="font-semibold text-white">ShikshaSetu — powered by NEXUS-IC</span> · <span className="italic">Connecting Institutions. Coordinating Action. Resolving Grievances.</span> <SyntheticDataBadge className="ml-2 border-saffron-400 bg-saffron-500/20 text-saffron-100" />
       </footer>
     </div>
   );

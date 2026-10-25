@@ -2,7 +2,7 @@
 @config '../tailwind.config.js';
 
 /*
- * AWAAZ DASTAK design system. Tokens live in tailwind.config.js (ink, saffron,
+ * ShikshaSetu design system. Tokens live in tailwind.config.js (ink, saffron,
  * bharat). This file is plain CSS on purpose: the base layer quietly upgrades
  * the markup used across older pages (tables, inputs, headings, bordered
  * boxes) so every screen shares one look without rewriting each page.
@@ -34,7 +34,7 @@
     border-radius: .6rem; border: 1px solid #cbd5e1; background-color: #fff; padding: .45rem .75rem; font-size: .875rem;
     box-shadow: 0 1px 2px rgba(16,24,40,.04); transition: border-color .15s, box-shadow .15s;
   }
-  main input:focus, main select:focus, main textarea:focus { outline: none; border-color: var(--ink-500); box-shadow: 0 0 0 4px var(--ink-100); }
+  main input:focus, main select:focus, main textarea:focus { outline: none; border-color: var(--saffron-500); box-shadow: 0 0 0 4px var(--saffron-50); }
   main button { transition: background-color .15s, color .15s, box-shadow .15s, border-color .15s; }
   main button:focus-visible { outline: none; box-shadow: 0 0 0 4px var(--saffron-200); }
   a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--saffron-400); outline-offset: 3px; }

@@ -3,6 +3,7 @@ import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import Icon from '../components/ui/Icon.jsx';
+import Logo from '../components/ui/Logo.jsx';
 import PresentStory from '../components/PresentStory.jsx';
 import { useI18n } from '../i18n/index.js';
 
@@ -85,30 +86,27 @@ export default function Home() {
       <section className="relative overflow-hidden bg-ink-950 text-white">
         <div className="pointer-events-none absolute inset-0 opacity-[.35]" style={{ backgroundImage: 'radial-gradient(circle at 15% 20%, rgba(255,125,16,.35), transparent 40%), radial-gradient(circle at 85% 70%, rgba(70,97,166,.55), transparent 45%)' }} />
         <div className="pointer-events-none absolute inset-0 opacity-[.07]" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '44px 44px' }} />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:px-8 lg:py-24">
-          <div className="space-y-7">
+        <div className="relative mx-auto grid max-w-7xl items-start gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:px-8 lg:py-20">
+          <div className="space-y-4">
             <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[.14em] text-saffron-200">
               <span className="h-1.5 w-1.5 rounded-full bg-saffron-400 animate-pulseRing" /> AICTE · Smart India Hackathon · PS 26264
             </p>
-            <div>
-              <h1 className="font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">AWAAZ DASTAK</h1>
-              <p className="mt-3 text-sm font-bold uppercase tracking-[.3em] text-saffron-300">powered by NEXUS-IC</p>
+            <div className="max-w-md py-5 sm:py-7">
+              <h1 className="sr-only">ShikshaSetu</h1>
+              <Logo large hero />
             </div>
-            <p className="font-serif text-2xl italic text-ink-100 sm:text-3xl">"Every voice, at the right door."</p>
+            <div className="flex flex-wrap items-center gap-3" aria-label="Get started">
+              {user ? <Link to="/dashboard" className="btn-accent min-h-11 px-5 py-2.5 text-sm">Go to Dashboard ({user.role}) <Icon name="arrow" className="h-4 w-4"/></Link>
+                : <Link to="/login" className="btn-accent min-h-11 px-5 py-2.5 text-sm"><PolishText>Sign In to Your Workspace →</PolishText></Link>}
+              <Link to={user ? '/judge' : '/login?next=/judge'} className="btn min-h-11 border border-white/20 bg-white/5 px-4 py-2.5 text-sm text-white hover:bg-white/10"><Icon name="play" className="h-4 w-4"/>Guided Walkthrough</Link>
+            </div>
+            <p className="max-w-lg font-serif text-lg italic leading-relaxed text-ink-100 sm:text-xl">"Connecting Institutions. Coordinating Action. Resolving Grievances."</p>
             <div className="max-w-xl space-y-2 border-l-2 border-saffron-500 pl-4">
-              <p className="text-lg font-semibold text-white"><PolishText>One Institution, One View, One Complaint Journey, Real Resolution</PolishText></p>
-              <p className="text-sm text-ink-200"><PolishText>Verified People • Verified Institutions • Coordinated Bureaus • No Lost Transfers • Faster, Accountable Resolution</PolishText></p>
+              <p className="text-base font-semibold text-white"><PolishText>One Institution, One View, One Complaint Journey, Real Resolution</PolishText></p>
+              <p className="text-xs leading-5 text-ink-200"><PolishText>Verified People • Verified Institutions • Coordinated Bureaus • No Lost Transfers • Faster, Accountable Resolution</PolishText></p>
             </div>
             <div className="flex flex-wrap gap-3 pt-1">
-              <button className="btn-accent px-6 py-3 text-base" onClick={() => setPresenting(true)}>{lang === 'hi' ? 'प्रस्तुत करें' : 'Present'}</button>
-              {user ? (
-                <Link to="/dashboard" className="btn-accent px-6 py-3 text-base">Go to Dashboard ({user.role}) →</Link>
-              ) : (
-                <Link to="/login" className="btn-accent px-6 py-3 text-base"><PolishText>Sign In to Your Workspace →</PolishText></Link>
-              )}
-              <Link to={user ? '/judge' : '/login?next=/judge'} className="btn border border-white/20 bg-white/5 px-6 py-3 text-base text-white hover:bg-white/10">
-                <Icon name="play" className="h-4 w-4" /> Guided Walkthrough
-              </Link>
+              <button className="inline-flex min-h-9 items-center gap-2 rounded-lg px-2 text-xs font-semibold text-saffron-200 hover:bg-white/5" onClick={() => setPresenting(true)}><Icon name="play" className="h-3.5 w-3.5"/>{lang === 'hi' ? 'प्रस्तुत करें' : 'Present'}</button>
             </div>
           </div>
           <JourneyCard />

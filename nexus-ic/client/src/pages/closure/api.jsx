@@ -34,7 +34,7 @@ export function useS5Action(path, method = 'POST', invalidate = []) {
   });
 }
 
-export const S5_SYNTHETIC = 'SYNTHETIC DATA';
+export const S5_SYNTHETIC = 'LOCAL ENVIRONMENT';
 
 export function Pct({ p }) {
   if (!p) return null;

@@ -5,10 +5,10 @@ import { EmptyState, SortableTable, SyntheticDataBadge } from '../src/components
 
 afterEach(cleanup);
 
-it('[A-N101] designed empty state and synthetic showcase disclosure prevent blank page surfaces', () => {
+it('[A-N101] designed empty state and local-environment disclosure prevent blank page surfaces', () => {
   render(<><EmptyState title="No cases yet" text="New cases will appear here with their routing status." /><SyntheticDataBadge /></>);
   expect(screen.getByRole('heading', { name: 'No cases yet' })).toBeInTheDocument();
-  expect(screen.getByText('Synthetic showcase data')).toBeInTheDocument();
+  expect(screen.getByText('Local environment')).toHaveAttribute('title', 'Local environment; not an official government record');
 });
 
 it('[A-N102] tables filter records and sort ascending then descending', () => {

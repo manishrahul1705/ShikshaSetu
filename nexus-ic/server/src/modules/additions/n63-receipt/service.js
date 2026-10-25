@@ -34,10 +34,10 @@ export async function buildReceipt(user, caseRef) {
   const mark = await watermarkExport(user, { kind: 'CASE_RECEIPT', rowCount: view.statusHistory.length, scope: 'Own case' });
   const rows = view.statusHistory.map((h) => `<tr><td>${esc(h.status)}</td><td>${esc(new Date(h.at).toISOString())}</td></tr>`).join('');
   const html = `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>AWAAZ DASTAK receipt ${esc(view.masterCaseId)}</title>
+<html lang="en"><head><meta charset="utf-8"><title>ShikshaSetu receipt ${esc(view.masterCaseId)}</title>
 <style>body{font-family:system-ui,sans-serif;max-width:640px;margin:24px auto;color:#0f172a}table{border-collapse:collapse;width:100%}td,th{border:1px solid #cbd5e1;padding:6px;text-align:left}.banner{background:#fef3c7;padding:6px;font-weight:700}footer{margin-top:16px;font-size:12px;color:#475569}</style></head>
 <body>
-<h1>AWAAZ DASTAK</h1><p>powered by NEXUS-IC. Every voice, at the right door.</p>
+<h1>ShikshaSetu</h1><p>powered by NEXUS-IC. Connecting Institutions. Coordinating Action. Resolving Grievances.</p>
 <h2>Case receipt</h2>
 <p><strong>Master Case ID:</strong> ${esc(view.masterCaseId)}</p>
 <p><strong>Category:</strong> ${esc(view.category)} / ${esc(view.subCategory)}</p>

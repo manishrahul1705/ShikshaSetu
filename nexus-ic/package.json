@@ -2,7 +2,7 @@
   "name": "awaaz-dastak",
   "version": "0.1.0",
   "private": true,
-  "description": "AWAAZ DASTAK — powered by NEXUS-IC. Integrated Institution Grievance Monitoring and Resolution System.",
+  "description": "ShikshaSetu — powered by NEXUS-IC. Integrated Institution Grievance Monitoring and Resolution System.",
   "workspaces": [
     "server",
     "client"

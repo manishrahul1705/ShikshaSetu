@@ -86,7 +86,7 @@ export default function CaseStepper({
           <h3 className="text-base font-bold text-slate-900">Event-Grounded Case Journey</h3>
         </div>
         <div className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 status-pulse" />
           <span className="text-xs font-semibold text-slate-700">Recorded case history</span>
         </div>
       </div>
@@ -100,7 +100,7 @@ export default function CaseStepper({
           const circleColor = isCompleted
             ? 'bg-emerald-600 text-white ring-4 ring-emerald-50'
             : isActive
-            ? 'bg-saffron-500 text-white ring-4 ring-saffron-100 animate-pulse'
+            ? 'bg-saffron-500 text-white ring-4 ring-saffron-100 status-pulse'
             : 'bg-slate-200 text-slate-500';
 
           const officeText = historyEntry?.office;

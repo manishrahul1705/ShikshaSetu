@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// AWAAZ DASTAK design tokens: deep navy for authority, saffron for action,
+// ShikshaSetu design tokens: deep navy for authority, saffron for action,
 // India green for resolved outcomes. Existing pages keep their slate/blue classes.
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],

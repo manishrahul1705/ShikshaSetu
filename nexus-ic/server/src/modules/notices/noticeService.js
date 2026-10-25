@@ -44,11 +44,11 @@ export const NoticeSink =
   mongoose.models.notice_simulator_sink || mongoose.model('notice_simulator_sink', sinkSchema, 'notice_simulator_sink');
 
 const label = (s) => (s === 'SUBMITTED' ? 'Registered' : s);
-const TEMPLATE = /^AWAAZ DASTAK: case NX-\d{4}-\d{6} status is now "[A-Za-z_ /]+"\. Log in to view details\.$/;
+const TEMPLATE = /^ShikshaSetu: case NX-\d{4}-\d{6} status is now "[A-Za-z_ /]+"\. Log in to view details\.$/;
 
 /** The only message text. Anything that does not match the template is refused. */
 export function noticeBody(masterCaseId, status) {
-  const body = `AWAAZ DASTAK: case ${masterCaseId} status is now "${label(status)}". Log in to view details.`;
+  const body = `ShikshaSetu: case ${masterCaseId} status is now "${label(status)}". Log in to view details.`;
   if (!TEMPLATE.test(body)) throw new Error('NOTICE_TEMPLATE_VIOLATION');
   return body;
 }

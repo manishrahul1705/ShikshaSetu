@@ -66,7 +66,7 @@ describe('S5 complainant workspace (N29, U31, A-N63)', () => {
     const html = res.text;
     expect(html).toContain(c.masterCaseId);
     expect(html).not.toContain('SYNTHETIC DATA'); // Explicit export-footer override.
-    expect(html).toContain('AWAAZ DASTAK');
+    expect(html).toContain('ShikshaSetu');
     expect(html).toContain(`/track/${c.masterCaseId}`);
     expect(html).toContain('You will need to log in.');
     expect(html).toMatch(/<svg|QR code: UNKNOWN \(QR_LIBRARY_NOT_INSTALLED\)/);

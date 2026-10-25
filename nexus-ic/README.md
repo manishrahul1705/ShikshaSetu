@@ -1,6 +1,6 @@
-# AWAAZ DASTAK
+# ShikshaSetu
 ### *powered by NEXUS-IC*
-> **"Every voice, at the right door."**  
+> *Connecting Institutions. Coordinating Action. Resolving Grievances.*
 > *"One Institution, One View, One Complaint Journey, Real Resolution"*  
 > *"Verified People • Verified Institutions • Coordinated Bureaus • No Lost Transfers • Faster, Accountable Resolution"*
 

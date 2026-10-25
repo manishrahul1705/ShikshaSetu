@@ -69,7 +69,7 @@ describe('S1b Client UI & Additions', () => {
     // Initial language is English
     expect(screen.getByTestId('current-lang').textContent).toBe('en');
     expect(screen.getByTestId('title').textContent).toBe('Grievance Intake Portal');
-    expect(screen.getByTestId('subtitle').textContent).toBe('Every voice, at the right door.');
+    expect(screen.getByTestId('subtitle').textContent).toBe('Connecting Institutions. Coordinating Action. Resolving Grievances.');
 
     // Toggle to Hindi
     fireEvent.click(screen.getByTestId('toggle-btn'));

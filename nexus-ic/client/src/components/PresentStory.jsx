@@ -37,7 +37,7 @@ export default function PresentStory({ onClose }) {
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
       if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     }}>
-    <div className="flex justify-between"><span>AWAAZ DASTAK · {index + 1}/{slides.length}</span><button ref={close} onClick={onClose}>{t("polish.Close")}</button></div>
+    <div className="flex justify-between"><span>ShikshaSetu · {index + 1}/{slides.length}</span><button ref={close} onClick={onClose}>{t("polish.Close")}</button></div>
     <div className="my-auto space-y-8 py-10" aria-live="polite">
       <h1 className="max-w-5xl text-4xl font-extrabold text-white sm:text-6xl">{slides[index][0]}</h1>
       <p className="max-w-4xl text-xl text-ink-100 sm:text-3xl">{slides[index][1]}</p>

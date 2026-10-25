@@ -1,8 +1,8 @@
 // N49 NOT-ADOPTED: static assets only, no offline case data or mutation queue.
 const PREFIX = 'awaaz-s6a-';
-const CACHE = `${PREFIX}static-v2`;
+const CACHE = `${PREFIX}static-v5-shikshasetu-icons`;
 const OFFLINE = '/pwa/offline.html';
-const FIXED = [OFFLINE, '/pwa/icon-192.png', '/pwa/icon-512.png'];
+const FIXED = [OFFLINE, '/brand/shikshasetu-logo.png', '/brand/shikshasetu-icon.png', '/brand/shikshasetu-icon-192.png', '/brand/shikshasetu-icon-512.png'];
 const assetPath = pathname => /^\/assets\/[A-Za-z0-9_.-]+\.(js|css)$/.test(pathname);
 const staticPath = pathname => FIXED.includes(pathname) || assetPath(pathname);
 async function clearCaches() {

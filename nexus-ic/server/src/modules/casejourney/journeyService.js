@@ -19,7 +19,7 @@ import { fail, actorId, findCase } from '../closure/util.js';
  */
 export const JOURNEY_ROLES = ['bureau_officer', 'regional_officer', 'supervisor', 'competent_authority', 'auditor', 'system_admin'];
 
-const SOURCE_LABELS = { web: 'AWAAZ DASTAK web / PWA intake', email: 'Email intake (EmailSimulator)', import: 'Bulk import (adapter)' };
+const SOURCE_LABELS = { web: 'ShikshaSetu web / PWA intake', email: 'Email intake (EmailSimulator)', import: 'Bulk import (adapter)' };
 
 export async function caseJourney(user, idOrMaster) {
   const caseDoc = await findCase(idOrMaster);

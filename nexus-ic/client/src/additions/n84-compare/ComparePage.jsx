@@ -30,7 +30,7 @@ export default function ComparePage() {
   const recorded = q.data?.recorded;
   return <div className="mx-auto max-w-7xl space-y-3">
     <header><p className="text-xs font-bold uppercase tracking-[.16em] text-saffron-700">Problem statement 26264</p>
-      <h1 className="mt-1 text-3xl font-extrabold text-ink-950 sm:text-4xl">Today vs with AWAAZ DASTAK</h1>
+      <h1 className="mt-1 text-3xl font-extrabold text-ink-950 sm:text-4xl">Today vs with ShikshaSetu</h1>
       <p className="mt-2 max-w-3xl text-slate-600">One college, two offices. Compare fragmented requests with the recorded coordinated workflow.</p></header>
     <details open={!selectedPid}><summary className="cursor-pointer text-sm">Choose another institution</summary><InstitutionPicker onSelect={i => { setSearch({pid:i.pid}); setStep(0); }} /></details>
     {selectedPid && <p className="text-sm text-slate-500">Institution {selectedPid}</p>}
@@ -41,7 +41,7 @@ export default function ComparePage() {
         <Counts values={fixed} source="scripted scenario" scope="illustrative sequence" />
       </section>
       <section className="rounded-3xl border border-saffron-200 bg-saffron-50 p-4"><p className="text-xs font-bold uppercase tracking-wider text-saffron-800">Recorded workflow</p>
-        <h2 className="mt-2 text-2xl font-bold text-ink-950">With AWAAZ DASTAK</h2><ol className="mt-3 space-y-1 text-sm text-slate-700">{['PREVENT warns before an overlapping action.', 'SYNC coordinates requests; the locker supports scoped document reuse.', 'The institution replies against each owning office item.', 'The student sees recorded status, next step and open queries.'].map((text,i)=><li key={text} className="ps-story-step" data-revealed={i<step}>{i+1}. {text}</li>)}</ol>
+        <h2 className="mt-2 text-2xl font-bold text-ink-950">With ShikshaSetu</h2><ol className="mt-3 space-y-1 text-sm text-slate-700">{['PREVENT warns before an overlapping action.', 'SYNC coordinates requests; the locker supports scoped document reuse.', 'The institution replies against each owning office item.', 'The student sees recorded status, next step and open queries.'].map((text,i)=><li key={text} className="ps-story-step" data-revealed={i<step}>{i+1}. {text}</li>)}</ol>
         {q.error && <p role="alert" className="mt-3">Recorded actions are unavailable for this institution.</p>}
         {recorded ? <Counts values={recorded} source={q.data.source} scope={`PID ${q.data.institutionPid}; ${q.data.scope.accessibleCases} accessible cases`} /> : <p className="mt-5 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-600">Choose an institution with recorded actions to load its comparison.</p>}
         {q.data?.caseReferences?.[0] && <Link className="mt-4 inline-block underline" to={`/cases/${q.data.caseReferences[0]}`}>Open a recorded case</Link>}

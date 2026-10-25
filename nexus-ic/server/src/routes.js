@@ -10,7 +10,7 @@ const router = Router();
  * Health check — public, no auth required.
  */
 router.get('/health', (req, res) => {
-  res.json({ status: 'ok', app: 'AWAAZ DASTAK', subtitle: 'powered by NEXUS-IC' });
+  res.json({ status: 'ok', app: 'ShikshaSetu', subtitle: 'Connecting Institutions. Coordinating Action. Resolving Grievances.' });
 });
 
 /**
