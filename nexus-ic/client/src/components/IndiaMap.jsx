@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { INDIA_STATES } from './maps/indiaStates.js';
 
 /**
  * N94 illustrative local SVG India region map
@@ -19,13 +20,13 @@ export const AICTE_REGIONS = {
   Western: {
     name: 'Western Region',
     hq: 'Mumbai',
-    states: ['Maharashtra', 'Gujarat', 'Goa', 'Daman & Diu', 'Dadra & Nagar Haveli'],
+    states: ['Maharashtra', 'Gujarat', 'Rajasthan', 'Goa', 'Daman & Diu', 'Dadra & Nagar Haveli'],
     center: { x: 180, y: 360 },
   },
   Central: {
     name: 'Central Region',
     hq: 'Bhopal',
-    states: ['Madhya Pradesh', 'Chhattisgarh', 'Rajasthan'],
+    states: ['Madhya Pradesh', 'Chhattisgarh'],
     center: { x: 265, y: 290 },
   },
   Southern: {
@@ -55,13 +56,15 @@ export const STATE_TO_REGION = {
   'Uttar Pradesh': 'Northern', 'Delhi': 'Northern', 'Chandigarh': 'Northern',
   'Maharashtra': 'Western', 'Gujarat': 'Western', 'Goa': 'Western',
   'Daman & Diu': 'Western', 'Dadra & Nagar Haveli': 'Western',
-  'Madhya Pradesh': 'Central', 'Chhattisgarh': 'Central', 'Rajasthan': 'Central',
+  'Madhya Pradesh': 'Central', 'Chhattisgarh': 'Central', 'Rajasthan': 'Western',
   'Tamil Nadu': 'Southern', 'Karnataka': 'Southern', 'Kerala': 'Southern',
   'Andhra Pradesh': 'Southern', 'Telangana': 'Southern', 'Puducherry': 'Southern', 'Lakshadweep': 'Southern',
   'West Bengal': 'Eastern', 'Bihar': 'Eastern', 'Jharkhand': 'Eastern', 'Odisha': 'Eastern', 'Andaman & Nicobar': 'Eastern',
   'Assam': 'North Eastern', 'Meghalaya': 'North Eastern', 'Manipur': 'North Eastern',
   'Mizoram': 'North Eastern', 'Nagaland': 'North Eastern', 'Tripura': 'North Eastern',
   'Arunachal Pradesh': 'North Eastern', 'Sikkim': 'North Eastern',
+  'Jammu and Kashmir': 'Northern', 'Andaman and Nicobar Islands': 'Eastern',
+  'Dadra and Nagar Haveli and Daman and Diu': 'Western',
 };
 
 // City coordinates mapping for college pins
@@ -94,27 +97,6 @@ export const CITY_COORDINATES = {
   'itanagar': { x: 520, y: 205 },
 };
 
-// SVG Paths representing the 6 AICTE regions
-const REGION_PATHS = {
-  // Northern: J&K, Ladakh, HP, Punjab, Haryana, Uttarakhand, UP, Delhi, Chandigarh
-  Northern: 'M 225 25 C 235 15, 275 10, 290 25 C 315 45, 330 75, 315 110 C 300 135, 290 145, 320 165 C 345 180, 360 210, 350 250 C 335 255, 295 250, 270 240 C 250 230, 230 220, 215 210 C 205 175, 200 130, 205 90 C 210 60, 215 35, 225 25 Z',
-
-  // Western: Maharashtra, Gujarat, Goa, Daman & Diu, Dadra & Nagar Haveli
-  Western: 'M 140 235 C 165 240, 195 245, 215 260 C 220 290, 200 325, 225 365 C 240 395, 225 435, 210 470 C 195 475, 185 450, 175 410 C 165 375, 160 340, 140 330 C 115 320, 100 295, 110 270 C 115 255, 130 245, 140 235 Z',
-
-  // Central: Madhya Pradesh, Chhattisgarh, Rajasthan
-  Central: 'M 165 220 C 185 215, 210 225, 240 240 C 275 250, 310 255, 335 255 C 345 285, 360 325, 350 365 C 335 400, 305 405, 280 390 C 265 370, 250 350, 235 340 C 215 325, 195 300, 185 260 C 175 240, 165 230, 165 220 Z',
-
-  // Southern: Tamil Nadu, Karnataka, Kerala, Andhra Pradesh, Telangana, Puducherry
-  Southern: 'M 210 470 C 235 450, 270 410, 305 405 C 330 425, 325 465, 305 510 C 290 550, 275 595, 250 635 C 235 615, 225 565, 210 520 C 205 495, 205 480, 210 470 Z',
-
-  // Eastern: West Bengal, Bihar, Jharkhand, Odisha
-  Eastern: 'M 335 255 C 375 250, 410 260, 405 295 C 415 325, 410 355, 395 385 C 380 410, 355 425, 335 410 C 330 380, 345 340, 335 300 C 330 280, 330 265, 335 255 Z',
-
-  // North Eastern: Assam, Meghalaya, Manipur, Mizoram, Nagaland, Tripura, Arunachal Pradesh, Sikkim
-  'North Eastern': 'M 410 220 C 430 215, 460 210, 495 190 C 535 175, 565 195, 555 225 C 545 250, 520 270, 525 295 C 510 315, 485 310, 465 285 C 450 275, 425 265, 415 245 C 410 235, 405 225, 410 220 Z',
-};
-
 // N100: distinct, accessible region fills from Tailwind tokens; the selected
 // region always uses saffron.
 export const REGION_FILL_CLASS = {
@@ -127,6 +109,9 @@ const REGION_SWATCH_CLASS = {
 };
 export const ILLUSTRATIVE_LABEL = 'Illustrative map, boundaries not official';
 const ZOOM_STEPS = [1, 1.5, 2, 3];
+const stateAliases = { 'Jammu & Kashmir': 'Jammu and Kashmir', 'Andaman & Nicobar': 'Andaman and Nicobar Islands', 'Daman & Diu': 'Dadra and Nagar Haveli and Daman and Diu', 'Dadra & Nagar Haveli': 'Dadra and Nagar Haveli and Daman and Diu' };
+const canonicalState = state => stateAliases[state] || state;
+const regionForState = state => STATE_TO_REGION[state] || STATE_TO_REGION[Object.keys(stateAliases).find(key => stateAliases[key] === state)];
 
 export default function IndiaMap({
   selectedRegion = null,
@@ -145,6 +130,8 @@ export default function IndiaMap({
   onSelectState = null,
   onSelectInstitution = null,
 }) {
+  const requestSequence = useRef(0);
+  const [collegeQuery, setCollegeQuery] = useState('');
   const [hoveredRegion, setHoveredRegion] = useState(null);
   const [zoom, setZoom] = useState(0);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -164,21 +151,25 @@ export default function IndiaMap({
   }, [explorer, stateCounts]);
   const focusState = pickedState || selectedState;
   const collegesIn = state => {
-    const value = counts?.[state];
+    const value = counts?.[canonicalState(state)] ?? counts?.[state];
     if (value === undefined || value === null) return null;
-    return typeof value === 'number' ? value : (value.fictional || 0) + (value.official || 0);
+    return typeof value === 'number' ? value : (value.fictional || 0) + (value.official || 0) + (value.research || 0);
   };
-  const chooseState = async state => {
+  const chooseState = async (state, offset = 0, query = '') => {
+    const sequence = ++requestSequence.current;
     setPickedState(state);
-    onSelectState?.(state, STATE_TO_REGION[state]);
+    onSelectState?.(state, regionForState(state));
     if (!explorer) return;
-    setStateColleges({ state, rows: [], status: 'Loading colleges…' });
+    setStateColleges(previous => ({ state, rows: offset ? previous.rows : [], status: 'Loading colleges...' }));
     try {
-      const response = await fetch(`/api/v1/institutions/search?state=${encodeURIComponent(state)}`, { credentials: 'include' });
+      const response = await fetch(`/api/v1/registry/research/institutions?state=${encodeURIComponent(canonicalState(state))}&offset=${offset}&q=${encodeURIComponent(query)}`, { credentials: 'include' });
+      if (!response.ok) throw new Error('UNAVAILABLE');
       const data = response.ok ? await response.json() : null;
       const rows = Array.isArray(data?.institutions) ? data.institutions : [];
-      setStateColleges({ state, rows, status: rows.length ? '' : `No colleges from ${state} in the active registry sources yet.` });
+      if (sequence !== requestSequence.current) return;
+      setStateColleges(previous => ({ state, rows: offset ? [...previous.rows, ...rows] : rows, nextOffset: data?.nextOffset ?? null, status: rows.length ? '' : `No colleges from ${state} in the active registry sources yet.` }));
     } catch {
+      if (sequence !== requestSequence.current) return;
       setStateColleges({ state, rows: [], status: 'College list unavailable (UNKNOWN). Try again.' });
     }
   };
@@ -189,7 +180,7 @@ export default function IndiaMap({
   const nudge = (dx, dy) => setPan(value => ({ x: value.x + dx / scale, y: value.y + dy / scale }));
 
   // Determine active region from state or selectedRegion prop
-  const activeRegion = (pickedState && STATE_TO_REGION[pickedState]) || selectedRegion || (selectedState ? STATE_TO_REGION[selectedState] : null);
+  const activeRegion = (pickedState && regionForState(pickedState)) || selectedRegion || (selectedState ? regionForState(selectedState) : null);
 
   // Pin coordinates resolution. A city-level pin needs coordinates in the
   // college's own data; otherwise the pin marks the region and the caption says
@@ -199,7 +190,7 @@ export default function IndiaMap({
   if (coordinates && Number.isFinite(coordinates.x) && Number.isFinite(coordinates.y)) {
     pinCoord = coordinates; pinLevel = 'city';
   } else if ((institutionName || institutionPid || selectedCity) && activeRegion && AICTE_REGIONS[activeRegion]) {
-    pinCoord = AICTE_REGIONS[activeRegion].center; pinLevel = 'state';
+    pinCoord = INDIA_STATES.find(state => state.name === canonicalState(selectedState))?.center || AICTE_REGIONS[activeRegion].center; pinLevel = 'state';
   }
 
   // Calculate choropleth heat fill
@@ -249,7 +240,7 @@ export default function IndiaMap({
       </div>
 
       {/* SVG Map */}
-      <div className="relative w-full max-w-[420px] aspect-[600/650]">
+      <div className="relative w-full max-w-[640px] aspect-[600/650]">
         <svg
           viewBox={`${viewX} ${viewY} ${viewW} ${viewH}`}
           className="w-full h-full drop-shadow-sm select-none motion-safe:transition-all"
@@ -259,73 +250,47 @@ export default function IndiaMap({
           {/* Subtle Outer Boundary & Graticule */}
           <rect x="2" y="2" width="596" height="646" rx="12" fill="#fafafa" stroke="#e2e8f0" strokeWidth="1" />
 
-          {/* Region Paths */}
-          {Object.entries(REGION_PATHS).map(([regionKey, pathD]) => {
-            const isSelected = activeRegion === regionKey;
-            const isHovered = hoveredRegion === regionKey;
-            const regionMeta = AICTE_REGIONS[regionKey];
-            const countVal = regionCounts[regionKey];
-            const count = typeof countVal === 'number' ? countVal : (countVal?.open || countVal?.total || 0);
-
-            return (
-              <g key={regionKey} className="transition-all duration-200">
-                <path
-                  d={pathD}
-                  fill={hasCounts || isSelected || isHovered ? getRegionFill(regionKey) : undefined}
-                  data-region={regionKey}
-                  stroke={isSelected ? '#c2410c' : isHovered ? '#ea580c' : '#94a3b8'}
-                  strokeWidth={isSelected ? '2.5' : '1.5'}
-                  strokeLinejoin="round"
-                  className={`${regionClass(regionKey)} ${interactive ? 'cursor-pointer hover:opacity-95' : ''}`}
-                  onMouseEnter={() => setHoveredRegion(regionKey)}
-                  onMouseLeave={() => setHoveredRegion(null)}
-                  onClick={() => interactive && onSelectRegion && onSelectRegion(regionKey)}
-                  tabIndex={interactive ? 0 : -1}
-                  aria-label={`${regionKey} Region: ${count} cases`}
-                  onKeyDown={(e) => {
-                    if (interactive && (e.key === 'Enter' || e.key === ' ')) {
-                      onSelectRegion && onSelectRegion(regionKey);
-                    }
-                  }}
-                />
-
-                {/* Region Label & Count Pill */}
-                <g pointerEvents="none">
-                  <text
-                    x={regionMeta.center.x}
-                    y={regionMeta.center.y - (count > 0 ? 8 : 0)}
-                    textAnchor="middle"
-                    className={`text-[11px] font-bold tracking-wide select-none ${isSelected ? 'fill-white' : 'fill-slate-700'}`}
-                    style={{ textShadow: isSelected ? '0 1px 2px rgba(0,0,0,0.4)' : '0 1px 1px white' }}
-                  >
-                    {regionKey}
-                  </text>
-                  {count > 0 && (
-                    <g transform={`translate(${regionMeta.center.x - 16}, ${regionMeta.center.y + 2})`}>
-                      <rect width="32" height="14" rx="7" fill={isSelected ? '#7c2d12' : '#0f172a'} />
-                      <text x="16" y="10" textAnchor="middle" fill="#ffffff" className="text-[9px] font-bold font-mono">
-                        {count}
-                      </text>
-                    </g>
-                  )}
-                </g>
-              </g>
-            );
-          })}
-
-          {/* Island Territories */}
-          <g fill="#94a3b8" stroke="#64748b" strokeWidth="1">
-            {/* Andaman & Nicobar */}
-            <circle cx="510" cy="540" r="3.5" />
-            <circle cx="515" cy="560" r="3" />
-            <circle cx="518" cy="585" r="3.5" />
-            <text x="525" y="565" className="text-[8px] fill-slate-500 font-medium select-none">A&N (Eastern)</text>
-
-            {/* Lakshadweep */}
-            <circle cx="170" cy="565" r="2.5" />
-            <circle cx="173" cy="580" r="2.5" />
-            <text x="120" y="575" className="text-[8px] fill-slate-500 font-medium select-none">Lakshadweep (Southern)</text>
+          <defs>
+            <radialGradient id="map-ocean"><stop offset="0" stopColor="#f8fdff"/><stop offset="1" stopColor="#e8f2f7"/></radialGradient>
+            <filter id="map-land-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" floodColor="#193451" floodOpacity=".17"/></filter>
+          </defs>
+          <rect x="3" y="3" width="594" height="644" rx="12" fill="url(#map-ocean)" />
+          <g opacity=".25" stroke="#b8ccd7" strokeWidth=".5" pointerEvents="none">
+            {[100,200,300,400,500].map(x => <path key={x} d={`M${x} 20V630`}/>)}
+            {[100,200,300,400,500,600].map(y => <path key={y} d={`M20 ${y}H580`}/>)}
           </g>
+          <g filter="url(#map-land-shadow)">
+            {INDIA_STATES.map(state => {
+              const regionKey = regionForState(state.name);
+              const selected = canonicalState(focusState) === state.name;
+              const regionSelected = activeRegion === regionKey;
+              return <path key={state.name} d={state.d} fillRule="evenodd"
+                data-region={regionKey} data-map-state={state.name}
+                className={`${regionClass(regionKey)} ${explorer || interactive ? 'cursor-pointer' : ''}`}
+                fill={selected ? '#f97316' : hasCounts ? getRegionFill(regionKey) : undefined}
+                stroke={selected ? '#9a3412' : regionSelected ? '#e78b39' : '#fff'} strokeWidth={selected ? 1.8 : .8}
+                vectorEffect="non-scaling-stroke" strokeLinejoin="round"
+                tabIndex={explorer || interactive ? 0 : -1} role={explorer || interactive ? 'button' : undefined}
+                aria-label={`${state.name}, ${regionKey} region, ${collegesIn(state.name) ?? 'UNKNOWN'} institutions`}
+                onMouseEnter={() => { setHoveredState(state.name); setHoveredRegion(regionKey); }}
+                onMouseLeave={() => { setHoveredState(null); setHoveredRegion(null); }}
+                onFocus={() => { setHoveredState(state.name); setHoveredRegion(regionKey); }}
+                onBlur={() => { setHoveredState(null); setHoveredRegion(null); }}
+                onClick={() => { if (explorer) { setCollegeQuery(''); void chooseState(state.name); } if (interactive) onSelectRegion?.(regionKey); }}
+                onKeyDown={event => { if ((explorer || interactive) && ['Enter', ' '].includes(event.key)) { event.preventDefault(); if (explorer) void chooseState(state.name); if (interactive) onSelectRegion?.(regionKey); } }}>
+                <title>{state.name} ? {regionKey} region ? {collegesIn(state.name) ?? 'UNKNOWN'} institutions in loaded sources</title>
+              </path>;
+            })}
+          </g>
+          <g pointerEvents="none" className="text-[10px] font-semibold fill-slate-700" style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 3, strokeLinejoin: 'round' }}>
+            {[
+              ['Northern', 230, 145], ['Western', 140, 335], ['Central', 278, 326],
+              ['Southern', 245, 485], ['Eastern', 385, 300], ['North Eastern', 500, 238],
+            ].map(([name,x,y]) => <text key={name} x={x} y={y} textAnchor="middle">{name}</text>)}
+            <text x="78" y="440" className="text-[9px] italic fill-slate-400" strokeWidth="0">ARABIAN SEA</text>
+            <text x="420" y="455" className="text-[9px] italic fill-slate-400" strokeWidth="0">BAY OF BENGAL</text>
+          </g>
+          <g transform="translate(550 65)" pointerEvents="none"><path d="M0 14V-10M-4-4L0-10 4-4" fill="none" stroke="#456078" strokeWidth="1.5"/><text y="-16" textAnchor="middle" className="text-[10px] fill-slate-500">N</text></g>
 
           {/* College Pin Marker */}
           {pinCoord && (
@@ -346,7 +311,7 @@ export default function IndiaMap({
           <div className="absolute bottom-2 left-2 right-2 bg-slate-900/95 text-white text-xs p-2.5 rounded-lg shadow-lg backdrop-blur-sm pointer-events-none transition-all">
             <div className="flex items-center justify-between font-bold">
               <span className="text-saffron-400">
-                {AICTE_REGIONS[hoveredRegion || activeRegion]?.name}
+                {hoveredState || AICTE_REGIONS[hoveredRegion || activeRegion]?.name}
               </span>
               <span className="text-[10px] text-slate-400">
                 HQ: {AICTE_REGIONS[hoveredRegion || activeRegion]?.hq}
@@ -376,7 +341,7 @@ export default function IndiaMap({
             <button type="button" className="min-h-10 min-w-10 rounded-lg border border-ink-200 bg-white text-xs focus-visible:ring-2 focus-visible:ring-saffron-500" aria-label="Pan down" onClick={() => nudge(0, 60)}>▼</button>
             <button type="button" className="min-h-10 min-w-10 rounded-lg border border-ink-200 bg-white text-xs focus-visible:ring-2 focus-visible:ring-saffron-500" aria-label="Pan right" onClick={() => nudge(60, 0)}>▶</button>
           </>}
-          <button type="button" className="min-h-10 rounded-lg border border-ink-200 bg-white px-3 text-xs font-semibold hover:border-saffron-400 focus-visible:ring-2 focus-visible:ring-saffron-500" aria-label="Reset map" onClick={() => { setZoom(0); setPan({ x: 0, y: 0 }); setPickedState(null); setStateColleges({ state: null, rows: [], status: '' }); }}>Reset</button>
+          <button type="button" className="min-h-10 rounded-lg border border-ink-200 bg-white px-3 text-xs font-semibold hover:border-saffron-400 focus-visible:ring-2 focus-visible:ring-saffron-500" aria-label="Reset map" onClick={() => { requestSequence.current++; setZoom(0); setPan({ x: 0, y: 0 }); setPickedState(null); setStateColleges({ state: null, rows: [], status: '' }); }}>Reset</button>
         </div>
       </div>
       <ul className="w-full mt-2 flex flex-wrap gap-2 text-[11px]" aria-label="AICTE region legend">
@@ -397,7 +362,7 @@ export default function IndiaMap({
                 <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">{region}</p>
                 <div className="mt-1 flex flex-wrap gap-1.5">
                   {meta.states.filter(state => explorer || state === focusState).map(state => {
-                    const selected = focusState === state;
+                    const selected = canonicalState(focusState) === canonicalState(state);
                     const total = collegesIn(state);
                     return (
                       <button key={state} type="button" data-state={state} aria-pressed={selected}
@@ -419,16 +384,21 @@ export default function IndiaMap({
             <div className="mt-3" aria-label={`Colleges in ${stateColleges.state}`}>
               <p className="text-xs font-bold text-slate-800">Colleges in {stateColleges.state}</p>
               {stateColleges.status && <p className="text-xs text-slate-600">{stateColleges.status}</p>}
-              <ul className="mt-1 space-y-1">
+              <form className="mt-2 flex gap-2" onSubmit={event => { event.preventDefault(); void chooseState(stateColleges.state, 0, collegeQuery); }}>
+                <input aria-label="Search colleges in selected state" placeholder="Search this state's colleges" className="min-w-0 flex-1 rounded-lg border border-slate-200 px-3 py-2 text-xs" value={collegeQuery} onChange={event => setCollegeQuery(event.target.value)}/>
+                <button className="btn-primary text-xs" type="submit">Search</button>
+              </form>
+              <ul className="mt-2 max-h-80 overflow-auto space-y-1">
                 {stateColleges.rows.map(row => (
-                  <li key={row.pid}>
-                    <button type="button" className="w-full min-h-10 rounded-lg border border-slate-200 px-3 py-1.5 text-left text-xs hover:border-saffron-400 hover:bg-saffron-50 focus-visible:ring-2 focus-visible:ring-saffron-500" onClick={() => onSelectInstitution?.(row)}>
-                      <strong className="block text-slate-900">{row.name}</strong>
+                  <li key={row.pid || row.recordKey}>
+                    <button type="button" className="w-full min-h-10 rounded-lg border border-slate-200 px-3 py-1.5 text-left text-xs hover:border-saffron-400 hover:bg-saffron-50 focus-visible:ring-2 focus-visible:ring-saffron-500" onClick={() => onSelectInstitution?.(row)} disabled={!row.pid}>
+                      <strong className="block text-slate-900">{row.name}</strong><span className="block text-[10px] text-slate-500">Supplied research export ? {row.city || row.state}</span>
                       <span className="font-mono text-slate-600">{row.pid} · {row.icid || 'ICID not available'}</span>
                     </button>
                   </li>
                 ))}
               </ul>
+              {stateColleges.nextOffset != null && <button type="button" className="btn mt-3 border border-slate-200 text-xs" onClick={() => chooseState(stateColleges.state, stateColleges.nextOffset, collegeQuery)}>Load more institutions</button>}
             </div>
           )}
         </div>
@@ -436,7 +406,7 @@ export default function IndiaMap({
 
       {/* Legend & Compliance Footer */}
       <div className="w-full mt-3 pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between text-[11px] text-slate-500">
-        <span>Illustrative region boundaries</span>
+        <a href="/maps/SOURCE.md" target="_blank" rel="noreferrer" className="underline">Boundary data and attribution</a>
         <span>Zero external API calls · 100% Offline SVG</span>
       </div>
     </div>
