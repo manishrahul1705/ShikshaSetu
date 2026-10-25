@@ -32,6 +32,7 @@ export const NAV_GROUPS = [
       { to: '/officer/manual-verification', label: 'Identity verification queue', icon: 'fingerprint', roles: ['bureau_officer', 'regional_officer'] },
       { to: '/review/identity', label: 'Institution identity review', icon: 'fingerprint', roles: ['supervisor', 'regional_officer'] },
       { to: '/officer/reveal-requests', label: 'Reveal requests', icon: 'eye', roles: [...OFFICERS] },
+      { to: '/cases/search', label: 'Search cases', icon: 'search', roles: [...OFFICERS, 'auditor'] },
     ],
   },
   {

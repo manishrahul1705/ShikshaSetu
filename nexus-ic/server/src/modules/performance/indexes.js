@@ -13,6 +13,8 @@ async function create() {
     db.collection('auditevents').createIndex({ action: 1, seq: 1 }), // ascending, so unsorted finds keep append order
     db.collection('case_actions').createIndex({ institutionPid: 1, at: 1 }),
     db.collection('prevent_action_checks').createIndex({ caseId: 1, result: 1 }),
+    db.collection('cases').createIndex({ createdAt: -1, _id: -1 }),
+    db.collection('cases').createIndex({ 'pidSnapshot.region': 1, createdAt: -1 }),
   ]);
 }
 
