@@ -1,4 +1,5 @@
 import React from 'react';
+import CoordinationBanner from '../../additions/n103-coordination/CoordinationBanner.jsx';
 import { useParams, Link } from 'react-router-dom';
 import { useS5 } from '../closure/api.jsx';
 import InstitutionRadar from './InstitutionRadar.jsx';
@@ -82,6 +83,7 @@ export default function InstitutionGraph() {
   return (
     <div className="max-w-4xl mx-auto space-y-4">
       <GraphCoordinationBanner pid={pid} />
+      <CoordinationBanner pid={pid} />
       <PageHeader eyebrow="INSTITUTION RELATIONSHIPS" title="Institution graph" purpose="Inspect institution, case and bureau relationships within your access scope." />
       <p className="id-pill">{user?.role==='system_admin'?pid:<Link className="underline" to={`/institutions/${pid}`}>{pid}</Link>}</p>
       <InstitutionGraphView pid={pid} />

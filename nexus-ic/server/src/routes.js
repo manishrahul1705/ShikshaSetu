@@ -87,3 +87,4 @@ router.use((await import('./modules/additions/n83-document-locker/routes.js')).d
 router.use((await import('./modules/additions/n87-monthly-report/routes.js')).default);
 router.use((await import('./modules/additions/n89-workload/routes.js')).default);
 router.use((await import('./modules/additions/n88-first-redressal/routes.js')).default);
+router.use((await import('./modules/additions/n103-coordination/routes.js')).default);

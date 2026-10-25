@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext.jsx';
 import { useI18n } from '../../i18n/index.js';
 import OverlapBanner from '../prevent/OverlapBanner.jsx';
+import CoordinationBanner from '../../additions/n103-coordination/CoordinationBanner.jsx';
 import InstitutionCaseJourney from './InstitutionCaseJourney.jsx';
 import { InstitutionGraphView } from '../graph/InstitutionGraph.jsx';
 import InstitutionTrend from '../../components/InstitutionTrend.jsx';
@@ -110,6 +111,7 @@ export default function Institution360() {
   return (
     <div className="max-w-6xl mx-auto space-y-6">
       <OverlapBanner institutionPid={id} />
+      <CoordinationBanner pid={id} />
       {/* Header Banner */}
       <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>

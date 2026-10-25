@@ -3,6 +3,7 @@ import PolishText from '../components/PolishText.jsx';
 import React from 'react';
 import { useAuth } from '../context/AuthContext.jsx';
 import Workload from '../additions/n89-workload/Workload.jsx';
+import CoordinationBanner from '../additions/n103-coordination/CoordinationBanner.jsx';
 import CombinedCounter from '../additions/n82-combined-request/CombinedCounter.jsx';
 import { Link } from 'react-router-dom';
 import OverlapBanner from './prevent/OverlapBanner.jsx';
@@ -14,6 +15,7 @@ import { ROLE_LABELS } from '../components/navigation.js';
 import { useI18n } from '../i18n/index.js';
 import { InstitutionSummary } from './institution/InstitutionWorkspace.jsx';
 import { nextStep } from './track/Track.jsx';
+import { EmptyState } from '../components/ui/PageKit.jsx';
 
 const OFFICER_LINKS = [['/cases', 'Bureau / Cell queue', 'inbox'], ['/sync', 'NEXUS SYNC', 'link'], ['/transfers', 'NEXUS TRACE', 'shuffle'], ['/review', 'PREVENT review', 'shield'], ['/impact', 'NEXUS IMPACT', 'chart'], ['/reports', 'Reports', 'file']];
 const WORKSPACE_LINKS = {
@@ -107,7 +109,7 @@ function ImpactPanel() {
   const q = useS5('/impact/summary');
   if (q.isLoading) return <div className="grid grid-cols-2 gap-4 xl:grid-cols-6">{Array.from({ length: 6 }, (_, i) => <div key={i} className="skeleton h-28" />)}</div>;
   if (q.error) return <p className="card card-pad text-sm text-slate-600">NEXUS IMPACT is unavailable for this role right now (UNKNOWN).</p>;
-  if (!q.data?.tiles) return null;
+  if (!q.data?.tiles) return <EmptyState icon="chart" title="Command centre data is not available yet" text="UNKNOWN: the reporting source has not returned summary data. Recorded cases will appear here once the reporting service is available." to="/reports" action="Open reports" />;
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-end justify-between gap-2">
@@ -169,6 +171,7 @@ export default function Dashboard() {
     <div className="space-y-6">
       <Hero user={user} />
       <OverlapBanner />
+      <CoordinationBanner showCount />
       <QuickLinks role={role} />
       {['bureau_officer','regional_officer','supervisor','competent_authority','institution_admin'].includes(role) && <CombinedCounter />}
       {IMPACT_ROLES.includes(role) && <ImpactPanel />}
