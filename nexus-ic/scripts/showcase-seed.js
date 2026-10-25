@@ -18,6 +18,7 @@
  */
 const path = require('path');
 const crypto = require('crypto');
+require('dotenv').config({ path: path.resolve(__dirname, '..', '.env.showcase') });
 require('dotenv').config({ path: path.resolve(__dirname, '..', '.env') });
 process.env.APP_MODE = 'demo';
 
@@ -89,6 +90,11 @@ async function run() {
       additionalFixtures: 'Existing S3 and Guided Walkthrough fixtures are seeded separately; final totals are reported after seeding.' }, null, 2));
     return;
   }
+  // Validate encryption configuration before rebuilding any showcase data.
+  for (const keyName of ['VAULT_KEY', 'DOCS_KEY']) {
+    if (!/^[a-fA-F0-9]{64}$/.test(process.env[keyName] || '')) throw new Error(`${keyName}_NOT_CONFIGURED: configure .env.showcase before rebuilding`);
+  }
+  if (process.env.VAULT_KEY.toLowerCase() === process.env.DOCS_KEY.toLowerCase()) throw new Error('DOCS_KEY_CANNOT_REUSE_VAULT_KEY');
   const mongoose = (await import('mongoose')).default;
   process.env.MONGODB_URI = URI;
   const { connectDB, disconnectDB } = await import('../server/src/config/db.js');
@@ -126,13 +132,13 @@ async function run() {
         coordinates: s.coordinates, datasetName: s.datasetName, datasetVersion: s.datasetVersion,
         registrySnapshot: s, lastRegistryFetch: new Date(), synthetic: true });
     }
-    await db.collection('syntheticstudents').insertMany(syntheticStudents(1500, showcaseInstitutions).map(student => ({
-      ...student, createdAt: new Date(), updatedAt: new Date(),
-    })));
     if (s.icid && !(await InstitutionIdentifier.exists({ icid: s.icid }))) {
       await InstitutionIdentifier.create({ icid: s.icid, pid: s.pid, source: 'seed_registry', verifiedAt: new Date(), status: 'active', synthetic: true });
     }
   }
+  await db.collection('syntheticstudents').insertMany(syntheticStudents(1500, showcaseInstitutions).map(student => ({
+    ...student, createdAt: new Date(), updatedAt: new Date(),
+  })));
   const institutions = await Institution.find({}).lean();
   const icidByPid = new Map((await InstitutionIdentifier.find({ status: 'active' }).lean()).map((i) => [i.pid, i.icid]));
   // Point the original S3 fixture cases at a registered institution so SYNC and Institution 360 load for them.

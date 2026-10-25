@@ -7,6 +7,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
+require('dotenv').config({ path: path.join(root, '.env.showcase') });
 require('dotenv').config({ path: path.join(root, '.env') });
 const env = {
   ...process.env,
@@ -18,6 +19,9 @@ const env = {
   APP_MODE: 'demo',
   SESSION_COOKIE_NAME: 'awaaz.showcase.sid',
 };
+const identityUri = new URL(env.MONGODB_URI);
+identityUri.pathname = '/awaaz_dastak_identity_simulator';
+env.IDENTITY_SIMULATOR_URI = identityUri.toString();
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 const kids = [
   // No --watch: edits by other tools must not restart the demo server mid-presentation.

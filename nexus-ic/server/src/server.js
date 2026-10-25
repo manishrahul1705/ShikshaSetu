@@ -3,9 +3,11 @@ import { connectDB } from './config/db.js';
 import env from './config/env.js';
 import logger from './config/logger.js';
 import { seedDemoAccounts } from './modules/auth/seed.js';
+import { loadSimulatorDatabase } from './modules/identity/SimulatorStore.js';
 
 async function start() {
   await connectDB();
+  await loadSimulatorDatabase(process.env.IDENTITY_SIMULATOR_URI);
   if (env.APP_MODE === 'demo') {
     await seedDemoAccounts();
   }

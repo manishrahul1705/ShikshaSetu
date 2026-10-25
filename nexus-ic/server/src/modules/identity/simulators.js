@@ -2,6 +2,7 @@
 // Simulated ABC / APAAR verification registry (N91).
 import { fictionalInstitutions } from '../registry/catalogue.js';
 import { syntheticStudents } from '../registry/syntheticDataset.js';
+import { findSimulatorStudent, simulatorStoreLoaded } from './SimulatorStore.js';
 
 const person = (kind, reference, extra = {}) => ({
   synthetic: true,
@@ -85,7 +86,7 @@ export class AbcApaarSimulator {
     }
 
     // Lookup in synthetic APAAR/ABC registry
-    const match = SYNTHETIC_STUDENT_REGISTRY.find(r => r.id === cleanNorm || r.display === cleanRef);
+    const match = simulatorStoreLoaded() ? findSimulatorStudent(cleanNorm) : SYNTHETIC_STUDENT_REGISTRY.find(r => r.id === cleanNorm || r.display === cleanRef);
     if (!match) {
       if (!validateApaarAbcFormat(cleanRef)) return null;
       return {
