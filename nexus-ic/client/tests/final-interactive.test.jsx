@@ -40,7 +40,9 @@ it('[A-N97] each option shows name, city, state, PID, ICID or "ICID not availabl
   expect(options[0]).toHaveTextContent('1-9000000001 · IIC-STNDIN01');
   expect(options[0]).toHaveTextContent('Official AICTE list as of 2026-10-01');
   expect(options[1]).toHaveTextContent('ICID not available');
-  expect(options[1]).toHaveTextContent('Fictional demo data');
+  expect(options[1]).toHaveTextContent('Local registry record');
+  expect(options[1]).toHaveTextContent('1-9000000002');
+  expect(options[1]).not.toHaveTextContent('Official AICTE list');
   expect(screen.getByRole('listbox')).toHaveAttribute('aria-label', 'Matching institutions');
 });
 

@@ -1,10 +1,11 @@
 import React, { useEffect, useId, useState } from 'react';
 import { useI18n } from '../i18n/index.js';
 import InstitutionDetailsCard from './InstitutionDetailsCard.jsx';
+import { registryLabel } from './registryLabel.js';
 
 // N97: search starts after two characters; every result names its source.
 export const MIN_QUERY_LENGTH = 2;
-const sourceLabel = row => row?.source?.label || 'Fictional demo data';
+const sourceLabel = registryLabel;
 
 /** Selection always returns the authoritative PID; searches never create mappings. */
 export default function InstitutionPicker({ onSelect, disabled = false, onCaseId = null, showDetails = false }) {
@@ -43,6 +44,7 @@ export default function InstitutionPicker({ onSelect, disabled = false, onCaseId
     return () => { clearTimeout(timer); controller.abort(); };
   }, [query, open, disabled, hi]);
   const choose = row => {
+    if (!row.pid) { setStatus('PID unavailable in source; this record cannot be selected as an institution identity.'); return; }
     setQuery(row.name); setOpen(false); setRows([]); setActive(-1); setNoMatch(false);
     setStatus(`${row.pid} · ${row.icid || (t("polish.ICID not available"))} · ${row.icidCheck}`);
     setSelected(row);
@@ -70,7 +72,7 @@ export default function InstitutionPicker({ onSelect, disabled = false, onCaseId
         }
       }} />
     {listOpen && <ul id={`${id}-results`} role="listbox" aria-label="Matching institutions" className="absolute z-40 max-h-80 w-full overflow-auto rounded-lg border border-saffron-200 bg-white shadow-xl">
-      {rows.map((row, index) => <li key={row.pid} id={`${id}-${index}`} role="option" aria-selected={active === index}
+      {rows.map((row, index) => <li key={row.pid || row.recordKey} id={`${id}-${index}`} role="option" aria-selected={active === index} aria-disabled={!row.pid}
         className={`cursor-pointer border-b p-3 text-xs ${active === index ? 'bg-saffron-50 border-l-4 border-l-saffron-500' : 'hover:bg-saffron-50/60'}`}
         onMouseDown={e => e.preventDefault()} onMouseEnter={() => setActive(index)} onClick={() => choose(row)}>
         <span className="flex flex-wrap items-start justify-between gap-2">

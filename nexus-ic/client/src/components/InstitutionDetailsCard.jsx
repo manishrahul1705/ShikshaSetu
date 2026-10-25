@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import IndiaMap from './IndiaMap.jsx';
+import { registryLabel } from './registryLabel.js';
 
-const sourceLabel = row => row?.source?.label || 'Fictional demo data';
+const sourceLabel = registryLabel;
 
 /** N97: the full details card shown after a college is chosen, with its map pin. */
 export default function InstitutionDetailsCard({ institution, showMap = true }) {
@@ -52,6 +53,13 @@ export default function InstitutionDetailsCard({ institution, showMap = true }) 
           </div>
         ))}
       </dl>
+      {row.source?.kind === 'research' && <div className="mt-3 space-y-2 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-950">
+        <p className="font-semibold">Incomplete research export; current AICTE approval is not certified.</p>
+        <p>ICID: {row.missingReasons?.icid || 'Not publicly verified in source'}. {row.region ? 'Region derived from the configured reference table; jurisdiction is not officially certified.' : 'Region unavailable in the configured reference table.'}</p>
+        <p>Source: {row.provenance?.sourceFileName || row.source.sourceFileName}, sheet {row.provenance?.sheet || row.source.sheet}, row {row.provenance?.row || row.source.row}. Verification date: {row.provenance?.verificationDate || 'UNKNOWN'}.</p>
+        {row.provenance?.sourceUrl?.startsWith('https://') && <a href={row.provenance.sourceUrl} target="_blank" rel="noreferrer" className="font-semibold underline">Open institution source</a>}
+        {!!row.courses?.length && <details><summary className="cursor-pointer font-semibold">View {row.courses.length} supplied course records</summary><ul className="mt-2 space-y-2">{row.courses.map((course,index) => <li key={index}>{[course.Level, course.Programme, course.Course, course['Academic Year']].filter(Boolean).join(' · ')} — intake: {course['Approved Intake (text)'] || 'UNKNOWN'}</li>)}</ul></details>}
+      </div>}
       {status && <p className="mt-2 text-[11px] text-slate-500" role="status">{status}</p>}
       {showMap && (
         <IndiaMap className="mt-3" selectedRegion={row.region} selectedState={row.state} selectedCity={row.city}

@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext.jsx';
 import InstitutionPicker from '../../components/InstitutionPicker.jsx';
 import IndiaMap from '../../components/IndiaMap.jsx';
+import ResearchRegistrySummary from '../../components/ResearchRegistrySummary.jsx';
+import InstitutionDetailsCard from '../../components/InstitutionDetailsCard.jsx';
+import { registryLabel } from '../../components/registryLabel.js';
 
 export default function InstitutionLookup() {
+  const { user } = useAuth();
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [matches, setMatches] = useState([]);
   const [error, setError] = useState('');
+
   async function lookup(pid) {
     if (!pid.trim()) return;
     setLoading(true); setError(''); setResult(null); setMatches([]);
@@ -56,6 +62,8 @@ export default function InstitutionLookup() {
   }
   return (
     <div className="max-w-4xl mx-auto space-y-6">
+      {!user && (<section className="mx-auto max-w-3xl px-5 py-8 sm:py-12"><div className="card card-pad border-t-4 border-t-orange-400 space-y-4"><p className="eyebrow">Institution directory</p><h1 className="text-2xl font-bold">Explore the institution registry</h1><p className="text-slate-600">Sign in to search by college name, city, state, PID or ICID and review available source details.</p><Link className="btn-primary" to="/login?next=/institutions/lookup">Sign in to search institutions</Link></div></section>)}
+      {user && <ResearchRegistrySummary />}
       <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
         <h1 className="text-2xl font-black text-slate-900 mb-2 border-b-4 border-saffron-500 pb-2">
           Institution Master Registry Lookup
@@ -97,7 +105,7 @@ export default function InstitutionLookup() {
       </div>
 
       {/* N100: explore colleges by state before choosing one */}
-      {!result && !loading && (
+      {user && !result && !loading && (
         <IndiaMap explorer interactive={false} onSelectInstitution={row => { setQuery(row.pid); void lookup(row.pid); }} />
       )}
 
@@ -129,6 +137,7 @@ export default function InstitutionLookup() {
             </div>
           ) : result.institution ? (
             <div className="space-y-4">
+              {result.institution.source?.kind === 'research' && <InstitutionDetailsCard institution={result.institution} showMap={false} />}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                 <div>
                   <span className="text-slate-500 font-medium">Institution Name</span>
@@ -180,7 +189,7 @@ export default function InstitutionLookup() {
                 </div>
               </div>
               <div className="rounded-lg border border-saffron-200 bg-saffron-50 px-3 py-2 text-xs font-semibold text-saffron-900">
-                Source: {result.institution.source?.label || (result.institution.synthetic ? 'Fictional demo data' : 'Registry record')}
+                Source: {registryLabel(result.institution)}
               </div>
 
               {/* SPEC Appendix V, stage 2: auto-fetch checklist and region-wise classification */}
@@ -213,14 +222,14 @@ export default function InstitutionLookup() {
                 </div>
               </div>
 
-              <div className="pt-4 border-t flex justify-end">
+              {result.institution.source?.kind !== 'research' && <div className="pt-4 border-t flex justify-end">
                 <Link
                   to={`/institutions/${encodeURIComponent(result.institution.pid)}`}
                   className="px-4 py-2 bg-blue-900 text-white font-bold text-xs rounded-lg hover:bg-blue-800"
                 >
                   View Institution 360 →
                 </Link>
-              </div>
+              </div>}
               <IndiaMap
                 selectedRegion={result.institution.region}
                 selectedState={result.institution.state}
