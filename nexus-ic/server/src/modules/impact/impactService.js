@@ -1,4 +1,5 @@
 import Case from '../cases/Case.js';
+import { additionalTiles } from '../additions/n105-dashboard-tiles/service.js';
 import Institution from '../institutions/Institution.js';
 import InstitutionIdentifier from '../institutions/InstitutionIdentifier.js';
 import { canAccessCase } from '../../middleware/rbac.js';
@@ -245,6 +246,7 @@ async function computeImpactReport(user, now) {
     generatedAt: now,
     scope,
     tiles,
+    psAlignmentTiles: additionalTiles(cases, transfers, scope, pct),
     resolutionTime,
     transfersAcceptedWithinTime: transfers === null ? { result: 'UNKNOWN', reason: 'TRACE_NOT_AVAILABLE' } : (() => {
       const accepted = transfers.filter(t => t.status === 'ACCEPTED');

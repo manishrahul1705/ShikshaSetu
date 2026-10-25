@@ -1,4 +1,5 @@
 import PolishText from '../PolishText.jsx';
+import AdditionalCards from '../../additions/n105-dashboard-tiles/AdditionalCards.jsx';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -32,7 +33,7 @@ export function StatCard({ icon, label, value, sub, tone = 'ink', to, unknown })
         <p className="text-xs font-semibold uppercase tracking-wider text-slate-500"><PolishText>{label}</PolishText></p>
         <span className={`grid h-9 w-9 place-items-center rounded-xl ${tones[tone]}`}><Icon name={icon} className="h-[18px] w-[18px]" /></span>
       </div>
-      <p className={`mt-2 font-display font-extrabold text-ink-950 ${unknown ? 'text-xl' : 'text-3xl'}`}>{unknown ? 'Not available' : value}</p>
+      <p className={`mt-2 font-display font-extrabold text-ink-950 ${unknown || value === 0 ? 'text-xl' : 'text-3xl'}`}>{unknown ? 'Not available' : value === 0 ? 'None recorded' : value}</p>
       {sub && <p className="mt-1 text-[11px] leading-snug text-slate-500">{sub}</p>}
     </div>
   );
@@ -47,9 +48,10 @@ function share(s) {
 
 export function KpiRow({ report }) {
   const t = report?.tiles;
-  if (!t) return null;
+  const extra = report?.psAlignmentTiles;
+  if (!t) return <Unknown reason="REPORT_SUMMARY_NOT_RETURNED" />;
   return (
-    <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-6">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       <StatCard icon="inbox" label="Total complaints" value={t.totalComplaints?.count} sub={t.totalComplaints?.scope} to={drill('tile:totalComplaints')} />
       <StatCard icon="clock" tone="saffron" label="Pending" value={t.pendingCases?.count} sub={share(t.pendingCases?.share)} to={drill('tile:pendingCases')} />
       <StatCard icon="check" tone="green" label="Disposed" value={t.disposedCases?.count} sub={share(t.disposedCases?.share)} to={drill('tile:disposedCases')} />
@@ -57,13 +59,14 @@ export function KpiRow({ report }) {
         sub={t.overdueCases?.share?.result === 'UNKNOWN' ? `Not available: ${codeLabel(t.overdueCases.share.reason)}; ${t.overdueCases.openWithoutClock ?? 0} open cases have no approved SLA clock` : share(t.overdueCases?.share)} to={drill('tile:overdueCases')} />
       <StatCard icon="shuffle" tone="saffron" label="Transfer delays" value={t.transferDelays?.count} sub={share(t.transferDelays?.share)} to={drill('tile:transferDelays')} />
       <StatCard icon="shield" label="Potential overlaps" value={t.potentialOverlaps?.pairs} sub={`pairs · restricted entries ${t.potentialOverlaps?.restrictedEntries ?? 0} · ${ruleLabel(t.potentialOverlaps?.ruleVersion, 'Matching rule')}`} to="/review" />
+      <AdditionalCards tiles={extra} share={share} />
     </div>
   );
 }
 
 function ChartCard({ title, subtitle, children, action }) {
   return (
-    <section className="card card-pad flex flex-col">
+    <section className="card card-pad flex min-w-0 flex-col break-words">
       <div className="mb-4 flex items-start justify-between gap-3">
         <div>
           <h3 className="card-title"><PolishText>{title}</PolishText></h3>
@@ -203,14 +206,14 @@ export default function CommandCharts({ report }) {
             {report.recommendations.map((r) => (
               <li key={r.id} className="rounded-xl border border-saffron-200 bg-saffron-50/60 p-3 text-sm text-ink-950">
                 <p className="flex gap-2"><Icon name="sparkle" className="mt-0.5 h-4 w-4 shrink-0 text-saffron-600" />{r.text}</p>
-                <p className="mt-1 pl-6 font-mono text-[10px] text-slate-500">{(r.citedRows || []).join(' · ')}</p>
+                <p className="mt-1 break-all pl-6 font-mono text-[10px] text-slate-500">{(r.citedRows || []).join(' · ')}</p>
               </li>
             ))}
           </ul>
         )}
         <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
-          <div className="rounded-xl bg-ink-50 p-2.5"><p className="text-slate-500"><PolishText>Resolution time</PolishText></p><p className="font-semibold text-ink-950">{report.resolutionTime?.result === 'UNKNOWN' ? `UNKNOWN (${report.resolutionTime.reason})` : `${report.resolutionTime?.medianDays ?? report.resolutionTime?.value ?? '—'} days`}</p></div>
-          <div className="rounded-xl bg-ink-50 p-2.5"><p className="text-slate-500"><PolishText>Duplicate actions flagged</PolishText></p><p className="font-semibold text-ink-950">{report.duplicateActions?.flagged ?? 'UNKNOWN'}</p></div>
+          <div className="rounded-xl bg-ink-50 p-2.5"><p className="text-slate-500"><PolishText>Resolution time</PolishText></p><p className="font-semibold text-ink-950">{report.resolutionTime?.result === 'UNKNOWN' ? `UNKNOWN (${report.resolutionTime.reason})` : (report.resolutionTime?.medianDays ?? report.resolutionTime?.value) === 0 ? 'Same day' : report.resolutionTime?.medianDays == null && report.resolutionTime?.value == null ? 'UNKNOWN (not in report)' : `${report.resolutionTime?.medianDays ?? report.resolutionTime?.value} days`}</p></div>
+          <div className="rounded-xl bg-ink-50 p-2.5"><p className="text-slate-500"><PolishText>Duplicate actions flagged</PolishText></p><p className="font-semibold text-ink-950">{report.duplicateActions?.flagged === 0 ? 'None recorded' : report.duplicateActions?.flagged ?? 'UNKNOWN (not in report)'}</p></div>
         </div>
       </ChartCard>
     </div>

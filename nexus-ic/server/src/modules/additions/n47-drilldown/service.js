@@ -1,4 +1,5 @@
 import Institution from '../../institutions/Institution.js';
+import { additionalTileCases } from '../n105-dashboard-tiles/service.js';
 import { recordAudit } from '../../audit/audit.js';
 import { listOverlaps } from '../../prevent/overlaps.js';
 import { allTransfers } from '../../closure/s3Adapter.js';
@@ -45,6 +46,11 @@ export async function drillDown(user, rowId, now = new Date()) {
   let extra = {};
 
   if (kind === 'tile') {
+    if (['underProcessCases', 'transferredCases', 'escalatedCases'].includes(key)) {
+      const transfers = await allTransfers({ caseId: { $in: cases.map(c => c._id) } });
+      if (key === 'transferredCases' && transfers === null) return { ...base, result: 'UNKNOWN', reason: 'TRACE_NOT_AVAILABLE' };
+      selected = additionalTileCases(cases, transfers)[key];
+    }
     if (key === 'totalComplaints') selected = cases;
     else if (key === 'pendingCases') selected = cases.filter((c) => (c.analyticStatus || 'PENDING') === 'PENDING');
     else if (key === 'disposedCases') selected = cases.filter((c) => c.analyticStatus === 'DISPOSED' || CLOSED_STATUSES.includes(c.status));
@@ -74,6 +80,8 @@ export async function drillDown(user, rowId, now = new Date()) {
     selected = cases.filter((c) => regionOf(c) === key);
   } else if (kind === 'institution') {
     selected = cases.filter((c) => c.institutionPid === key);
+  } else if (kind === 'status') {
+    selected = cases.filter(c => c.status === key);
   } else if (kind === 'month') {
     selected = cases.filter((c) => new Date(c.createdAt).toISOString().slice(0, 7) === key);
   }
