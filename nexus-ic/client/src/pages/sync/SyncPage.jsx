@@ -4,12 +4,19 @@ import { useAuth } from '../../context/AuthContext.jsx';
 import { useI18n } from '../../i18n/index.js';
 import InstitutionPicker from '../../components/InstitutionPicker.jsx';
 import CombinedRequests from '../../additions/n82-combined-request/CombinedRequests.jsx';
-import { PageHeader } from '../../components/ui/PageKit.jsx';
+import Icon from '../../components/ui/Icon.jsx';
+
+const SYNC_GUIDE = [
+  { icon: 'building', title: 'One institution, one shared view', text: 'Find a college to see its accessible cases, participating bureaus and current coordination records.', detail: 'Search by college name, city, state, PID or ICID. Select a matching institution to open its coordination workspace.' },
+  { icon: 'users', title: 'Agree on the next steps', text: 'Review the accountable lead and record a clear plan with the participating teams.', detail: 'The institution workspace brings lead bureaus, participating offices and agreed next steps together. Each team retains its own responsibilities.' },
+  { icon: 'check', title: 'Keep shared work moving', text: 'Follow coordination tasks, acknowledgements and the progress recorded by each bureau.', detail: 'Review assigned tasks, acknowledge requests and record completion. Restricted case details remain protected by your existing access scope.' },
+];
 
 export default function SyncPage() {
   const { institutionPid } = useParams();
   const [searchParams] = useSearchParams();
   const [selectedPid, setSelectedPid] = useState('');
+  const [guideStep, setGuideStep] = useState(0);
   const pid = institutionPid || selectedPid || searchParams.get('pid') || '';
   const preselectedCases = new Set((searchParams.get('cases') || '').split(',').filter(Boolean));
   const { user } = useAuth();
@@ -165,7 +172,24 @@ export default function SyncPage() {
     }
   };
 
-  if (!pid) return <div className="max-w-2xl space-y-6"><PageHeader eyebrow="CROSS-BUREAU COORDINATION" title="NEXUS SYNC" purpose="Choose an institution to review shared work, accountable leads and coordination tasks." /><div className="card card-pad"><InstitutionPicker onSelect={row => setSelectedPid(row.pid)} /></div></div>;
+  if (!pid) return <div className="mx-auto max-w-6xl space-y-6 font-sans">
+    <header className="space-y-2"><p className="text-[11px] font-bold uppercase tracking-[.16em] text-saffron-700">Cross-bureau coordination</p><h1 className="font-display text-3xl font-extrabold tracking-tight text-ink-950">NEXUS SYNC</h1><p className="max-w-3xl text-sm leading-6 text-slate-600">Choose an institution to review shared work, accountable leads and coordination tasks.</p></header>
+    <section className="relative rounded-2xl border border-saffron-200 bg-white shadow-sm" aria-label="Start institution coordination">
+      <div className="h-1.5 rounded-t-2xl bg-gradient-to-r from-saffron-600 via-saffron-400 to-amber-200"/>
+      <div className="grid lg:grid-cols-[1.25fr_1fr]">
+        <div className="space-y-5 p-5 sm:p-7"><div className="flex gap-3"><span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-saffron-100 text-saffron-700"><Icon name="search" className="h-5 w-5"/></span><div><p className="text-[10px] font-bold uppercase tracking-[.16em] text-saffron-700">Start with an institution</p><h2 className="mt-1 text-xl font-bold tracking-tight text-ink-950">Bring every team to the same page</h2><p className="mt-2 text-sm leading-6 text-slate-600">Find the college you want to coordinate on. Its shared work and accountable teams will appear here.</p></div></div>
+          <div className="rounded-xl border border-saffron-200 bg-saffron-50/60 p-4"><InstitutionPicker onSelect={row => setSelectedPid(row.pid)} /><p className="mt-2 text-xs leading-5 text-slate-500">Type at least two characters. You can use a name, acronym, location or institution ID.</p></div>
+          <p className="flex items-start gap-2 text-xs leading-5 text-slate-500"><Icon name="shield" className="mt-0.5 h-4 w-4 shrink-0 text-saffron-700"/>You will see only the cases and coordination records allowed for your role.</p>
+        </div>
+        <div className="flex flex-col justify-center rounded-b-2xl border-t border-saffron-100 bg-gradient-to-br from-saffron-50 to-amber-50/50 p-6 sm:p-8 lg:rounded-bl-none lg:rounded-tr-none lg:border-l lg:border-t-0">
+          <p className="text-[10px] font-bold uppercase tracking-[.16em] text-saffron-800">Connected work. Clear ownership.</p>
+          <div className="mx-auto my-6 flex w-full max-w-sm flex-col items-center" aria-hidden="true"><div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-saffron-200 bg-white text-saffron-700 shadow-sm"><Icon name="building" className="h-8 w-8"/></div><div className="h-5 w-px bg-saffron-300"/><div className="h-4 w-3/4 rounded-t-xl border-x border-t border-saffron-300"/><div className="grid w-full grid-cols-3 gap-3">{[['users','Shared teams'],['route','Clear lead'],['check','Tracked tasks']].map(([icon,title]) => <div key={title} className="rounded-xl border border-saffron-200 bg-white p-3 text-center shadow-sm"><Icon name={icon} className="mx-auto h-5 w-5 text-saffron-700"/><p className="mt-2 text-[11px] font-semibold text-ink-900">{title}</p></div>)}</div></div>
+          <p className="text-center text-sm leading-6 text-slate-600">One college connects the cases, teams and next steps that belong together.</p>
+        </div>
+      </div>
+    </section>
+    <section aria-label="How NEXUS SYNC works" className="space-y-4"><div className="flex flex-wrap items-end justify-between gap-2"><h2 className="text-lg font-bold text-ink-950">A clearer way to coordinate</h2><p className="text-xs text-slate-500">Select a step to explore the workflow</p></div><div className="grid gap-3 md:grid-cols-3">{SYNC_GUIDE.map((step,index) => <button key={step.title} type="button" onClick={() => setGuideStep(index)} aria-pressed={guideStep === index} className={`flex h-full items-start gap-3 rounded-xl border p-5 text-left transition focus-visible:ring-4 focus-visible:ring-saffron-100 ${guideStep === index ? 'border-saffron-400 bg-saffron-50 shadow-sm' : 'border-slate-200 bg-white hover:border-saffron-300 hover:bg-saffron-50/40'}`}><span className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg ${guideStep === index ? 'bg-saffron-600 text-white' : 'bg-slate-50 text-saffron-700'}`}><Icon name={step.icon} className="h-4 w-4"/></span><span><span className="block text-[10px] font-bold uppercase tracking-wider text-saffron-700">Step {index + 1}</span><span className="mt-1 block text-sm font-bold leading-5 text-ink-950">{step.title}</span><span className="mt-2 block text-xs leading-5 text-slate-600">{step.text}</span></span></button>)}</div><div className="flex items-start gap-3 rounded-xl border border-saffron-100 bg-white px-5 py-4" aria-live="polite"><Icon name={SYNC_GUIDE[guideStep].icon} className="mt-0.5 h-5 w-5 shrink-0 text-saffron-700"/><p className="text-sm leading-6 text-slate-600">{SYNC_GUIDE[guideStep].detail}</p></div></section>
+  </div>;
   if (loading) {
     return <div className="p-8 text-center text-slate-500">Loading sync coordination...</div>;
   }
@@ -370,7 +394,7 @@ export default function SyncPage() {
           ))}
         </div>
 
-        <CombinedRequests key={pid} institutionPid={pid} />
+        {['bureau_officer', 'regional_officer', 'supervisor', 'competent_authority'].includes(user?.role) && <CombinedRequests key={pid} institutionPid={pid} />}
         <form onSubmit={handleAddNote} className="space-y-2 pt-2">
           <textarea
             value={noteText}
