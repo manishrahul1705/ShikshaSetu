@@ -1,14 +1,15 @@
 // A small, dependency-free PDF writer for a text ledger. No case narratives or identities.
 const literal = value => String(value).replace(/[^\x20-\x7e]/g, '?').replace(/([\\()])/g, '\\$1');
 export function monthlyPdf(report, mark) {
-  const lines = [`AWAAZ DASTAK - powered by NEXUS-IC`, `Monthly pendency: ${report.month}`, report.scope,
+  const lines = [`ShikshaSetu - powered by NEXUS-IC`, 'Connecting Institutions. Coordinating Action. Resolving Grievances.', report.quarter ? `Quarterly pendency: ${report.quarter}` : `Monthly pendency: ${report.month}`, report.scope,
     `Scoped cases: ${report.denominator}. Calendar: Asia/Kolkata.`,
     `Incomplete historical evidence: ${report.incompleteHistoryCases}.`,
     'O: opening; R: received; D: disposed; OUT/IN: accepted transfers; C: closing.',
     ...report.rows.flatMap(r => [`${r.kind}: ${r.name}`,
       `O ${r.counts.opening} | R ${r.counts.received} | D ${r.counts.disposed} | OUT ${r.counts.transferredOut} | IN ${r.counts.transferredIn} | C ${r.counts.closing}`,
       `Escalated ${r.counts.escalated} | Age 0-15 ${r.counts.age0to15}, 16-30 ${r.counts.age16to30}, 31-60 ${r.counts.age31to60}, >60 ${r.counts.ageOver60}`,
-      `Balance difference: ${r.difference}. ${r.reconciles ? 'Reconciled' : 'Not certified'}.`])];
+      `Balance difference: ${r.difference}. ${r.reconciles ? 'Reconciled' : 'Not certified'}.`,
+      ...(report.quarter ? [`Disposal rate: ${r.disposalRate.value === null ? 'Not available' : r.disposalRate.value + '%'} (${r.disposalRate.numerator}/${r.disposalRate.denominator}).`] : [])])];
   const wrapped = lines.flatMap(line => String(line).match(/.{1,100}/g) || ['']);
   const pages = Array.from({length: Math.max(1, Math.ceil(wrapped.length / 43))}, (_,i) => wrapped.slice(i*43,(i+1)*43));
   const objects = ['<< /Type /Catalog /Pages 2 0 R >>', '', '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>'];

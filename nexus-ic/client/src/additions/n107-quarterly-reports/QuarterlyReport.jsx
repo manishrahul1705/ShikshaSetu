@@ -1,0 +1,13 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useS5 } from '../../pages/closure/api.jsx';
+import { SortableTable } from '../../components/ui/PageKit.jsx';
+export default function QuarterlyReport({ scope = 'all', value = '' }) {
+  const now = new Date(), [quarter, setQuarter] = useState(`${now.getFullYear()}-Q${Math.floor(now.getMonth() / 3) + 1}`), [cell, setCell] = useState(null);
+  const params = new URLSearchParams({ quarter, scope, value }), q = useS5('/reports/quarterly?' + params);
+  const columns = [['opening', 'Opening'], ['received', 'Received'], ['disposed', 'Disposed'], ['transferredOut', 'Transferred out'], ['transferredIn', 'Transferred in'], ['escalated', 'Escalated'], ['closing', 'Closing'], ['age0to15', '0–15 days'], ['age16to30', '16–30 days'], ['age31to60', '31–60 days'], ['ageOver60', 'Over 60 days']];
+  return <section aria-label="Quarterly report" className="card card-pad space-y-4"><h2 className="card-title">Quarterly performance report</h2><div className="flex flex-wrap items-center gap-3"><label>Quarter<input className="ml-2 rounded border p-2" value={quarter} onChange={e => { setQuarter(e.target.value); setCell(null); }} pattern="\d{4}-Q[1-4]" placeholder="YYYY-Qn" /></label><a className="btn-secondary" href={`/api/v1/reports/quarterly.csv?${params}`}>Quarterly CSV</a><a className="btn-secondary" href={`/api/v1/reports/quarterly.pdf?${params}`}>Quarterly PDF</a></div>
+    {q.isLoading ? <p role="status">Calculating quarterly balances…</p> : q.error ? <p role="alert">Quarterly report unavailable: {q.error.message}</p> : <><p className="text-xs">{q.data?.scope} · Asia/Kolkata · {q.data?.denominator} scoped cases · {q.data?.incompleteHistoryCases} cases with incomplete historical evidence</p><SortableTable label="Search quarterly offices and regions" rows={q.data?.rows || []} columns={[{ key: 'name', label: 'Office / region' }, { key: 'kind', label: 'Kind' }, ...columns.map(([key, label]) => ({ key, label, render: (_, r) => <button className="underline" onClick={() => setCell({ title: `${r.name}: ${label}`, rows: r.cells[key] })}>{r.counts[key]}</button> })), { key: 'disposalRate', label: 'Disposal rate', render: r => `${r.value === null ? 'Not available' : r.value + '%'} (${r.numerator}/${r.denominator})` }, { key: 'reconciles', label: 'Balance check', render: v => v ? 'Reconciled' : 'Not certified' }]} /></>}
+    {cell && <section aria-label="Quarterly supporting cases"><h3>{cell.title}</h3><ul>{cell.rows.map((r, i) => <li key={i}><Link to={`/cases/${r.caseId}`}>{r.caseId}</Link></li>)}</ul><button className="btn-secondary" onClick={() => setCell(null)}>Close records</button></section>}
+  </section>;
+}
