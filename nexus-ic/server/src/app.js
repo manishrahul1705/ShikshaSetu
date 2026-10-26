@@ -6,12 +6,14 @@ import routes from './routes.js';
 import env from './config/env.js';
 import logger from './config/logger.js';
 import csrfOrigin from './middleware/csrfOrigin.js';
+import { startReminderScheduler } from './modules/additions/n108-reminders/scheduler.js';
 
 /**
  * Create and configure the Express app.
  * Accepts an optional mongoUri for tests.
  */
 export function createApp(mongoUri) {
+  startReminderScheduler();
   const app = express();
 
   // Security headers

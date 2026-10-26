@@ -1,6 +1,7 @@
 import RuleBookVersion from './models.js';
 import User from '../auth/User.js';
 import { createDraftVersion, runDryRun, approveVersion } from './rulebookService.js';
+import { seedReminderRule } from '../additions/n108-reminders/seed.js';
 
 let overlapDefaults = {
   version: 'DEMO-OVERLAP-v1',
@@ -339,4 +340,5 @@ export async function seedRuleBook() {
       { upsert: true, new: true }
     );
   }
+  await seedReminderRule();
 }

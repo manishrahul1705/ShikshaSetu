@@ -1,4 +1,5 @@
 import Case from '../cases/Case.js';
+import { reminderItems } from '../additions/n108-reminders/service.js';
 import User from '../auth/User.js';
 import AuditEvent from '../audit/AuditEvent.js';
 import { verifyChain, recordAudit } from '../audit/audit.js';
@@ -149,6 +150,7 @@ export async function notifications(user) {
       }
     }
   }
+  items.push(...await reminderItems(user));
   items.sort((a, b) => new Date(b.at) - new Date(a.at));
   return { synthetic: true, channels: { inApp: 'ACTIVE', email: 'EmailSimulator', sms: 'SmsSimulator (sandbox until approved)' }, items };
 }
