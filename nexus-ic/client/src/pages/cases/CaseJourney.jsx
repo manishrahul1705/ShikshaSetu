@@ -7,6 +7,7 @@ import { useS5 } from '../closure/api.jsx';
 import Icon from '../../components/ui/Icon.jsx';
 import RuleVersion, { ruleLabel, policyText } from '../../components/RuleVersion.jsx';
 import CaseExplanation from '../../components/CaseExplanation.jsx';
+import CaseSummaryCard from '../../additions/n106-case-summary/CaseSummaryCard.jsx';
 import { metadataLabel } from '../../components/metadataLabel.js';
 import { CodeText } from '../../components/ui/PageKit.jsx';
 import { useAuth } from '../../context/AuthContext.jsx';
@@ -127,6 +128,7 @@ export default function CaseJourney() {
         </div>
       </section>
 
+      <CaseSummaryCard caseId={caseId} />
       <div className="grid gap-6 lg:grid-cols-3">
         {/* Identity */}
         <section aria-label="Institution identity" className="card card-pad space-y-4">

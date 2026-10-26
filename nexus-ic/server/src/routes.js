@@ -89,3 +89,4 @@ router.use((await import('./modules/additions/n89-workload/routes.js')).default)
 router.use((await import('./modules/additions/n88-first-redressal/routes.js')).default);
 router.use((await import('./modules/additions/n103-coordination/routes.js')).default);
 router.use((await import('./modules/additions/n104-case-search/routes.js')).default);
+router.use((await import('./modules/additions/n106-case-summary/routes.js')).default);
