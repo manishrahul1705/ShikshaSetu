@@ -7,6 +7,7 @@ import { institutionSearchTokens, CATALOGUE_VERSION } from '../registry/catalogu
 import IdentityReview from './IdentityReview.js';
 import { resolveIdentity } from './institutionService.js';
 import { recordAudit } from '../audit/audit.js';
+import { addressFor, optionalAddressRows } from '../additions/n109-institution-address/seed.js';
 
 /**
  * Seed DEMO-REGIONS-v1 and initial institutions/ICID mappings.
@@ -19,12 +20,14 @@ export async function seedInstitutionsAndRegions() {
   const actor = { actorId: 'institution-catalogue-seed', actorRole: 'system' };
   if (regResult.created) await recordAudit({ ...actor, action: 'institution.regions.seeded', targetType: 'RegionCatalogue', targetId: 'DEMO-REGIONS-v1', meta: { created: regResult.created } });
   const catalogue = listInstitutions();
+  const officialAddressRows = await optionalAddressRows();
   const existingPids = new Set((await Institution.find({ pid: { $in: catalogue.map(row => row.pid) } }).select('pid').lean()).map(row => row.pid));
   const fresh = catalogue.filter(row => !existingPids.has(row.pid)).map(row => ({
     pid: row.pid, icid: row.icid, name: row.name, city: row.city, state: row.state, region: row.region,
     district: row.district, establishedYear: row.establishedYear, intake: row.intake, approvalValidUntil: row.approvalValidUntil,
     type: row.type, approvalStatus: row.approvalStatus, aliases: row.aliases, campuses: row.campuses,
     registrySnapshot: row, lastRegistryFetch: new Date(), synthetic: true, pickerTokens: institutionSearchTokens(row),
+    address: addressFor(row, officialAddressRows),
   }));
   if (fresh.length) {
     await Institution.insertMany(fresh);

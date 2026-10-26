@@ -1,4 +1,4 @@
-// Schema plugin registry (see PARALLEL_PLAN.md, "Mongoose models").
+// Schema plugin registry for module-owned model extensions.
 // A phase that needs extra fields on a model it does not own writes
 // server/src/modules/<its module>/plugins/<model>.plugin.js, then appends
 // one import line and one registry entry below. The owning model calls
@@ -49,3 +49,5 @@ import institutionPickerPlugin from '../modules/registry/plugins/institution.plu
 registry.push({ model: 'Institution', plugin: institutionPickerPlugin });
 import firstRedressalPlugin from '../modules/additions/n88-first-redressal/plugin.js';
 registry.push({ model: 'Case', plugin: firstRedressalPlugin });
+import institutionAddressPlugin from '../modules/additions/n109-institution-address/plugin.js';
+registry.push({ model: 'Institution', plugin: institutionAddressPlugin });
