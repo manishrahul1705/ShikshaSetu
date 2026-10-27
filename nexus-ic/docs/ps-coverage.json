@@ -1,376 +1,676 @@
 {
-    "problemNeeds":  [
-                         {
-                             "need":  "Officers can see overlapping or conflicting work before acting on one college",
-                             "features":  [
-                                              "N81"
-                                          ],
-                             "route":  "/review",
-                             "roles":  [
-                                           "bureau_officer",
-                                           "regional_officer",
-                                           "supervisor",
-                                           "competent_authority"
-                                       ],
-                             "testIds":  [
-                                             "A-N81"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "One coordinated request replaces repeated requests to the institution",
-                             "features":  [
-                                              "N82"
-                                          ],
-                             "route":  "/requests/combined",
-                             "roles":  [
-                                           "bureau_officer",
-                                           "regional_officer",
-                                           "supervisor",
-                                           "competent_authority"
-                                       ],
-                             "testIds":  [
-                                             "A-N82"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "The institution can reuse an already submitted document safely",
-                             "features":  [
-                                              "N83"
-                                          ],
-                             "route":  "/documents/locker",
-                             "roles":  [
-                                           "institution_admin"
-                                       ],
-                             "testIds":  [
-                                             "A-N83"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "The student sees a truthful status and next accountable step",
-                             "features":  [
-                                              "N86"
-                                          ],
-                             "route":  "/track",
-                             "roles":  [
-                                           "student"
-                                       ],
-                             "testIds":  [
-                                             "A-N86"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "The Competent Authority can reconcile monthly pendency",
-                             "features":  [
-                                              "N87"
-                                          ],
-                             "route":  "/reports/monthly",
-                             "roles":  [
-                                           "competent_authority",
-                                           "supervisor"
-                                       ],
-                             "testIds":  [
-                                             "A-N87"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "Compare fragmented handling with the recorded coordinated workflow",
-                             "features":  [
-                                              "N84"
-                                          ],
-                             "route":  "/walkthrough/compare",
-                             "roles":  [
-                                           "bureau_officer",
-                                           "regional_officer",
-                                           "supervisor",
-                                           "competent_authority"
-                                       ],
-                             "testIds":  [
-                                             "A-N84"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "Trace every need, workflow step and role action to its screen and test evidence",
-                             "features":  [
-                                              "N85"
-                                          ],
-                             "route":  "/coverage",
-                             "roles":  [
-                                           "bureau_officer",
-                                           "regional_officer",
-                                           "supervisor",
-                                           "competent_authority",
-                                           "auditor",
-                                           "system_admin"
-                                       ],
-                             "testIds":  [
-                                             "A-N85"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Implemented; final regression and browser rehearsal pending."
-                         },
-                         {
-                             "need":  "Institution first-level redressal is recorded without blocking intake",
-                             "features":  [
-                                              "N88"
-                                          ],
-                             "route":  "/grievances/new",
-                             "roles":  [
-                                           "student",
-                                           "faculty",
-                                           "other_stakeholder"
-                                       ],
-                             "testIds":  [
-                                             "A-N88"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Optional intake record implemented; regulation text awaits approval."
-                         },
-                         {
-                             "need":  "Officer workload supports a human-confirmed TRACE handover",
-                             "features":  [
-                                              "N89"
-                                          ],
-                             "route":  "/officer-workload",
-                             "roles":  [
-                                           "supervisor"
-                                       ],
-                             "testIds":  [
-                                             "A-N89"
-                                         ],
-                             "state":  "In progress",
-                             "reason":  "Human-confirmed handover implemented; workload threshold awaits approval."
-                         }
-                     ],
-    "workflow":  [
-                     [
-                         1,
-                         "Verify complainant",
-                         "/verify",
-                         [
-                             "N01",
-                             "N04"
-                         ]
-                     ],
-                     [
-                         2,
-                         "Identify institution",
-                         "/institutions/lookup",
-                         [
-                             "N09",
-                             "N10"
-                         ]
-                     ],
-                     [
-                         3,
-                         "Submit complaint",
-                         "/grievances/new",
-                         [
-                             "N13",
-                             "N14"
-                         ]
-                     ],
-                     [
-                         4,
-                         "Check possible duplicate complaint",
-                         "/grievances/new",
-                         [
-                             "N16"
-                         ]
-                     ],
-                     [
-                         5,
-                         "Route to an authorized bureau or cell",
-                         "/cases",
-                         [
-                             "N18"
-                         ]
-                     ],
-                     [
-                         6,
-                         "Check overlapping or conflicting action",
-                         "/review",
-                         [
-                             "N81"
-                         ]
-                     ],
-                     [
-                         7,
-                         "Coordinate bureau work",
-                         "/sync",
-                         [
-                             "N21",
-                             "N75",
-                             "N82"
-                         ]
-                     ],
-                     [
-                         8,
-                         "Transfer with acknowledgement and history",
-                         "/transfers",
-                         [
-                             "N20"
-                         ]
-                     ],
-                     [
-                         9,
-                         "Process the complaint and record actions",
-                         "/cases",
-                         [
-                             "N72"
-                         ]
-                     ],
-                     [
-                         10,
-                         "Detect stalled cases",
-                         "/rescue",
-                         [
-                             "N24"
-                         ]
-                     ],
-                     [
-                         11,
-                         "Record closure evidence and approval",
-                         "/cases",
-                         [
-                             "N22",
-                             "N76"
-                         ]
-                     ],
-                     [
-                         12,
-                         "Dispose or appeal",
-                         "/review/appeals",
-                         [
-                             "N25"
-                         ]
-                     ],
-                     [
-                         13,
-                         "Monitor management analytics",
-                         "/impact",
-                         [
-                             "N26",
-                             "N77"
-                         ]
-                     ]
-                 ],
-    "roles":  [
-                  [
-                      "Complainant",
-                      "File and track a complaint; answer AICTE queries",
-                      "/track",
-                      [
-                          "N28",
-                          "N70",
-                          "N86"
-                      ],
-                      [
-                          "student",
-                          "faculty",
-                          "other_stakeholder"
-                      ]
-                  ],
-                  [
-                      "Institution representative",
-                      "View own institution cases and respond to requests",
-                      "/institution",
-                      [
-                          "N30",
-                          "N71",
-                          "N82",
-                          "N83",
-                          "N88"
-                      ],
-                      [
-                          "institution_admin"
-                      ]
-                  ],
-                  [
-                      "PGRC officer",
-                      "Scrutinize, request information and coordinate",
-                      "/cases",
-                      [
-                          "N70",
-                          "N72",
-                          "N82"
-                      ],
-                      [
-                          "bureau_officer"
-                      ]
-                  ],
-                  [
-                      "Regulation Bureau officer",
-                      "Review, inspect and coordinate",
-                      "/review",
-                      [
-                          "N72",
-                          "N81"
-                      ],
-                      [
-                          "bureau_officer"
-                      ]
-                  ],
-                  [
-                      "Other bureau or cell officer",
-                      "Process jurisdictional work and coordinate",
-                      "/sync",
-                      [
-                          "N72",
-                          "N73",
-                          "N82"
-                      ],
-                      [
-                          "bureau_officer"
-                      ]
-                  ],
-                  [
-                      "Regional Office officer",
-                      "Coordinate regional verification and field follow-up",
-                      "/regional",
-                      [
-                          "N11",
-                          "N74"
-                      ],
-                      [
-                          "regional_officer"
-                      ]
-                  ],
-                  [
-                      "Competent Authority",
-                      "Monitor reports and review escalated matters",
-                      "/reports",
-                      [
-                          "N77",
-                          "N80",
-                          "N87"
-                      ],
-                      [
-                          "competent_authority"
-                      ]
-                  ],
-                  [
-                      "System administrator",
-                      "Manage users, master data and approved rules",
-                      "/admin",
-                      [
-                          "N27",
-                          "N79"
-                      ],
-                      [
-                          "system_admin"
-                      ]
-                  ]
-              ]
+  "problemNeeds": [
+    {
+      "need": "Officers can see overlapping or conflicting work before acting on one college",
+      "features": [
+        "N81"
+      ],
+      "route": "/review",
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority"
+      ],
+      "testIds": [
+        "A-N81"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "One coordinated request replaces repeated requests to the institution",
+      "features": [
+        "N82"
+      ],
+      "route": "/requests/combined",
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority"
+      ],
+      "testIds": [
+        "A-N82"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "The institution can reuse an already submitted document safely",
+      "features": [
+        "N83"
+      ],
+      "route": "/documents/locker",
+      "roles": [
+        "institution_admin"
+      ],
+      "testIds": [
+        "A-N83"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "The student sees a truthful status and next accountable step",
+      "features": [
+        "N86"
+      ],
+      "route": "/track",
+      "roles": [
+        "student"
+      ],
+      "testIds": [
+        "A-N86"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "The Competent Authority can reconcile monthly pendency",
+      "features": [
+        "N87"
+      ],
+      "route": "/reports/monthly",
+      "roles": [
+        "competent_authority",
+        "supervisor"
+      ],
+      "testIds": [
+        "A-N87"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "Compare fragmented handling with the recorded coordinated workflow",
+      "features": [
+        "N84"
+      ],
+      "route": "/walkthrough/compare",
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority"
+      ],
+      "testIds": [
+        "A-N84"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "Trace every need, workflow step and role action to its screen and test evidence",
+      "features": [
+        "N85"
+      ],
+      "route": "/coverage",
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N85"
+      ],
+      "state": "In progress",
+      "reason": "Implemented; final regression and browser rehearsal pending."
+    },
+    {
+      "need": "Institution first-level redressal is recorded without blocking intake",
+      "features": [
+        "N88"
+      ],
+      "route": "/grievances/new",
+      "roles": [
+        "student",
+        "faculty",
+        "other_stakeholder"
+      ],
+      "testIds": [
+        "A-N88"
+      ],
+      "state": "In progress",
+      "reason": "Optional intake record implemented; regulation text awaits approval."
+    },
+    {
+      "need": "Officer workload supports a human-confirmed TRACE handover",
+      "features": [
+        "N89"
+      ],
+      "route": "/officer-workload",
+      "roles": [
+        "supervisor"
+      ],
+      "testIds": [
+        "A-N89"
+      ],
+      "state": "In progress",
+      "reason": "Human-confirmed handover implemented; workload threshold awaits approval."
+    },
+    {
+      "need": "PS Key Feature 1: Centralized Institution Profile",
+      "features": [
+        "N109",
+        "N97"
+      ],
+      "route": "/institutions/lookup",
+      "endpoints": [
+        "/api/v1/institutions/public/:pid"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N109",
+        "A-N97"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 2: Complaint/Case Tracking",
+      "features": [
+        "N106"
+      ],
+      "route": "/cases/:caseId",
+      "endpoints": [
+        "/api/v1/cases/:caseId/summary"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N106"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 3: Cross-Bureau/Cell Overlap Detection and Innovation Expected",
+      "features": [
+        "N103"
+      ],
+      "route": "/coordination",
+      "endpoints": [
+        "/api/v1/coordination"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority"
+      ],
+      "testIds": [
+        "A-N103"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 4: Real-Time Dashboard",
+      "features": [
+        "N105"
+      ],
+      "route": "/impact",
+      "additionalRoutes": [
+        "/dashboard"
+      ],
+      "endpoints": [
+        "/api/v1/impact/summary",
+        "/api/v1/impact/cases"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N105"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 5: Workflow and Action History",
+      "features": [
+        "N106",
+        "N93"
+      ],
+      "route": "/cases/:caseId",
+      "endpoints": [
+        "/api/v1/cases/:caseId/journey"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N106",
+        "A-N93"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 6: Search and Filters",
+      "features": [
+        "N104"
+      ],
+      "route": "/cases/search",
+      "endpoints": [
+        "/api/v1/case-search",
+        "/api/v1/case-search/options",
+        "/api/v1/case-search.csv"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N104"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 7: Alerts and Notifications",
+      "features": [
+        "N108"
+      ],
+      "route": "/notifications",
+      "endpoints": [
+        "/api/v1/notifications"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N108"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    },
+    {
+      "need": "PS Key Feature 8: Reports and Analytics",
+      "features": [
+        "N107"
+      ],
+      "route": "/reports/monthly",
+      "endpoints": [
+        "/api/v1/reports/quarterly",
+        "/api/v1/reports/quarterly.csv",
+        "/api/v1/reports/quarterly.pdf",
+        "/api/v1/reports/status-wise"
+      ],
+      "roles": [
+        "bureau_officer",
+        "regional_officer",
+        "supervisor",
+        "competent_authority",
+        "auditor",
+        "system_admin"
+      ],
+      "testIds": [
+        "A-N107"
+      ],
+      "state": "Tested",
+      "reason": "Passing feature tests, desktop/mobile PS flow and page audit. Controlled baseline: 55,543 unchanged values. See docs/screenshots/ps-align/README.md for live-data and fixed-clock showcase limits."
+    }
+  ],
+  "workflow": [
+    [
+      1,
+      "Verify complainant",
+      "/verify",
+      [
+        "N01",
+        "N04"
+      ]
+    ],
+    [
+      2,
+      "Identify institution",
+      "/institutions/lookup",
+      [
+        "N09",
+        "N10"
+      ]
+    ],
+    [
+      3,
+      "Submit complaint",
+      "/grievances/new",
+      [
+        "N13",
+        "N14"
+      ]
+    ],
+    [
+      4,
+      "Check possible duplicate complaint",
+      "/grievances/new",
+      [
+        "N16"
+      ]
+    ],
+    [
+      5,
+      "Route to an authorized bureau or cell",
+      "/cases",
+      [
+        "N18"
+      ]
+    ],
+    [
+      6,
+      "Check overlapping or conflicting action",
+      "/review",
+      [
+        "N81"
+      ]
+    ],
+    [
+      7,
+      "Coordinate bureau work",
+      "/sync",
+      [
+        "N21",
+        "N75",
+        "N82"
+      ]
+    ],
+    [
+      8,
+      "Transfer with acknowledgement and history",
+      "/transfers",
+      [
+        "N20"
+      ]
+    ],
+    [
+      9,
+      "Process the complaint and record actions",
+      "/cases",
+      [
+        "N72"
+      ]
+    ],
+    [
+      10,
+      "Detect stalled cases",
+      "/rescue",
+      [
+        "N24"
+      ]
+    ],
+    [
+      11,
+      "Record closure evidence and approval",
+      "/cases",
+      [
+        "N22",
+        "N76"
+      ]
+    ],
+    [
+      12,
+      "Dispose or appeal",
+      "/review/appeals",
+      [
+        "N25"
+      ]
+    ],
+    [
+      13,
+      "Monitor management analytics",
+      "/impact",
+      [
+        "N26",
+        "N77"
+      ]
+    ]
+  ],
+  "roles": [
+    [
+      "Complainant",
+      "File and track a complaint; answer AICTE queries",
+      "/track",
+      [
+        "N28",
+        "N70",
+        "N86"
+      ],
+      [
+        "student",
+        "faculty",
+        "other_stakeholder"
+      ]
+    ],
+    [
+      "Institution representative",
+      "View own institution cases and respond to requests",
+      "/institution",
+      [
+        "N30",
+        "N71",
+        "N82",
+        "N83",
+        "N88"
+      ],
+      [
+        "institution_admin"
+      ]
+    ],
+    [
+      "PGRC officer",
+      "Scrutinize, request information and coordinate",
+      "/cases",
+      [
+        "N70",
+        "N72",
+        "N82"
+      ],
+      [
+        "bureau_officer"
+      ]
+    ],
+    [
+      "Regulation Bureau officer",
+      "Review, inspect and coordinate",
+      "/review",
+      [
+        "N72",
+        "N81"
+      ],
+      [
+        "bureau_officer"
+      ]
+    ],
+    [
+      "Other bureau or cell officer",
+      "Process jurisdictional work and coordinate",
+      "/sync",
+      [
+        "N72",
+        "N73",
+        "N82"
+      ],
+      [
+        "bureau_officer"
+      ]
+    ],
+    [
+      "Regional Office officer",
+      "Coordinate regional verification and field follow-up",
+      "/regional",
+      [
+        "N11",
+        "N74"
+      ],
+      [
+        "regional_officer"
+      ]
+    ],
+    [
+      "Competent Authority",
+      "Monitor reports and review escalated matters",
+      "/reports",
+      [
+        "N77",
+        "N80",
+        "N87"
+      ],
+      [
+        "competent_authority"
+      ]
+    ],
+    [
+      "System administrator",
+      "Manage users, master data and approved rules",
+      "/admin",
+      [
+        "N27",
+        "N79"
+      ],
+      [
+        "system_admin"
+      ]
+    ]
+  ],
+  "psAlignment": {
+    "source": "Original PS 26264 supplied by Manish in chat on 28 October 2026",
+    "clauses": [
+      {
+        "clause": 1,
+        "title": "Centralized Institution Profile",
+        "features": [
+          "N109",
+          "N97"
+        ],
+        "route": "/institutions/lookup",
+        "endpoints": [
+          "/api/v1/institutions/public/:pid"
+        ]
+      },
+      {
+        "clause": 2,
+        "title": "Complaint/Case Tracking",
+        "features": [
+          "N106"
+        ],
+        "route": "/cases/:caseId",
+        "endpoints": [
+          "/api/v1/cases/:caseId/summary"
+        ]
+      },
+      {
+        "clause": 3,
+        "title": "Cross-Bureau/Cell Overlap Detection and Innovation Expected",
+        "features": [
+          "N103"
+        ],
+        "route": "/coordination",
+        "endpoints": [
+          "/api/v1/coordination"
+        ]
+      },
+      {
+        "clause": 4,
+        "title": "Real-Time Dashboard",
+        "features": [
+          "N105"
+        ],
+        "route": "/impact",
+        "additionalRoutes": [
+          "/dashboard"
+        ],
+        "endpoints": [
+          "/api/v1/impact/summary",
+          "/api/v1/impact/cases"
+        ]
+      },
+      {
+        "clause": 5,
+        "title": "Workflow and Action History",
+        "features": [
+          "N106",
+          "N93"
+        ],
+        "route": "/cases/:caseId",
+        "endpoints": [
+          "/api/v1/cases/:caseId/journey"
+        ]
+      },
+      {
+        "clause": 6,
+        "title": "Search and Filters",
+        "features": [
+          "N104"
+        ],
+        "route": "/cases/search",
+        "endpoints": [
+          "/api/v1/case-search",
+          "/api/v1/case-search/options",
+          "/api/v1/case-search.csv"
+        ]
+      },
+      {
+        "clause": 7,
+        "title": "Alerts and Notifications",
+        "features": [
+          "N108"
+        ],
+        "route": "/notifications",
+        "endpoints": [
+          "/api/v1/notifications"
+        ]
+      },
+      {
+        "clause": 8,
+        "title": "Reports and Analytics",
+        "features": [
+          "N107"
+        ],
+        "route": "/reports/monthly",
+        "endpoints": [
+          "/api/v1/reports/quarterly",
+          "/api/v1/reports/quarterly.csv",
+          "/api/v1/reports/quarterly.pdf",
+          "/api/v1/reports/status-wise"
+        ]
+      }
+    ],
+    "reminderPolicy": "DEMO-REMINDER-v1: configurable synthetic idleDays=7; not an official AICTE timeline; scheduler opt-in only"
+  }
 }

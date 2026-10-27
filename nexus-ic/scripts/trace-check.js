@@ -16,12 +16,12 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const FEATURES = path.join(ROOT, 'FEATURES.md');
-const STATUSES = ['TODO', 'IN-PROGRESS', 'DONE', 'GAP', 'BLOCKED-SOURCE', 'PLANNED-P2', 'NOT-ADOPTED'];
+const STATUSES = ['TODO', 'IN-PROGRESS', 'DONE', 'GAP', 'BLOCKED-SOURCE', 'PLANNED-P2', 'NOT-ADOPTED', 'PLANNED'];
 
 const range = (p, a, b, pad = 2) =>
   Array.from({ length: b - a + 1 }, (_, i) => p + String(a + i).padStart(pad, '0'));
 const EXPECTED = [
-  ...range('F', 1, 64), ...range('E', 1, 10), ...range('N', 1, 102), ...range('S', 1, 30),
+  ...range('F', 1, 64), ...range('E', 1, 10), ...range('N', 1, 102), ...range('N', 103, 109), ...range('S', 1, 30),
   ...range('R', 1, 55), ...range('U', 1, 32), ...range('T', 1, 30), ...range('X', 1, 22), ...range('D', 1, 26),
 ];
 

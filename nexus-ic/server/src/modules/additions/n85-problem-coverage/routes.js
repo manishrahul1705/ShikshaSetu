@@ -14,6 +14,7 @@ function resultIndex(json) {
   for (const suite of json?.testResults || []) for (const assertion of suite.assertionResults || []) {
     const title = assertion.fullName || assertion.title || '';
     for (const match of title.matchAll(/\[([A-Z](?:-N)?\d{2})\]/g)) byId[match[1]] = byId[match[1]] === 'failed' ? 'failed' : assertion.status;
+    for (const match of title.matchAll(/\[([A-Z](?:-N)?\d{3})\]/g)) byId[match[1]] = byId[match[1]] === 'failed' ? 'failed' : assertion.status;
   }
   return byId;
 }

@@ -66,3 +66,15 @@ Ground rules for every addition:
 | N93 | Realistic, fast status updates | Dynamic complainant status stepper mapped to real recorded milestones with officer action recording | Never reverts; office and role displayed without personal names; refetch/short polling | CF | A-N93 |
 | N94 | India map with college region marked | Offline illustrative regional map highlighting institution region and caseload | Local SVG; zero network/tiles; official boundary validation pending | CF | A-N94 |
 | N95 | Saffron across every page | Consistent application of saffron tokens for eyebrows, buttons, active nav, focus rings and stripes | WCAG AA contrast compliance; tricolour aesthetic | CF | A-N95 |
+
+## PS alignment (approved by Manish, 28 October 2026)
+
+| ID | Feature | PS 26264 clause | Guardrail | Stage | Test |
+|---|---|---|---|---|---|
+| N103 | Cross-bureau coordination | Key Feature 3; Innovation Expected | Distinct from duplicate matching; restricted case IDs never exposed | PS-ALIGN | A-N103 |
+| N104 | Complete case search | Key Feature 6 | Existing case access and field policy; bounded page size | PS-ALIGN | A-N104 |
+| N105 | Under-process, transferred and escalated tiles | Key Feature 4; monitoring objective | Existing IMPACT tiles and decisions unchanged | PS-ALIGN | A-N105 |
+| N106 | Consolidated case summary | Key Feature 2 | Same journey access/audit; recorded information only | PS-ALIGN | A-N106 |
+| N107 | Quarterly, disposal-rate and status reports | Key Feature 8 | Compose existing monthly ledgers without changing them | PS-ALIGN | A-N107 |
+| N108 | Pending-case reminders | Key Feature 7 | Synthetic configurable seven-day idle rule delegated by Manish; opt-in scheduler; idempotent | PS-ALIGN | A-N108 |
+| N109 | Institution address | Key Feature 1 | Nullable plugin field; official addresses only from supplied file; fictional addresses clearly synthetic | PS-ALIGN | A-N109 |
