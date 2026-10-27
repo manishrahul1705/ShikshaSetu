@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import authorize from '../../../middleware/authorize.js';
+import { handle, demoOnly } from '../../channels/common.js';
+import { history, capture, compareDay, startDailyPublisher } from './service.js';
+const router = Router();
+router.get('/integrity', authorize(), handle(() => history()));
+router.post('/integrity/compute', authorize('system_admin'), handle(req => { demoOnly(); return capture(req.user, req.body.day ? { day: req.body.day } : {}); }));
+router.post('/integrity/:day/compare', authorize(), handle(req => compareDay(req.user, req.params.day)));
+startDailyPublisher();
+export default router;

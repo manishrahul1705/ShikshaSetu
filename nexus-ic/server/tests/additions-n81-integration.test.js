@@ -1,0 +1,24 @@
+import { it, expect } from 'vitest';
+import { seedDemoAccounts } from '../src/modules/auth/seed.js';
+import User from '../src/modules/auth/User.js';
+import Case from '../src/modules/cases/Case.js';
+import AuditEvent from '../src/modules/audit/AuditEvent.js';
+import { checkAction, proceedAction } from '../src/modules/prevent/stage2.js';
+import { CaseAction } from '../src/modules/prevent/models.js';
+it('[A-N81] REVIEW requires an attributed reason, CLEAR and UNKNOWN remain advisory, and another actor cannot proceed', async () => {
+  await seedDemoAccounts();
+  const rb = await User.findOne({username:'rb_officer1'}), student = await User.findOne({username:'student1'});
+  const c = await Case.create({masterCaseId:'NX-2026-009501',reporterId:'RP-private',institutionPid:'1-1000000001',category:'Fee Dispute',subCategory:'Refund Denial',narrative:'Private grievance',narrativeHash:'h',owningBureau:rb.bureau,status:'Under Process'});
+  const input={caseId:c.id,actionType:'DOCUMENT_REQUEST',details:{subject:'Fee notification'}};
+  const unknown=await checkAction(rb,input);expect(unknown.result).toBe('UNKNOWN');
+  await proceedAction(rb,unknown.checkId);
+  const review=await checkAction(rb,input);expect(review.result).toBe('REVIEW');
+  const count=await CaseAction.countDocuments();
+  await expect(proceedAction(rb,review.checkId,' ')).rejects.toMatchObject({code:'PROCEED_REASON_REQUIRED'});
+  expect(await CaseAction.countDocuments()).toBe(count);
+  await expect(proceedAction(student,review.checkId,'Unrelated person')).rejects.toMatchObject({status:404});
+  await proceedAction(rb,review.checkId,'The prior notification has a different fee period.');
+  expect(await AuditEvent.exists({action:'prevent.action.proceeded','meta.reason':'The prior notification has a different fee period.'})).toBeTruthy();
+  expect((await checkAction(rb,{...input,actionType:'INSPECTION',details:{subject:'Accessibility'}})).result).toBe('CLEAR');
+  expect(JSON.stringify(review)).not.toMatch(/Private grievance|RP-private|reporterId|narrative/);
+});

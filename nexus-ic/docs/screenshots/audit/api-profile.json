@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-26T10:02:58.606Z",
+  "scope": "Supervisor; local showcase; first request is cold only when run immediately after audit-runtime startup",
+  "records": [
+    {
+      "endpoint": "/impact/summary",
+      "run": "first request",
+      "ms": 1525.3,
+      "responseSha256": "1baeadbd494de5f53d38df967b38daffc50ad4f07dea36fed338766055f29ca5"
+    },
+    {
+      "endpoint": "/impact/summary",
+      "run": "repeat request",
+      "ms": 77.2,
+      "responseSha256": "1baeadbd494de5f53d38df967b38daffc50ad4f07dea36fed338766055f29ca5"
+    },
+    {
+      "endpoint": "/prevent/overlaps",
+      "run": "first request",
+      "ms": 694.1,
+      "responseSha256": "367e7d537d596c6c7e84c07d264d4774f79ad695f1869ebc32067f26223a7564"
+    },
+    {
+      "endpoint": "/prevent/overlaps",
+      "run": "repeat request",
+      "ms": 471.3,
+      "responseSha256": "367e7d537d596c6c7e84c07d264d4774f79ad695f1869ebc32067f26223a7564"
+    }
+  ]
+}

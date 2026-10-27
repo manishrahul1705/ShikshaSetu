@@ -1,0 +1,560 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:16:30.952Z",
+  "records": [
+    {
+      "role": "competent_authority",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2385,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/landing.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 1088,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/login.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 3602,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3602 ms",
+        "Forbidden sidebar link /cases/NX-2026-001001",
+        "Forbidden sidebar link /cases/NX-2026-001598",
+        "Forbidden sidebar link /cases/NX-2026-000001",
+        "Forbidden sidebar link /cases/NX-2026-000002",
+        "Forbidden sidebar link /cases/NX-2026-001002",
+        "Forbidden sidebar link /cases/NX-2026-001599",
+        "Forbidden sidebar link /cases/NX-2026-001006",
+        "Forbidden sidebar link /cases/NX-2026-001600"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 2024.739
+        },
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 2101.678
+        }
+      ],
+      "screenshot": "mobile/competent_authority/dashboard.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 759,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/verify.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 679,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/my-consents.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 843,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/officer-reveal-requests.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 802,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/dev-otp-inbox.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 753,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/institutions-lookup.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6342091611",
+      "readyMs": 1266,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 124.472
+        }
+      ],
+      "screenshot": "mobile/competent_authority/institutions-id.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001535",
+      "readyMs": 771,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/my-cases-caseId.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 944,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/rulebook.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/triage",
+      "target": "/triage",
+      "readyMs": 1062,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/triage.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 1328,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/transfers.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6342091611",
+      "readyMs": 809,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/sync-institutionPid.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 635,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/sync.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001535",
+      "readyMs": 612,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/queries-caseId.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001535",
+      "readyMs": 775,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/fieldwork-caseId.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/insider/alerts",
+      "target": "/insider/alerts",
+      "readyMs": 709,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/insider-alerts.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 579,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/leave.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 2292,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Forbidden sidebar link /cases/NX-2026-001001",
+        "Forbidden sidebar link /cases/NX-2026-001598",
+        "Forbidden sidebar link /cases/NX-2026-000001",
+        "Forbidden sidebar link /cases/NX-2026-000002",
+        "Forbidden sidebar link /cases/NX-2026-001002",
+        "Forbidden sidebar link /cases/NX-2026-001599",
+        "Forbidden sidebar link /cases/NX-2026-001006",
+        "Forbidden sidebar link /cases/NX-2026-001600"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1378.236
+        }
+      ],
+      "screenshot": "mobile/competent_authority/review.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001535",
+      "readyMs": 1634,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/closure-caseId.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/review/appeals",
+      "target": "/review/appeals",
+      "readyMs": 1026,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/review-appeals.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/rescue",
+      "target": "/rescue",
+      "readyMs": 1151,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/rescue.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 2705,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 67.685
+        }
+      ],
+      "screenshot": "mobile/competent_authority/impact.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/authority",
+      "target": "/authority",
+      "readyMs": 2392,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/authority.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 1073,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/integrity.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 1063,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/judge.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 1034,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/walkthrough-compare.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 939,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/coverage.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 856,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/impact-cases.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6342091611",
+      "readyMs": 790,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/overlap-timeline-pid.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6342091611",
+      "readyMs": 1614,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 457.931
+        }
+      ],
+      "screenshot": "mobile/competent_authority/graph-institutions-pid.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 1232,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/cases.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 2162,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 87.734
+        }
+      ],
+      "screenshot": "mobile/competent_authority/reports.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 2384,
+      "layout": {
+        "width": 790,
+        "scrollWidth": 790
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/audit.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 2119,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/notifications.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 1417,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 102.321
+        }
+      ],
+      "screenshot": "mobile/competent_authority/regional.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001535",
+      "readyMs": 1152,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/competent_authority/cases-caseId.png"
+    }
+  ]
+}

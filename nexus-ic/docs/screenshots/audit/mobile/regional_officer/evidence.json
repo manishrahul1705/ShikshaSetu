@@ -1,0 +1,498 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:12:59.687Z",
+  "records": [
+    {
+      "role": "regional_officer",
+      "route": "/",
+      "target": "/",
+      "readyMs": 935,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/landing.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 393,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/login.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 1721,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Forbidden sidebar link /cases/NX-2026-001001",
+        "Forbidden sidebar link /cases/NX-2026-001598",
+        "Forbidden sidebar link /cases/NX-2026-000001",
+        "Forbidden sidebar link /cases/NX-2026-000002"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 816.478
+        },
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 875.935
+        }
+      ],
+      "screenshot": "mobile/regional_officer/dashboard.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 852,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/verify.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 769,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/my-consents.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/officer/manual-verification",
+      "target": "/officer/manual-verification",
+      "readyMs": 581,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/officer-manual-verification.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 949,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/officer-reveal-requests.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 529,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/dev-otp-inbox.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 490,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/institutions-lookup.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6342091611",
+      "readyMs": 801,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 72.153
+        }
+      ],
+      "screenshot": "mobile/regional_officer/institutions-id.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/review/identity",
+      "target": "/review/identity",
+      "readyMs": 642,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/review-identity.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001535",
+      "readyMs": 668,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/my-cases-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 497,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/transfers.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6342091611",
+      "readyMs": 641,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/sync-institutionPid.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 560,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/sync.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001535",
+      "readyMs": 468,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/queries-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001535",
+      "readyMs": 434,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/fieldwork-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 696,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/leave.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 1373,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Forbidden sidebar link /cases/NX-2026-001001",
+        "Forbidden sidebar link /cases/NX-2026-001598",
+        "Forbidden sidebar link /cases/NX-2026-000001",
+        "Forbidden sidebar link /cases/NX-2026-000002"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 673.565
+        }
+      ],
+      "screenshot": "mobile/regional_officer/review.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001535",
+      "readyMs": 774,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/closure-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 1677,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 46.594
+        }
+      ],
+      "screenshot": "mobile/regional_officer/impact.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/cases/:caseId/redaction",
+      "target": "/cases/NX-2026-001535/redaction",
+      "readyMs": 853,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/cases-caseId-redaction.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 757,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/integrity.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 585,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/judge.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 550,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/walkthrough-compare.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 623,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/coverage.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 523,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/impact-cases.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6342091611",
+      "readyMs": 500,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/overlap-timeline-pid.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6342091611",
+      "readyMs": 715,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 164.682
+        }
+      ],
+      "screenshot": "mobile/regional_officer/graph-institutions-pid.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 809,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/cases.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1103,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 56.513
+        }
+      ],
+      "screenshot": "mobile/regional_officer/reports.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 925,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/notifications.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 1312,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 81.224
+        }
+      ],
+      "screenshot": "mobile/regional_officer/regional.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001535",
+      "readyMs": 664,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/regional_officer/cases-caseId.png"
+    }
+  ]
+}

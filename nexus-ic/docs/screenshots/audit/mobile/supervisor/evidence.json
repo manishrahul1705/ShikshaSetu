@@ -1,0 +1,586 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:14:31.730Z",
+  "records": [
+    {
+      "role": "supervisor",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2288,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/landing.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 746,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/login.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 3091,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3091 ms"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 2956.517
+        },
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 3057.905
+        }
+      ],
+      "screenshot": "mobile/supervisor/dashboard.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 698,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/verify.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 714,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/my-consents.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 647,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/officer-reveal-requests.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 639,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/dev-otp-inbox.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 775,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/institutions-lookup.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6342091611",
+      "readyMs": 1258,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 134.553
+        }
+      ],
+      "screenshot": "mobile/supervisor/institutions-id.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review/identity",
+      "target": "/review/identity",
+      "readyMs": 651,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/review-identity.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001535",
+      "readyMs": 637,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/my-cases-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 727,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/rulebook.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/triage",
+      "target": "/triage",
+      "readyMs": 728,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/triage.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 796,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/transfers.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6342091611",
+      "readyMs": 662,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/sync-institutionPid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 640,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/sync.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001535",
+      "readyMs": 601,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/queries-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001535",
+      "readyMs": 834,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/fieldwork-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/insider/alerts",
+      "target": "/insider/alerts",
+      "readyMs": 633,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/insider-alerts.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 650,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/leave.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 2614,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Forbidden sidebar link /cases/NX-2026-001001",
+        "Forbidden sidebar link /cases/NX-2026-001598",
+        "Forbidden sidebar link /cases/NX-2026-000001",
+        "Forbidden sidebar link /cases/NX-2026-000002",
+        "Forbidden sidebar link /cases/NX-2026-001002",
+        "Forbidden sidebar link /cases/NX-2026-001599",
+        "Forbidden sidebar link /cases/NX-2026-001006",
+        "Forbidden sidebar link /cases/NX-2026-001600"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1758.536
+        }
+      ],
+      "screenshot": "mobile/supervisor/review.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001535",
+      "readyMs": 594,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/closure-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review/appeals",
+      "target": "/review/appeals",
+      "readyMs": 587,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/review-appeals.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/rescue",
+      "target": "/rescue",
+      "readyMs": 560,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/rescue.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 1213,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 33.335
+        }
+      ],
+      "screenshot": "mobile/supervisor/impact.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId/redaction",
+      "target": "/cases/NX-2026-001535/redaction",
+      "readyMs": 1050,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/cases-caseId-redaction.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 844,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/integrity.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/benchmark",
+      "target": "/benchmark",
+      "readyMs": 690,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/benchmark.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 646,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/judge.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 700,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/walkthrough-compare.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 786,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/coverage.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 711,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/impact-cases.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6342091611",
+      "readyMs": 988,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/overlap-timeline-pid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6342091611",
+      "readyMs": 1289,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 253.588
+        }
+      ],
+      "screenshot": "mobile/supervisor/graph-institutions-pid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 1449,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/cases.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 3560,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3560 ms"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 325.676
+        }
+      ],
+      "screenshot": "mobile/supervisor/reports.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 3030,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3030 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/audit.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 2984,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/notifications.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 3029,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3029 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/regional.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001535",
+      "readyMs": 2973,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/supervisor/cases-caseId.png"
+    }
+  ]
+}

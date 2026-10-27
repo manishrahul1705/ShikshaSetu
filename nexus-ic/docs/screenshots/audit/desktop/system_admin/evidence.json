@@ -1,0 +1,432 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:10:17.655Z",
+  "records": [
+    {
+      "role": "system_admin",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2625,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/landing.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 993,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/login.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 2769,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 1918.537
+        }
+      ],
+      "screenshot": "desktop/system_admin/dashboard.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 812,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/verify.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 743,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/my-consents.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin",
+      "target": "/admin",
+      "readyMs": 1204,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/admin.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 463,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/dev-otp-inbox.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 488,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/institutions-lookup.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/master/institutions",
+      "target": "/admin/master/institutions",
+      "readyMs": 577,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/admin-master-institutions.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/master/categories",
+      "target": "/admin/master/categories",
+      "readyMs": 527,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/admin-master-categories.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/master/regions",
+      "target": "/admin/master/regions",
+      "readyMs": 620,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/admin-master-regions.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 704,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/rulebook.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 298,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/transfers.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-5794156983",
+      "readyMs": 531,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/sync-institutionPid.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 508,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/sync.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001024",
+      "readyMs": 521,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/queries-caseId.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001024",
+      "readyMs": 533,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/fieldwork-caseId.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/insider/alerts",
+      "target": "/insider/alerts",
+      "readyMs": 362,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/insider-alerts.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 950,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 44.084
+        }
+      ],
+      "screenshot": "desktop/system_admin/impact.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/import",
+      "target": "/admin/import",
+      "readyMs": 532,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/admin-import.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 422,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/integrity.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/benchmark",
+      "target": "/benchmark",
+      "readyMs": 675,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/benchmark.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 433,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/judge.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 567,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/walkthrough-compare.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 700,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/coverage.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 520,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/impact-cases.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-5794156983",
+      "readyMs": 787,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 41.045
+        }
+      ],
+      "screenshot": "desktop/system_admin/graph-institutions-pid.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1562,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 80.989
+        }
+      ],
+      "screenshot": "desktop/system_admin/reports.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 1062,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/audit.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 390,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/notifications.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001024",
+      "readyMs": 640,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/cases-caseId.png"
+    }
+  ]
+}

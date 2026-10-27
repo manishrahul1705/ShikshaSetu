@@ -1,0 +1,17 @@
+import { Router } from 'express';
+import authorize from '../../middleware/authorize.js';
+import { handle } from './common.js';
+import { EmailSimulator, readEmail, previewEmail, confirmEmail, listEmailDrafts } from './email/service.js';
+import { previewImport, dryRun, commit, dataHealthReview } from './imports.js';
+const router = Router(), email = new EmailSimulator();
+const complainants = ['student', 'faculty'];
+router.post('/channels/email/inbound', authorize('system_admin'), handle(req => email.receive(req.user, req.body)));
+router.get('/channels/email', authorize(...complainants), handle(req => listEmailDrafts(req.user)));
+router.get('/channels/email/:id', authorize(...complainants), handle(req => readEmail(req.user, req.params.id)));
+router.post('/channels/email/:id/preview', authorize(...complainants), handle(req => previewEmail(req.user, req.params.id, req.body)));
+router.post('/channels/email/:id/confirm', authorize(...complainants), handle(req => confirmEmail(req.user, req.params.id, req.body.previewToken)));
+router.post('/channels/import/preview', authorize('system_admin'), handle(req => previewImport(req.user, req.body.csv)));
+router.get('/channels/import/review', authorize('system_admin'), handle(req => dataHealthReview(req.user)));
+router.post('/channels/import/:id/dry-run', authorize('system_admin'), handle(req => dryRun(req.user, req.params.id)));
+router.post('/channels/import/:id/commit', authorize('system_admin'), handle(req => commit(req.user, req.params.id)));
+export default router;

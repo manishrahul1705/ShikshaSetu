@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+
+/*
+ * AWAAZ DASTAK design system. Tokens live in tailwind.config.js (ink, saffron,
+ * bharat). This file is plain CSS on purpose: the base layer quietly upgrades
+ * the markup used across older pages (tables, inputs, headings, bordered
+ * boxes) so every screen shares one look without rewriting each page.
+ */
+:root {
+  --ink-50: #f4f6fb; --ink-100: #e8ecf6; --ink-200: #cbd4ea; --ink-300: #9eaed6; --ink-400: #6a81bd;
+  --ink-500: #4661a6; --ink-700: #2b3d71; --ink-800: #1d2b55; --ink-900: #121c3d; --ink-950: #0a1129;
+  --saffron-50: #fff8ed; --saffron-200: #ffdba8; --saffron-300: #ffc070; --saffron-400: #ff9a37; --saffron-500: #ff7d10; --saffron-600: #f06106; --saffron-700: #c74707;
+  --font-sans: Inter, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', Inter, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  --shadow-card: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+  --shadow-lift: 0 12px 32px -12px rgba(18,28,61,.28);
+}
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body { margin: 0; background: #f5f7fb; color: #1e293b; font-family: var(--font-sans); }
+  h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.015em; }
+  ::selection { background: var(--saffron-200); color: var(--ink-950); }
+
+  main table { width: 100%; font-size: .875rem; border-collapse: separate; border-spacing: 0; }
+  main table th { background: var(--ink-50); text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-700); padding: .6rem .75rem; border-bottom: 1px solid var(--ink-100); }
+  main table td { padding: .6rem .75rem; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+  main tbody tr:hover td { background: rgba(255,248,237,.7); }
+
+  main input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=range]),
+  main select, main textarea {
+    border-radius: .6rem; border: 1px solid #cbd5e1; background-color: #fff; padding: .45rem .75rem; font-size: .875rem;
+    box-shadow: 0 1px 2px rgba(16,24,40,.04); transition: border-color .15s, box-shadow .15s;
+  }
+  main input:focus, main select:focus, main textarea:focus { outline: none; border-color: var(--ink-500); box-shadow: 0 0 0 4px var(--ink-100); }
+  main button { transition: background-color .15s, color .15s, box-shadow .15s, border-color .15s; }
+  main button:focus-visible { outline: none; box-shadow: 0 0 0 4px var(--saffron-200); }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--saffron-400); outline-offset: 3px; }
+  main button:disabled { cursor: not-allowed; }
+  main a { text-decoration-color: var(--saffron-400); text-underline-offset: 2px; }
+  main section.border, main div.border.rounded, main section.rounded { border-radius: .9rem; }
+  main .bg-white.border { box-shadow: var(--shadow-card); border-color: rgba(226,232,240,.85); }
+}
+
+@layer components {
+  .card { background: #fff; border-radius: 1rem; border: 1px solid rgba(226,232,240,.85); box-shadow: var(--shadow-card); }
+  .card-pad { padding: 1.25rem; }
+  @media (min-width: 640px) { .card-pad { padding: 1.5rem; } }
+  .card-title { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--ink-950); }
+  .eyebrow { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--saffron-700); }
+  .btn, .btn-primary, .btn-accent, .btn-ghost, .btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border-radius: .75rem; padding: .5rem 1rem; font-size: .875rem; font-weight: 600; text-decoration: none; transition: background-color .15s, box-shadow .15s, border-color .15s; }
+  .btn-secondary { border: 1px solid var(--ink-200); background: #fff; color: var(--ink-900); }
+  .btn-primary { background: #c2410c; color: #ffffff; font-weight: 600; box-shadow: 0 1px 3px rgba(194,65,12,.25); }
+  .btn-primary:hover { background: #9e380e; }
+  .btn-primary:focus-visible { outline: 3px solid var(--saffron-400); outline-offset: 2px; }
+  .btn-accent { background: var(--saffron-500); color: #fff; box-shadow: var(--shadow-lift); }
+  .btn-accent:hover { background: var(--saffron-600); }
+  .btn-ghost { border: 1px solid #e2e8f0; background: #fff; color: var(--ink-900); }
+  .btn-ghost:hover { border-color: var(--ink-300); background: var(--ink-50); }
+  .chip { display: inline-flex; align-items: center; gap: .25rem; border-radius: 999px; padding: .125rem .6rem; font-size: 11px; font-weight: 600; }
+  .id-pill { display: inline-flex; align-items: center; gap: .375rem; border-radius: .5rem; border: 1px solid var(--ink-200); background: var(--ink-50); padding: .2rem .5rem; font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--ink-900); }
+  .id-mono { font-family: var(--font-mono); }
+  .skeleton { border-radius: .5rem; background: linear-gradient(90deg, #f1f5f9, #e2e8f0, #f1f5f9); background-size: 800px 100%; animation: ad-shimmer 1.4s linear infinite; }
+  .nav-link { display: flex; align-items: center; gap: .75rem; border-radius: .75rem; padding: .5rem .75rem; font-size: 13px; font-weight: 500; color: var(--ink-200); text-decoration: none; transition: background-color .15s, color .15s; }
+  .nav-link:hover { background: rgba(255,255,255,.05); color: #fff; }
+  .nav-link-active { background: rgba(255,255,255,.12); color: #fff; box-shadow: inset 4px 0 0 var(--saffron-500); }
+  .font-display { font-family: var(--font-display); }
+}
+
+@keyframes ad-shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }

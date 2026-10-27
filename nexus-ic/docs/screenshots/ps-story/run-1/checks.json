@@ -1,0 +1,10 @@
+{
+  "timings": [],
+  "errors": [],
+  "video": "Chrome recording",
+  "recording": {
+    "frames": 8,
+    "bytes": 30426,
+    "encoder": "Chrome MediaRecorder VP8"
+  }
+}

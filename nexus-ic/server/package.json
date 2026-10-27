@@ -1,0 +1,28 @@
+{
+  "name": "awaaz-dastak-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "test": "vitest run --reporter=default --reporter=json --outputFile=../test-results/server-results.json"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.8.4",
+    "qrcode": "1.5.4",
+    "seedrandom": "^3.0.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.4.0",
+    "supertest": "^7.0.0",
+    "vitest": "4.1.12"
+  }
+}

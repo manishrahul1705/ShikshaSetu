@@ -1,0 +1,190 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.ps.config.js",
+      "--repeat-each=1"
+    ],
+    "configFile": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\playwright.ps.config.js",
+    "rootDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/docs/screenshots/ps-story/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "ps-story.spec.js"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\docs\\screenshots\\ps-story\\artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
+        "snapshotDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
+        "testIgnore": [],
+        "testMatch": "ps-story.spec.js",
+        "timeout": 300000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5317",
+          "browserName": "chromium",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1366,
+            "height": 768
+          },
+          "video": "off",
+          "screenshot": "off",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/screenshots/ps-story/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node e2e/ps-runtime.mjs",
+      "url": "http://127.0.0.1:5317",
+      "reuseExistingServer": false,
+      "timeout": 60000,
+      "stdout": "ignore"
+    }
+  },
+  "suites": [
+    {
+      "title": "ps-story.spec.js",
+      "file": "ps-story.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "[PS-STORY] N81 to N89 coordinated workflow, exports and role isolation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23690,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/dashboard$/\u001b[39m\nReceived string:  \u001b[31m\"http://127.0.0.1:5317/login\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://127.0.0.1:5317/login\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/dashboard$/\u001b[39m\nReceived string:  \u001b[31m\"http://127.0.0.1:5317/login\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://127.0.0.1:5317/login\"\u001b[22m\n\n    at login (C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js:17:287)\n    at C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js:21:5",
+                    "location": {
+                      "file": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js",
+                      "column": 287,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   page.on('pageerror',e=>errors.push(e.message));\n  16 |   async function api(url,data){const r= data===undefined?await context.request.get(`${BASE}/api/v1${url}`):await context.request.post(`${BASE}/api/v1${url}`,{data,headers:{Origin:BASE}});expect(r.ok(),`${url}: ${r.status()} ${await r.text()}`).toBeTruthy();return r.json();}\n> 17 |   async function login(username){await context.clearCookies();await page.goto('/login');await page.locator('form input').nth(0).fill(username);await page.locator('form input').nth(1).fill('demo1234');await page.getByRole('button',{name:'Sign In',exact:true}).click();await expect(page).toHaveURL(/\\/dashboard$/);}\n     |                                                                                                                                                                                                                                                                                               ^\n  18 |   async function visit(route,ready){const start=Date.now();await page.goto(route);await ready();timings.push({route,ms:Date.now()-start});}\n  19 |   async function shot(name){expect(await page.locator('body').innerText()).not.toMatch(/\\b(synthetic|demo|fake|sample|simulator)\\b|POLICY_NOT_CONFIGURED|_comment/i);await page.screenshot({path:path.join(dir,`${name}.png`),fullPage:true,mask:[page.locator('input:not([data-jury-public]),textarea,[data-jury-private]')],maskColor:'#cbd5e1'});}\n  20 |   try {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js",
+                        "column": 287,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/dashboard$/\u001b[39m\nReceived string:  \u001b[31m\"http://127.0.0.1:5317/login\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://127.0.0.1:5317/login\"\u001b[22m\n\n\n  15 |   page.on('pageerror',e=>errors.push(e.message));\n  16 |   async function api(url,data){const r= data===undefined?await context.request.get(`${BASE}/api/v1${url}`):await context.request.post(`${BASE}/api/v1${url}`,{data,headers:{Origin:BASE}});expect(r.ok(),`${url}: ${r.status()} ${await r.text()}`).toBeTruthy();return r.json();}\n> 17 |   async function login(username){await context.clearCookies();await page.goto('/login');await page.locator('form input').nth(0).fill(username);await page.locator('form input').nth(1).fill('demo1234');await page.getByRole('button',{name:'Sign In',exact:true}).click();await expect(page).toHaveURL(/\\/dashboard$/);}\n     |                                                                                                                                                                                                                                                                                               ^\n  18 |   async function visit(route,ready){const start=Date.now();await page.goto(route);await ready();timings.push({route,ms:Date.now()-start});}\n  19 |   async function shot(name){expect(await page.locator('body').innerText()).not.toMatch(/\\b(synthetic|demo|fake|sample|simulator)\\b|POLICY_NOT_CONFIGURED|_comment/i);await page.screenshot({path:path.join(dir,`${name}.png`),fullPage:true,mask:[page.locator('input:not([data-jury-public]),textarea,[data-jury-private]')],maskColor:'#cbd5e1'});}\n  20 |   try {\n    at login (C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js:17:287)\n    at C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js:21:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T16:43:29.796Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\docs\\screenshots\\ps-story\\artifacts\\ps-story--PS-STORY-N81-to--01900--exports-and-role-isolation\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e\\ps-story.spec.js",
+                    "column": 287,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "30eaadd5a7ae80abac0a-9ac27002d62ab3da8a48",
+          "file": "ps-story.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T16:43:16.482Z",
+    "duration": 317243.371,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:32:34.112Z",
+  "records": [
+    {
+      "role": "student",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2625,
+      "readiness": {
+        "characters": 4048,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/landing.png"
+    },
+    {
+      "role": "student",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 1658,
+      "readiness": {
+        "characters": 728,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/login.png"
+    },
+    {
+      "role": "student",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 1116,
+      "readiness": {
+        "characters": 1063,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/dashboard.png"
+    },
+    {
+      "role": "student",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 691,
+      "readiness": {
+        "characters": 782,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/verify.png"
+    },
+    {
+      "role": "student",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 714,
+      "readiness": {
+        "characters": 748,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/my-consents.png"
+    },
+    {
+      "role": "student",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 516,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/dev-otp-inbox.png"
+    },
+    {
+      "role": "student",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 589,
+      "readiness": {
+        "characters": 169,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/institutions-lookup.png"
+    },
+    {
+      "role": "student",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-7734299133",
+      "readyMs": 893,
+      "readiness": {
+        "characters": 1223,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/institutions-id.png"
+    },
+    {
+      "role": "student",
+      "route": "/grievances/new",
+      "target": "/grievances/new",
+      "readyMs": 586,
+      "readiness": {
+        "characters": 695,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/grievances-new.png"
+    },
+    {
+      "role": "student",
+      "route": "/my/cases",
+      "target": "/my/cases",
+      "readyMs": 1094,
+      "readiness": {
+        "characters": 2001,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/my-cases.png"
+    },
+    {
+      "role": "student",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-000001",
+      "readyMs": 637,
+      "readiness": {
+        "characters": 578,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/my-cases-caseId.png"
+    },
+    {
+      "role": "student",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-000001",
+      "readyMs": 692,
+      "readiness": {
+        "characters": 136,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/queries-caseId.png"
+    },
+    {
+      "role": "student",
+      "route": "/prevent/back",
+      "target": "/prevent/back",
+      "readyMs": 656,
+      "readiness": {
+        "characters": 47,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/prevent-back.png"
+    },
+    {
+      "role": "student",
+      "route": "/track",
+      "target": "/track",
+      "readyMs": 622,
+      "readiness": {
+        "characters": 243,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/track.png"
+    },
+    {
+      "role": "student",
+      "route": "/track/:caseId",
+      "target": "/track/NX-2026-000001",
+      "readyMs": 819,
+      "readiness": {
+        "characters": 303,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/track-caseId.png"
+    },
+    {
+      "role": "student",
+      "route": "/channels",
+      "target": "/channels",
+      "readyMs": 678,
+      "readiness": {
+        "characters": 809,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/channels.png"
+    },
+    {
+      "role": "student",
+      "route": "/channels/email/:id",
+      "target": "/channels/email/6adf22ce745e37a3e88560b4",
+      "readyMs": 738,
+      "readiness": {
+        "characters": 969,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/channels-email-id.png"
+    },
+    {
+      "role": "student",
+      "route": "/my/email-drafts",
+      "target": "/my/email-drafts",
+      "readyMs": 477,
+      "readiness": {
+        "characters": 251,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/my-email-drafts.png"
+    },
+    {
+      "role": "student",
+      "route": "/my/email-drafts/:id",
+      "target": "/my/email-drafts/6adf22ce745e37a3e88560b4",
+      "readyMs": 645,
+      "readiness": {
+        "characters": 969,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/my-email-drafts-id.png"
+    },
+    {
+      "role": "student",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 555,
+      "readiness": {
+        "characters": 5030,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/integrity.png"
+    },
+    {
+      "role": "student",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 677,
+      "readiness": {
+        "characters": 1001,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/judge.png"
+    },
+    {
+      "role": "student",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 603,
+      "readiness": {
+        "characters": 3111,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/student/notifications.png"
+    }
+  ]
+}

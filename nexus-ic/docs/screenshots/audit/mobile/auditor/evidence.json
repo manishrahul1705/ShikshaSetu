@@ -1,0 +1,360 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:17:46.246Z",
+  "records": [
+    {
+      "role": "auditor",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2734,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/landing.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 535,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/login.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 1871,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 1206.091
+        }
+      ],
+      "screenshot": "mobile/auditor/dashboard.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 763,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/verify.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 728,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/my-consents.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 830,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/dev-otp-inbox.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 858,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/institutions-lookup.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-5794156983",
+      "readyMs": 1642,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/institutions-id.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001024",
+      "readyMs": 919,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/my-cases-caseId.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 1507,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/rulebook.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001024",
+      "readyMs": 1735,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/closure-caseId.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/review/appeals",
+      "target": "/review/appeals",
+      "readyMs": 1573,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/review-appeals.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/rescue",
+      "target": "/rescue",
+      "readyMs": 1460,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/rescue.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 4119,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 4119 ms"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 533.836
+        }
+      ],
+      "screenshot": "mobile/auditor/impact.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 1011,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/integrity.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 1040,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/judge.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 1686,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/walkthrough-compare.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 1759,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/coverage.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 1079,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/impact-cases.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-5794156983",
+      "readyMs": 995,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/overlap-timeline-pid.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-5794156983",
+      "readyMs": 1467,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 102.79
+        }
+      ],
+      "screenshot": "mobile/auditor/graph-institutions-pid.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1782,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 195.567
+        }
+      ],
+      "screenshot": "mobile/auditor/reports.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 3094,
+      "layout": {
+        "width": 750,
+        "scrollWidth": 750
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3094 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/audit.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 1352,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/notifications.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001024",
+      "readyMs": 1348,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/cases-caseId.png"
+    }
+  ]
+}

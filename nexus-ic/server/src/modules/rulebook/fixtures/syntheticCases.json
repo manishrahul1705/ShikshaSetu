@@ -1,0 +1,52 @@
+[
+  {
+    "id": "FX-001",
+    "category": "Ragging",
+    "subCategory": "Physical",
+    "institutionType": "Engineering",
+    "region": "Northern",
+    "narrative": "Severe ragging reported in student hostel with intimidation",
+    "expectedPrimary": "PGRC",
+    "expectedPriority": "urgent"
+  },
+  {
+    "id": "FX-002",
+    "category": "Regulatory Compliance",
+    "subCategory": "Land & Infrastructure",
+    "institutionType": "Polytechnic",
+    "region": "Western",
+    "narrative": "Building safety certificates missing and unauthorized floors",
+    "expectedPrimary": "RB",
+    "expectedPriority": "normal"
+  },
+  {
+    "id": "FX-003",
+    "category": "Faculty Shortage",
+    "subCategory": "Unpaid Salary",
+    "institutionType": "Management",
+    "region": "Southern",
+    "narrative": "Faculty salaries withheld for four months across departments",
+    "expectedPrimary": "PGRC",
+    "expectedPriority": "high"
+  },
+  {
+    "id": "FX-004",
+    "category": "Curriculum",
+    "subCategory": "Examination Malpractice",
+    "institutionType": "Engineering",
+    "region": "Eastern",
+    "narrative": "Mass examination malpractice and leaked question papers",
+    "expectedPrimary": "AB",
+    "expectedPriority": "high"
+  },
+  {
+    "id": "FX-005",
+    "category": "Approval Process",
+    "subCategory": "Seat Intake",
+    "institutionType": "Pharmacy",
+    "region": "Central",
+    "narrative": "Admissions conducted beyond approved AICTE seat intake quota",
+    "expectedPrimary": "APB",
+    "expectedPriority": "normal"
+  }
+]

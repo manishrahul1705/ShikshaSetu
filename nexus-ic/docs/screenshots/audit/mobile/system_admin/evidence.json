@@ -1,0 +1,495 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:19:57.614Z",
+  "records": [
+    {
+      "role": "system_admin",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2556,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/landing.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 639,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/login.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 3146,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3146 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/dashboard.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 3138,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3138 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/verify.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 3072,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3072 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/my-consents.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin",
+      "target": "/admin",
+      "readyMs": 2967,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/admin.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 2971,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/dev-otp-inbox.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 3036,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3036 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/institutions-lookup.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/master/institutions",
+      "target": "/admin/master/institutions",
+      "readyMs": 3015,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3015 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/admin-master-institutions.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/master/categories",
+      "target": "/admin/master/categories",
+      "readyMs": 3008,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3008 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/admin-master-categories.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/master/regions",
+      "target": "/admin/master/regions",
+      "readyMs": 2956,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/admin-master-regions.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 2962,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/rulebook.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 2995,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/transfers.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-5794156983",
+      "readyMs": 3017,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3017 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/sync-institutionPid.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 2977,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/sync.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001024",
+      "readyMs": 3000,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/queries-caseId.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001024",
+      "readyMs": 2995,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/fieldwork-caseId.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/insider/alerts",
+      "target": "/insider/alerts",
+      "readyMs": 3003,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3003 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/insider-alerts.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 2979,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 120.349
+        }
+      ],
+      "screenshot": "mobile/system_admin/impact.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/admin/import",
+      "target": "/admin/import",
+      "readyMs": 2960,
+      "layout": {
+        "width": 876,
+        "scrollWidth": 876
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/admin-import.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 3007,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3007 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/integrity.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/benchmark",
+      "target": "/benchmark",
+      "readyMs": 2981,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/benchmark.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 2998,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/judge.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 2983,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/walkthrough-compare.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 2968,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/coverage.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 2975,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/impact-cases.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-5794156983",
+      "readyMs": 2979,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 141.393
+        }
+      ],
+      "screenshot": "mobile/system_admin/graph-institutions-pid.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 3008,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3008 ms"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 809.839
+        }
+      ],
+      "screenshot": "mobile/system_admin/reports.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 2996,
+      "layout": {
+        "width": 750,
+        "scrollWidth": 750
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/audit.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 2990,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/notifications.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001024",
+      "readyMs": 3005,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3005 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "mobile/system_admin/cases-caseId.png"
+    }
+  ]
+}

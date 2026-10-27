@@ -1,0 +1,582 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T09:15:18.564Z",
+  "records": [
+    {
+      "role": "supervisor",
+      "route": "/",
+      "target": "/",
+      "readyMs": 2170,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/landing.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 895,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/login.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 2274,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/dashboard.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 1308,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: simulator, POLICY_NOT_CONFIGURED",
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/verify.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 686,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED",
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/my-consents.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 1028,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/officer-reveal-requests.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 613,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/dev-otp-inbox.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 800,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/institutions-lookup.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6342091611",
+      "readyMs": 1840,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: simulator"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 218.331
+        }
+      ],
+      "screenshot": "desktop/supervisor/institutions-id.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review/identity",
+      "target": "/review/identity",
+      "readyMs": 774,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/review-identity.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001535",
+      "readyMs": 812,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/my-cases-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 1053,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/rulebook.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/triage",
+      "target": "/triage",
+      "readyMs": 910,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/triage.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 1696,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/transfers.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6342091611",
+      "readyMs": 847,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/sync-institutionPid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 3040,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3040 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/sync.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001535",
+      "readyMs": 743,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/queries-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001535",
+      "readyMs": 765,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/fieldwork-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/insider/alerts",
+      "target": "/insider/alerts",
+      "readyMs": 886,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/insider-alerts.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 984,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/leave.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 619,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/review.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001535",
+      "readyMs": 881,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/closure-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review/appeals",
+      "target": "/review/appeals",
+      "readyMs": 819,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/review-appeals.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/rescue",
+      "target": "/rescue",
+      "readyMs": 749,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/rescue.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 1607,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 120.169
+        }
+      ],
+      "screenshot": "desktop/supervisor/impact.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId/redaction",
+      "target": "/cases/NX-2026-001535/redaction",
+      "readyMs": 831,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases-caseId-redaction.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 688,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/integrity.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/benchmark",
+      "target": "/benchmark",
+      "readyMs": 536,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/benchmark.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 859,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/judge.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 645,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/walkthrough-compare.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 807,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/coverage.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 3029,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3029 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/impact-cases.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6342091611",
+      "readyMs": 745,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/overlap-timeline-pid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6342091611",
+      "readyMs": 1026,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: simulator"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 360.194
+        }
+      ],
+      "screenshot": "desktop/supervisor/graph-institutions-pid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 1104,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1465,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 112.124
+        }
+      ],
+      "screenshot": "desktop/supervisor/reports.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 1465,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/audit.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 1553,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/notifications.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 2019,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 567.669
+        }
+      ],
+      "screenshot": "desktop/supervisor/regional.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001535",
+      "readyMs": 1117,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Banned visible wording: SIMULATOR"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases-caseId.png"
+    }
+  ]
+}

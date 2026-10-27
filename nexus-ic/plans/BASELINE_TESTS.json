@@ -1,0 +1,3144 @@
+{
+  "capturedAt": "2026-10-27T07:08:14.927Z",
+  "namespace": "fi_codex_base_20261027_1",
+  "commands": [
+    "TEST_MONGODB_URI=mongodb://127.0.0.1:27017 TEST_DB_NAMESPACE=fi_codex_base_20261027_1 npm test --workspace=server -- --maxWorkers=2",
+    "npm run test:client",
+    "node scripts/merge-results.js",
+    "node scripts/trace-check.js"
+  ],
+  "exitCodes": {
+    "server": 1,
+    "client": 0,
+    "merge": 0,
+    "trace": 1
+  },
+  "summary": {
+    "server": {
+      "total": 291,
+      "passed": 288,
+      "failed": 3,
+      "skipped": 0,
+      "startTime": 1793083141128
+    },
+    "client": {
+      "total": 97,
+      "passed": 97,
+      "failed": 0,
+      "skipped": 0,
+      "startTime": 1793084764381
+    }
+  },
+  "tests": [
+    {
+      "suite": "server",
+      "file": "additions-n81-integration.test.js",
+      "title": "[A-N81] REVIEW requires an attributed reason, CLEAR and UNKNOWN remain advisory, and another actor cannot proceed",
+      "fullName": "[A-N81] REVIEW requires an attributed reason, CLEAR and UNKNOWN remain advisory, and another actor cannot proceed",
+      "status": "passed",
+      "durationMs": 4328.4935
+    },
+    {
+      "suite": "server",
+      "file": "additions-n81.test.js",
+      "title": "[A-N81] requires a reason before proceeding after REVIEW",
+      "fullName": "[A-N81] live conflict warning [A-N81] requires a reason before proceeding after REVIEW",
+      "status": "passed",
+      "durationMs": 3.707499999999982
+    },
+    {
+      "suite": "server",
+      "file": "additions-n81.test.js",
+      "title": "shows only scoped action metadata, never case narrative or reporter identity",
+      "fullName": "[A-N81] live conflict warning shows only scoped action metadata, never case narrative or reporter identity",
+      "status": "passed",
+      "durationMs": 3.896099999999933
+    },
+    {
+      "suite": "server",
+      "file": "additions-n82-n83.test.js",
+      "title": "[A-N82] owning bureaus confirm independently and replies reach only their own N70 items",
+      "fullName": "[A-N82] owning bureaus confirm independently and replies reach only their own N70 items",
+      "status": "passed",
+      "durationMs": 6961.7891
+    },
+    {
+      "suite": "server",
+      "file": "additions-n82-n83.test.js",
+      "title": "[A-N83] versions retain hashes and access requires a live case-specific officer grant",
+      "fullName": "[A-N83] versions retain hashes and access requires a live case-specific officer grant",
+      "status": "passed",
+      "durationMs": 1955.7308999999987
+    },
+    {
+      "suite": "server",
+      "file": "additions-n84.test.js",
+      "title": "[A-N84] labels scripted values separately from values derived from recorded actions",
+      "fullName": "[A-N84] Today vs with AWAAZ DASTAK comparison [A-N84] labels scripted values separately from values derived from recorded actions",
+      "status": "passed",
+      "durationMs": 824.2936
+    },
+    {
+      "suite": "server",
+      "file": "additions-n85.test.js",
+      "title": "[A-N85] references actual proving test IDs including Appendix W without an additions prefix",
+      "fullName": "[A-N85] problem-statement coverage [A-N85] references actual proving test IDs including Appendix W without an additions prefix",
+      "status": "passed",
+      "durationMs": 54.26019999999971
+    },
+    {
+      "suite": "server",
+      "file": "additions-n85.test.js",
+      "title": "[A-N85] maps every need, workflow step and role action to a declared route and viewer role",
+      "fullName": "[A-N85] problem-statement coverage [A-N85] maps every need, workflow step and role action to a declared route and viewer role",
+      "status": "passed",
+      "durationMs": 21.83060000000023
+    },
+    {
+      "suite": "server",
+      "file": "additions-n86-n89.test.js",
+      "title": "[A-N86] own tracking exposes no internal fields and replies update N70 without false submitted status",
+      "fullName": "[A-N86] own tracking exposes no internal fields and replies update N70 without false submitted status",
+      "status": "passed",
+      "durationMs": 10468.0272
+    },
+    {
+      "suite": "server",
+      "file": "additions-n86-n89.test.js",
+      "title": "[A-N87] monthly balances reconcile and every drill-down contains the counted records",
+      "fullName": "[A-N87] monthly balances reconcile and every drill-down contains the counted records",
+      "status": "passed",
+      "durationMs": 487.78169999999955
+    },
+    {
+      "suite": "server",
+      "file": "additions-n86-n89.test.js",
+      "title": "[A-N88] optional redressal accepts omission and negative answers without a policy gate",
+      "fullName": "[A-N88] optional redressal accepts omission and negative answers without a policy gate",
+      "status": "passed",
+      "durationMs": 497.5033000000003
+    },
+    {
+      "suite": "server",
+      "file": "additions-n86-n89.test.js",
+      "title": "[A-N89] suggestions never reassign and nominated same-bureau handover needs receiver acceptance",
+      "fullName": "[A-N89] suggestions never reassign and nominated same-bureau handover needs receiver acceptance",
+      "status": "passed",
+      "durationMs": 1287.6104999999989
+    },
+    {
+      "suite": "server",
+      "file": "additions-n87-pdf.test.js",
+      "title": "[A-N87] PDF ledger paginates all balances and retains a traceable export watermark",
+      "fullName": "[A-N87] PDF ledger paginates all balances and retains a traceable export watermark",
+      "status": "passed",
+      "durationMs": 3627.6552
+    },
+    {
+      "suite": "server",
+      "file": "additions-n90.test.js",
+      "title": "[A-N90] typing a college name, city, state, PID or ICID returns bounded results with auto-filled fields",
+      "fullName": "[A-N90] college name auto-fetch everywhere [A-N90] typing a college name, city, state, PID or ICID returns bounded results with auto-filled fields",
+      "status": "passed",
+      "durationMs": 468.2004999999999
+    },
+    {
+      "suite": "server",
+      "file": "additions-n91.test.js",
+      "title": "[A-N91] format validation correctly validates 12-digit APAAR and valid Staff IDs",
+      "fullName": "[A-N91] simulated ABC / APAAR ID and staff ID verification [A-N91] format validation correctly validates 12-digit APAAR and valid Staff IDs",
+      "status": "passed",
+      "durationMs": 7.486799999999903
+    },
+    {
+      "suite": "server",
+      "file": "additions-n91.test.js",
+      "title": "[A-N91] student APAAR verification produces all 5 required outcomes",
+      "fullName": "[A-N91] simulated ABC / APAAR ID and staff ID verification [A-N91] student APAAR verification produces all 5 required outcomes",
+      "status": "passed",
+      "durationMs": 2.862799999999879
+    },
+    {
+      "suite": "server",
+      "file": "additions-n91.test.js",
+      "title": "[A-N91] faculty Staff ID verification produces all 5 required outcomes",
+      "fullName": "[A-N91] simulated ABC / APAAR ID and staff ID verification [A-N91] faculty Staff ID verification produces all 5 required outcomes",
+      "status": "passed",
+      "durationMs": 3.210299999999961
+    },
+    {
+      "suite": "server",
+      "file": "additions-n91.test.js",
+      "title": "[A-N91] synthetic registries contain >= 20 distinct records and make 0 external network calls",
+      "fullName": "[A-N91] simulated ABC / APAAR ID and staff ID verification [A-N91] synthetic registries contain >= 20 distinct records and make 0 external network calls",
+      "status": "passed",
+      "durationMs": 16.008800000000065
+    },
+    {
+      "suite": "server",
+      "file": "additions-n92.test.js",
+      "title": "[A-N92] routes to Regional Grievance Cell with explainable ICID and PID reason",
+      "fullName": "[A-N92] ICID-based regional routing to Regional Grievance Cell [A-N92] routes to Regional Grievance Cell with explainable ICID and PID reason",
+      "status": "passed",
+      "durationMs": 3335.1793
+    },
+    {
+      "suite": "server",
+      "file": "additions-n92.test.js",
+      "title": "[A-N92] routes accurately across all 6 AICTE regions",
+      "fullName": "[A-N92] ICID-based regional routing to Regional Grievance Cell [A-N92] routes accurately across all 6 AICTE regions",
+      "status": "passed",
+      "durationMs": 2023.5190999999995
+    },
+    {
+      "suite": "server",
+      "file": "additions-n92.test.js",
+      "title": "[A-N92] never treats a missing or mismatched IIC ID as a verified match",
+      "fullName": "[A-N92] ICID-based regional routing to Regional Grievance Cell [A-N92] never treats a missing or mismatched IIC ID as a verified match",
+      "status": "passed",
+      "durationMs": 1751.669200000002
+    },
+    {
+      "suite": "server",
+      "file": "additions-n92.test.js",
+      "title": "[A-N92] seeds regional officer accounts for all 6 AICTE regions",
+      "fullName": "[A-N92] ICID-based regional routing to Regional Grievance Cell [A-N92] seeds regional officer accounts for all 6 AICTE regions",
+      "status": "passed",
+      "durationMs": 1497.4100999999973
+    },
+    {
+      "suite": "server",
+      "file": "additions-n93.test.js",
+      "title": "[A-N93] recording an officer action updates statusHistory and advances stage immediately",
+      "fullName": "[A-N93] realistic, fast status updates and event-grounded stepper [A-N93] recording an officer action updates statusHistory and advances stage immediately",
+      "status": "passed",
+      "durationMs": 3093.4313
+    },
+    {
+      "suite": "server",
+      "file": "additions-n93.test.js",
+      "title": "[A-N93] officer inspection and instruction actions map cleanly to accountable offices and roles",
+      "fullName": "[A-N93] realistic, fast status updates and event-grounded stepper [A-N93] officer inspection and instruction actions map cleanly to accountable offices and roles",
+      "status": "passed",
+      "durationMs": 1381.2804000000006
+    },
+    {
+      "suite": "server",
+      "file": "additions-n94.test.js",
+      "title": "[A-N94] delineates all 6 AICTE administrative regions with complete state coverage",
+      "fullName": "[A-N94] illustrative India map with college region marked [A-N94] delineates all 6 AICTE administrative regions with complete state coverage",
+      "status": "passed",
+      "durationMs": 9.240999999999985
+    },
+    {
+      "suite": "server",
+      "file": "additions-n94.test.js",
+      "title": "[A-N94] resolves city and region coordinates for accurate college pin placement",
+      "fullName": "[A-N94] illustrative India map with college region marked [A-N94] resolves city and region coordinates for accurate college pin placement",
+      "status": "passed",
+      "durationMs": 5.4792999999999665
+    },
+    {
+      "suite": "server",
+      "file": "additions-n94.test.js",
+      "title": "[A-N94] pure local SVG requires zero external dependencies and runs completely offline",
+      "fullName": "[A-N94] illustrative India map with college region marked [A-N94] pure local SVG requires zero external dependencies and runs completely offline",
+      "status": "passed",
+      "durationMs": 1.6326999999996588
+    },
+    {
+      "suite": "server",
+      "file": "additions-n95.test.js",
+      "title": "[A-N95] verifies saffron tokens across CSS and layout configuration",
+      "fullName": "[A-N95] saffron design tokens and WCAG AA contrast compliance [A-N95] verifies saffron tokens across CSS and layout configuration",
+      "status": "passed",
+      "durationMs": 14.865599999999631
+    },
+    {
+      "suite": "server",
+      "file": "additions-n95.test.js",
+      "title": "[A-N95] satisfies WCAG AA contrast requirements (>= 4.5:1 for normal text)",
+      "fullName": "[A-N95] saffron design tokens and WCAG AA contrast compliance [A-N95] satisfies WCAG AA contrast requirements (>= 4.5:1 for normal text)",
+      "status": "passed",
+      "durationMs": 1.1993000000002212
+    },
+    {
+      "suite": "server",
+      "file": "additions-n96.test.js",
+      "title": "[A-N96] validates AICTE PID and optional ICID without guessing values",
+      "fullName": "[A-N96] institution registry adapters [A-N96] validates AICTE PID and optional ICID without guessing values",
+      "status": "passed",
+      "durationMs": 23.128799999999956
+    },
+    {
+      "suite": "server",
+      "file": "additions-n96.test.js",
+      "title": "[A-N96] parses an official CSV and rejects invalid rows",
+      "fullName": "[A-N96] institution registry adapters [A-N96] parses an official CSV and rejects invalid rows",
+      "status": "passed",
+      "durationMs": 12.48739999999998
+    },
+    {
+      "suite": "server",
+      "file": "additions-n96.test.js",
+      "title": "[A-N96] keeps the fictional catalogue clearly labelled",
+      "fullName": "[A-N96] institution registry adapters [A-N96] keeps the fictional catalogue clearly labelled",
+      "status": "passed",
+      "durationMs": 11.675900000000183
+    },
+    {
+      "suite": "server",
+      "file": "additions-n96.test.js",
+      "title": "[A-N96] exposes the live adapter as disabled and never performs a network call",
+      "fullName": "[A-N96] institution registry adapters [A-N96] exposes the live adapter as disabled and never performs a network call",
+      "status": "passed",
+      "durationMs": 13.456700000000183
+    },
+    {
+      "suite": "server",
+      "file": "audit.test.js",
+      "title": "[S09] chain verifies after 50 events",
+      "fullName": "[S09] Tamper-evident audit log (hash chain) [S09] chain verifies after 50 events",
+      "status": "passed",
+      "durationMs": 3792.8918000000003
+    },
+    {
+      "suite": "server",
+      "file": "audit.test.js",
+      "title": "[S09] editing one stored event makes verify report that seq",
+      "fullName": "[S09] Tamper-evident audit log (hash chain) [S09] editing one stored event makes verify report that seq",
+      "status": "passed",
+      "durationMs": 201.1827999999996
+    },
+    {
+      "suite": "server",
+      "file": "audit.test.js",
+      "title": "[S09] hash computation is deterministic",
+      "fullName": "[S09] Tamper-evident audit log (hash chain) [S09] hash computation is deterministic",
+      "status": "passed",
+      "durationMs": 13.005699999999706
+    },
+    {
+      "suite": "server",
+      "file": "audit.test.js",
+      "title": "[S09] chain stays intact with empty meta and concurrent records",
+      "fullName": "[S09] Tamper-evident audit log (hash chain) [S09] chain stays intact with empty meta and concurrent records",
+      "status": "passed",
+      "durationMs": 688.1693999999998
+    },
+    {
+      "suite": "server",
+      "file": "auth.test.js",
+      "title": "[S16] login sets an HttpOnly cookie",
+      "fullName": "[S16] HttpOnly Secure session cookies, no tokens in localStorage [S16] login sets an HttpOnly cookie",
+      "status": "passed",
+      "durationMs": 8608.4372
+    },
+    {
+      "suite": "server",
+      "file": "auth.test.js",
+      "title": "[S16] the client source contains no localStorage/sessionStorage token use",
+      "fullName": "[S16] HttpOnly Secure session cookies, no tokens in localStorage [S16] the client source contains no localStorage/sessionStorage token use",
+      "status": "passed",
+      "durationMs": 1684.1133999999984
+    },
+    {
+      "suite": "server",
+      "file": "auth.test.js",
+      "title": "[F45] demo accounts seed correctly with all roles present",
+      "fullName": "[F45] Demo accounts [F45] demo accounts seed correctly with all roles present",
+      "status": "passed",
+      "durationMs": 1306.0334000000003
+    },
+    {
+      "suite": "server",
+      "file": "authorize.test.js",
+      "title": "[S01] every /api route except login/health rejects unauthenticated and wrong-role requests",
+      "fullName": "[S01] Zero trust: every request re-authorized server-side [S01] every /api route except login/health rejects unauthenticated and wrong-role requests",
+      "status": "passed",
+      "durationMs": 9195.438900000001
+    },
+    {
+      "suite": "server",
+      "file": "authorize.test.js",
+      "title": "[S01] wrong role is rejected with 403",
+      "fullName": "[S01] Zero trust: every request re-authorized server-side [S01] wrong role is rejected with 403",
+      "status": "passed",
+      "durationMs": 1254.5032000000028
+    },
+    {
+      "suite": "server",
+      "file": "authorize.test.js",
+      "title": "[S01] valid role is accepted",
+      "fullName": "[S01] Zero trust: every request re-authorized server-side [S01] valid role is accepted",
+      "status": "passed",
+      "durationMs": 1069.0399999999972
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] acronym of the significant words finds the stand-in (\"sece\", \"SECE\")",
+      "fullName": "[A-N97] smart college search [A-N97] acronym of the significant words finds the stand-in (\"sece\", \"SECE\")",
+      "status": "passed",
+      "durationMs": 4846.5534
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] any part of the name, case and accent insensitive",
+      "fullName": "[A-N97] smart college search [A-N97] any part of the name, case and accent insensitive",
+      "status": "passed",
+      "durationMs": 331.33699999999953
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] the aliases column matches",
+      "fullName": "[A-N97] smart college search [A-N97] the aliases column matches",
+      "status": "passed",
+      "durationMs": 215.57790000000023
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] one or two typos still match, only when nothing matches exactly",
+      "fullName": "[A-N97] smart college search [A-N97] one or two typos still match, only when nothing matches exactly",
+      "status": "passed",
+      "durationMs": 653.6132999999991
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] short forms are expanded in the query only",
+      "fullName": "[A-N97] smart college search [A-N97] short forms are expanded in the query only",
+      "status": "passed",
+      "durationMs": 625.3154999999988
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] ranking puts exact acronym, PID or ICID first, then prefix, then substring",
+      "fullName": "[A-N97] smart college search [A-N97] ranking puts exact acronym, PID or ICID first, then prefix, then substring",
+      "status": "passed",
+      "durationMs": 352.3081000000002
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] results are bounded to 20 through the authorized search route",
+      "fullName": "[A-N97] smart college search [A-N97] results are bounded to 20 through the authorized search route",
+      "status": "passed",
+      "durationMs": 2545.7981
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] official-list rows carry an \"Official AICTE list as of\" source badge; fictional rows do not claim it",
+      "fullName": "[A-N97] smart college search [A-N97] official-list rows carry an \"Official AICTE list as of\" source badge; fictional rows do not claim it",
+      "status": "passed",
+      "durationMs": 1233.8198000000011
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N97] an imported real-list college can never be the target of a demo grievance",
+      "fullName": "[A-N97] smart college search [A-N97] an imported real-list college can never be the target of a demo grievance",
+      "status": "passed",
+      "durationMs": 1026.7540000000008
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N98] maps AICTE headers tolerantly, keeps quoted commas, reports unknown columns and never guesses missing values",
+      "fullName": "[A-N98] official AICTE list import [A-N98] maps AICTE headers tolerantly, keeps quoted commas, reports unknown columns and never guesses missing values",
+      "status": "passed",
+      "durationMs": 169.39270000000033
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N98] the dry-run preview counts new, updated and rejected rows and writes nothing",
+      "fullName": "[A-N98] official AICTE list import [A-N98] the dry-run preview counts new, updated and rejected rows and writes nothing",
+      "status": "passed",
+      "durationMs": 120.53369999999995
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N98] only a system admin can preview or import (authorize)",
+      "fullName": "[A-N98] official AICTE list import [A-N98] only a system admin can preview or import (authorize)",
+      "status": "passed",
+      "durationMs": 1069.5996999999988
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-search.test.js",
+      "title": "[A-N98] confirming writes the valid rows with provenance and records one audit event",
+      "fullName": "[A-N98] official AICTE list import [A-N98] confirming writes the valid rows with provenance and records one audit event",
+      "status": "passed",
+      "durationMs": 824.0397999999986
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] ABC happy path: details fetched for the student to confirm, then verified with no manual review and no OTP",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] ABC happy path: details fetched for the student to confirm, then verified with no manual review and no OTP",
+      "status": "passed",
+      "durationMs": 2096.5468999999975
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] a student without an ABC ID is verified with a synthetic Aadhaar-style number (Verhoeff checksum)",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] a student without an ABC ID is verified with a synthetic Aadhaar-style number (Verhoeff checksum)",
+      "status": "passed",
+      "durationMs": 1365.0645000000004
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] a bad checksum and an unknown number are refused without verifying",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] a bad checksum and an unknown number are refused without verifying",
+      "status": "passed",
+      "durationMs": 953.5985000000001
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] an institution mismatch, \"these are not my details\", a reused number or too many failed tries go to the existing manual review",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] an institution mismatch, \"these are not my details\", a reused number or too many failed tries go to the existing manual review",
+      "status": "passed",
+      "durationMs": 1447.2733000000007
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] no raw ABC or Aadhaar number is stored, logged or audited; only a salted hash and the last four digits",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] no raw ABC or Aadhaar number is stored, logged or audited; only a salted hash and the last four digits",
+      "status": "passed",
+      "durationMs": 1106.8235999999997
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] every response carries the simulated label and consent is required",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] every response carries the simulated label and consent is required",
+      "status": "passed",
+      "durationMs": 1088.7648999999983
+    },
+    {
+      "suite": "server",
+      "file": "final-interactive-selfcheck.test.js",
+      "title": "[A-N99] the existing officer-assisted path still works beside the self-service path",
+      "fullName": "[A-N99] self-service ABC / Aadhaar check (simulated) [A-N99] the existing officer-assisted path still works beside the self-service path",
+      "status": "passed",
+      "durationMs": 1026.2978999999978
+    },
+    {
+      "suite": "server",
+      "file": "final-polish-registry.test.js",
+      "title": "[R32] institution search authorizes, finds name/city/state/ICID and returns at most 20 public records",
+      "fullName": "[R32] institution search authorizes, finds name/city/state/ICID and returns at most 20 public records",
+      "status": "passed",
+      "durationMs": 8322.2147
+    },
+    {
+      "suite": "server",
+      "file": "final-polish-registry.test.js",
+      "title": "[U02] ICID search resolves to its PID without linking, merging or resolving the queued disagreement",
+      "fullName": "[U02] ICID search resolves to its PID without linking, merging or resolving the queued disagreement",
+      "status": "passed",
+      "durationMs": 3280.139299999999
+    },
+    {
+      "suite": "server",
+      "file": "final-polish-registry.test.js",
+      "title": "[U04] the idempotent 120-institution catalogue retains six unavailable ICIDs across six regions",
+      "fullName": "[U04] the idempotent 120-institution catalogue retains six unavailable ICIDs across six regions",
+      "status": "passed",
+      "durationMs": 1743.564400000003
+    },
+    {
+      "suite": "server",
+      "file": "generator.test.js",
+      "title": "[A-N48] same seed gives identical output",
+      "fullName": "[A-N48] Realistic test-data generator [A-N48] same seed gives identical output",
+      "status": "passed",
+      "durationMs": 15.688400000000001
+    },
+    {
+      "suite": "server",
+      "file": "generator.test.js",
+      "title": "[A-N48] different seed gives different output",
+      "fullName": "[A-N48] Realistic test-data generator [A-N48] different seed gives different output",
+      "status": "passed",
+      "durationMs": 3.766599999999926
+    },
+    {
+      "suite": "server",
+      "file": "generator.test.js",
+      "title": "[A-N48] output contains typos, acronyms, Hindi and Tamil spellings",
+      "fullName": "[A-N48] Realistic test-data generator [A-N48] output contains typos, acronyms, Hindi and Tamil spellings",
+      "status": "passed",
+      "durationMs": 63.57009999999991
+    },
+    {
+      "suite": "server",
+      "file": "generator.test.js",
+      "title": "[A-N48] every record has synthetic: true",
+      "fullName": "[A-N48] Realistic test-data generator [A-N48] every record has synthetic: true",
+      "status": "passed",
+      "durationMs": 15.324399999999969
+    },
+    {
+      "suite": "server",
+      "file": "generator.test.js",
+      "title": "[A-N48] PIDs follow the correct format",
+      "fullName": "[A-N48] Realistic test-data generator [A-N48] PIDs follow the correct format",
+      "status": "passed",
+      "durationMs": 3.177599999999984
+    },
+    {
+      "suite": "server",
+      "file": "generator.test.js",
+      "title": "[A-N48] some institutions have ICID and some do not",
+      "fullName": "[A-N48] Realistic test-data generator [A-N48] some institutions have ICID and some do not",
+      "status": "passed",
+      "durationMs": 3.890900000000329
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-contracts.test.js",
+      "title": "[S02] concurrent overlap reads share work only within the same actor and scope and every read is audited",
+      "fullName": "[S02] concurrent overlap reads share work only within the same actor and scope and every read is audited",
+      "status": "passed",
+      "durationMs": 13542.8419
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-contracts.test.js",
+      "title": "[N70] query URLs accept Master Case IDs and both reading and replying recheck case ownership",
+      "fullName": "[N70] query URLs accept Master Case IDs and both reading and replying recheck case ownership",
+      "status": "passed",
+      "durationMs": 2890.7700000000004
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-contracts.test.js",
+      "title": "[N71] institution summary stays institution-scoped, has twelve months and never invents resolution days",
+      "fullName": "[N71] institution summary stays institution-scoped, has twelve months and never invents resolution days",
+      "status": "passed",
+      "durationMs": 2461.9285999999993
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-contracts.test.js",
+      "title": "[N74] fieldwork accepts a Master Case ID and denies a different bureau both reads and scheduling",
+      "fullName": "[N74] fieldwork accepts a Master Case ID and denies a different bureau both reads and scheduling",
+      "status": "passed",
+      "durationMs": 2297.2772000000004
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-contracts.test.js",
+      "title": "[N01] accounts without a reporter see an unverified identity and empty consent ledger without a failed request",
+      "fullName": "[N01] accounts without a reporter see an unverified identity and empty consent ledger without a failed request",
+      "status": "passed",
+      "durationMs": 2920.245500000001
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-contracts.test.js",
+      "title": "[A-N60] current absences expose only office-scoped dates and titles, never another office or medical reason",
+      "fullName": "[A-N60] current absences expose only office-scoped dates and titles, never another office or medical reason",
+      "status": "passed",
+      "durationMs": 2991.2708999999995
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-data.test.js",
+      "title": "[N10] the catalogue is reproducible, distinct, non-sequential and complete apart from deliberate ICID gaps",
+      "fullName": "[N10] the catalogue is reproducible, distinct, non-sequential and complete apart from deliberate ICID gaps",
+      "status": "passed",
+      "durationMs": 515.8085000000001
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-data.test.js",
+      "title": "[D01] the source-defined standard clock is approved by a different user and ends exactly receipt plus 14 calendar days",
+      "fullName": "[D01] the source-defined standard clock is approved by a different user and ends exactly receipt plus 14 calendar days",
+      "status": "passed",
+      "durationMs": 1700.2732999999998
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-data.test.js",
+      "title": "[D02] near-due starts at precisely 72 hours remaining and never earlier",
+      "fullName": "[D02] near-due starts at precisely 72 hours remaining and never earlier",
+      "status": "passed",
+      "durationMs": 25.819499999999607
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-data.test.js",
+      "title": "[D03] real monitoring records overdue and escalation at their thresholds and retry creates no duplicate in-app notices",
+      "fullName": "[D03] real monitoring records overdue and escalation at their thresholds and retry creates no duplicate in-app notices",
+      "status": "passed",
+      "durationMs": 1349.157000000001
+    },
+    {
+      "suite": "server",
+      "file": "global-jury-data.test.js",
+      "title": "[D05] production never selects the demonstration SLA or invents a clock for a missing policy",
+      "fullName": "[D05] production never selects the demonstration SLA or invents a clock for a missing policy",
+      "status": "passed",
+      "durationMs": 1178.0591999999997
+    },
+    {
+      "suite": "server",
+      "file": "jury91-release.test.js",
+      "title": "[A-N63] a real own-case receipt contains the QR SVG and authenticated tracking link, while another reporter gets 404",
+      "fullName": "[A-N63] a real own-case receipt contains the QR SVG and authenticated tracking link, while another reporter gets 404",
+      "status": "passed",
+      "durationMs": 12240.477700000001
+    },
+    {
+      "suite": "server",
+      "file": "jury91-release.test.js",
+      "title": "[S02] transfer history authorizes its case before reading and audits indistinguishable 404 denials",
+      "fullName": "[S02] transfer history authorizes its case before reading and audits indistinguishable 404 denials",
+      "status": "passed",
+      "durationMs": 5206.092100000002
+    },
+    {
+      "suite": "server",
+      "file": "jury91-release.test.js",
+      "title": "[N19] the immutable routing decision retains the actual computed priority reason",
+      "fullName": "[N19] the immutable routing decision retains the actual computed priority reason",
+      "status": "passed",
+      "durationMs": 4496.9172
+    },
+    {
+      "suite": "server",
+      "file": "jury91-release.test.js",
+      "title": "[S03] transfer request and accept responses apply the officer case field policy",
+      "fullName": "[S03] transfer request and accept responses apply the officer case field policy",
+      "status": "passed",
+      "durationMs": 5824.782900000002
+    },
+    {
+      "suite": "server",
+      "file": "jury91-release.test.js",
+      "title": "[S03] transfer request and reject responses apply the officer case field policy",
+      "fullName": "[S03] transfer request and reject responses apply the officer case field policy",
+      "status": "passed",
+      "durationMs": 5755.813500000004
+    },
+    {
+      "suite": "server",
+      "file": "logger.test.js",
+      "title": "[S28] the logger never outputs the protected fields",
+      "fullName": "[S28] No complainant text in logs [S28] the logger never outputs the protected fields",
+      "status": "passed",
+      "durationMs": 6.836599999999635
+    },
+    {
+      "suite": "server",
+      "file": "logger.test.js",
+      "title": "[S28] long free-text strings are redacted",
+      "fullName": "[S28] No complainant text in logs [S28] long free-text strings are redacted",
+      "status": "passed",
+      "durationMs": 0.7723000000000866
+    },
+    {
+      "suite": "server",
+      "file": "logger.test.js",
+      "title": "[S28] sanitize handles nested objects",
+      "fullName": "[S28] No complainant text in logs [S28] sanitize handles nested objects",
+      "status": "passed",
+      "durationMs": 0.8683000000000902
+    },
+    {
+      "suite": "server",
+      "file": "logger.test.js",
+      "title": "[S28] sanitize handles arrays",
+      "fullName": "[S28] No complainant text in logs [S28] sanitize handles arrays",
+      "status": "passed",
+      "durationMs": 0.8976999999999862
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N01] AbcApaarSimulator checks current enrolment before OTP verification",
+      "fullName": "[N01] AbcApaarSimulator checks current enrolment before OTP verification",
+      "status": "passed",
+      "durationMs": 9475.944799999997
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N02] faculty needs current staff employment and institutional SSO",
+      "fullName": "[N02] faculty needs current staff employment and institutional SSO",
+      "status": "passed",
+      "durationMs": 1540.7301999999981
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N03] other authorized roles verify through SSO and cannot spoof a student role",
+      "fullName": "[N03] other authorized roles verify through SSO and cannot spoof a student role",
+      "status": "passed",
+      "durationMs": 1917.628499999999
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N04] OTP is hashed, user-scoped, expiring, single-use and attempt-limited",
+      "fullName": "[N04] OTP is hashed, user-scoped, expiring, single-use and attempt-limited",
+      "status": "passed",
+      "durationMs": 2188.819199999998
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N05] burst signals route to manual review and discard untrusted metadata",
+      "fullName": "[N05] burst signals route to manual review and discard untrusted metadata",
+      "status": "passed",
+      "durationMs": 2121.6804000000047
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N06] reporter ID is random, unique and independent of provider identity",
+      "fullName": "[N06] reporter ID is random, unique and independent of provider identity",
+      "status": "passed",
+      "durationMs": 3955.2332000000024
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N07] each verification and OTP step appends a consent visible to its owner",
+      "fullName": "[N07] each verification and OTP step appends a consent visible to its owner",
+      "status": "passed",
+      "durationMs": 2230.484199999999
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N08] manual review requires an officer and a reason and records the decision",
+      "fullName": "[N08] manual review requires an officer and a reason and records the decision",
+      "status": "passed",
+      "durationMs": 3290.0012999999963
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N68] Other Stakeholder subtype uses officer-assisted verification",
+      "fullName": "[N68] Other Stakeholder subtype uses officer-assisted verification",
+      "status": "passed",
+      "durationMs": 2315.021299999993
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N69] missing eligibility policy returns POLICY_NOT_CONFIGURED without blocking verification",
+      "fullName": "[N69] missing eligibility policy returns POLICY_NOT_CONFIGURED without blocking verification",
+      "status": "passed",
+      "durationMs": 8934.294900000008
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N79] system admin manages roles, sees denominated metrics and runs an audited BackupSimulator",
+      "fullName": "[N79] system admin manages roles, sees denominated metrics and runs an audited BackupSimulator",
+      "status": "passed",
+      "durationMs": 5161.678599999999
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S04] reporter schema is minimal and APIs reject unknown identity fields",
+      "fullName": "[S04] reporter schema is minimal and APIs reject unknown identity fields",
+      "status": "passed",
+      "durationMs": 1654.4360000000015
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S05] verification and OTP refuse missing consent",
+      "fullName": "[S05] verification and OTP refuse missing consent",
+      "status": "passed",
+      "durationMs": 2696.7416000000085
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S06] allowlisted officer serializer drops identity and unknown fields",
+      "fullName": "[S06] allowlisted officer serializer drops identity and unknown fields",
+      "status": "passed",
+      "durationMs": 2343.6907999999967
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S07] vault bytes are encrypted and ordinary APIs contain no vault payload",
+      "fullName": "[S07] vault bytes are encrypted and ordinary APIs contain no vault payload",
+      "status": "passed",
+      "durationMs": 3222.0620999999956
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S14] session alone and pending OTP do not create verified status",
+      "fullName": "[S14] session alone and pending OTP do not create verified status",
+      "status": "passed",
+      "durationMs": 1885.9394999999931
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S15] login, verification and OTP routes enforce configured DEMO limits",
+      "fullName": "[S15] login, verification and OTP routes enforce configured DEMO limits",
+      "status": "passed",
+      "durationMs": 1743.3582000000024
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S26] consent withdrawal appends a record and invokes unconfigured retention",
+      "fullName": "[S26] consent withdrawal appends a record and invokes unconfigured retention",
+      "status": "passed",
+      "durationMs": 2045.970100000006
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U05] student with no current enrolment has no verified reporter account",
+      "fullName": "[U05] student with no current enrolment has no verified reporter account",
+      "status": "passed",
+      "durationMs": 1528.3596000000107
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U06] inactive faculty is rejected with no verified employment status",
+      "fullName": "[U06] inactive faculty is rejected with no verified employment status",
+      "status": "passed",
+      "durationMs": 1466.3530000000028
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U07] second account for one verified person is blocked and flagged",
+      "fullName": "[U07] second account for one verified person is blocked and flagged",
+      "status": "passed",
+      "durationMs": 3592.275299999994
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U08] officer queues and reveal summaries use RP IDs and contain no identity fields",
+      "fullName": "[U08] officer queues and reveal summaries use RP IDs and contain no identity fields",
+      "status": "passed",
+      "durationMs": 2398.7155000000057
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U09] reveal requires purpose, different approver, requester scope, expiry and audit chain",
+      "fullName": "[U09] reveal requires purpose, different approver, requester scope, expiry and audit chain",
+      "status": "passed",
+      "durationMs": 5004.517399999997
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U10] withdrawal is owner-scoped, idempotent and visible without deleting history",
+      "fullName": "[U10] withdrawal is owner-scoped, idempotent and visible without deleting history",
+      "status": "passed",
+      "durationMs": 3132.6120999999985
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S28 regression] verification and approved reveals never write identity values to the safe logger",
+      "fullName": "[S28 regression] verification and approved reveals never write identity values to the safe logger",
+      "status": "passed",
+      "durationMs": 3327.8198999999877
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S07] missing VAULT_KEY fails closed and never uses a fallback encryption key",
+      "fullName": "[S07] missing VAULT_KEY fails closed and never uses a fallback encryption key",
+      "status": "passed",
+      "durationMs": 557.8736000000063
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S07] counterpart bureaus cannot request or reuse an owning-office reveal",
+      "fullName": "[S07] counterpart bureaus cannot request or reuse an owning-office reveal",
+      "status": "passed",
+      "durationMs": 2739.917200000011
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[U07] simultaneous OTP claims for the same person yield exactly one verified account",
+      "fullName": "[U07] simultaneous OTP claims for the same person yield exactly one verified account",
+      "status": "passed",
+      "durationMs": 2281.7921999999962
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N05] shared devices and repeated verification attempts require human review",
+      "fullName": "[N05] shared devices and repeated verification attempts require human review",
+      "status": "passed",
+      "durationMs": 2452.869100000011
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N04] wrong OTP attempts exhaust the configured allowance and cannot be replayed by another account",
+      "fullName": "[N04] wrong OTP attempts exhaust the configured allowance and cannot be replayed by another account",
+      "status": "passed",
+      "durationMs": 1903.2671999999875
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[N68] manual verification cannot create a second claim for the same synthetic person",
+      "fullName": "[N68] manual verification cannot create a second claim for the same synthetic person",
+      "status": "passed",
+      "durationMs": 2846.870900000009
+    },
+    {
+      "suite": "server",
+      "file": "s1a-identity.test.js",
+      "title": "[S26] withdrawing verification consent invalidates an outstanding OTP and blocks reveal",
+      "fullName": "[S26] withdrawing verification consent invalidates an outstanding OTP and blocks reveal",
+      "status": "passed",
+      "durationMs": 1565.6414000000223
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[U11] form validation, preview, and edit-before-confirm work; bad uploads are rejected",
+      "fullName": "S1b: Intake, Master Cases & Document Security [U11] form validation, preview, and edit-before-confirm work; bad uploads are rejected",
+      "status": "passed",
+      "durationMs": 11756.127799999998
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[U12] master case ID remains unchanged across operations",
+      "fullName": "S1b: Intake, Master Cases & Document Security [U12] master case ID remains unchanged across operations",
+      "status": "passed",
+      "durationMs": 3089.5329999999994
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[U13] external reference preserved and duplicate registration blocked",
+      "fullName": "S1b: Intake, Master Cases & Document Security [U13] external reference preserved and duplicate registration blocked",
+      "status": "passed",
+      "durationMs": 3558.3788999999997
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[N13] grievance portal guided fields and preview confirmation",
+      "fullName": "S1b: Intake, Master Cases & Document Security [N13] grievance portal guided fields and preview confirmation",
+      "status": "passed",
+      "durationMs": 3355.178500000002
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[N14] master case ID generation and external ref preservation",
+      "fullName": "S1b: Intake, Master Cases & Document Security [N14] master case ID generation and external ref preservation",
+      "status": "passed",
+      "durationMs": 3141.2043000000012
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[N15] web portal grievance intake submission",
+      "fullName": "S1b: Intake, Master Cases & Document Security [N15] web portal grievance intake submission",
+      "status": "passed",
+      "durationMs": 2921.0387999999984
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[N31] encrypted document storage with malware scan",
+      "fullName": "S1b: Intake, Master Cases & Document Security [N31] encrypted document storage with malware scan",
+      "status": "passed",
+      "durationMs": 2699.217700000001
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[A-N52] hidden-data scrubber strips metadata and seals original",
+      "fullName": "S1b: Intake, Master Cases & Document Security [A-N52] hidden-data scrubber strips metadata and seals original",
+      "status": "passed",
+      "durationMs": 2634.155300000006
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[A-N67] multilingual complaints detected locally without cloud translation",
+      "fullName": "S1b: Intake, Master Cases & Document Security [A-N67] multilingual complaints detected locally without cloud translation",
+      "status": "passed",
+      "durationMs": 2349.179799999998
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S03] field-level ABAC filters restricted fields",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S03] field-level ABAC filters restricted fields",
+      "status": "passed",
+      "durationMs": 2486.135900000001
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S10] document download requires case authorization",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S10] document download requires case authorization",
+      "status": "passed",
+      "durationMs": 3380.5366000000067
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S11] downloads are server-proxied without exposing storage keys",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S11] downloads are server-proxied without exposing storage keys",
+      "status": "passed",
+      "durationMs": 2606.553700000004
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S12] upload validation enforces types, sizes and malware check",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S12] upload validation enforces types, sizes and malware check",
+      "status": "passed",
+      "durationMs": 2341.3155000000042
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S21] IDOR denied: complainant sees own cases only",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S21] IDOR denied: complainant sees own cases only",
+      "status": "passed",
+      "durationMs": 5563.253100000002
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S02] reveal scope follows case access",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S02] reveal scope follows case access",
+      "status": "passed",
+      "durationMs": 3167.338299999996
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[N05] burst submission records fraud signal without rejecting grievance",
+      "fullName": "S1b: Intake, Master Cases & Document Security [N05] burst submission records fraud signal without rejecting grievance",
+      "status": "passed",
+      "durationMs": 2847.6659
+    },
+    {
+      "suite": "server",
+      "file": "s1b-intake-cases.test.js",
+      "title": "[S04/S21] no case response contains userId to any role",
+      "fullName": "S1b: Intake, Master Cases & Document Security [S04/S21] no case response contains userId to any role",
+      "status": "passed",
+      "durationMs": 2992.9683999999907
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[U01] PID lookup returns the profile, including ICID when available",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [U01] PID lookup returns the profile, including ICID when available",
+      "status": "passed",
+      "durationMs": 6608.9754
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[U02] ICID search resolves to the PID; ICID alone never links institutions",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [U02] ICID search resolves to the PID; ICID alone never links institutions",
+      "status": "passed",
+      "durationMs": 810.5859999999993
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[U03] PID and ICID disagreement goes to identity review, not auto-resolved",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [U03] PID and ICID disagreement goes to identity review, not auto-resolved",
+      "status": "passed",
+      "durationMs": 455.2008999999998
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[U04] Missing ICID shows \"not available\"; case creation still works",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [U04] Missing ICID shows \"not available\"; case creation still works",
+      "status": "passed",
+      "durationMs": 1189.4244999999992
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[N09] ICID mapping resolves to PID and disagreement goes to review",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [N09] ICID mapping resolves to PID and disagreement goes to review",
+      "status": "passed",
+      "durationMs": 828.1242000000002
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[N10] master registry lookup returns profile and UNKNOWN when offline",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [N10] master registry lookup returns profile and UNKNOWN when offline",
+      "status": "passed",
+      "durationMs": 1147.7019999999993
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[N11] six-region classification and reviewer reclassification",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [N11] six-region classification and reviewer reclassification",
+      "status": "passed",
+      "durationMs": 1078.0758000000023
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[N12] institution 360 shows attention indicators and opaque counterpart metadata",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [N12] institution 360 shows attention indicators and opaque counterpart metadata",
+      "status": "passed",
+      "durationMs": 879.2255000000005
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[F01] PID exact match only, never fuzzy-linked",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [F01] PID exact match only, never fuzzy-linked",
+      "status": "passed",
+      "durationMs": 929.8589000000029
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[F02] ambiguous campuses route to review",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [F02] ambiguous campuses route to review",
+      "status": "passed",
+      "durationMs": 811.1846000000005
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[F03] verified aliases displayed separately",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [F03] verified aliases displayed separately",
+      "status": "passed",
+      "durationMs": 737.1906999999992
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[F04] institution 360 composite view",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [F04] institution 360 composite view",
+      "status": "passed",
+      "durationMs": 877.1032000000014
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[R32] global search accepts ICID as key",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [R32] global search accepts ICID as key",
+      "status": "passed",
+      "durationMs": 702.9429999999993
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[R50] regional officer scoped to delegated region",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [R50] regional officer scoped to delegated region",
+      "status": "passed",
+      "durationMs": 775.654599999998
+    },
+    {
+      "suite": "server",
+      "file": "s1b-registry-institutions.test.js",
+      "title": "[S02] RBAC enforces bureau and regional scoping",
+      "fullName": "S1b: Institutions, Registry & Regional Classification [S02] RBAC enforces bureau and regional scoping",
+      "status": "passed",
+      "durationMs": 1130.2782000000007
+    },
+    {
+      "suite": "server",
+      "file": "s2-bureaus.test.js",
+      "title": "[N73] bureaus and cells seeded as configurable units with officers",
+      "fullName": "S2: Bureaus and Cells Operational Units (N73) [N73] bureaus and cells seeded as configurable units with officers",
+      "status": "failed",
+      "durationMs": 206712.68800000002
+    },
+    {
+      "suite": "server",
+      "file": "s2-import.test.js",
+      "title": "[F15] import preview and dry-run validate externalRefs",
+      "fullName": "S2: External Imports & Idempotent Commit Engine (F15, F49) [F15] import preview and dry-run validate externalRefs",
+      "status": "passed",
+      "durationMs": 3811.7106999999996
+    },
+    {
+      "suite": "server",
+      "file": "s2-import.test.js",
+      "title": "[F49] import idempotent commit rejects duplicate externalRef",
+      "fullName": "S2: External Imports & Idempotent Commit Engine (F15, F49) [F49] import idempotent commit rejects duplicate externalRef",
+      "status": "passed",
+      "durationMs": 1821.0273000000016
+    },
+    {
+      "suite": "server",
+      "file": "s2-lifecycle.test.js",
+      "title": "[N28] nine statuses and F09 mapping; transferred case never reverts",
+      "fullName": "S2: Case Lifecycle & Complainant Transparency (N28) [N28] nine statuses and F09 mapping; transferred case never reverts",
+      "status": "passed",
+      "durationMs": 3492.0136999999995
+    },
+    {
+      "suite": "server",
+      "file": "s2-priority.test.js",
+      "title": "[N19] priority has visible reason and never score; sensitivity works locally",
+      "fullName": "S2: Risk, Priority & Sensitivity (N19, U18, U19) [N19] priority has visible reason and never score; sensitivity works locally",
+      "status": "passed",
+      "durationMs": 3016.090800000001
+    },
+    {
+      "suite": "server",
+      "file": "s2-priority.test.js",
+      "title": "[U18] sensitive category is flagged, human-confirmed, and restricted",
+      "fullName": "S2: Risk, Priority & Sensitivity (N19, U18, U19) [U18] sensitive category is flagged, human-confirmed, and restricted",
+      "status": "passed",
+      "durationMs": 5199.871299999999
+    },
+    {
+      "suite": "server",
+      "file": "s2-priority.test.js",
+      "title": "[U19] priority change alters clock via active rule version non-retroactively",
+      "fullName": "S2: Risk, Priority & Sensitivity (N19, U18, U19) [U19] priority change alters clock via active rule version non-retroactively",
+      "status": "passed",
+      "durationMs": 938.3734999999997
+    },
+    {
+      "suite": "server",
+      "file": "s2-routing.test.js",
+      "title": "[N18] every decision has primary, reason and ruleVersion; immutable",
+      "fullName": "S2: NEXUS ROUTE & Jurisdiction Routing (N18, U16, U17, F48, F56) [N18] every decision has primary, reason and ruleVersion; immutable",
+      "status": "passed",
+      "durationMs": 7060.8482
+    },
+    {
+      "suite": "server",
+      "file": "s2-routing.test.js",
+      "title": "[U16] routing returns primary, secondary and reason; ambiguous to triage",
+      "fullName": "S2: NEXUS ROUTE & Jurisdiction Routing (N18, U16, U17, F48, F56) [U16] routing returns primary, secondary and reason; ambiguous to triage",
+      "status": "passed",
+      "durationMs": 2274.8250000000007
+    },
+    {
+      "suite": "server",
+      "file": "s2-routing.test.js",
+      "title": "[U17] route override requires reason and records audit",
+      "fullName": "S2: NEXUS ROUTE & Jurisdiction Routing (N18, U16, U17, F48, F56) [U17] route override requires reason and records audit",
+      "status": "passed",
+      "durationMs": 2336.264000000003
+    },
+    {
+      "suite": "server",
+      "file": "s2-routing.test.js",
+      "title": "[F48] registry unavailable causes routing to flag manual review UNKNOWN",
+      "fullName": "S2: NEXUS ROUTE & Jurisdiction Routing (N18, U16, U17, F48, F56) [F48] registry unavailable causes routing to flag manual review UNKNOWN",
+      "status": "passed",
+      "durationMs": 1472.3746000000028
+    },
+    {
+      "suite": "server",
+      "file": "s2-routing.test.js",
+      "title": "[F56] registry down produces no zero values in routing",
+      "fullName": "S2: NEXUS ROUTE & Jurisdiction Routing (N18, U16, U17, F48, F56) [F56] registry down produces no zero values in routing",
+      "status": "passed",
+      "durationMs": 1442.5251000000026
+    },
+    {
+      "suite": "server",
+      "file": "s2-rulebook.test.js",
+      "title": "[N27] editing rule creates new version; APP_MODE=production cannot select DEMO-*",
+      "fullName": "S2: NEXUS RULEBOOK (N27, N78, N65, U29, S20) [N27] editing rule creates new version; APP_MODE=production cannot select DEMO-*",
+      "status": "passed",
+      "durationMs": 5197.133400000001
+    },
+    {
+      "suite": "server",
+      "file": "s2-rulebook.test.js",
+      "title": "[N78] overlap detection and closure requirements families loaded",
+      "fullName": "S2: NEXUS RULEBOOK (N27, N78, N65, U29, S20) [N78] overlap detection and closure requirements families loaded",
+      "status": "passed",
+      "durationMs": 2591.2731000000003
+    },
+    {
+      "suite": "server",
+      "file": "s2-rulebook.test.js",
+      "title": "[A-N65] what-if preview lists affected open cases and changes nothing",
+      "fullName": "S2: NEXUS RULEBOOK (N27, N78, N65, U29, S20) [A-N65] what-if preview lists affected open cases and changes nothing",
+      "status": "passed",
+      "durationMs": 2953.713899999999
+    },
+    {
+      "suite": "server",
+      "file": "s2-rulebook.test.js",
+      "title": "[U29] rulebook edit creates version with dry-run and two-step approval",
+      "fullName": "S2: NEXUS RULEBOOK (N27, N78, N65, U29, S20) [U29] rulebook edit creates version with dry-run and two-step approval",
+      "status": "passed",
+      "durationMs": 1872.645199999999
+    },
+    {
+      "suite": "server",
+      "file": "s2-rulebook.test.js",
+      "title": "[S20] approval of rulebook version by requester rejected with 403",
+      "fullName": "S2: NEXUS RULEBOOK (N27, N78, N65, U29, S20) [S20] approval of rulebook version by requester rejected with 403",
+      "status": "passed",
+      "durationMs": 1187.3560999999972
+    },
+    {
+      "suite": "server",
+      "file": "s2-security.test.js",
+      "title": "[S20] requester differs from approver on sensitive approvals",
+      "fullName": "S2: Security, Separation of Duties & Operational Integrity (S20, S25, S29) [S20] requester differs from approver on sensitive approvals",
+      "status": "passed",
+      "durationMs": 8494.949
+    },
+    {
+      "suite": "server",
+      "file": "s2-security.test.js",
+      "title": "[S25] institution_admin cannot read confirmed sensitive case narrative/docs",
+      "fullName": "S2: Security, Separation of Duties & Operational Integrity (S20, S25, S29) [S25] institution_admin cannot read confirmed sensitive case narrative/docs",
+      "status": "passed",
+      "durationMs": 3606.4141999999974
+    },
+    {
+      "suite": "server",
+      "file": "s2-security.test.js",
+      "title": "[S29] backup and restore into _demo; import replay creates no duplicates",
+      "fullName": "S2: Security, Separation of Duties & Operational Integrity (S20, S25, S29) [S29] backup and restore into _demo; import replay creates no duplicates",
+      "status": "passed",
+      "durationMs": 2061.3918999999987
+    },
+    {
+      "suite": "server",
+      "file": "s3-actions-fieldwork.test.js",
+      "title": "[N72] Process the Complaint with role-specific officer actions (PGRC, RB, other bureaus)",
+      "fullName": "S3: Officer Actions & Field Verification (N72, N74) [N72] Process the Complaint with role-specific officer actions (PGRC, RB, other bureaus)",
+      "status": "passed",
+      "durationMs": 5652.0415
+    },
+    {
+      "suite": "server",
+      "file": "s3-actions-fieldwork.test.js",
+      "title": "[N74] Regional Office field verification (inspections / site verification, field documents)",
+      "fullName": "S3: Officer Actions & Field Verification (N72, N74) [N74] Regional Office field verification (inspections / site verification, field documents)",
+      "status": "passed",
+      "durationMs": 1816.7140999999992
+    },
+    {
+      "suite": "server",
+      "file": "s3-insider-absence.test.js",
+      "title": "[A-N54] repeated reveal requests and bulk case opening raise a supervisor alert with the rule ID and counts, and never block the officer",
+      "fullName": "S3: Insider Alerts & Absence-Aware Ownership (A-N54, A-N60) [A-N54] repeated reveal requests and bulk case opening raise a supervisor alert with the rule ID and counts, and never block the officer",
+      "status": "passed",
+      "durationMs": 4789.755899999999
+    },
+    {
+      "suite": "server",
+      "file": "s3-insider-absence.test.js",
+      "title": "[A-N60] marking leave with an owned open case is refused and lists the case; after a TRACE handover it succeeds",
+      "fullName": "S3: Insider Alerts & Absence-Aware Ownership (A-N54, A-N60) [A-N60] marking leave with an owned open case is refused and lists the case; after a TRACE handover it succeeds",
+      "status": "passed",
+      "durationMs": 2271.759900000001
+    },
+    {
+      "suite": "server",
+      "file": "s3-queries.test.js",
+      "title": "[N70] a query and its reply are logged with times; the institution admin never sees queries addressed to the complainant",
+      "fullName": "S3: Query and Response Loop (N70) [N70] a query and its reply are logged with times; the institution admin never sees queries addressed to the complainant",
+      "status": "passed",
+      "durationMs": 4578.3551
+    },
+    {
+      "suite": "server",
+      "file": "s3-sync.test.js",
+      "title": "[N21] completing every task leaves the case status unchanged; a conflicting instruction shows S4's REVIEW result and can still be recorded",
+      "fullName": "S3: NEXUS SYNC 2.0 (N21, N75, S17, S18, S24, U23) [N21] completing every task leaves the case status unchanged; a conflicting instruction shows S4's REVIEW result and can still be recorded",
+      "status": "passed",
+      "durationMs": 21467.5892
+    },
+    {
+      "suite": "server",
+      "file": "s3-sync.test.js",
+      "title": "[N75] the SYNC steps \"Agree on Next Steps (where applicable)\" and \"Each Unit Continues Its Assigned Work\": an agreement record (who agreed, what, when) and each unit keeps its own tasks and ownership",
+      "fullName": "S3: NEXUS SYNC 2.0 (N21, N75, S17, S18, S24, U23) [N75] the SYNC steps \"Agree on Next Steps (where applicable)\" and \"Each Unit Continues Its Assigned Work\": an agreement record (who agreed, what, when) and each unit keeps its own tasks and ownership",
+      "status": "passed",
+      "durationMs": 3264.2474
+    },
+    {
+      "suite": "server",
+      "file": "s3-sync.test.js",
+      "title": "[S17] the counterpart bureau's notice contains no narrative, document, reporterId or complainant field",
+      "fullName": "S3: NEXUS SYNC 2.0 (N21, N75, S17, S18, S24, U23) [S17] the counterpart bureau's notice contains no narrative, document, reporterId or complainant field",
+      "status": "passed",
+      "durationMs": 4698.744600000005
+    },
+    {
+      "suite": "server",
+      "file": "s3-sync.test.js",
+      "title": "[S18] a grant without purpose is 400; after expiry the document is refused and the refusal is audited; revocation works",
+      "fullName": "S3: NEXUS SYNC 2.0 (N21, N75, S17, S18, S24, U23) [S18] a grant without purpose is 400; after expiry the document is refused and the refusal is audited; revocation works",
+      "status": "passed",
+      "durationMs": 1023.3669999999984
+    },
+    {
+      "suite": "server",
+      "file": "s3-sync.test.js",
+      "title": "[U23] and [S24] every complainant-facing and institution-admin response is scanned and contains no internal note text or note IDs",
+      "fullName": "S3: NEXUS SYNC 2.0 (N21, N75, S17, S18, S24, U23) [U23] and [S24] every complainant-facing and institution-admin response is scanned and contains no internal note text or note IDs",
+      "status": "passed",
+      "durationMs": 1279.9536999999982
+    },
+    {
+      "suite": "server",
+      "file": "s3-trace.test.js",
+      "title": "[U20] an unacknowledged transfer escalates after exactly 2 business days (test across a weekend with a fake clock), the case does not move, and the sender stays the named accountable owner throughout",
+      "fullName": "S3: NEXUS TRACE & Ownership Handover (N20, U20, U21, U22) [U20] an unacknowledged transfer escalates after exactly 2 business days (test across a weekend with a fake clock), the case does not move, and the sender stays the named accountable owner throughout",
+      "status": "failed",
+      "durationMs": 206237.26090000002
+    },
+    {
+      "suite": "server",
+      "file": "s3-trace.test.js",
+      "title": "[N20] an invariant test: after every step of request, accept, reject and escalate, the case has exactly one accountable owner or one open transfer with a named sender; the Master Case ID never changes",
+      "fullName": "S3: NEXUS TRACE & Ownership Handover (N20, U20, U21, U22) [N20] an invariant test: after every step of request, accept, reject and escalate, the case has exactly one accountable owner or one open transfer with a named sender; the Master Case ID never changes",
+      "status": "passed",
+      "durationMs": 3151.9144000000088
+    },
+    {
+      "suite": "server",
+      "file": "s3-trace.test.js",
+      "title": "[U21] rejection without a reason is 400; with a reason the case is back in the sender's queue and nothing else changed",
+      "fullName": "S3: NEXUS TRACE & Ownership Handover (N20, U20, U21, U22) [U21] rejection without a reason is 400; with a reason the case is back in the sender's queue and nothing else changed",
+      "status": "passed",
+      "durationMs": 1449.2229999999981
+    },
+    {
+      "suite": "server",
+      "file": "s3-trace.test.js",
+      "title": "[U22] after any transfer the lifecycle can never return to Registered/Submitted (try every path)",
+      "fullName": "S3: NEXUS TRACE & Ownership Handover (N20, U20, U21, U22) [U22] after any transfer the lifecycle can never return to Registered/Submitted (try every path)",
+      "status": "passed",
+      "durationMs": 2658.2919999999867
+    },
+    {
+      "suite": "server",
+      "file": "s3-trace.test.js",
+      "title": "[S28 regression] TRACE, SYNC and queries never write complaint text or identity to the logger or the communication_log",
+      "fullName": "S3: NEXUS TRACE & Ownership Handover (N20, U20, U21, U22) [S28 regression] TRACE, SYNC and queries never write complaint text or identity to the logger or the communication_log",
+      "status": "passed",
+      "durationMs": 1668.3393000000215
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[S23] a third-party match reveals only the generic notice in JSON and persisted hints",
+      "fullName": "[S23] a third-party match reveals only the generic notice in JSON and persisted hints",
+      "status": "passed",
+      "durationMs": 7237.256599999999
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[U14] own earlier cases explain similarity and continue, view and cancel choices are logged",
+      "fullName": "[U14] own earlier cases explain similarity and continue, view and cancel choices are logged",
+      "status": "passed",
+      "durationMs": 3244.4040999999997
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[N16] similar and genuinely different drafts both submit independently of PREVENT advice",
+      "fullName": "[N16] similar and genuinely different drafts both submit independently of PREVENT advice",
+      "status": "passed",
+      "durationMs": 3365.41
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[N17] repeated document request, cross-bureau overlap and opposing instructions give advisory REVIEW",
+      "fullName": "[N17] repeated document request, cross-bureau overlap and opposing instructions give advisory REVIEW",
+      "status": "passed",
+      "durationMs": 2688.2096999999994
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[N17] missing and stale feeds give UNKNOWN, a clean fresh feed CLEAR, and every result permits proceeding",
+      "fullName": "[N17] missing and stale feeds give UNKNOWN, a clean fresh feed CLEAR, and every result permits proceeding",
+      "status": "passed",
+      "durationMs": 2766.5660000000025
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[N17] production action check is UNKNOWN and its Proceed endpoint still works",
+      "fullName": "[N17] production action check is UNKNOWN and its Proceed endpoint still works",
+      "status": "passed",
+      "durationMs": 2972.5483999999997
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[N17] overlap and alert responses expose accessible cases only and count restricted entries",
+      "fullName": "[N17] overlap and alert responses expose accessible cases only and count restricted entries",
+      "status": "passed",
+      "durationMs": 3247.0973999999987
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[A-N59] verified institution helper returns only the encrypted evidence PID, never identity",
+      "fullName": "[A-N59] verified institution helper returns only the encrypted evidence PID, never identity",
+      "status": "passed",
+      "durationMs": 2318.8381999999983
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[A-N59] fourteen unique co-signs leave priority, routing and PREVENT byte-identical; duplicates fail and officers see only count",
+      "fullName": "[A-N59] fourteen unique co-signs leave priority, routing and PREVENT byte-identical; duplicates fail and officers see only count",
+      "status": "passed",
+      "durationMs": 6795.4355
+    },
+    {
+      "suite": "server",
+      "file": "s4-api.test.js",
+      "title": "[S28] similarity and action checks never send complaint text or action details to the logger",
+      "fullName": "[S28] similarity and action checks never send complaint text or action details to the logger",
+      "status": "failed",
+      "durationMs": 627577.1714
+    },
+    {
+      "suite": "server",
+      "file": "s4-matcher.test.js",
+      "title": "[N16] seven weights are exact and every signal explains its contribution",
+      "fullName": "[N16] seven weights are exact and every signal explains its contribution",
+      "status": "passed",
+      "durationMs": 816.8368
+    },
+    {
+      "suite": "server",
+      "file": "s4-matcher.test.js",
+      "title": "[N16] different PIDs never match and an ICID conflict forces REVIEW",
+      "fullName": "[N16] different PIDs never match and an ICID conflict forces REVIEW",
+      "status": "passed",
+      "durationMs": 291.7645999999995
+    },
+    {
+      "suite": "server",
+      "file": "s4-matcher.test.js",
+      "title": "[N16] Hindi and Tamil semantic evidence is local with all network calls forbidden",
+      "fullName": "[N16] Hindi and Tamil semantic evidence is local with all network calls forbidden",
+      "status": "passed",
+      "durationMs": 173.98299999999927
+    },
+    {
+      "suite": "server",
+      "file": "s4-matcher.test.js",
+      "title": "[N17] production without approved RuleBook policy is UNKNOWN, never a DEMO rule",
+      "fullName": "[N17] production without approved RuleBook policy is UNKNOWN, never a DEMO rule",
+      "status": "passed",
+      "durationMs": 78.77430000000004
+    },
+    {
+      "suite": "server",
+      "file": "s4-matcher.test.js",
+      "title": "[N17] default app mode uses the same demo default as S0 configuration",
+      "fullName": "[N17] default app mode uses the same demo default as S0 configuration",
+      "status": "passed",
+      "durationMs": 100.64990000000034
+    },
+    {
+      "suite": "server",
+      "file": "s5-closure.test.js",
+      "title": "[N22] proposal records action records, hashed evidence and a packet hash; approval by a different officer; a human closes; the system never closes on its own",
+      "fullName": "S5 NEXUS PROOF closure gate (N22, N76, U24, U25, F26) [N22] proposal records action records, hashed evidence and a packet hash; approval by a different officer; a human closes; the system never closes on its own",
+      "status": "passed",
+      "durationMs": 15990.320300000001
+    },
+    {
+      "suite": "server",
+      "file": "s5-closure.test.js",
+      "title": "[U24] closure is blocked until every task is complete, every transfer acknowledged, evidence attached and approval exists; no other route can set Closed",
+      "fullName": "S5 NEXUS PROOF closure gate (N22, N76, U24, U25, F26) [U24] closure is blocked until every task is complete, every transfer acknowledged, evidence attached and approval exists; no other route can set Closed",
+      "status": "passed",
+      "durationMs": 3780.3204000000005
+    },
+    {
+      "suite": "server",
+      "file": "s5-closure.test.js",
+      "title": "[U25] the closure approver must differ from the proposer",
+      "fullName": "S5 NEXUS PROOF closure gate (N22, N76, U24, U25, F26) [U25] the closure approver must differ from the proposer",
+      "status": "passed",
+      "durationMs": 3379.0362000000023
+    },
+    {
+      "suite": "server",
+      "file": "s5-closure.test.js",
+      "title": "[N76] a closure reason is required at PROOF, and closing marks the case as disposed",
+      "fullName": "S5 NEXUS PROOF closure gate (N22, N76, U24, U25, F26) [N76] a closure reason is required at PROOF, and closing marks the case as disposed",
+      "status": "passed",
+      "durationMs": 3262.311300000001
+    },
+    {
+      "suite": "server",
+      "file": "s5-closure.test.js",
+      "title": "[F26] (hint only) closure needs evidence and action records: no action records refuses the proposal, no evidence blocks closing",
+      "fullName": "S5 NEXUS PROOF closure gate (N22, N76, U24, U25, F26) [F26] (hint only) closure needs evidence and action records: no action records refuses the proposal, no evidence blocks closing",
+      "status": "passed",
+      "durationMs": 3298.4089999999997
+    },
+    {
+      "suite": "server",
+      "file": "s5-feedback-appeals.test.js",
+      "title": "[N23] feedback is collected after resolution is proposed, shown to reviewers, kept out of audit meta, and only from the owning complainant",
+      "fullName": "S5 complainant feedback (N23, U26) [N23] feedback is collected after resolution is proposed, shown to reviewers, kept out of audit meta, and only from the owning complainant",
+      "status": "passed",
+      "durationMs": 17285.6247
+    },
+    {
+      "suite": "server",
+      "file": "s5-feedback-appeals.test.js",
+      "title": "[U26] feedback is stored and does not change status",
+      "fullName": "S5 complainant feedback (N23, U26) [U26] feedback is stored and does not change status",
+      "status": "passed",
+      "durationMs": 5107.0206000000035
+    },
+    {
+      "suite": "server",
+      "file": "s5-feedback-appeals.test.js",
+      "title": "[N25] Closed -> Appeal Filed -> Under Appeal Review -> Upheld / Modified / Remanded, levels 1 to n from the RuleBook, extra evidence accepted",
+      "fullName": "S5 appeal and review (N25, U28) [N25] Closed -> Appeal Filed -> Under Appeal Review -> Upheld / Modified / Remanded, levels 1 to n from the RuleBook, extra evidence accepted",
+      "status": "passed",
+      "durationMs": 8890.8315
+    },
+    {
+      "suite": "server",
+      "file": "s5-feedback-appeals.test.js",
+      "title": "[U28] an appeal adds events, leaves the original closure and earlier events intact, and needs a reviewer other than the original resolver",
+      "fullName": "S5 appeal and review (N25, U28) [U28] an appeal adds events, leaves the original closure and earlier events intact, and needs a reviewer other than the original resolver",
+      "status": "passed",
+      "durationMs": 6511.552199999998
+    },
+    {
+      "suite": "server",
+      "file": "s5-impact.test.js",
+      "title": "[N26] resolution time, duplicate actions (flagged never counted as avoided), bureau- and region-wise insights and cited recommendations, all labelled synthetic",
+      "fullName": "S5 NEXUS IMPACT (N26, N77, U30, A-N55) [N26] resolution time, duplicate actions (flagged never counted as avoided), bureau- and region-wise insights and cited recommendations, all labelled synthetic",
+      "status": "passed",
+      "durationMs": 18772.0308
+    },
+    {
+      "suite": "server",
+      "file": "s5-impact.test.js",
+      "title": "[N77] the nine IMPACT management tiles from workflow step 13",
+      "fullName": "S5 NEXUS IMPACT (N26, N77, U30, A-N55) [N77] the nine IMPACT management tiles from workflow step 13",
+      "status": "passed",
+      "durationMs": 4092.0516000000025
+    },
+    {
+      "suite": "server",
+      "file": "s5-impact.test.js",
+      "title": "[U30] the IMPACT report downloads with denominators and the synthetic label; recommendations cite rows that are in the report",
+      "fullName": "S5 NEXUS IMPACT (N26, N77, U30, A-N55) [U30] the IMPACT report downloads with denominators and the synthetic label; recommendations cite rows that are in the report",
+      "status": "passed",
+      "durationMs": 3674.039100000002
+    },
+    {
+      "suite": "server",
+      "file": "s5-impact.test.js",
+      "title": "[A-N55] every S5 export has a visible exported-by footer and an invisible per-export code stored in export_log, with no reporter identity",
+      "fullName": "S5 NEXUS IMPACT (N26, N77, U30, A-N55) [A-N55] every S5 export has a visible exported-by footer and an invisible per-export code stored in export_log, with no reporter identity",
+      "status": "passed",
+      "durationMs": 7149.840099999998
+    },
+    {
+      "suite": "server",
+      "file": "s5-notices.test.js",
+      "title": "[N35] every status change sends one minimal email and one SMS notice through the simulators",
+      "fullName": "S5 minimal status notices (N35, S27) [N35] every status change sends one minimal email and one SMS notice through the simulators",
+      "status": "passed",
+      "durationMs": 8263.2383
+    },
+    {
+      "suite": "server",
+      "file": "s5-notices.test.js",
+      "title": "[S27] the outbox is idempotent and email and SMS carry no narrative or PII",
+      "fullName": "S5 minimal status notices (N35, S27) [S27] the outbox is idempotent and email and SMS carry no narrative or PII",
+      "status": "passed",
+      "durationMs": 4825.906999999999
+    },
+    {
+      "suite": "server",
+      "file": "s5-notices.test.js",
+      "title": "[A-N51] only complainants with a recorded consent for this purpose are re-checked; a suspension sends a private advisory alert to the Competent Authority that names no guilt",
+      "fullName": "S5 Retaliation Watch (A-N51, F52) [A-N51] only complainants with a recorded consent for this purpose are re-checked; a suspension sends a private advisory alert to the Competent Authority that names no guilt",
+      "status": "passed",
+      "durationMs": 10258.936300000001
+    },
+    {
+      "suite": "server",
+      "file": "s5-notices.test.js",
+      "title": "[F52] (hint only) withdrawing consent stops the watch at once; retention returns POLICY_NOT_CONFIGURED",
+      "fullName": "S5 Retaliation Watch (A-N51, F52) [F52] (hint only) withdrawing consent stops the watch at once; retention returns POLICY_NOT_CONFIGURED",
+      "status": "passed",
+      "durationMs": 5411.9411
+    },
+    {
+      "suite": "server",
+      "file": "s5-rescue.test.js",
+      "title": "[U27] RESCUE fires on three transfers or a 7-day stall, once per case (deduplicated)",
+      "fullName": "S5 NEXUS RESCUE (N24, U27, F43) [U27] RESCUE fires on three transfers or a 7-day stall, once per case (deduplicated)",
+      "status": "passed",
+      "durationMs": 12555.6901
+    },
+    {
+      "suite": "server",
+      "file": "s5-rescue.test.js",
+      "title": "[N24] all four DEMO-RESCUE-v1 triggers alert a supervisor with a reason for delay and a suggested next action that point to work items",
+      "fullName": "S5 NEXUS RESCUE (N24, U27, F43) [N24] all four DEMO-RESCUE-v1 triggers alert a supervisor with a reason for delay and a suggested next action that point to work items",
+      "status": "passed",
+      "durationMs": 5775.958899999998
+    },
+    {
+      "suite": "server",
+      "file": "s5-rescue.test.js",
+      "title": "[F43] (hint only) a late-arriving feed never counts as officer delay",
+      "fullName": "S5 NEXUS RESCUE (N24, U27, F43) [F43] (hint only) a late-arriving feed never counts as officer delay",
+      "status": "passed",
+      "durationMs": 4064.045199999997
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[N29] /track/:caseId shows exact status, owner as office and role, status history, SLA summary, closure reason and appeal rule state; no internal notes",
+      "fullName": "S5 complainant workspace (N29, U31, A-N63) [N29] /track/:caseId shows exact status, owner as office and role, status history, SLA summary, closure reason and appeal rule state; no internal notes",
+      "status": "passed",
+      "durationMs": 10276.4214
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[U31] a complainant sees only own cases; IDOR attempts by Master Case ID or _id are denied and audited",
+      "fullName": "S5 complainant workspace (N29, U31, A-N63) [U31] a complainant sees only own cases; IDOR attempts by Master Case ID or _id are denied and audited",
+      "status": "passed",
+      "durationMs": 4407.460199999998
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[A-N63] the case receipt carries the Master Case ID, status history and a link or QR to /track/:caseId, with no internal notes or narrative",
+      "fullName": "S5 complainant workspace (N29, U31, A-N63) [A-N63] the case receipt carries the Master Case ID, status history and a link or QR to /track/:caseId, with no internal notes or narrative",
+      "status": "passed",
+      "durationMs": 4083.2875999999997
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[N30] the institution admin sees only cases about their own institution, in the redacted institution-facing form, and requests addressed to them",
+      "fullName": "S5 institution workspace (N30, N71, S22, U32, A-N62) [N30] the institution admin sees only cases about their own institution, in the redacted institution-facing form, and requests addressed to them",
+      "status": "passed",
+      "durationMs": 3855.891099999997
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[N71] the Institute Nodal Officer submits clarifications and documents, responds to AICTE queries and tracks institution-wise case status",
+      "fullName": "S5 institution workspace (N30, N71, S22, U32, A-N62) [N71] the Institute Nodal Officer submits clarifications and documents, responds to AICTE queries and tracks institution-wise case status",
+      "status": "passed",
+      "durationMs": 4052.2518999999957
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[A-N62] the redaction helper highlights names, roll numbers and phone numbers; the officer confirms each before the institution-facing form",
+      "fullName": "S5 institution workspace (N30, N71, S22, U32, A-N62) [A-N62] the redaction helper highlights names, roll numbers and phone numbers; the officer confirms each before the institution-facing form",
+      "status": "passed",
+      "durationMs": 6928.366900000001
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[S22] the institution admin never sees reporter identity, even for a confirmed-sensitive case",
+      "fullName": "S5 institution workspace (N30, N71, S22, U32, A-N62) [S22] the institution admin never sees reporter identity, even for a confirmed-sensitive case",
+      "status": "passed",
+      "durationMs": 3899.8169999999955
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[U32] the institution admin sees no reporter identity in any institution-workspace response",
+      "fullName": "S5 institution workspace (N30, N71, S22, U32, A-N62) [U32] the institution admin sees no reporter identity in any institution-workspace response",
+      "status": "passed",
+      "durationMs": 4399.0638000000035
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[S19] the Competent Authority workspace cannot bypass field ABAC: no narrative, reporter ID, vault identity or internal notes",
+      "fullName": "S5 Competent Authority workspace (N80, S19) [S19] the Competent Authority workspace cannot bypass field ABAC: no narrative, reporter ID, vault identity or internal notes",
+      "status": "passed",
+      "durationMs": 5339.998399999997
+    },
+    {
+      "suite": "server",
+      "file": "s5-workspaces.test.js",
+      "title": "[N80] Competent Authority members (Chairperson, Member Secretary, Authorized Senior Official) record final decisions that never close a case",
+      "fullName": "S5 Competent Authority workspace (N80, S19) [N80] Competent Authority members (Chairperson, Member Secretary, Authorized Senior Official) record final decisions that never close a case",
+      "status": "passed",
+      "durationMs": 5431.5861
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[U15] unverified email creates neither a case nor a draft and stores no sender/body in audit",
+      "fullName": "[U15] unverified email creates neither a case nor a draft and stores no sender/body in audit",
+      "status": "passed",
+      "durationMs": 7909.0019999999995
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[N15] verified email is an encrypted DRAFT until edited preview and explicit confirmation, replay stays one case",
+      "fullName": "[N15] verified email is an encrypted DRAFT until edited preview and explicit confirmation, replay stays one case",
+      "status": "passed",
+      "durationMs": 4511.465299999998
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[N15] CSV uses S2 preview, dry-run and idempotent commit with pseudonym and institution snapshots",
+      "fullName": "[N15] CSV uses S2 preview, dry-run and idempotent commit with pseudonym and institution snapshots",
+      "status": "passed",
+      "durationMs": 3977.3676000000014
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[N15] PID/ICID mismatch is quarantined, forbidden roles and production simulator writes are denied",
+      "fullName": "[N15] PID/ICID mismatch is quarantined, forbidden roles and production simulator writes are denied",
+      "status": "passed",
+      "durationMs": 3885.9033000000018
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[N32] AICTE and CPGRAMS adapter simulators expose snapshots and watermarks without external calls",
+      "fullName": "[N32] AICTE and CPGRAMS adapter simulators expose snapshots and watermarks without external calls",
+      "status": "passed",
+      "durationMs": 3260.9893999999986
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[N15] web API records PWA only for an explicit standalone signal, WEB otherwise",
+      "fullName": "[N15] web API records PWA only for an explicit standalone signal, WEB otherwise",
+      "status": "passed",
+      "durationMs": 3609.2918000000027
+    },
+    {
+      "suite": "server",
+      "file": "s6a-channels.test.js",
+      "title": "[A-N48] benchmark runs are scoped to supervisor and system_admin and retain real rule version and runtime",
+      "fullName": "[A-N48] benchmark runs are scoped to supervisor and system_admin and retain real rule version and runtime",
+      "status": "passed",
+      "durationMs": 5202.762999999999
+    },
+    {
+      "suite": "server",
+      "file": "s6a-integrity-benchmark.test.js",
+      "title": "[A-N57] daily write-once hashes match the independent anchor, change on a new day, and expose no audit payload",
+      "fullName": "[A-N57] daily write-once hashes match the independent anchor, change on a new day, and expose no audit payload",
+      "status": "passed",
+      "durationMs": 6870.5694
+    },
+    {
+      "suite": "server",
+      "file": "s6a-integrity-benchmark.test.js",
+      "title": "[A-N57] audit tampering is recorded unverified and recompute reports mismatch without rewriting history",
+      "fullName": "[A-N57] audit tampering is recorded unverified and recompute reports mismatch without rewriting history",
+      "status": "passed",
+      "durationMs": 262.9953000000005
+    },
+    {
+      "suite": "server",
+      "file": "s6a-integrity-benchmark.test.js",
+      "title": "[A-N57] fingerprint models refuse save updates, query updates, replacements, deletes and bulk mutations",
+      "fullName": "[A-N57] fingerprint models refuse save updates, query updates, replacements, deletes and bulk mutations",
+      "status": "passed",
+      "durationMs": 167.15549999999894
+    },
+    {
+      "suite": "server",
+      "file": "s6a-integrity-benchmark.test.js",
+      "title": "[A-N48] generated benchmark is deterministic, network-free and reports the actual confusion matrix with scope",
+      "fullName": "[A-N48] generated benchmark is deterministic, network-free and reports the actual confusion matrix with scope",
+      "status": "passed",
+      "durationMs": 861.1481000000003
+    },
+    {
+      "suite": "server",
+      "file": "s6a-integrity-benchmark.test.js",
+      "title": "[A-N48] unavailable matcher policy reports UNKNOWN with zero coverage and no invented accuracy",
+      "fullName": "[A-N48] unavailable matcher policy reports UNKNOWN with zero coverage and no invented accuracy",
+      "status": "passed",
+      "durationMs": 99.34040000000095
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[A-N47] every IMPACT count opens exactly the cases behind it, scoped by the viewer, showing nothing new",
+      "fullName": "S6b N47 click any number [A-N47] every IMPACT count opens exactly the cases behind it, scoped by the viewer, showing nothing new",
+      "status": "passed",
+      "durationMs": 12857.1681
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[N47] the drill-down is audited and an unknown row is refused rather than guessed",
+      "fullName": "S6b N47 click any number [N47] the drill-down is audited and an unknown row is refused rather than guessed",
+      "status": "passed",
+      "durationMs": 4903.117900000001
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[A-N50] two bureaus side by side with the PREVENT conflict point marked, read-only",
+      "fullName": "S6b N50 overlap timeline [A-N50] two bureaus side by side with the PREVENT conflict point marked, read-only",
+      "status": "passed",
+      "durationMs": 3814.762700000003
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[N50] other bureaus appear as opaque metadata and out-of-scope cases as restricted",
+      "fullName": "S6b N50 overlap timeline [N50] other bureaus appear as opaque metadata and out-of-scope cases as restricted",
+      "status": "passed",
+      "durationMs": 4254.020500000006
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[A-N61] the same issue rising across institutions in one region is flagged with cited cases, a denominator and the synthetic label",
+      "fullName": "S6b N61 cross-institution pattern alert [A-N61] the same issue rising across institutions in one region is flagged with cited cases, a denominator and the synthetic label",
+      "status": "passed",
+      "durationMs": 3751.751400000001
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[N61] no alert below the minimum, or when the issue is not rising; nothing about any case changes",
+      "fullName": "S6b N61 cross-institution pattern alert [N61] no alert below the minimum, or when the issue is not rising; nothing about any case changes",
+      "status": "passed",
+      "durationMs": 7539.023800000003
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[A-N46] one click resets demo data and returns a captioned tour of the two-bureau overlap scenario, with no manual database edits",
+      "fullName": "S6b N46 Judge Demo Mode [A-N46] one click resets demo data and returns a captioned tour of the two-bureau overlap scenario, with no manual database edits",
+      "status": "passed",
+      "durationMs": 9361.490900000004
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[N46] Judge Mode is hidden in production mode and refuses a non-demo database",
+      "fullName": "S6b N46 Judge Demo Mode [N46] Judge Mode is hidden in production mode and refuses a non-demo database",
+      "status": "passed",
+      "durationMs": 3327.6619999999966
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[F05] (graph evidence only) the institution graph links visible cases, owning bureaus and transfers, with restricted entries counted, never shown",
+      "fullName": "S6b graph, radar and safeguards (F05, E07, E09) [F05] (graph evidence only) the institution graph links visible cases, owning bureaus and transfers, with restricted entries counted, never shown",
+      "status": "passed",
+      "durationMs": 3599.6491000000024
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[E07] (hint only) the radar shows attention indicators as counts with reasons, never a score; UNKNOWN stays UNKNOWN",
+      "fullName": "S6b graph, radar and safeguards (F05, E07, E09) [E07] (hint only) the radar shows attention indicators as counts with reasons, never a score; UNKNOWN stays UNKNOWN",
+      "status": "passed",
+      "durationMs": 3366.84629999999
+    },
+    {
+      "suite": "server",
+      "file": "s6b-differentiators.test.js",
+      "title": "[E09] (hint only) IMPACT, drill-down and pattern alerts all carry the synthetic label, numerator/denominator/scope, flagged never counted as avoided, and cited rows",
+      "fullName": "S6b graph, radar and safeguards (F05, E07, E09) [E09] (hint only) IMPACT, drill-down and pattern alerts all carry the synthetic label, numerator/denominator/scope, flagged never counted as avoided, and cited rows",
+      "status": "passed",
+      "durationMs": 4683.649400000009
+    },
+    {
+      "suite": "server",
+      "file": "s7-judge.test.js",
+      "title": "[JUDGE] the judge script runs end to end from a fresh Judge Mode reset, three times in a row, without database edits",
+      "fullName": "[JUDGE] the judge script runs end to end from a fresh Judge Mode reset, three times in a row, without database edits",
+      "status": "passed",
+      "durationMs": 47653.367000000086
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] another complainant sees none of case A: no narrative, no internal note, no identity, no case ID",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] another complainant sees none of case A: no narrative, no internal note, no identity, no case ID",
+      "status": "passed",
+      "durationMs": 10526.0271
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] the owning complainant never sees internal notes or officer-only data",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] the owning complainant never sees internal notes or officer-only data",
+      "status": "passed",
+      "durationMs": 4852.4198
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] the institution admin never sees reporter identity, raw narratives or internal notes",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] the institution admin never sees reporter identity, raw narratives or internal notes",
+      "status": "passed",
+      "durationMs": 5474.9643
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] a bureau officer never sees another bureau's narrative or internal notes",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] a bureau officer never sees another bureau's narrative or internal notes",
+      "status": "passed",
+      "durationMs": 7296.951900000004
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] a regional officer never sees cases outside the delegated region",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] a regional officer never sees cases outside the delegated region",
+      "status": "passed",
+      "durationMs": 5096.480300000003
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] the Competent Authority gets no private narrative or reporter identity anywhere (D16, S19)",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] the Competent Authority gets no private narrative or reporter identity anywhere (D16, S19)",
+      "status": "passed",
+      "durationMs": 5359.2952000000005
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] supervisor, auditor and system admin never receive vault identity",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] supervisor, auditor and system admin never receive vault identity",
+      "status": "passed",
+      "durationMs": 9150.2641
+    },
+    {
+      "suite": "server",
+      "file": "s7-negative-roles.test.js",
+      "title": "[NEG] anonymous requests get nothing",
+      "fullName": "S7 negative-role sweep (critical if any leak) [NEG] anonymous requests get nothing",
+      "status": "passed",
+      "durationMs": 3598.042500000003
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N20] a transfer requested and accepted over HTTP records the sender and receiver from the session",
+      "fullName": "S3 fixes [N20] a transfer requested and accepted over HTTP records the sender and receiver from the session",
+      "status": "passed",
+      "durationMs": 9179.6613
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N70] queries and internal notes sent over HTTP record the officer from the session",
+      "fullName": "S3 fixes [N70] queries and internal notes sent over HTTP record the officer from the session",
+      "status": "passed",
+      "durationMs": 3759.646700000001
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N21] the S3 demo seed runs on a fresh database, so npm run reset completes",
+      "fullName": "S3 fixes [N21] the S3 demo seed runs on a fresh database, so npm run reset completes",
+      "status": "passed",
+      "durationMs": 3230.2257000000027
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N27] without an approved SLA rule no clock starts; in production DEMO SLA rules are not selected",
+      "fullName": "S2 fixes: a missing approved rule gives POLICY_NOT_CONFIGURED, never invented values [N27] without an approved SLA rule no clock starts; in production DEMO SLA rules are not selected",
+      "status": "passed",
+      "durationMs": 2863.313399999999
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N18] without an approved jurisdiction rule the case goes to manual review with POLICY_NOT_CONFIGURED, no default bureau",
+      "fullName": "S2 fixes: a missing approved rule gives POLICY_NOT_CONFIGURED, never invented values [N18] without an approved jurisdiction rule the case goes to manual review with POLICY_NOT_CONFIGURED, no default bureau",
+      "status": "passed",
+      "durationMs": 2846.5072
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N54] without an approved INSIDER rule no insider alert is raised from invented thresholds",
+      "fullName": "S2 fixes: a missing approved rule gives POLICY_NOT_CONFIGURED, never invented values [N54] without an approved INSIDER rule no insider alert is raised from invented thresholds",
+      "status": "passed",
+      "durationMs": 3128.115800000003
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N09] the institution-wise report has an ICID column: the active mapping, or \"not available\"",
+      "fullName": "SPEC 12.1 workspaces and the ICID column [N09] the institution-wise report has an ICID column: the active mapping, or \"not available\"",
+      "status": "passed",
+      "durationMs": 3556.4074000000037
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N28] the officer dashboard and /cases queue show my cases, tasks, SLA and actions in my scope only",
+      "fullName": "SPEC 12.1 workspaces and the ICID column [N28] the officer dashboard and /cases queue show my cases, tasks, SLA and actions in my scope only",
+      "status": "passed",
+      "durationMs": 3729.4112999999998
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[S09] the /audit trail lists every action with the chain check, for audit roles only, without meta payloads",
+      "fullName": "SPEC 12.1 workspaces and the ICID column [S09] the /audit trail lists every action with the chain check, for audit roles only, without meta payloads",
+      "status": "passed",
+      "durationMs": 6986.260399999999
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[N35] the notification centre shows each user only their own notices, with no narrative",
+      "fullName": "SPEC 12.1 workspaces and the ICID column [N35] the notification centre shows each user only their own notices, with no narrative",
+      "status": "passed",
+      "durationMs": 8435.005299999997
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[U12] the Master Case ID is unchanged after routing, transfer and appeal",
+      "fullName": "U12 end to end [U12] the Master Case ID is unchanged after routing, transfer and appeal",
+      "status": "passed",
+      "durationMs": 8753.4686
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[S07] a case closed in any status spelling is out of identity-reveal scope",
+      "fullName": "Jury-audit hardening [S07] a case closed in any status spelling is out of identity-reveal scope",
+      "status": "passed",
+      "durationMs": 3605.2271000000037
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[S16] state-changing requests from another site are refused (CSRF origin check); same-origin and non-browser clients pass",
+      "fullName": "Jury-audit hardening [S16] state-changing requests from another site are refused (CSRF origin check); same-origin and non-browser clients pass",
+      "status": "passed",
+      "durationMs": 4039.7238999999972
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[S16] local dev logins pass from any loopback origin (127.0.0.1, other Vite ports); production keeps the strict list",
+      "fullName": "Jury-audit hardening [S16] local dev logins pass from any loopback origin (127.0.0.1, other Vite ports); production keeps the strict list",
+      "status": "passed",
+      "durationMs": 4056.2121000000043
+    },
+    {
+      "suite": "server",
+      "file": "s7-release-fix.test.js",
+      "title": "[A-N48] the hard-case benchmark reports precision and recall per stratum: same college other issue, paraphrase, code-mixed, new detail",
+      "fullName": "Matcher hard cases (N48) [A-N48] the hard-case benchmark reports precision and recall per stratum: same college other issue, paraphrase, code-mixed, new detail",
+      "status": "passed",
+      "durationMs": 3953.3659000000043
+    },
+    {
+      "suite": "server",
+      "file": "s7-release.test.js",
+      "title": "[S08] stored documents and the identity vault hold no plaintext; deployment notes cover TLS, at-rest encryption and keys",
+      "fullName": "[S08] stored documents and the identity vault hold no plaintext; deployment notes cover TLS, at-rest encryption and keys",
+      "status": "passed",
+      "durationMs": 17827.935
+    },
+    {
+      "suite": "server",
+      "file": "s7-release.test.js",
+      "title": "[S13] the audit schedule exists and keeps the \"S34\" reference as written",
+      "fullName": "[S13] the audit schedule exists and keeps the \"S34\" reference as written",
+      "status": "passed",
+      "durationMs": 484.5100999999995
+    },
+    {
+      "suite": "server",
+      "file": "s7-release.test.js",
+      "title": "[S30] the threat model and penetration-test checklist cover every control S01 to S30",
+      "fullName": "[S30] the threat model and penetration-test checklist cover every control S01 to S30",
+      "status": "passed",
+      "durationMs": 384.8436999999976
+    },
+    {
+      "suite": "server",
+      "file": "s7-release.test.js",
+      "title": "[N34] the recurring security audit programme names owner, cadence, scope, method, evidence and findings handling",
+      "fullName": "[N34] the recurring security audit programme names owner, cadence, scope, method, evidence and findings handling",
+      "status": "passed",
+      "durationMs": 601.8082000000068
+    },
+    {
+      "suite": "server",
+      "file": "s7-release.test.js",
+      "title": "[S19] GET /api/v1/cases/:id and Institution 360 give the Competent Authority no narrative (S7 fix in abac.js)",
+      "fullName": "[S19] GET /api/v1/cases/:id and Institution 360 give the Competent Authority no narrative (S7 fix in abac.js)",
+      "status": "passed",
+      "durationMs": 6956.601499999997
+    },
+    {
+      "suite": "server",
+      "file": "ui-case-journey.test.js",
+      "title": "[N09] the case journey shows the PID and ICID snapshot, the ICID check, the source trail and the case events, with no narrative or reporter",
+      "fullName": "Officer case journey (N09 touchpoint 5, S21) [N09] the case journey shows the PID and ICID snapshot, the ICID check, the source trail and the case events, with no narrative or reporter",
+      "status": "passed",
+      "durationMs": 11314.589199999999
+    },
+    {
+      "suite": "server",
+      "file": "ui-case-journey.test.js",
+      "title": "[N09] a missing ICID shows as not available, never as a failed check",
+      "fullName": "Officer case journey (N09 touchpoint 5, S21) [N09] a missing ICID shows as not available, never as a failed check",
+      "status": "passed",
+      "durationMs": 2662.6159000000007
+    },
+    {
+      "suite": "server",
+      "file": "ui-case-journey.test.js",
+      "title": "[S21] out-of-scope officers and complainants get 404, and the denial is audited",
+      "fullName": "Officer case journey (N09 touchpoint 5, S21) [S21] out-of-scope officers and complainants get 404, and the denial is audited",
+      "status": "passed",
+      "durationMs": 3179.1494999999995
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N97] the dropdown waits for two characters and never searches on one",
+      "fullName": "[A-N97] the dropdown waits for two characters and never searches on one",
+      "status": "passed",
+      "durationMs": 563.4878000000008
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N97] each option shows name, city, state, PID, ICID or \"ICID not available\", and a source badge",
+      "fullName": "[A-N97] each option shows name, city, state, PID, ICID or \"ICID not available\", and a source badge",
+      "status": "passed",
+      "durationMs": 457.21259999999893
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N97] keyboard selection: arrows move, Enter picks, Escape closes",
+      "fullName": "[A-N97] keyboard selection: arrows move, Enter picks, Escape closes",
+      "status": "passed",
+      "durationMs": 765.4750999999997
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N97] choosing a match auto-fills PID and ICID and opens the details card with a state-level map pin",
+      "fullName": "[A-N97] choosing a match auto-fills PID and ICID and opens the details card with a state-level map pin",
+      "status": "passed",
+      "durationMs": 570.8870000000006
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N97] no results shows \"No match\" with a hint, never an empty box",
+      "fullName": "[A-N97] no results shows \"No match\" with a hint, never an empty box",
+      "status": "passed",
+      "durationMs": 347.5084999999999
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N100] states are individually selectable, list their colleges and open the details on click",
+      "fullName": "[A-N100] states are individually selectable, list their colleges and open the details on click",
+      "status": "passed",
+      "durationMs": 717.3184000000001
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N100] zoom, pan and reset change the view; a chosen college highlights its region and drops a pin",
+      "fullName": "[A-N100] zoom, pan and reset change the view; a chosen college highlights its region and drops a pin",
+      "status": "passed",
+      "durationMs": 281.4246000000003
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N100] the map is labelled illustrative and pins at city level only when the record has coordinates",
+      "fullName": "[A-N100] the map is labelled illustrative and pins at city level only when the record has coordinates",
+      "status": "passed",
+      "durationMs": 138.2639999999992
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N99] the self-check panel is labelled simulated, never shows the full number back and confirms instantly",
+      "fullName": "[A-N99] the self-check panel is labelled simulated, never shows the full number back and confirms instantly",
+      "status": "passed",
+      "durationMs": 154.03060000000005
+    },
+    {
+      "suite": "client",
+      "file": "final-interactive.test.jsx",
+      "title": "[A-N99] a student without an ABC ID can switch to the synthetic Aadhaar check",
+      "fullName": "[A-N99] a student without an ABC ID can switch to the synthetic Aadhaar check",
+      "status": "passed",
+      "durationMs": 34.03149999999914
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-audit.test.jsx",
+      "title": "[N66] audit rule targets show a friendly version and retain the complete ID only in the audit tooltip",
+      "fullName": "[N66] audit rule targets show a friendly version and retain the complete ID only in the audit tooltip",
+      "status": "passed",
+      "durationMs": 105.26209999999992
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-disclosure.test.js",
+      "title": "[A-N66] the removed screen disclosure remains explicit in README, limitations and the spoken judge script",
+      "fullName": "[A-N66] the removed screen disclosure remains explicit in README, limitations and the spoken judge script",
+      "status": "passed",
+      "durationMs": 13.903999999999996
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-explanation.test.jsx",
+      "title": "[N17] the case explanation shows seven returned contributions and retains sender accountability",
+      "fullName": "[N17] the case explanation shows seven returned contributions and retains sender accountability",
+      "status": "passed",
+      "durationMs": 260.1269000000002
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-language.test.jsx",
+      "title": "[N64] the institution picker switches its label and search guidance to the Hindi bundle",
+      "fullName": "[N64] the institution picker switches its label and search guidance to the Hindi bundle",
+      "status": "passed",
+      "durationMs": 195.8463999999999
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-language.test.jsx",
+      "title": "[N21] SYNC without a PID asks for an institution and never fetches a default institution",
+      "fullName": "[N21] SYNC without a PID asks for an institution and never fetches a default institution",
+      "status": "passed",
+      "durationMs": 21.61259999999993
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-picker.test.jsx",
+      "title": "[R32] the picker searches public metadata and keyboard selection returns the PID with ICID",
+      "fullName": "[R32] the picker searches public metadata and keyboard selection returns the PID with ICID",
+      "status": "passed",
+      "durationMs": 571.0769
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-picker.test.jsx",
+      "title": "[U04] a missing ICID is explicitly not available and does not block selecting its PID",
+      "fullName": "[U04] a missing ICID is explicitly not available and does not block selecting its PID",
+      "status": "passed",
+      "durationMs": 390.95730000000003
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-presentation.test.jsx",
+      "title": "[N26] the presentation uses the live mean rather than median and preserves unavailable results",
+      "fullName": "[N26] the presentation uses the live mean rather than median and preserves unavailable results",
+      "status": "passed",
+      "durationMs": 387.0807999999997
+    },
+    {
+      "suite": "client",
+      "file": "final-polish-presentation.test.jsx",
+      "title": "[N12] the institution trend counts only supplied records in the last twelve UTC months",
+      "fullName": "[N12] the institution trend counts only supplied records in the last twelve UTC months",
+      "status": "passed",
+      "durationMs": 3.9283000000000357
+    },
+    {
+      "suite": "client",
+      "file": "global-jury-navigation.test.jsx",
+      "title": "[S02] every sidebar link is allowed by its real route for each role, including complainant-only channels",
+      "fullName": "[S02] every sidebar link is allowed by its real route for each role, including complainant-only channels",
+      "status": "passed",
+      "durationMs": 9.118000000000393
+    },
+    {
+      "suite": "client",
+      "file": "global-jury-pages.test.jsx",
+      "title": "[A-N47] a direct drill-down offers accessible measures and makes no empty-row API request",
+      "fullName": "[A-N47] a direct drill-down offers accessible measures and makes no empty-row API request",
+      "status": "passed",
+      "durationMs": 212.90120000000024
+    },
+    {
+      "suite": "client",
+      "file": "global-jury-pages.test.jsx",
+      "title": "[N29] case tracking shows twelve cases at a time and every filtered case remains reachable",
+      "fullName": "[N29] case tracking shows twelve cases at a time and every filtered case remains reachable",
+      "status": "passed",
+      "durationMs": 442.80589999999984
+    },
+    {
+      "suite": "client",
+      "file": "global-jury-pages.test.jsx",
+      "title": "[N28] queue pagination and filtering retain clickable case IDs and explain a missing SLA without exposing its code",
+      "fullName": "[N28] queue pagination and filtering retain clickable case IDs and explain a missing SLA without exposing its code",
+      "status": "passed",
+      "durationMs": 317.51150000000007
+    },
+    {
+      "suite": "client",
+      "file": "jury91-release.test.jsx",
+      "title": "[N20] transfer timeline shows all four steps without claiming acceptance before the recorded acceptance",
+      "fullName": "[N20] transfer timeline shows all four steps without claiming acceptance before the recorded acceptance",
+      "status": "passed",
+      "durationMs": 84.33840000000009
+    },
+    {
+      "suite": "client",
+      "file": "jury91-release.test.jsx",
+      "title": "[N20] an explicit transfer request uses the real endpoint and preserves the pending sender accountability message",
+      "fullName": "[N20] an explicit transfer request uses the real endpoint and preserves the pending sender accountability message",
+      "status": "passed",
+      "durationMs": 341.3637999999996
+    },
+    {
+      "suite": "client",
+      "file": "jury91-visuals.test.jsx",
+      "title": "[N26] real Recharts bars and trend points render the report counts and preserve UNKNOWN measures",
+      "fullName": "[N26] real Recharts bars and trend points render the report counts and preserve UNKNOWN measures",
+      "status": "passed",
+      "durationMs": 764.1364000000003
+    },
+    {
+      "suite": "client",
+      "file": "jury91-visuals.test.jsx",
+      "title": "[A-N47] a real chart bar and line point navigate to the same row URL as their corresponding numeric links",
+      "fullName": "[A-N47] a real chart bar and line point navigate to the same row URL as their corresponding numeric links",
+      "status": "passed",
+      "durationMs": 431.47130000000016
+    },
+    {
+      "suite": "client",
+      "file": "jury91-visuals.test.jsx",
+      "title": "[N12] real React Flow renders institution, case and bureau nodes from the authorized API without inventing labels",
+      "fullName": "[N12] real React Flow renders institution, case and bureau nodes from the authorized API without inventing labels",
+      "status": "passed",
+      "durationMs": 89.85030000000006
+    },
+    {
+      "suite": "client",
+      "file": "n66.test.jsx",
+      "title": "[A-N66] Manish override removes data labels on every route while retaining the integrity control",
+      "fullName": "[A-N66] Synthetic-data banner and chain-check button [A-N66] Manish override removes data labels on every route while retaining the integrity control",
+      "status": "passed",
+      "durationMs": 192.04269999999997
+    },
+    {
+      "suite": "client",
+      "file": "n66.test.jsx",
+      "title": "[A-N66] chain-check button hidden in production mode",
+      "fullName": "[A-N66] Synthetic-data banner and chain-check button [A-N66] chain-check button hidden in production mode",
+      "status": "passed",
+      "durationMs": 176.76720000000023
+    },
+    {
+      "suite": "client",
+      "file": "ps-case-stepper.test.jsx",
+      "title": "does not mark acknowledgement or investigation done without their recorded events",
+      "fullName": "[A-N93] event-grounded status display does not mark acknowledgement or investigation done without their recorded events",
+      "status": "passed",
+      "durationMs": 127.72119999999995
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[S07] server AES-256-GCM hides plaintext, randomizes ciphertext and authenticates reporter scope",
+      "fullName": "[S07] server AES-256-GCM hides plaintext, randomizes ciphertext and authenticates reporter scope",
+      "status": "passed",
+      "durationMs": 38.72769999999991
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[S07] missing or invalid keys have no plaintext or default-key fallback",
+      "fullName": "[S07] missing or invalid keys have no plaintext or default-key fallback",
+      "status": "passed",
+      "durationMs": 2.124500000000353
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[N01] enrolment evidence is explicit and unknown references are refused",
+      "fullName": "[N01] enrolment evidence is explicit and unknown references are refused",
+      "status": "passed",
+      "durationMs": 9.097700000000259
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[N02] employment and SSO simulator evidence cannot be replaced by an arbitrary reference",
+      "fullName": "[N02] employment and SSO simulator evidence cannot be replaced by an arbitrary reference",
+      "status": "passed",
+      "durationMs": 4.799799999999777
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[N68] manual fixture identity stays stable across accounts for anti-proxy claims",
+      "fullName": "[N68] manual fixture identity stays stable across accounts for anti-proxy claims",
+      "status": "passed",
+      "durationMs": 2.88550000000032
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[S04] reporter model rejects raw identity fields and user extension preserves S0 role catalogue",
+      "fullName": "[S04] reporter model rejects raw identity fields and user extension preserves S0 role catalogue",
+      "status": "passed",
+      "durationMs": 10.841100000000097
+    },
+    {
+      "suite": "client",
+      "file": "s1a-crypto.test.js",
+      "title": "[S06] export serializer cannot pass through unknown fields or vault material",
+      "fullName": "[S06] export serializer cannot pass through unknown fields or vault material",
+      "status": "passed",
+      "durationMs": 0.5782000000003791
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N01] /verify renders the exact USER VERIFICATION (NEXUS TRUST) title",
+      "fullName": "[N01] /verify renders the exact USER VERIFICATION (NEXUS TRUST) title",
+      "status": "passed",
+      "durationMs": 337.7471000000005
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N07] verification requires consent and displays the exact verified badge and pseudonym",
+      "fullName": "[N07] verification requires consent and displays the exact verified badge and pseudonym",
+      "status": "passed",
+      "durationMs": 206.9411
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[S26] consent withdrawal updates the displayed state and includes the legal review note",
+      "fullName": "[S26] consent withdrawal updates the displayed state and includes the legal review note",
+      "status": "passed",
+      "durationMs": 373.7574999999997
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[U09] approved identity is removed when its expiry passes and is absent from Query cache",
+      "fullName": "[U09] approved identity is removed when its expiry passes and is absent from Query cache",
+      "status": "passed",
+      "durationMs": 412.4328000000005
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N04] production hides the demo OTP inbox and never fetches an OTP",
+      "fullName": "[N04] production hides the demo OTP inbox and never fetches an OTP",
+      "status": "passed",
+      "durationMs": 12.75550000000112
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N79] master data links match every eligible S1b route and rules remain in RuleBook",
+      "fullName": "[N79] master data links match every eligible S1b route and rules remain in RuleBook",
+      "status": "passed",
+      "durationMs": 103.57530000000042
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N79] system_admin follows all three actual master links through protected routes and loads their data",
+      "fullName": "[N79] system_admin follows all three actual master links through protected routes and loads their data",
+      "status": "passed",
+      "durationMs": 321.78319999999985
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N79] a student cannot open any of the three protected master-data pages",
+      "fullName": "[N79] a student cannot open any of the three protected master-data pages",
+      "status": "passed",
+      "durationMs": 70.76749999999993
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N79] populated glob result renders all authorized master links and excludes other routes",
+      "fullName": "[N79] populated glob result renders all authorized master links and excludes other routes",
+      "status": "passed",
+      "durationMs": 134.7567999999992
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N79] empty glob result preserves the master-data placeholder",
+      "fullName": "[N79] empty glob result preserves the master-data placeholder",
+      "status": "passed",
+      "durationMs": 60.84909999999945
+    },
+    {
+      "suite": "client",
+      "file": "s1a-trust.test.jsx",
+      "title": "[N68] route registry includes all six pages and localization has complete Hindi key parity",
+      "fullName": "[N68] route registry includes all six pages and localization has complete Hindi key parity",
+      "status": "passed",
+      "durationMs": 1.6802000000006956
+    },
+    {
+      "suite": "client",
+      "file": "s1b-intake-ui.test.jsx",
+      "title": "[A-N58] quick-exit button redirects and hides form",
+      "fullName": "S1b Client UI & Additions [A-N58] quick-exit button redirects and hides form",
+      "status": "passed",
+      "durationMs": 176.3415
+    },
+    {
+      "suite": "client",
+      "file": "s1b-intake-ui.test.jsx",
+      "title": "[A-N64] hindi and english interface on complainant pages",
+      "fullName": "S1b Client UI & Additions [A-N64] hindi and english interface on complainant pages",
+      "status": "passed",
+      "durationMs": 16.28630000000021
+    },
+    {
+      "suite": "client",
+      "file": "s1b-intake-ui.test.jsx",
+      "title": "[A-N64] defaults to Hindi for a Hindi browser language",
+      "fullName": "S1b Client UI & Additions [A-N64] defaults to Hindi for a Hindi browser language",
+      "status": "passed",
+      "durationMs": 4.682500000000346
+    },
+    {
+      "suite": "client",
+      "file": "s1b-intake-ui.test.jsx",
+      "title": "[A-N64] language changes stay in context and a fresh provider uses the browser default",
+      "fullName": "S1b Client UI & Additions [A-N64] language changes stay in context and a fresh provider uses the browser default",
+      "status": "passed",
+      "durationMs": 13.11010000000033
+    },
+    {
+      "suite": "client",
+      "file": "s2-ui.test.jsx",
+      "title": "renders ComplainantStatusCard with true status and accountable office only",
+      "fullName": "S2 Client UI Components renders ComplainantStatusCard with true status and accountable office only",
+      "status": "passed",
+      "durationMs": 111.95730000000003
+    },
+    {
+      "suite": "client",
+      "file": "s2-ui.test.jsx",
+      "title": "renders WhatIfPreviewModal with simulation notice and affected breakdown",
+      "fullName": "S2 Client UI Components renders WhatIfPreviewModal with simulation notice and affected breakdown",
+      "status": "passed",
+      "durationMs": 54.61340000000018
+    },
+    {
+      "suite": "client",
+      "file": "s2-ui.test.jsx",
+      "title": "enforces required reason in RuleChangeModal",
+      "fullName": "S2 Client UI Components enforces required reason in RuleChangeModal",
+      "status": "passed",
+      "durationMs": 21.551400000000285
+    },
+    {
+      "suite": "client",
+      "file": "s3-ui.test.jsx",
+      "title": "renders TransfersPage with incoming transfers, overdue indicator and accept/reject actions",
+      "fullName": "S3 Client UI Components (N20, N21, N54, N60, N70, N75, S17, S18, S24, U20-U23) renders TransfersPage with incoming transfers, overdue indicator and accept/reject actions",
+      "status": "passed",
+      "durationMs": 176.86549999999988
+    },
+    {
+      "suite": "client",
+      "file": "s3-ui.test.jsx",
+      "title": "renders SyncPage with shared institution view, restricted entries count, and internal notes warning",
+      "fullName": "S3 Client UI Components (N20, N21, N54, N60, N70, N75, S17, S18, S24, U20-U23) renders SyncPage with shared institution view, restricted entries count, and internal notes warning",
+      "status": "passed",
+      "durationMs": 62.395200000000386
+    },
+    {
+      "suite": "client",
+      "file": "s3-ui.test.jsx",
+      "title": "renders QueryThread with query details, replied state, and response loop",
+      "fullName": "S3 Client UI Components (N20, N21, N54, N60, N70, N75, S17, S18, S24, U20-U23) renders QueryThread with query details, replied state, and response loop",
+      "status": "passed",
+      "durationMs": 79.87199999999984
+    },
+    {
+      "suite": "client",
+      "file": "s3-ui.test.jsx",
+      "title": "renders InsiderAlertsPage with supervisory notice that alerts never block officers",
+      "fullName": "S3 Client UI Components (N20, N21, N54, N60, N70, N75, S17, S18, S24, U20-U23) renders InsiderAlertsPage with supervisory notice that alerts never block officers",
+      "status": "passed",
+      "durationMs": 66.0319999999997
+    },
+    {
+      "suite": "client",
+      "file": "s3-ui.test.jsx",
+      "title": "renders LeaveManagementPage with transfer handover blocker when active cases exist",
+      "fullName": "S3 Client UI Components (N20, N21, N54, N60, N70, N75, S17, S18, S24, U20-U23) renders LeaveManagementPage with transfer handover blocker when active cases exist",
+      "status": "passed",
+      "durationMs": 248.92389999999978
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[N17] exact overlap banner appears on dashboard, institution and review with authorized links only",
+      "fullName": "[N17] exact overlap banner appears on dashboard, institution and review with authorized links only",
+      "status": "passed",
+      "durationMs": 684.6313
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[S23] generic intake hints expose no third-party link and continuing remains available",
+      "fullName": "[S23] generic intake hints expose no third-party link and continuing remains available",
+      "status": "passed",
+      "durationMs": 106.17810000000009
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[U14] own-case view, cancel and unavailable-check continuation never gate the user",
+      "fullName": "[U14] own-case view, cancel and unavailable-check continuation never gate the user",
+      "status": "passed",
+      "durationMs": 174.60000000000036
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[N17] action form shows reasons and counter-reasons and Proceed works for every result",
+      "fullName": "[N17] action form shows reasons and counter-reasons and Proceed works for every result",
+      "status": "passed",
+      "durationMs": 440.6414999999997
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[A-N59] officer view is a count only and eligible students receive an anonymous button",
+      "fullName": "[A-N59] officer view is a count only and eligible students receive an anonymous button",
+      "status": "passed",
+      "durationMs": 116.0587000000005
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[S23] switching accounts immediately removes the previous account own-case hints",
+      "fullName": "[S23] switching accounts immediately removes the previous account own-case hints",
+      "status": "passed",
+      "durationMs": 70.79770000000008
+    },
+    {
+      "suite": "client",
+      "file": "s4-prevent.test.jsx",
+      "title": "[U14] existing preview confirm and edit controls also log choices without being gated",
+      "fullName": "[U14] existing preview confirm and edit controls also log choices without being gated",
+      "status": "passed",
+      "durationMs": 115.97829999999976
+    },
+    {
+      "suite": "client",
+      "file": "s5-ui.test.jsx",
+      "title": "[N29] the complainant workspace shows status, owner as office and role, history, closure reason, receipt link and feedback without changing status",
+      "fullName": "[N29] the complainant workspace shows status, owner as office and role, history, closure reason, receipt link and feedback without changing status",
+      "status": "passed",
+      "durationMs": 352.57880000000023
+    },
+    {
+      "suite": "client",
+      "file": "s5-ui.test.jsx",
+      "title": "[N22] the PROOF panel lists the four gate checks and keeps Close disabled until all pass",
+      "fullName": "[N22] the PROOF panel lists the four gate checks and keeps Close disabled until all pass",
+      "status": "passed",
+      "durationMs": 101.09649999999965
+    },
+    {
+      "suite": "client",
+      "file": "s5-ui.test.jsx",
+      "title": "[N77] the IMPACT page shows the nine tiles with numerator, denominator and scope, and the synthetic label",
+      "fullName": "[N77] the IMPACT page shows the nine tiles with numerator, denominator and scope, and the synthetic label",
+      "status": "passed",
+      "durationMs": 622.7332999999999
+    },
+    {
+      "suite": "client",
+      "file": "s5-ui.test.jsx",
+      "title": "[N30] the institution workspace shows only the released redacted form and no reporter identity",
+      "fullName": "[N30] the institution workspace shows only the released redacted form and no reporter identity",
+      "status": "passed",
+      "durationMs": 45.96699999999964
+    },
+    {
+      "suite": "client",
+      "file": "s5-ui.test.jsx",
+      "title": "[N80] the Competent Authority workspace shows the member designation, approvals and escalations, and no narrative",
+      "fullName": "[N80] the Competent Authority workspace shows the member designation, approvals and escalations, and no narrative",
+      "status": "passed",
+      "durationMs": 168.0700999999999
+    },
+    {
+      "suite": "client",
+      "file": "s5-ui.test.jsx",
+      "title": "[A-N62] the redaction helper enables Confirm only after the officer decides every highlight",
+      "fullName": "[A-N62] the redaction helper enables Confirm only after the officer decides every highlight",
+      "status": "passed",
+      "durationMs": 100.30349999999999
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[N33] channels explains installable PWA, no offline queue, and native apps remain PLANNED-P2 with complete Hindi labels",
+      "fullName": "[N33] channels explains installable PWA, no offline queue, and native apps remain PLANNED-P2 with complete Hindi labels",
+      "status": "passed",
+      "durationMs": 81.04950000000008
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[N15] manifest is installable and bootstrap registers the same-origin worker without storing session data",
+      "fullName": "[N15] manifest is installable and bootstrap registers the same-origin worker without storing session data",
+      "status": "passed",
+      "durationMs": 24.6886999999997
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[N15] service worker caches only static shell assets, uses network-only for case/API data and clears caches on logout",
+      "fullName": "[N15] service worker caches only static shell assets, uses network-only for case/API data and clears caches on logout",
+      "status": "passed",
+      "durationMs": 13.598799999999756
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[U15] email opens in the portal, previews with real PREVENT panel and confirms only after explicit continue",
+      "fullName": "[U15] email opens in the portal, previews with real PREVENT panel and confirms only after explicit continue",
+      "status": "passed",
+      "durationMs": 453.7972
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[A-N57] integrity UI exposes immutable daily hashes, admin computation and honest recompute mismatch",
+      "fullName": "[A-N57] integrity UI exposes immutable daily hashes, admin computation and honest recompute mismatch",
+      "status": "passed",
+      "durationMs": 92.8194999999996
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[A-N48] benchmark shows numerator denominator scope and UNKNOWN without invented percent",
+      "fullName": "[A-N48] benchmark shows numerator denominator scope and UNKNOWN without invented percent",
+      "status": "passed",
+      "durationMs": 21.631900000000314
+    },
+    {
+      "suite": "client",
+      "file": "s6a-channels.test.jsx",
+      "title": "[N15] admin import shows S2 row outcomes and preserves quarantined rows visibly",
+      "fullName": "[N15] admin import shows S2 row outcomes and preserves quarantined rows visibly",
+      "status": "passed",
+      "durationMs": 85.3768
+    },
+    {
+      "suite": "client",
+      "file": "s6b-ui.test.jsx",
+      "title": "[A-N46] Judge Mode resets with one click and plays a captioned tour; hidden in production mode",
+      "fullName": "[A-N46] Judge Mode resets with one click and plays a captioned tour; hidden in production mode",
+      "status": "passed",
+      "durationMs": 485.3648999999996
+    },
+    {
+      "suite": "client",
+      "file": "s6b-ui.test.jsx",
+      "title": "[A-N47] IMPACT numbers link to their cases, and the drill-down lists exactly those cases with the synthetic label",
+      "fullName": "[A-N47] IMPACT numbers link to their cases, and the drill-down lists exactly those cases with the synthetic label",
+      "status": "passed",
+      "durationMs": 435.6125000000002
+    },
+    {
+      "suite": "client",
+      "file": "s6b-ui.test.jsx",
+      "title": "[A-N50] the overlap timeline shows two lanes and marks the conflict point; other bureaus stay opaque",
+      "fullName": "[A-N50] the overlap timeline shows two lanes and marks the conflict point; other bureaus stay opaque",
+      "status": "passed",
+      "durationMs": 72.65349999999944
+    },
+    {
+      "suite": "client",
+      "file": "s6b-ui.test.jsx",
+      "title": "[A-N61] pattern alerts show the suggestion, the share with its denominator, the cited cases and the DEMO rule label",
+      "fullName": "[A-N61] pattern alerts show the suggestion, the share with its denominator, the cited cases and the DEMO rule label",
+      "status": "passed",
+      "durationMs": 36.759500000000116
+    },
+    {
+      "suite": "client",
+      "file": "s6b-ui.test.jsx",
+      "title": "[E07] (hint only) the graph page draws the institution graph and the attention radar with UNKNOWN shown as UNKNOWN",
+      "fullName": "[E07] (hint only) the graph page draws the institution graph and the attention radar with UNKNOWN shown as UNKNOWN",
+      "status": "passed",
+      "durationMs": 90.15790000000015
+    },
+    {
+      "suite": "client",
+      "file": "s7-ui.test.jsx",
+      "title": "[N13] (Appendix V) the landing page carries the pillars, key outcomes, manager expectations and the footer",
+      "fullName": "[N13] (Appendix V) the landing page carries the pillars, key outcomes, manager expectations and the footer",
+      "status": "passed",
+      "durationMs": 576.3379999999997
+    },
+    {
+      "suite": "client",
+      "file": "s7-ui.test.jsx",
+      "title": "[N28] the officer dashboard shows my cases with the four lanes and the never-revert warning, not a placeholder",
+      "fullName": "[N28] the officer dashboard shows my cases with the four lanes and the never-revert warning, not a placeholder",
+      "status": "passed",
+      "durationMs": 674.8410000000003
+    },
+    {
+      "suite": "client",
+      "file": "s7-ui.test.jsx",
+      "title": "[N10] (Appendix V) the PID lookup shows the auto-fetch checklist and the six-region panel; missing values are UNKNOWN or not available",
+      "fullName": "[N10] (Appendix V) the PID lookup shows the auto-fetch checklist and the six-region panel; missing values are UNKNOWN or not available",
+      "status": "passed",
+      "durationMs": 246.2603999999992
+    },
+    {
+      "suite": "client",
+      "file": "s7-ui.test.jsx",
+      "title": "[N09] /reports shows trends, performance, region-wise insights and the institution ICID column",
+      "fullName": "[N09] /reports shows trends, performance, region-wise insights and the institution ICID column",
+      "status": "passed",
+      "durationMs": 551.1934999999976
+    },
+    {
+      "suite": "client",
+      "file": "s7-ui.test.jsx",
+      "title": "[S09] /audit shows the chain check and the event list; notifications list the SMS sandbox",
+      "fullName": "[S09] /audit shows the chain check and the event list; notifications list the SMS sandbox",
+      "status": "passed",
+      "durationMs": 146.9354999999996
+    },
+    {
+      "suite": "client",
+      "file": "s7-ui.test.jsx",
+      "title": "[N11] the regional view shows region-scoped figures with drill-down links, institutions with ICID, and the queue",
+      "fullName": "[N11] the regional view shows region-scoped figures with drill-down links, institutions with ICID, and the queue",
+      "status": "passed",
+      "durationMs": 202.58240000000296
+    },
+    {
+      "suite": "client",
+      "file": "ui-redesign.test.jsx",
+      "title": "[N09] the officer case journey shows the Master Case ID, PID, ICID with its check, the source trail and the timeline",
+      "fullName": "[N09] the officer case journey shows the Master Case ID, PID, ICID with its check, the source trail and the timeline",
+      "status": "passed",
+      "durationMs": 457.2008000000005
+    },
+    {
+      "suite": "client",
+      "file": "ui-redesign.test.jsx",
+      "title": "[R32] global search sends a Master Case ID to the case, a PID to Institution 360, and anything else to ICID resolution",
+      "fullName": "[R32] global search sends a Master Case ID to the case, a PID to Institution 360, and anything else to ICID resolution",
+      "status": "passed",
+      "durationMs": 3.126800000000003
+    },
+    {
+      "suite": "client",
+      "file": "ui-redesign.test.jsx",
+      "title": "[S02] the sidebar shows each role only the modules its routes allow",
+      "fullName": "[S02] the sidebar shows each role only the modules its routes allow",
+      "status": "passed",
+      "durationMs": 2.368199999999888
+    },
+    {
+      "suite": "client",
+      "file": "ui-redesign.test.jsx",
+      "title": "[S02] case action links match auditor and administrator route permissions",
+      "fullName": "[S02] case action links match auditor and administrator route permissions",
+      "status": "passed",
+      "durationMs": 300.0588000000007
+    },
+    {
+      "suite": "client",
+      "file": "ui-redesign.test.jsx",
+      "title": "[S02] graph readers never call the officer-only overlap API or receive its action link",
+      "fullName": "[S02] graph readers never call the officer-only overlap API or receive its action link",
+      "status": "passed",
+      "durationMs": 99.24629999999979
+    }
+  ],
+  "evidenceDirectory": "test-results/fi-codex-baseline-20261027",
+  "notes": [
+    "Unmodified source and tests. Three server failures are setup-hook timeouts; focused diagnosis is separate.",
+    "Prior baseline preserved at test-results/fi-codex-baseline-20261027/BASELINE_TESTS.json.",
+    "Console log identity numbers and OTP values have been redacted."
+  ]
+}

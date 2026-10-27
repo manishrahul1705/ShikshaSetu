@@ -1,0 +1,561 @@
+[
+  {
+    "path": "/verify",
+    "public": false,
+    "source": "s1a.jsx"
+  },
+  {
+    "path": "/my/consents",
+    "public": false,
+    "source": "s1a.jsx"
+  },
+  {
+    "path": "/officer/manual-verification",
+    "roles": [
+      "bureau_officer",
+      "regional_officer"
+    ],
+    "public": false,
+    "source": "s1a.jsx"
+  },
+  {
+    "path": "/officer/reveal-requests",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority"
+    ],
+    "public": false,
+    "source": "s1a.jsx"
+  },
+  {
+    "path": "/admin",
+    "roles": [
+      "system_admin"
+    ],
+    "public": false,
+    "source": "s1a.jsx"
+  },
+  {
+    "path": "/dev/otp-inbox",
+    "public": false,
+    "source": "s1a.jsx"
+  },
+  {
+    "path": "/institutions/lookup",
+    "public": true,
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/institutions/:id",
+    "roles": [
+      "student",
+      "faculty",
+      "institution_admin",
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/review/identity",
+    "roles": [
+      "supervisor",
+      "regional_officer"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/grievances/new",
+    "roles": [
+      "student",
+      "faculty"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/my/cases",
+    "roles": [
+      "student",
+      "faculty"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/my/cases/:caseId",
+    "roles": [
+      "student",
+      "faculty",
+      "institution_admin",
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/admin/master/institutions",
+    "roles": [
+      "system_admin"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/admin/master/categories",
+    "roles": [
+      "system_admin"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/admin/master/regions",
+    "roles": [
+      "system_admin"
+    ],
+    "source": "s1b.jsx"
+  },
+  {
+    "path": "/rulebook",
+    "roles": [
+      "system_admin",
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "source": "s2.jsx"
+  },
+  {
+    "path": "/triage",
+    "roles": [
+      "supervisor",
+      "competent_authority"
+    ],
+    "source": "s2.jsx"
+  },
+  {
+    "path": "/transfers",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "system_admin"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/sync/:institutionPid",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "system_admin"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/sync",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "system_admin"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/queries/:caseId",
+    "roles": [
+      "student",
+      "faculty",
+      "other_stakeholder",
+      "institution_admin",
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "system_admin"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/fieldwork/:caseId",
+    "roles": [
+      "regional_officer",
+      "bureau_officer",
+      "supervisor",
+      "competent_authority",
+      "system_admin"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/insider/alerts",
+    "roles": [
+      "supervisor",
+      "system_admin",
+      "competent_authority"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/leave",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority"
+    ],
+    "source": "s3.jsx"
+  },
+  {
+    "path": "/review",
+    "roles": [
+      "supervisor",
+      "competent_authority",
+      "regional_officer",
+      "bureau_officer"
+    ],
+    "public": false,
+    "source": "s4.jsx"
+  },
+  {
+    "path": "/prevent/back",
+    "roles": [
+      "student"
+    ],
+    "public": false,
+    "source": "s4.jsx"
+  },
+  {
+    "path": "/track",
+    "roles": [
+      "student",
+      "faculty",
+      "other_stakeholder"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/track/:caseId",
+    "roles": [
+      "student",
+      "faculty",
+      "other_stakeholder"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/closure/:caseId",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/review/appeals",
+    "roles": [
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/rescue",
+    "roles": [
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/impact",
+    "roles": [
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin",
+      "bureau_officer",
+      "regional_officer"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/authority",
+    "roles": [
+      "competent_authority"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/institution",
+    "roles": [
+      "institution_admin"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/cases/:caseId/redaction",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor"
+    ],
+    "public": false,
+    "source": "s5.jsx"
+  },
+  {
+    "path": "/channels",
+    "roles": [
+      "student",
+      "faculty"
+    ],
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/channels/email/:id",
+    "roles": [
+      "student",
+      "faculty"
+    ],
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/my/email-drafts",
+    "roles": [
+      "student",
+      "faculty"
+    ],
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/my/email-drafts/:id",
+    "roles": [
+      "student",
+      "faculty"
+    ],
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/admin/import",
+    "roles": [
+      "system_admin"
+    ],
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/integrity",
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/benchmark",
+    "roles": [
+      "system_admin",
+      "supervisor"
+    ],
+    "public": false,
+    "source": "s6a.jsx"
+  },
+  {
+    "path": "/judge",
+    "public": false,
+    "source": "s6b.jsx"
+  },
+  {
+    "path": "/walkthrough/compare",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin"
+    ],
+    "public": false,
+    "source": "s6b.jsx"
+  },
+  {
+    "path": "/coverage",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin"
+    ],
+    "public": false,
+    "source": "s6b.jsx"
+  },
+  {
+    "path": "/impact/cases",
+    "roles": [
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin",
+      "bureau_officer",
+      "regional_officer"
+    ],
+    "public": false,
+    "source": "s6b.jsx"
+  },
+  {
+    "path": "/overlap-timeline/:pid",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "public": false,
+    "source": "s6b.jsx"
+  },
+  {
+    "path": "/graph/institutions/:pid",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin"
+    ],
+    "public": false,
+    "source": "s6b.jsx"
+  },
+  {
+    "path": "/cases",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority"
+    ],
+    "public": false,
+    "source": "s7.jsx"
+  },
+  {
+    "path": "/reports",
+    "roles": [
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin",
+      "bureau_officer",
+      "regional_officer"
+    ],
+    "public": false,
+    "source": "s7.jsx"
+  },
+  {
+    "path": "/audit",
+    "roles": [
+      "auditor",
+      "system_admin",
+      "competent_authority",
+      "supervisor"
+    ],
+    "public": false,
+    "source": "s7.jsx"
+  },
+  {
+    "path": "/notifications",
+    "public": false,
+    "source": "s7.jsx"
+  },
+  {
+    "path": "/regional",
+    "roles": [
+      "regional_officer",
+      "supervisor",
+      "competent_authority"
+    ],
+    "public": false,
+    "source": "s7.jsx"
+  },
+  {
+    "path": "/requests/combined",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "institution_admin"
+    ],
+    "source": "sps.jsx"
+  },
+  {
+    "path": "/documents/locker",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "institution_admin"
+    ],
+    "source": "sps.jsx"
+  },
+  {
+    "path": "/reports/monthly",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin"
+    ],
+    "source": "sps.jsx"
+  },
+  {
+    "path": "/officer-workload",
+    "roles": [
+      "supervisor",
+      "bureau_officer"
+    ],
+    "source": "sps.jsx"
+  },
+  {
+    "path": "/cases/:caseId",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor",
+      "system_admin"
+    ],
+    "public": false,
+    "source": "sui.jsx"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "timings": [
+    {
+      "route": "/queries/NX-2026-000018",
+      "ms": 4168
+    },
+    {
+      "route": "/requests/combined?pid=1-7734299133",
+      "ms": 2955
+    },
+    {
+      "route": "/documents/locker",
+      "ms": 2334
+    },
+    {
+      "route": "/requests/combined",
+      "ms": 1384
+    },
+    {
+      "route": "/track",
+      "ms": 5478
+    },
+    {
+      "route": "/reports/monthly",
+      "ms": 1845
+    },
+    {
+      "route": "/coverage",
+      "ms": 1079
+    },
+    {
+      "route": "/walkthrough/compare?pid=1-7734299133",
+      "ms": 1689
+    },
+    {
+      "route": "/officer-workload",
+      "ms": 1147
+    }
+  ],
+  "errors": [],
+  "video": "Unavailable: installed Playwright encoder is missing; no download authorized"
+}

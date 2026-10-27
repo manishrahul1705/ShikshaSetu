@@ -1,0 +1,457 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:12:13.759Z",
+  "records": [
+    {
+      "role": "bureau_officer",
+      "route": "/",
+      "target": "/",
+      "readyMs": 1710,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/landing.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 591,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/login.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 2062,
+      "layout": {
+        "width": 391,
+        "scrollWidth": 391
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1274.155
+        },
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 1331.93
+        }
+      ],
+      "screenshot": "mobile/bureau_officer/dashboard.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 991,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/verify.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 943,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/my-consents.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/officer/manual-verification",
+      "target": "/officer/manual-verification",
+      "readyMs": 664,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/officer-manual-verification.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 681,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/officer-reveal-requests.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 798,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/dev-otp-inbox.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 815,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/institutions-lookup.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6042348167",
+      "readyMs": 1564,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 94.958
+        }
+      ],
+      "screenshot": "mobile/bureau_officer/institutions-id.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001061",
+      "readyMs": 715,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/my-cases-caseId.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 586,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/transfers.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6042348167",
+      "readyMs": 662,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/sync-institutionPid.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 541,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/sync.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001061",
+      "readyMs": 538,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/queries-caseId.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001061",
+      "readyMs": 649,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/fieldwork-caseId.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 595,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/leave.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 1116,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 708.743
+        }
+      ],
+      "screenshot": "mobile/bureau_officer/review.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001061",
+      "readyMs": 564,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/closure-caseId.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 938,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 58.443
+        }
+      ],
+      "screenshot": "mobile/bureau_officer/impact.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/cases/:caseId/redaction",
+      "target": "/cases/NX-2026-001061/redaction",
+      "readyMs": 506,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/cases-caseId-redaction.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 483,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/integrity.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 452,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/judge.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 559,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/walkthrough-compare.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 580,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/coverage.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 580,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/impact-cases.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6042348167",
+      "readyMs": 472,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/overlap-timeline-pid.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6042348167",
+      "readyMs": 525,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 115.832
+        }
+      ],
+      "screenshot": "mobile/bureau_officer/graph-institutions-pid.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 544,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/cases.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 850,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 84.672
+        }
+      ],
+      "screenshot": "mobile/bureau_officer/reports.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 851,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/notifications.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001061",
+      "readyMs": 604,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/cases-caseId.png"
+    }
+  ]
+}

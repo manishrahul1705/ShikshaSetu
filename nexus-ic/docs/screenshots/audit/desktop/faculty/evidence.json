@@ -1,0 +1,391 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:33:13.939Z",
+  "records": [
+    {
+      "role": "faculty",
+      "route": "/",
+      "target": "/",
+      "readyMs": 914,
+      "readiness": {
+        "characters": 4048,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/landing.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 469,
+      "readiness": {
+        "characters": 728,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/login.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 636,
+      "readiness": {
+        "characters": 1086,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/dashboard.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 779,
+      "readiness": {
+        "characters": 778,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/verify.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 750,
+      "readiness": {
+        "characters": 748,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/my-consents.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 990,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/dev-otp-inbox.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 1461,
+      "readiness": {
+        "characters": 169,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/institutions-lookup.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-7734299133",
+      "readyMs": 3238,
+      "readiness": {
+        "characters": 41,
+        "loadingLines": [
+          "Loading Institution 360 composite view..."
+        ],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Readiness: {\"characters\":41,\"loadingLines\":[\"Loading Institution 360 composite view...\"],\"skeletons\":0}; pending API paths: /api/v1/config/mode, /api/v1/institutions/1-7734299133/360",
+        "Content deadline exceeded: 3238 ms"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/institutions-id.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/grievances/new",
+      "target": "/grievances/new",
+      "readyMs": 1181,
+      "readiness": {
+        "characters": 695,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/grievances-new.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/my/cases",
+      "target": "/my/cases",
+      "readyMs": 1984,
+      "readiness": {
+        "characters": 2010,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/my-cases.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-000002",
+      "readyMs": 748,
+      "readiness": {
+        "characters": 605,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/my-cases-caseId.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-000002",
+      "readyMs": 706,
+      "readiness": {
+        "characters": 136,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/queries-caseId.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/track",
+      "target": "/track",
+      "readyMs": 703,
+      "readiness": {
+        "characters": 1843,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/track.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/track/:caseId",
+      "target": "/track/NX-2026-000002",
+      "readyMs": 719,
+      "readiness": {
+        "characters": 317,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/track-caseId.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/channels",
+      "target": "/channels",
+      "readyMs": 915,
+      "readiness": {
+        "characters": 809,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/channels.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/channels/email/:id",
+      "target": "/channels/email/6adf22ce745e37a3e88560c0",
+      "readyMs": 875,
+      "readiness": {
+        "characters": 969,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/channels-email-id.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/my/email-drafts",
+      "target": "/my/email-drafts",
+      "readyMs": 965,
+      "readiness": {
+        "characters": 251,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/my-email-drafts.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/my/email-drafts/:id",
+      "target": "/my/email-drafts/6adf22ce745e37a3e88560c0",
+      "readyMs": 1136,
+      "readiness": {
+        "characters": 969,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/my-email-drafts-id.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 802,
+      "readiness": {
+        "characters": 5030,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/integrity.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 980,
+      "readiness": {
+        "characters": 1001,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/judge.png"
+    },
+    {
+      "role": "faculty",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 1370,
+      "readiness": {
+        "characters": 2736,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/faculty/notifications.png"
+    }
+  ]
+}

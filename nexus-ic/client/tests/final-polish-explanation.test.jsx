@@ -1,0 +1,23 @@
+import React from 'react';
+import { afterEach, expect, it, vi } from 'vitest';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import CaseExplanation from '../src/components/CaseExplanation.jsx';
+import { I18nProvider } from '../src/i18n/index.js';
+let client;
+afterEach(() => { cleanup(); client?.clear(); vi.unstubAllGlobals(); });
+it('[N17] the case explanation shows seven returned contributions and retains sender accountability', async () => {
+  const keys = ['issue', 'timeWindow', 'category', 'documentOrSubject', 'remedy', 'sharedEntities', 'semantic'];
+  vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ result: 'REVIEW', pairs: [{ cases: ['NX-2026-000001', 'NX-2026-000002'], ruleVersion: 'DEMO-OVERLAP-v1', signals: keys.map((name, i) => ({ name, value: 0.5, weight: i + 1, contribution: (i + 1) / 2 })), reasons: ['SIMILAR_ISSUE_EVIDENCE'] }] }) }));
+  client = new QueryClient({ defaultOptions: { queries: { retry: false } } });
+  const { container } = render(<I18nProvider><QueryClientProvider client={client}><CaseExplanation journey={{ institution: { pid: '1-1000000001' }, case: { masterCaseId: 'NX-2026-000001', status: 'Under Process', owningBureau: 'RB' }, routing: [{ primary: 'RB', ruleVersion: 'DEMO-ROUTE-v1', reasons: ['Fee category maps to RB'] }], transfers: [{ status: 'REQUESTED', fromBureau: 'RB', toBureau: 'PGRC' }] }} /></QueryClientProvider></I18nProvider>);
+  const details = container.querySelector('details');
+  details.open = true;
+  fireEvent(details, new Event('toggle'));
+  expect(await screen.findByRole('table')).toBeInTheDocument();
+  expect(screen.getAllByRole('row')).toHaveLength(8);
+  expect(screen.getByText('Fee category maps to RB')).toBeInTheDocument();
+  expect(screen.getByText(/Sender remains accountable: RB/)).toBeInTheDocument();
+  expect(screen.getByText(/not a historical decision record/)).toBeInTheDocument();
+  expect(container).not.toHaveTextContent('DEMO-');
+});

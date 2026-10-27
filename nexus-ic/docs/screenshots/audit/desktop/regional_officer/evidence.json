@@ -1,0 +1,658 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:35:44.722Z",
+  "records": [
+    {
+      "role": "regional_officer",
+      "route": "/",
+      "target": "/",
+      "readyMs": 1488,
+      "readiness": {
+        "characters": 4057,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/landing.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 505,
+      "readiness": {
+        "characters": 728,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/login.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 2370,
+      "readiness": {
+        "characters": 6815,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1392.361
+        },
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 1460.965
+        }
+      ],
+      "screenshot": "desktop/regional_officer/dashboard.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 760,
+      "readiness": {
+        "characters": 696,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/verify.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 456,
+      "readiness": {
+        "characters": 378,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/my-consents.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/officer/manual-verification",
+      "target": "/officer/manual-verification",
+      "readyMs": 640,
+      "readiness": {
+        "characters": 354,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/officer-manual-verification.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 593,
+      "readiness": {
+        "characters": 603,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/officer-reveal-requests.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 617,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/dev-otp-inbox.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 567,
+      "readiness": {
+        "characters": 169,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/institutions-lookup.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6342091611",
+      "readyMs": 834,
+      "readiness": {
+        "characters": 1682,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 92.217
+        }
+      ],
+      "screenshot": "desktop/regional_officer/institutions-id.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/review/identity",
+      "target": "/review/identity",
+      "readyMs": 479,
+      "readiness": {
+        "characters": 603,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/review-identity.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001535",
+      "readyMs": 458,
+      "readiness": {
+        "characters": 603,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/my-cases-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 594,
+      "readiness": {
+        "characters": 3648,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/transfers.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6342091611",
+      "readyMs": 625,
+      "readiness": {
+        "characters": 985,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/sync-institutionPid.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 601,
+      "readiness": {
+        "characters": 146,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/sync.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001535",
+      "readyMs": 691,
+      "readiness": {
+        "characters": 188,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/queries-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001535",
+      "readyMs": 670,
+      "readiness": {
+        "characters": 280,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/fieldwork-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 917,
+      "readiness": {
+        "characters": 291,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/leave.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 2830,
+      "readiness": {
+        "characters": 2649,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1760.622
+        }
+      ],
+      "screenshot": "desktop/regional_officer/review.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001535",
+      "readyMs": 1286,
+      "readiness": {
+        "characters": 479,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/closure-caseId.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 2384,
+      "readiness": {
+        "characters": 5454,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 457.769
+        }
+      ],
+      "screenshot": "desktop/regional_officer/impact.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/cases/:caseId/redaction",
+      "target": "/cases/NX-2026-001535/redaction",
+      "readyMs": 898,
+      "readiness": {
+        "characters": 127,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/cases-caseId-redaction.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 703,
+      "readiness": {
+        "characters": 5030,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/integrity.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 738,
+      "readiness": {
+        "characters": 1001,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/judge.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 630,
+      "readiness": {
+        "characters": 923,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/walkthrough-compare.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 894,
+      "readiness": {
+        "characters": 4000,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/coverage.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 1668,
+      "readiness": {
+        "characters": 174,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/impact-cases.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6342091611",
+      "readyMs": 1216,
+      "readiness": {
+        "characters": 162,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/overlap-timeline-pid.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6342091611",
+      "readyMs": 1437,
+      "readiness": {
+        "characters": 825,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 573.35
+        }
+      ],
+      "screenshot": "desktop/regional_officer/graph-institutions-pid.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 1369,
+      "readiness": {
+        "characters": 4287,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/cases.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1369,
+      "readiness": {
+        "characters": 4353,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 115.462
+        }
+      ],
+      "screenshot": "desktop/regional_officer/reports.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 1092,
+      "readiness": {
+        "characters": 1866,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/notifications.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 1086,
+      "readiness": {
+        "characters": 8007,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 304.458
+        }
+      ],
+      "screenshot": "desktop/regional_officer/regional.png"
+    },
+    {
+      "role": "regional_officer",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001535",
+      "readyMs": 1990,
+      "readiness": {
+        "characters": 2108,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/regional_officer/cases-caseId.png"
+    }
+  ]
+}

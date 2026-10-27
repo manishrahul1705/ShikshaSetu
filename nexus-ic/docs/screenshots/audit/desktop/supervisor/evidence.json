@@ -1,0 +1,773 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:36:52.601Z",
+  "records": [
+    {
+      "role": "supervisor",
+      "route": "/",
+      "target": "/",
+      "readyMs": 1756,
+      "readiness": {
+        "characters": 4051,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/landing.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 326,
+      "readiness": {
+        "characters": 728,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/login.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 2145,
+      "readiness": {
+        "characters": 7122,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1545.286
+        },
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 1616.464
+        }
+      ],
+      "screenshot": "desktop/supervisor/dashboard.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 1452,
+      "readiness": {
+        "characters": 696,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/verify.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 568,
+      "readiness": {
+        "characters": 378,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/my-consents.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/officer/reveal-requests",
+      "target": "/officer/reveal-requests",
+      "readyMs": 430,
+      "readiness": {
+        "characters": 1120,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/officer-reveal-requests.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 409,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/dev-otp-inbox.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 398,
+      "readiness": {
+        "characters": 169,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/institutions-lookup.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-6342091611",
+      "readyMs": 1080,
+      "readiness": {
+        "characters": 1700,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 160.715
+        }
+      ],
+      "screenshot": "desktop/supervisor/institutions-id.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review/identity",
+      "target": "/review/identity",
+      "readyMs": 437,
+      "readiness": {
+        "characters": 603,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/review-identity.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001535",
+      "readyMs": 594,
+      "readiness": {
+        "characters": 603,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/my-cases-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 455,
+      "readiness": {
+        "characters": 1432,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/rulebook.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/triage",
+      "target": "/triage",
+      "readyMs": 684,
+      "readiness": {
+        "characters": 3430,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/triage.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/transfers",
+      "target": "/transfers",
+      "readyMs": 429,
+      "readiness": {
+        "characters": 3648,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/transfers.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/sync/:institutionPid",
+      "target": "/sync/1-6342091611",
+      "readyMs": 509,
+      "readiness": {
+        "characters": 985,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/sync-institutionPid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/sync",
+      "target": "/sync",
+      "readyMs": 521,
+      "readiness": {
+        "characters": 146,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/sync.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001535",
+      "readyMs": 318,
+      "readiness": {
+        "characters": 188,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/queries-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/fieldwork/:caseId",
+      "target": "/fieldwork/NX-2026-001535",
+      "readyMs": 549,
+      "readiness": {
+        "characters": 280,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/fieldwork-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/insider/alerts",
+      "target": "/insider/alerts",
+      "readyMs": 403,
+      "readiness": {
+        "characters": 1928,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/insider-alerts.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/leave",
+      "target": "/leave",
+      "readyMs": 410,
+      "readiness": {
+        "characters": 291,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/leave.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review",
+      "target": "/review",
+      "readyMs": 1994,
+      "readiness": {
+        "characters": 4693,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 1269.083
+        }
+      ],
+      "screenshot": "desktop/supervisor/review.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001535",
+      "readyMs": 545,
+      "readiness": {
+        "characters": 479,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/closure-caseId.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/review/appeals",
+      "target": "/review/appeals",
+      "readyMs": 535,
+      "readiness": {
+        "characters": 2536,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/review-appeals.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/rescue",
+      "target": "/rescue",
+      "readyMs": 648,
+      "readiness": {
+        "characters": 3349,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/rescue.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 1310,
+      "readiness": {
+        "characters": 11114,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 70.141
+        }
+      ],
+      "screenshot": "desktop/supervisor/impact.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId/redaction",
+      "target": "/cases/NX-2026-001535/redaction",
+      "readyMs": 415,
+      "readiness": {
+        "characters": 127,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases-caseId-redaction.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 517,
+      "readiness": {
+        "characters": 5030,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/integrity.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/benchmark",
+      "target": "/benchmark",
+      "readyMs": 679,
+      "readiness": {
+        "characters": 2220,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/benchmark.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 482,
+      "readiness": {
+        "characters": 1001,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/judge.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 589,
+      "readiness": {
+        "characters": 923,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/walkthrough-compare.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 337,
+      "readiness": {
+        "characters": 3931,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/coverage.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 496,
+      "readiness": {
+        "characters": 174,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/impact-cases.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-6342091611",
+      "readyMs": 696,
+      "readiness": {
+        "characters": 162,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/overlap-timeline-pid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-6342091611",
+      "readyMs": 807,
+      "readiness": {
+        "characters": 750,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 179.314
+        }
+      ],
+      "screenshot": "desktop/supervisor/graph-institutions-pid.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases",
+      "target": "/cases",
+      "readyMs": 867,
+      "readiness": {
+        "characters": 4466,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1800,
+      "readiness": {
+        "characters": 11992,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 139.369
+        }
+      ],
+      "screenshot": "desktop/supervisor/reports.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 1091,
+      "readiness": {
+        "characters": 2721,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/audit.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 1757,
+      "readiness": {
+        "characters": 14247,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/notifications.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 3407,
+      "readiness": {
+        "characters": 32,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Readiness: {\"characters\":32,\"loadingLines\":[],\"skeletons\":0}; pending API paths: /api/v1/auth/me",
+        "Content deadline exceeded: 3407 ms"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 387.842
+        }
+      ],
+      "screenshot": "desktop/supervisor/regional.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001535",
+      "readyMs": 2974,
+      "readiness": {
+        "characters": 2108,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Readiness: {\"characters\":2108,\"loadingLines\":[],\"skeletons\":0}; pending API paths: /api/v1/workspace/queue"
+      ],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases-caseId.png"
+    }
+  ]
+}

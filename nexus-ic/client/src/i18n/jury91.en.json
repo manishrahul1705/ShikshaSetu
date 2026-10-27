@@ -1,0 +1,4 @@
+{
+  "s4_LOCAL_EMBEDDING_AND_LEXICAL": "Larger of local model similarity and lexical overlap",
+  "s4_LEXICAL_FALLBACK": "Local semantic inference unavailable; lexical matching used"
+}

@@ -1,0 +1,456 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--repeat-each=3",
+      "--max-failures=1"
+    ],
+    "configFile": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\playwright.config.js",
+    "rootDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/docs/screenshots/run-artifacts",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "judge.spec.js"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\docs\\screenshots\\run-artifacts",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
+        "snapshotDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
+        "testIgnore": [],
+        "testMatch": "judge.spec.js",
+        "timeout": 300000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5317",
+          "browserName": "chromium",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "video": "off",
+          "screenshot": "off",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/screenshots/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node e2e/runtime.mjs",
+      "url": "http://127.0.0.1:5317",
+      "reuseExistingServer": false,
+      "timeout": 60000,
+      "stdout": "ignore"
+    }
+  },
+  "suites": [
+    {
+      "title": "judge.spec.js",
+      "file": "judge.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "[JUDGE] complete browser rehearsal: verification, PREVENT, TRACE, PROOF, tracking and audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 156122,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Saved masked browser step 01-landing\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 02-trust-verification\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 02a-institution-picker\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 03-pid-lookup\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 04-hindi\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 05-prevent-preview\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 06-case-created\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 06a-case-explanation\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 07-institution-overlap\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 08-overlap-timeline\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 09-officer-action-review\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 10-transfer-pending\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 11-transfer-accepted\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 12-closure-blocked\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 13-closure-proposed\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 14-closure-approved\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 15-track-receipt\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 15a-downloaded-qr-receipt\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 16-feedback\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 17-authority\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 18-impact\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 19-impact-drilldown\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 19a-presentation-results\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 20-audit\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 21-integrity\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T05:21:30.297Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f19a278ac7698482343-9788d081177f7199e514",
+          "file": "judge.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "[JUDGE] complete browser rehearsal: verification, PREVENT, TRACE, PROOF, tracking and audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 164275,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Saved masked browser step 01-landing\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 02-trust-verification\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 02a-institution-picker\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 03-pid-lookup\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 04-hindi\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 05-prevent-preview\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 06-case-created\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 06a-case-explanation\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 07-institution-overlap\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 08-overlap-timeline\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 09-officer-action-review\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 10-transfer-pending\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 11-transfer-accepted\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 12-closure-blocked\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 13-closure-proposed\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 14-closure-approved\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 15-track-receipt\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 15a-downloaded-qr-receipt\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 16-feedback\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 17-authority\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 18-impact\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 19-impact-drilldown\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 19a-presentation-results\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 20-audit\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 21-integrity\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T05:24:12.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f19a278ac7698482343-d7e0517c0df144374f83",
+          "file": "judge.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "[JUDGE] complete browser rehearsal: verification, PREVENT, TRACE, PROOF, tracking and audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 123799,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Saved masked browser step 01-landing\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 02-trust-verification\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 02a-institution-picker\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 03-pid-lookup\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 04-hindi\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 05-prevent-preview\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 06-case-created\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 06a-case-explanation\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 07-institution-overlap\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 08-overlap-timeline\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 09-officer-action-review\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 10-transfer-pending\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 11-transfer-accepted\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 12-closure-blocked\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 13-closure-proposed\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 14-closure-approved\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 15-track-receipt\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 15a-downloaded-qr-receipt\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 16-feedback\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 17-authority\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 18-impact\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 19-impact-drilldown\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 19a-presentation-results\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 20-audit\n"
+                    },
+                    {
+                      "text": "Saved masked browser step 21-integrity\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T05:27:05.480Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f19a278ac7698482343-a65aca4c7d1376843c1b",
+          "file": "judge.spec.js",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T05:21:23.209Z",
+    "duration": 477801.321,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

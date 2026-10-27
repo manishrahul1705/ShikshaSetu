@@ -1,0 +1,126 @@
+{
+  "recordedAt": "2026-10-26T09:43:39.420Z",
+  "pages": 40,
+  "passed": 27,
+  "failed": 13,
+  "failures": [
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/dashboard",
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/verify",
+      "errors": [
+        "Banned visible wording: simulator, POLICY_NOT_CONFIGURED",
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/my/consents",
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED",
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/institutions/:id",
+      "errors": [
+        "Banned visible wording: simulator"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/sync",
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3040 ms"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/queries/:caseId",
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/fieldwork/:caseId",
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/leave",
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/impact/cases",
+      "errors": [
+        "Content not ready within 3000 ms",
+        "Content deadline exceeded: 3029 ms"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/graph/institutions/:pid",
+      "errors": [
+        "Banned visible wording: simulator"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/cases",
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/regional",
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "route": "/cases/:caseId",
+      "errors": [
+        "Banned visible wording: SIMULATOR"
+      ]
+    }
+  ],
+  "dashboards": [
+    {
+      "viewport": "desktop",
+      "role": "supervisor",
+      "readyMs": 2274,
+      "errors": [
+        "Banned visible wording: POLICY_NOT_CONFIGURED"
+      ]
+    }
+  ]
+}

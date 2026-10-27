@@ -1,0 +1,259 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:33:50.171Z",
+  "records": [
+    {
+      "role": "institution_admin",
+      "route": "/",
+      "target": "/",
+      "readyMs": 1301,
+      "readiness": {
+        "characters": 4058,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/landing.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 855,
+      "readiness": {
+        "characters": 728,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/login.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 1127,
+      "readiness": {
+        "characters": 759,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/dashboard.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 620,
+      "readiness": {
+        "characters": 696,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/verify.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 552,
+      "readiness": {
+        "characters": 378,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/my-consents.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 565,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/dev-otp-inbox.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 585,
+      "readiness": {
+        "characters": 169,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/institutions-lookup.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-7734299133",
+      "readyMs": 805,
+      "readiness": {
+        "characters": 1726,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/institutions-id.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001290",
+      "readyMs": 739,
+      "readiness": {
+        "characters": 498,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/my-cases-caseId.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/queries/:caseId",
+      "target": "/queries/NX-2026-001290",
+      "readyMs": 723,
+      "readiness": {
+        "characters": 136,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/queries-caseId.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/institution",
+      "target": "/institution",
+      "readyMs": 766,
+      "readiness": {
+        "characters": 1155,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/institution.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 508,
+      "readiness": {
+        "characters": 5030,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/integrity.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 422,
+      "readiness": {
+        "characters": 196,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/judge.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 445,
+      "readiness": {
+        "characters": 200,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/notifications.png"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "browser": "155.0.8059.85",
+  "database": "awaaz_dastak_showcase",
+  "recordedAt": "2026-10-26T10:09:25.590Z",
+  "records": [
+    {
+      "role": "auditor",
+      "route": "/",
+      "target": "/",
+      "readyMs": 952,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/landing.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/login",
+      "target": "/login",
+      "readyMs": 317,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/login.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/dashboard",
+      "target": "/dashboard",
+      "readyMs": 1671,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 1215.306
+        }
+      ],
+      "screenshot": "desktop/auditor/dashboard.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/verify",
+      "target": "/verify",
+      "readyMs": 457,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/verify.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/my/consents",
+      "target": "/my/consents",
+      "readyMs": 430,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/my-consents.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/dev/otp-inbox",
+      "target": "/dev/otp-inbox",
+      "readyMs": 507,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/dev-otp-inbox.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/institutions/lookup",
+      "target": "/institutions/lookup",
+      "readyMs": 540,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/institutions-lookup.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/institutions/:id",
+      "target": "/institutions/1-5794156983",
+      "readyMs": 948,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/institutions-id.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/my/cases/:caseId",
+      "target": "/my/cases/NX-2026-001024",
+      "readyMs": 826,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/my-cases-caseId.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/rulebook",
+      "target": "/rulebook",
+      "readyMs": 506,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/rulebook.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/closure/:caseId",
+      "target": "/closure/NX-2026-001024",
+      "readyMs": 545,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/closure-caseId.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/review/appeals",
+      "target": "/review/appeals",
+      "readyMs": 534,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/review-appeals.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/rescue",
+      "target": "/rescue",
+      "readyMs": 747,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/rescue.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/impact",
+      "target": "/impact",
+      "readyMs": 980,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 47.357
+        }
+      ],
+      "screenshot": "desktop/auditor/impact.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/integrity",
+      "target": "/integrity",
+      "readyMs": 541,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/integrity.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/judge",
+      "target": "/judge",
+      "readyMs": 464,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/judge.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/walkthrough/compare",
+      "target": "/walkthrough/compare",
+      "readyMs": 507,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/walkthrough-compare.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/coverage",
+      "target": "/coverage",
+      "readyMs": 445,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/coverage.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/impact/cases",
+      "target": "/impact/cases",
+      "readyMs": 540,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/impact-cases.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/overlap-timeline/:pid",
+      "target": "/overlap-timeline/1-5794156983",
+      "readyMs": 705,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/overlap-timeline-pid.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/graph/institutions/:pid",
+      "target": "/graph/institutions/1-5794156983",
+      "readyMs": 726,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [
+        "Console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ],
+      "apiTimes": [
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 67.986
+        }
+      ],
+      "screenshot": "desktop/auditor/graph-institutions-pid.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 1337,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 92.96
+        }
+      ],
+      "screenshot": "desktop/auditor/reports.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 918,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/audit.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 647,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/notifications.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001024",
+      "readyMs": 594,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/auditor/cases-caseId.png"
+    }
+  ]
+}
