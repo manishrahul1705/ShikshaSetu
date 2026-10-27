@@ -90,7 +90,7 @@ export default function OfficialImport() {
           Imported {result.rows?.length || 0} rows from {result.provenance?.sourceFileName} (list as of {result.provenance?.listDate}). New {result.counts.new}, updated {result.counts.updated}, rejected {result.counts.rejected}. The import is recorded in the audit trail. Search results now show “Official AICTE list as of {result.provenance?.listDate}”.
         </section>
       )}
-      <p className="text-xs text-slate-500">Live IIC/AICTE lookup: awaiting official API access. Imported real colleges can be searched and viewed, but demo grievances cannot name them.</p>
+      <p className="text-xs text-slate-500">Live IIC/AICTE lookup: awaiting official API access. Imported real colleges can be searched and viewed, but practice grievances cannot name them.</p>
     </div>
   );
 }

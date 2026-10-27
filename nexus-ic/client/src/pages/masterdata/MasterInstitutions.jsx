@@ -14,6 +14,12 @@ export default function MasterInstitutions() {
   const [reason, setReason] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [actionError, setActionError] = useState('');
+  const [query, setQuery] = useState('');
+  const [filterRegion, setFilterRegion] = useState('');
+  const [page, setPage] = useState(0);
+  const institutions = (data?.institutions || []).filter(row => (!filterRegion || row.region === filterRegion) && `${row.name} ${row.pid} ${row.icid || ''} ${row.state}`.toLowerCase().includes(query.trim().toLowerCase()));
+  const pages = Math.max(1, Math.ceil(institutions.length / 12));
+  const currentPage = Math.min(page, pages - 1);
 
   const fetchInstitutions = async () => {
     setLoading(true);
@@ -92,6 +98,7 @@ export default function MasterInstitutions() {
         <div className="p-4 bg-red-50 text-red-700 text-xs rounded-lg">{error}</div>
       ) : (
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="flex flex-wrap items-end gap-3 border-b border-saffron-100 bg-saffron-50/40 p-4"><label className="min-w-0 flex-1 text-xs font-semibold text-slate-600">Search institutions<input aria-label="Search master institutions" placeholder="Name, PID, ICID or state" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} className="mt-1 block w-full rounded-lg border border-slate-200 p-2 text-sm"/></label><label className="text-xs font-semibold text-slate-600">Region<select aria-label="Filter master institutions by region" value={filterRegion} onChange={e => { setFilterRegion(e.target.value); setPage(0); }} className="mt-1 block rounded-lg border border-slate-200 p-2 text-sm"><option value="">All regions</option>{[...new Set((data?.institutions || []).map(row => row.region).filter(Boolean))].sort().map(value => <option key={value}>{value}</option>)}</select></label><span className="pb-2 text-xs text-slate-500">{institutions.length} matching records</span></div><div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
             <thead className="bg-slate-50 border-b text-slate-700 font-bold uppercase tracking-wider">
               <tr>
@@ -104,7 +111,7 @@ export default function MasterInstitutions() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {data?.institutions?.map((inst) => (
+              {institutions.slice(currentPage * 12, (currentPage + 1) * 12).map((inst) => (
                 <tr key={inst.pid} className="hover:bg-slate-50">
                   <td className="p-3 font-mono font-bold text-blue-900">{inst.pid}</td>
                   <td className="p-3 font-semibold text-slate-900">{inst.name}</td>
@@ -126,7 +133,9 @@ export default function MasterInstitutions() {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table></div>
+          {institutions.length === 0 && <p className="p-8 text-center text-sm text-slate-500">No institutions match your filters.</p>}
+          <nav aria-label="Institution registry pages" className="flex items-center justify-between gap-3 border-t border-slate-100 p-3 text-xs"><button type="button" className="btn-secondary text-xs" disabled={currentPage === 0} onClick={() => setPage(currentPage - 1)}>Previous</button><span>Page {currentPage + 1} of {pages}</span><button type="button" className="btn-secondary text-xs" disabled={currentPage + 1 >= pages} onClick={() => setPage(currentPage + 1)}>Next</button></nav>
         </div>
       )}
 

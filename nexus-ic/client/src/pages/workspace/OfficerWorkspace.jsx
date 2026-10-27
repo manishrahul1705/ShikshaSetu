@@ -20,7 +20,7 @@ export default function OfficerWorkspace() {
   const currentPage = Math.min(page, Math.max(0, Math.ceil(filtered.length / 20) - 1));
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <h2 className="text-lg font-bold">My cases, tasks, SLA and actions</h2>
         <span className="text-xs">{w.scope}</span>
       </div>
@@ -55,10 +55,12 @@ export default function OfficerWorkspace() {
         <section className="border rounded p-2 bg-white" aria-label="My tasks">
           <h3 className="font-semibold">Coordination tasks</h3>
           {Array.isArray(w.tasks) ? w.tasks.map((t) => <p key={t.id}>{t.title} ({t.status}) {t.masterCaseId}</p>) : <p>UNKNOWN ({w.tasks.reason})</p>}
+          {Array.isArray(w.tasks) && w.tasks.length === 0 && <p className="mt-2 text-slate-600">No coordination tasks are assigned in your scope. Tasks will appear when an authorized officer creates a coordination plan.</p>}
         </section>
         <section className="border rounded p-2 bg-white" aria-label="Incoming transfers">
           <h3 className="font-semibold">Incoming transfers</h3>
           {Array.isArray(w.incomingTransfers) ? w.incomingTransfers.map((t) => <p key={t.id}>{t.masterCaseId} from {t.fromBureau}{t.isEscalated ? ' (escalated)' : ''}</p>) : <p>UNKNOWN ({w.incomingTransfers.reason})</p>}
+          {Array.isArray(w.incomingTransfers) && w.incomingTransfers.length === 0 && <p className="mt-2 text-slate-600">No transfers are awaiting your office. Incoming handovers will appear here when another office forwards a case.</p>}
           <Link className="underline text-xs" to="/transfers">Open NEXUS TRACE</Link>
         </section>
         <section className="border rounded p-2 bg-white" aria-label="My recent actions">
