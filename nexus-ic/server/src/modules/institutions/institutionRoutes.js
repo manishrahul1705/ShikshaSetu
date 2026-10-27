@@ -14,7 +14,7 @@ import { searchInstitutions } from '../registry/search.js';
 
 const router = Router();
 
-router.get('/public-search', async (req, res) => {
+router.get('/public-search', authorize(), async (req, res) => {
   try {
     res.set('Cache-Control', 'no-store').json(await searchInstitutions(req.query));
   } catch (error) {
@@ -30,7 +30,7 @@ router.get('/search', authorize(), async (req, res) => {
   }
 });
 
-router.get('/public/:pid', async (req, res) => {
+router.get('/public/:pid', authorize(), async (req, res) => {
   try {
     const result = await getInstitutionByPid(req.params.pid);
     if (!result.found) return res.status(404).json({ error: result.reason || 'Institution not found' });

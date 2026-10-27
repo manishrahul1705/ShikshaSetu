@@ -76,7 +76,7 @@ export async function canAccessCase(user, caseDoc) {
   if (role === 'institution_admin') {
     if (!user.institutionPid) {
       // In demo mode, if inst_admin1 has no institutionPid, match if explicit
-      return true;
+      return (process.env.APP_MODE || 'demo') === 'demo';
     }
     return caseDoc.institutionPid === user.institutionPid;
   }
