@@ -1,10 +1,47 @@
 {
-  "timings": [],
+  "timings": [
+    {
+      "route": "/grievances/new",
+      "ms": 288
+    },
+    {
+      "route": "/queries/NX-2026-000018",
+      "ms": 346
+    },
+    {
+      "route": "/requests/combined?pid=1-7734299133",
+      "ms": 281
+    },
+    {
+      "route": "/documents/locker",
+      "ms": 315
+    },
+    {
+      "route": "/requests/combined",
+      "ms": 231
+    },
+    {
+      "route": "/track",
+      "ms": 224
+    },
+    {
+      "route": "/reports/monthly",
+      "ms": 576
+    },
+    {
+      "route": "/coverage",
+      "ms": 286
+    },
+    {
+      "route": "/walkthrough/compare?pid=1-7734299133",
+      "ms": 340
+    },
+    {
+      "route": "/officer-workload",
+      "ms": 249
+    }
+  ],
   "errors": [],
-  "video": "Chrome recording",
-  "recording": {
-    "frames": 8,
-    "bytes": 30426,
-    "encoder": "Chrome MediaRecorder VP8"
-  }
+  "video": "Playwright recording",
+  "recording": null
 }

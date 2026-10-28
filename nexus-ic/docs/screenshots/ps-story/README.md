@@ -23,4 +23,4 @@ Video is currently unavailable: the installed Playwright expects `ffmpeg-1013/ff
 
 Monthly reporting preserves evidence gaps: historical Closed records without imported PROOF evidence are explicitly marked incomplete. The comparison's left column is an illustrative sequence; the right counts issued combined covers, separate N70 queries, PREVENT flags and accepted TRACE transfers. Neither side measures real-world savings.
 
-Final counts and timing findings are recorded in [the phase report](../../../plans/PS_FEATURES_REPORT.md).
+The development phase report is archived outside the repository. Run counts and timing evidence remain in the per-run checks and reporter files indexed above.

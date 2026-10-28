@@ -1,42 +1,47 @@
 {
   "timings": [
     {
+      "route": "/grievances/new",
+      "ms": 221
+    },
+    {
       "route": "/queries/NX-2026-000018",
-      "ms": 4168
+      "ms": 287
     },
     {
       "route": "/requests/combined?pid=1-7734299133",
-      "ms": 2955
+      "ms": 253
     },
     {
       "route": "/documents/locker",
-      "ms": 2334
+      "ms": 278
     },
     {
       "route": "/requests/combined",
-      "ms": 1384
+      "ms": 315
     },
     {
       "route": "/track",
-      "ms": 5478
+      "ms": 268
     },
     {
       "route": "/reports/monthly",
-      "ms": 1845
+      "ms": 425
     },
     {
       "route": "/coverage",
-      "ms": 1079
+      "ms": 316
     },
     {
       "route": "/walkthrough/compare?pid=1-7734299133",
-      "ms": 1689
+      "ms": 364
     },
     {
       "route": "/officer-workload",
-      "ms": 1147
+      "ms": 203
     }
   ],
   "errors": [],
-  "video": "Unavailable: installed Playwright encoder is missing; no download authorized"
+  "video": "Playwright recording",
+  "recording": null
 }
