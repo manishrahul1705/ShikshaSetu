@@ -1,0 +1,228 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.ps-align-showcase.config.js"
+    ],
+    "configFile": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\playwright.ps-align-showcase.config.js",
+    "rootDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/docs/screenshots/ps-story/artifacts",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "ps-story.spec.js"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\docs\\screenshots\\ps-story\\artifacts",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\e2e",
+        "snapshotDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\e2e",
+        "testIgnore": [],
+        "testMatch": "ps-story.spec.js",
+        "timeout": 300000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5317",
+          "browserName": "chromium",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1366,
+            "height": 768
+          },
+          "video": "off",
+          "screenshot": "off",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/screenshots/ps-align/showcase-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node e2e/ps-runtime.mjs",
+      "url": "http://127.0.0.1:5317",
+      "reuseExistingServer": true,
+      "timeout": 60000,
+      "stdout": "ignore"
+    }
+  },
+  "suites": [
+    {
+      "title": "ps-story.spec.js",
+      "file": "ps-story.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "[PS-STORY] N81 to N89 coordinated workflow, exports and role isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17671,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:38:35.340Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "30eaadd5a7ae80abac0a-9ac27002d62ab3da8a48",
+          "file": "ps-story.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "[PS-STORY] N81 to N89 coordinated workflow, exports and role isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15102,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:39:02.245Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "30eaadd5a7ae80abac0a-4c11dfd4274ae48a55a3",
+          "file": "ps-story.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "[PS-STORY] N81 to N89 coordinated workflow, exports and role isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:39:19.554Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "30eaadd5a7ae80abac0a-e6401d9d4221b967f682",
+          "file": "ps-story.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T16:38:34.585Z",
+    "duration": 61736.376000000004,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
