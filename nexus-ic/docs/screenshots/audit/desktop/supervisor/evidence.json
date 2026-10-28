@@ -1,15 +1,15 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:36:52.601Z",
+  "recordedAt": "2026-10-28T16:30:20.249Z",
   "records": [
     {
       "role": "supervisor",
       "route": "/",
       "target": "/",
-      "readyMs": 1756,
+      "readyMs": 448,
       "readiness": {
-        "characters": 4051,
+        "characters": 4063,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -25,9 +25,9 @@
       "role": "supervisor",
       "route": "/login",
       "target": "/login",
-      "readyMs": 326,
+      "readyMs": 208,
       "readiness": {
-        "characters": 728,
+        "characters": 399,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -43,9 +43,9 @@
       "role": "supervisor",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 2145,
+      "readyMs": 560,
       "readiness": {
-        "characters": 7122,
+        "characters": 9713,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -57,11 +57,15 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 1545.286
+          "ms": 171.888
+        },
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 173.382
         },
         {
           "path": "/api/v1/impact/summary",
-          "ms": 1616.464
+          "ms": 192.755
         }
       ],
       "screenshot": "desktop/supervisor/dashboard.png"
@@ -70,9 +74,9 @@
       "role": "supervisor",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 1452,
+      "readyMs": 287,
       "readiness": {
-        "characters": 696,
+        "characters": 731,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -88,7 +92,7 @@
       "role": "supervisor",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 568,
+      "readyMs": 331,
       "readiness": {
         "characters": 378,
         "loadingLines": [],
@@ -106,9 +110,9 @@
       "role": "supervisor",
       "route": "/officer/reveal-requests",
       "target": "/officer/reveal-requests",
-      "readyMs": 430,
+      "readyMs": 387,
       "readiness": {
-        "characters": 1120,
+        "characters": 1116,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -124,7 +128,7 @@
       "role": "supervisor",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 409,
+      "readyMs": 386,
       "readiness": {
         "characters": 184,
         "loadingLines": [],
@@ -142,9 +146,9 @@
       "role": "supervisor",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 398,
+      "readyMs": 465,
       "readiness": {
-        "characters": 169,
+        "characters": 1389,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -159,10 +163,10 @@
     {
       "role": "supervisor",
       "route": "/institutions/:id",
-      "target": "/institutions/1-6342091611",
-      "readyMs": 1080,
+      "target": "/institutions/1-3275979314",
+      "readyMs": 1159,
       "readiness": {
-        "characters": 1700,
+        "characters": 1385,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -174,7 +178,11 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 160.715
+          "ms": 481.182
+        },
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 502.047
         }
       ],
       "screenshot": "desktop/supervisor/institutions-id.png"
@@ -183,7 +191,7 @@
       "role": "supervisor",
       "route": "/review/identity",
       "target": "/review/identity",
-      "readyMs": 437,
+      "readyMs": 360,
       "readiness": {
         "characters": 603,
         "loadingLines": [],
@@ -200,12 +208,12 @@
     {
       "role": "supervisor",
       "route": "/my/cases/:caseId",
-      "target": "/my/cases/NX-2026-001535",
-      "readyMs": 594,
+      "target": "/my/cases/NX-2026-001325",
+      "readyMs": 344,
       "readiness": {
-        "characters": 603,
+        "characters": 1215,
         "loadingLines": [],
-        "skeletons": 0
+        "skeletons": 1
       },
       "layout": {
         "width": 1440,
@@ -219,9 +227,9 @@
       "role": "supervisor",
       "route": "/rulebook",
       "target": "/rulebook",
-      "readyMs": 455,
+      "readyMs": 396,
       "readiness": {
-        "characters": 1432,
+        "characters": 2386,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -237,9 +245,9 @@
       "role": "supervisor",
       "route": "/triage",
       "target": "/triage",
-      "readyMs": 684,
+      "readyMs": 402,
       "readiness": {
-        "characters": 3430,
+        "characters": 2029,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -255,9 +263,9 @@
       "role": "supervisor",
       "route": "/transfers",
       "target": "/transfers",
-      "readyMs": 429,
+      "readyMs": 359,
       "readiness": {
-        "characters": 3648,
+        "characters": 3475,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -272,10 +280,10 @@
     {
       "role": "supervisor",
       "route": "/sync/:institutionPid",
-      "target": "/sync/1-6342091611",
-      "readyMs": 509,
+      "target": "/sync/1-3275979314",
+      "readyMs": 393,
       "readiness": {
-        "characters": 985,
+        "characters": 1019,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -291,9 +299,9 @@
       "role": "supervisor",
       "route": "/sync",
       "target": "/sync",
-      "readyMs": 521,
+      "readyMs": 429,
       "readiness": {
-        "characters": 146,
+        "characters": 1181,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -308,8 +316,8 @@
     {
       "role": "supervisor",
       "route": "/queries/:caseId",
-      "target": "/queries/NX-2026-001535",
-      "readyMs": 318,
+      "target": "/queries/NX-2026-001325",
+      "readyMs": 365,
       "readiness": {
         "characters": 188,
         "loadingLines": [],
@@ -326,8 +334,8 @@
     {
       "role": "supervisor",
       "route": "/fieldwork/:caseId",
-      "target": "/fieldwork/NX-2026-001535",
-      "readyMs": 549,
+      "target": "/fieldwork/NX-2026-001325",
+      "readyMs": 395,
       "readiness": {
         "characters": 280,
         "loadingLines": [],
@@ -345,9 +353,9 @@
       "role": "supervisor",
       "route": "/insider/alerts",
       "target": "/insider/alerts",
-      "readyMs": 403,
+      "readyMs": 425,
       "readiness": {
-        "characters": 1928,
+        "characters": 1922,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -363,9 +371,9 @@
       "role": "supervisor",
       "route": "/leave",
       "target": "/leave",
-      "readyMs": 410,
+      "readyMs": 323,
       "readiness": {
-        "characters": 291,
+        "characters": 372,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -381,9 +389,9 @@
       "role": "supervisor",
       "route": "/review",
       "target": "/review",
-      "readyMs": 1994,
+      "readyMs": 885,
       "readiness": {
-        "characters": 4693,
+        "characters": 12933,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -395,7 +403,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 1269.083
+          "ms": 181.882
         }
       ],
       "screenshot": "desktop/supervisor/review.png"
@@ -403,8 +411,8 @@
     {
       "role": "supervisor",
       "route": "/closure/:caseId",
-      "target": "/closure/NX-2026-001535",
-      "readyMs": 545,
+      "target": "/closure/NX-2026-001325",
+      "readyMs": 362,
       "readiness": {
         "characters": 479,
         "loadingLines": [],
@@ -422,7 +430,7 @@
       "role": "supervisor",
       "route": "/review/appeals",
       "target": "/review/appeals",
-      "readyMs": 535,
+      "readyMs": 386,
       "readiness": {
         "characters": 2536,
         "loadingLines": [],
@@ -440,9 +448,9 @@
       "role": "supervisor",
       "route": "/rescue",
       "target": "/rescue",
-      "readyMs": 648,
+      "readyMs": 429,
       "readiness": {
-        "characters": 3349,
+        "characters": 3350,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -458,9 +466,9 @@
       "role": "supervisor",
       "route": "/impact",
       "target": "/impact",
-      "readyMs": 1310,
+      "readyMs": 933,
       "readiness": {
-        "characters": 11114,
+        "characters": 6847,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -472,7 +480,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 70.141
+          "ms": 22.188
         }
       ],
       "screenshot": "desktop/supervisor/impact.png"
@@ -480,8 +488,8 @@
     {
       "role": "supervisor",
       "route": "/cases/:caseId/redaction",
-      "target": "/cases/NX-2026-001535/redaction",
-      "readyMs": 415,
+      "target": "/cases/NX-2026-001325/redaction",
+      "readyMs": 504,
       "readiness": {
         "characters": 127,
         "loadingLines": [],
@@ -499,9 +507,9 @@
       "role": "supervisor",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 517,
+      "readyMs": 438,
       "readiness": {
-        "characters": 5030,
+        "characters": 5216,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -517,9 +525,9 @@
       "role": "supervisor",
       "route": "/benchmark",
       "target": "/benchmark",
-      "readyMs": 679,
+      "readyMs": 489,
       "readiness": {
-        "characters": 2220,
+        "characters": 2218,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -535,9 +543,9 @@
       "role": "supervisor",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 482,
+      "readyMs": 377,
       "readiness": {
-        "characters": 1001,
+        "characters": 1034,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -553,9 +561,9 @@
       "role": "supervisor",
       "route": "/walkthrough/compare",
       "target": "/walkthrough/compare",
-      "readyMs": 589,
+      "readyMs": 473,
       "readiness": {
-        "characters": 923,
+        "characters": 921,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -571,9 +579,9 @@
       "role": "supervisor",
       "route": "/coverage",
       "target": "/coverage",
-      "readyMs": 337,
+      "readyMs": 537,
       "readiness": {
-        "characters": 3931,
+        "characters": 5836,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -589,7 +597,7 @@
       "role": "supervisor",
       "route": "/impact/cases",
       "target": "/impact/cases",
-      "readyMs": 496,
+      "readyMs": 359,
       "readiness": {
         "characters": 174,
         "loadingLines": [],
@@ -606,8 +614,8 @@
     {
       "role": "supervisor",
       "route": "/overlap-timeline/:pid",
-      "target": "/overlap-timeline/1-6342091611",
-      "readyMs": 696,
+      "target": "/overlap-timeline/1-3275979314",
+      "readyMs": 440,
       "readiness": {
         "characters": 162,
         "loadingLines": [],
@@ -624,10 +632,10 @@
     {
       "role": "supervisor",
       "route": "/graph/institutions/:pid",
-      "target": "/graph/institutions/1-6342091611",
-      "readyMs": 807,
+      "target": "/graph/institutions/1-3275979314",
+      "readyMs": 474,
       "readiness": {
-        "characters": 750,
+        "characters": 633,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -639,7 +647,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 179.314
+          "ms": 68.183
         }
       ],
       "screenshot": "desktop/supervisor/graph-institutions-pid.png"
@@ -648,9 +656,9 @@
       "role": "supervisor",
       "route": "/cases",
       "target": "/cases",
-      "readyMs": 867,
+      "readyMs": 416,
       "readiness": {
-        "characters": 4466,
+        "characters": 4328,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -666,9 +674,9 @@
       "role": "supervisor",
       "route": "/reports",
       "target": "/reports",
-      "readyMs": 1800,
+      "readyMs": 763,
       "readiness": {
-        "characters": 11992,
+        "characters": 4119,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -680,7 +688,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 139.369
+          "ms": 26.352
         }
       ],
       "screenshot": "desktop/supervisor/reports.png"
@@ -689,9 +697,9 @@
       "role": "supervisor",
       "route": "/audit",
       "target": "/audit",
-      "readyMs": 1091,
+      "readyMs": 801,
       "readiness": {
-        "characters": 2721,
+        "characters": 2720,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -707,9 +715,9 @@
       "role": "supervisor",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 1757,
+      "readyMs": 669,
       "readiness": {
-        "characters": 14247,
+        "characters": 15500,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -725,9 +733,9 @@
       "role": "supervisor",
       "route": "/regional",
       "target": "/regional",
-      "readyMs": 3407,
+      "readyMs": 564,
       "readiness": {
-        "characters": 32,
+        "characters": 9440,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -735,26 +743,22 @@
         "width": 1440,
         "scrollWidth": 1440
       },
-      "errors": [
-        "Content not ready within 3000 ms",
-        "Readiness: {\"characters\":32,\"loadingLines\":[],\"skeletons\":0}; pending API paths: /api/v1/auth/me",
-        "Content deadline exceeded: 3407 ms"
-      ],
+      "errors": [],
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 387.842
+          "ms": 67.607
         }
       ],
       "screenshot": "desktop/supervisor/regional.png"
     },
     {
       "role": "supervisor",
-      "route": "/cases/:caseId",
-      "target": "/cases/NX-2026-001535",
-      "readyMs": 2974,
+      "route": "/requests/combined",
+      "target": "/requests/combined",
+      "readyMs": 442,
       "readiness": {
-        "characters": 2108,
+        "characters": 141,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -762,10 +766,115 @@
         "width": 1440,
         "scrollWidth": 1440
       },
-      "errors": [
-        "Content not ready within 3000 ms",
-        "Readiness: {\"characters\":2108,\"loadingLines\":[],\"skeletons\":0}; pending API paths: /api/v1/workspace/queue"
-      ],
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/requests-combined.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/documents/locker",
+      "target": "/documents/locker",
+      "readyMs": 473,
+      "readiness": {
+        "characters": 156,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/documents-locker.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/reports/monthly",
+      "target": "/reports/monthly",
+      "readyMs": 465,
+      "readiness": {
+        "characters": 1656,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/reports-monthly.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/officer-workload",
+      "target": "/officer-workload",
+      "readyMs": 407,
+      "readiness": {
+        "characters": 263,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/officer-workload.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/search",
+      "target": "/cases/search",
+      "readyMs": 559,
+      "readiness": {
+        "characters": 2877,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/cases-search.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/coordination",
+      "target": "/coordination",
+      "readyMs": 471,
+      "readiness": {
+        "characters": 2110,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/supervisor/coordination.png"
+    },
+    {
+      "role": "supervisor",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001325",
+      "readyMs": 529,
+      "readiness": {
+        "characters": 3898,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
       "apiTimes": [],
       "screenshot": "desktop/supervisor/cases-caseId.png"
     }

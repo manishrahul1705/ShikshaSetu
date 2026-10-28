@@ -1,15 +1,15 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:33:50.171Z",
+  "recordedAt": "2026-10-28T16:28:22.452Z",
   "records": [
     {
       "role": "institution_admin",
       "route": "/",
       "target": "/",
-      "readyMs": 1301,
+      "readyMs": 331,
       "readiness": {
-        "characters": 4058,
+        "characters": 4070,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -25,9 +25,9 @@
       "role": "institution_admin",
       "route": "/login",
       "target": "/login",
-      "readyMs": 855,
+      "readyMs": 195,
       "readiness": {
-        "characters": 728,
+        "characters": 399,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -43,9 +43,9 @@
       "role": "institution_admin",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 1127,
+      "readyMs": 446,
       "readiness": {
-        "characters": 759,
+        "characters": 909,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -61,9 +61,9 @@
       "role": "institution_admin",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 620,
+      "readyMs": 297,
       "readiness": {
-        "characters": 696,
+        "characters": 751,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -79,7 +79,7 @@
       "role": "institution_admin",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 552,
+      "readyMs": 339,
       "readiness": {
         "characters": 378,
         "loadingLines": [],
@@ -97,7 +97,7 @@
       "role": "institution_admin",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 565,
+      "readyMs": 327,
       "readiness": {
         "characters": 184,
         "loadingLines": [],
@@ -115,9 +115,9 @@
       "role": "institution_admin",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 585,
+      "readyMs": 402,
       "readiness": {
-        "characters": 169,
+        "characters": 1389,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -133,9 +133,9 @@
       "role": "institution_admin",
       "route": "/institutions/:id",
       "target": "/institutions/1-7734299133",
-      "readyMs": 805,
+      "readyMs": 417,
       "readiness": {
-        "characters": 1726,
+        "characters": 1618,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -150,10 +150,10 @@
     {
       "role": "institution_admin",
       "route": "/my/cases/:caseId",
-      "target": "/my/cases/NX-2026-001290",
-      "readyMs": 739,
+      "target": "/my/cases/NX-2026-000019",
+      "readyMs": 346,
       "readiness": {
-        "characters": 498,
+        "characters": 1007,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -168,10 +168,10 @@
     {
       "role": "institution_admin",
       "route": "/queries/:caseId",
-      "target": "/queries/NX-2026-001290",
-      "readyMs": 723,
+      "target": "/queries/NX-2026-000019",
+      "readyMs": 341,
       "readiness": {
-        "characters": 136,
+        "characters": 178,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -187,9 +187,9 @@
       "role": "institution_admin",
       "route": "/institution",
       "target": "/institution",
-      "readyMs": 766,
+      "readyMs": 473,
       "readiness": {
-        "characters": 1155,
+        "characters": 1803,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -205,9 +205,9 @@
       "role": "institution_admin",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 508,
+      "readyMs": 302,
       "readiness": {
-        "characters": 5030,
+        "characters": 5216,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -223,9 +223,9 @@
       "role": "institution_admin",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 422,
+      "readyMs": 440,
       "readiness": {
-        "characters": 196,
+        "characters": 1034,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -241,9 +241,9 @@
       "role": "institution_admin",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 445,
+      "readyMs": 337,
       "readiness": {
-        "characters": 200,
+        "characters": 421,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -254,6 +254,42 @@
       "errors": [],
       "apiTimes": [],
       "screenshot": "desktop/institution_admin/notifications.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/requests/combined",
+      "target": "/requests/combined",
+      "readyMs": 320,
+      "readiness": {
+        "characters": 891,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/requests-combined.png"
+    },
+    {
+      "role": "institution_admin",
+      "route": "/documents/locker",
+      "target": "/documents/locker",
+      "readyMs": 369,
+      "readiness": {
+        "characters": 486,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/institution_admin/documents-locker.png"
     }
   ]
 }

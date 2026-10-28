@@ -1,13 +1,18 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:17:46.246Z",
+  "recordedAt": "2026-10-28T16:34:57.071Z",
   "records": [
     {
       "role": "auditor",
       "route": "/",
       "target": "/",
-      "readyMs": 2734,
+      "readyMs": 331,
+      "readiness": {
+        "characters": 4060,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -20,7 +25,12 @@
       "role": "auditor",
       "route": "/login",
       "target": "/login",
-      "readyMs": 535,
+      "readyMs": 169,
+      "readiness": {
+        "characters": 96,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -33,7 +43,12 @@
       "role": "auditor",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 1871,
+      "readyMs": 344,
+      "readiness": {
+        "characters": 2695,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -42,7 +57,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 1206.091
+          "ms": 12.406
         }
       ],
       "screenshot": "mobile/auditor/dashboard.png"
@@ -51,7 +66,12 @@
       "role": "auditor",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 763,
+      "readyMs": 229,
+      "readiness": {
+        "characters": 751,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -64,7 +84,12 @@
       "role": "auditor",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 728,
+      "readyMs": 204,
+      "readiness": {
+        "characters": 378,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -77,7 +102,12 @@
       "role": "auditor",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 830,
+      "readyMs": 253,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -90,7 +120,12 @@
       "role": "auditor",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 858,
+      "readyMs": 471,
+      "readiness": {
+        "characters": 1389,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -103,7 +138,12 @@
       "role": "auditor",
       "route": "/institutions/:id",
       "target": "/institutions/1-5794156983",
-      "readyMs": 1642,
+      "readyMs": 471,
+      "readiness": {
+        "characters": 1087,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -116,7 +156,12 @@
       "role": "auditor",
       "route": "/my/cases/:caseId",
       "target": "/my/cases/NX-2026-001024",
-      "readyMs": 919,
+      "readyMs": 357,
+      "readiness": {
+        "characters": 1234,
+        "loadingLines": [],
+        "skeletons": 1
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -129,7 +174,12 @@
       "role": "auditor",
       "route": "/rulebook",
       "target": "/rulebook",
-      "readyMs": 1507,
+      "readyMs": 345,
+      "readiness": {
+        "characters": 2442,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -142,7 +192,12 @@
       "role": "auditor",
       "route": "/closure/:caseId",
       "target": "/closure/NX-2026-001024",
-      "readyMs": 1735,
+      "readyMs": 310,
+      "readiness": {
+        "characters": 479,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -155,7 +210,12 @@
       "role": "auditor",
       "route": "/review/appeals",
       "target": "/review/appeals",
-      "readyMs": 1573,
+      "readyMs": 340,
+      "readiness": {
+        "characters": 2536,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -168,7 +228,12 @@
       "role": "auditor",
       "route": "/rescue",
       "target": "/rescue",
-      "readyMs": 1460,
+      "readyMs": 315,
+      "readiness": {
+        "characters": 3350,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -181,19 +246,21 @@
       "role": "auditor",
       "route": "/impact",
       "target": "/impact",
-      "readyMs": 4119,
+      "readyMs": 673,
+      "readiness": {
+        "characters": 6823,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
       },
-      "errors": [
-        "Content not ready within 3000 ms",
-        "Content deadline exceeded: 4119 ms"
-      ],
+      "errors": [],
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 533.836
+          "ms": 10.84
         }
       ],
       "screenshot": "mobile/auditor/impact.png"
@@ -202,7 +269,12 @@
       "role": "auditor",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 1011,
+      "readyMs": 314,
+      "readiness": {
+        "characters": 5216,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -215,7 +287,12 @@
       "role": "auditor",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 1040,
+      "readyMs": 326,
+      "readiness": {
+        "characters": 1034,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -228,7 +305,12 @@
       "role": "auditor",
       "route": "/walkthrough/compare",
       "target": "/walkthrough/compare",
-      "readyMs": 1686,
+      "readyMs": 314,
+      "readiness": {
+        "characters": 921,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -241,7 +323,12 @@
       "role": "auditor",
       "route": "/coverage",
       "target": "/coverage",
-      "readyMs": 1759,
+      "readyMs": 316,
+      "readiness": {
+        "characters": 6181,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -254,7 +341,12 @@
       "role": "auditor",
       "route": "/impact/cases",
       "target": "/impact/cases",
-      "readyMs": 1079,
+      "readyMs": 345,
+      "readiness": {
+        "characters": 174,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -267,7 +359,12 @@
       "role": "auditor",
       "route": "/overlap-timeline/:pid",
       "target": "/overlap-timeline/1-5794156983",
-      "readyMs": 995,
+      "readyMs": 289,
+      "readiness": {
+        "characters": 162,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -280,27 +377,30 @@
       "role": "auditor",
       "route": "/graph/institutions/:pid",
       "target": "/graph/institutions/1-5794156983",
-      "readyMs": 1467,
+      "readyMs": 332,
+      "readiness": {
+        "characters": 622,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
       },
-      "errors": [
-        "Console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
-      ],
-      "apiTimes": [
-        {
-          "path": "/api/v1/prevent/overlaps",
-          "ms": 102.79
-        }
-      ],
+      "errors": [],
+      "apiTimes": [],
       "screenshot": "mobile/auditor/graph-institutions-pid.png"
     },
     {
       "role": "auditor",
       "route": "/reports",
       "target": "/reports",
-      "readyMs": 1782,
+      "readyMs": 685,
+      "readiness": {
+        "characters": 4095,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -309,7 +409,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 195.567
+          "ms": 17.354
         }
       ],
       "screenshot": "mobile/auditor/reports.png"
@@ -318,15 +418,17 @@
       "role": "auditor",
       "route": "/audit",
       "target": "/audit",
-      "readyMs": 3094,
-      "layout": {
-        "width": 750,
-        "scrollWidth": 750
+      "readyMs": 359,
+      "readiness": {
+        "characters": 2837,
+        "loadingLines": [],
+        "skeletons": 0
       },
-      "errors": [
-        "Content not ready within 3000 ms",
-        "Content deadline exceeded: 3094 ms"
-      ],
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
       "apiTimes": [],
       "screenshot": "mobile/auditor/audit.png"
     },
@@ -334,7 +436,12 @@
       "role": "auditor",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 1352,
+      "readyMs": 317,
+      "readiness": {
+        "characters": 284,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -345,9 +452,50 @@
     },
     {
       "role": "auditor",
+      "route": "/reports/monthly",
+      "target": "/reports/monthly",
+      "readyMs": 421,
+      "readiness": {
+        "characters": 1656,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/reports-monthly.png"
+    },
+    {
+      "role": "auditor",
+      "route": "/cases/search",
+      "target": "/cases/search",
+      "readyMs": 439,
+      "readiness": {
+        "characters": 2877,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/auditor/cases-search.png"
+    },
+    {
+      "role": "auditor",
       "route": "/cases/:caseId",
       "target": "/cases/NX-2026-001024",
-      "readyMs": 1348,
+      "readyMs": 511,
+      "readiness": {
+        "characters": 3809,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390

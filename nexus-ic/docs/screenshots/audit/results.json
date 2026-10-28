@@ -2,14 +2,13 @@
   "config": {
     "argv": [
       "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\node_modules\\@playwright\\test\\cli.js",
+      "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "--config=playwright.audit.config.js",
-      "--grep",
-      "JURY-PRIVACY"
+      "--config",
+      "playwright.audit.config.js"
     ],
-    "configFile": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\playwright.audit.config.js",
-    "rootDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+    "configFile": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\playwright.audit.config.js",
+    "rootDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/e2e",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -25,7 +24,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/docs/screenshots/audit/runner-artifacts",
+        "outputDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/docs/screenshots/audit/runner-artifacts",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -33,7 +32,7 @@
         },
         "id": "desktop",
         "name": "desktop",
-        "testDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+        "testDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/e2e",
         "testIgnore": [],
         "testMatch": [
           "page-audit.spec.js",
@@ -42,7 +41,7 @@
         "timeout": 600000
       },
       {
-        "outputDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/docs/screenshots/audit/runner-artifacts",
+        "outputDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/docs/screenshots/audit/runner-artifacts",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -50,7 +49,7 @@
         },
         "id": "mobile",
         "name": "mobile",
-        "testDir": "C:/Users/nethr/OneDrive/Desktop/AICTE - SIH/nexus-ic/e2e",
+        "testDir": "C:/Users/Manish/OneDrive/Desktop/AICTE-SIH/AICTE-SIH/nexus-ic/e2e",
         "testIgnore": [],
         "testMatch": [
           "page-audit.spec.js",
@@ -63,15 +62,15 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\docs\\screenshots\\audit\\runner-artifacts",
+        "outputDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\docs\\screenshots\\audit\\runner-artifacts",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "name": "desktop",
-        "testDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
-        "snapshotDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
+        "testDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\e2e",
+        "snapshotDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\e2e",
         "testIgnore": [],
         "testMatch": [
           "page-audit.spec.js",
@@ -96,15 +95,15 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\docs\\screenshots\\audit\\runner-artifacts",
+        "outputDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\docs\\screenshots\\audit\\runner-artifacts",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "name": "mobile",
-        "testDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
-        "snapshotDir": "C:\\Users\\nethr\\OneDrive\\Desktop\\AICTE - SIH\\nexus-ic\\e2e",
+        "testDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\e2e",
+        "snapshotDir": "C:\\Users\\Manish\\OneDrive\\Desktop\\AICTE-SIH\\AICTE-SIH\\nexus-ic\\e2e",
         "testIgnore": [],
         "testMatch": [
           "page-audit.spec.js",
@@ -161,6 +160,2354 @@
   },
   "suites": [
     {
+      "title": "page-audit.spec.js",
+      "file": "page-audit.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "[JURY-PAGE] student: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15897,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop student /: PASS 589ms\n"
+                    },
+                    {
+                      "text": "desktop student /login: PASS 227ms\n"
+                    },
+                    {
+                      "text": "desktop student /dashboard: PASS 519ms\n"
+                    },
+                    {
+                      "text": "desktop student /verify: PASS 304ms\n"
+                    },
+                    {
+                      "text": "desktop student /my/consents: PASS 240ms\n"
+                    },
+                    {
+                      "text": "desktop student /dev/otp-inbox: PASS 253ms\n"
+                    },
+                    {
+                      "text": "desktop student /institutions/lookup: PASS 413ms\n"
+                    },
+                    {
+                      "text": "desktop student /institutions/:id: PASS 276ms\n"
+                    },
+                    {
+                      "text": "desktop student /grievances/new: PASS 235ms\n"
+                    },
+                    {
+                      "text": "desktop student /my/cases: PASS 307ms\n"
+                    },
+                    {
+                      "text": "desktop student /my/cases/:caseId: PASS 365ms\n"
+                    },
+                    {
+                      "text": "desktop student /queries/:caseId: PASS 217ms\n"
+                    },
+                    {
+                      "text": "desktop student /prevent/back: PASS 206ms\n"
+                    },
+                    {
+                      "text": "desktop student /track: PASS 203ms\n"
+                    },
+                    {
+                      "text": "desktop student /track/:caseId: PASS 244ms\n"
+                    },
+                    {
+                      "text": "desktop student /channels: PASS 250ms\n"
+                    },
+                    {
+                      "text": "desktop student /channels/email/:id: PASS 300ms\n"
+                    },
+                    {
+                      "text": "desktop student /my/email-drafts: PASS 309ms\n"
+                    },
+                    {
+                      "text": "desktop student /my/email-drafts/:id: PASS 313ms\n"
+                    },
+                    {
+                      "text": "desktop student /integrity: PASS 242ms\n"
+                    },
+                    {
+                      "text": "desktop student /judge: PASS 223ms\n"
+                    },
+                    {
+                      "text": "desktop student /notifications: PASS 217ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:27:36.691Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-6564b05b3f5e7388665d",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] faculty: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15502,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop faculty /: PASS 431ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /login: PASS 218ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /dashboard: PASS 248ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /verify: PASS 194ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /my/consents: PASS 299ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /dev/otp-inbox: PASS 355ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /institutions/lookup: PASS 413ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /institutions/:id: PASS 357ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /grievances/new: PASS 293ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /my/cases: PASS 406ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /my/cases/:caseId: PASS 362ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /queries/:caseId: PASS 321ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /track: PASS 326ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /track/:caseId: PASS 317ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /channels: PASS 314ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /channels/email/:id: PASS 357ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /my/email-drafts: PASS 352ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /my/email-drafts/:id: PASS 364ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /integrity: PASS 482ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /judge: PASS 367ms\n"
+                    },
+                    {
+                      "text": "desktop faculty /notifications: PASS 350ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:27:54.418Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-8460b874d59ec8f8935d",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] institution_admin: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12529,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop institution_admin /: PASS 331ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /login: PASS 195ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /dashboard: PASS 446ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /verify: PASS 297ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /my/consents: PASS 339ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /dev/otp-inbox: PASS 327ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /institutions/lookup: PASS 402ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /institutions/:id: PASS 417ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /my/cases/:caseId: PASS 346ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /queries/:caseId: PASS 341ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /institution: PASS 473ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /integrity: PASS 302ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /judge: PASS 440ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /notifications: PASS 337ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /requests/combined: PASS 320ms\n"
+                    },
+                    {
+                      "text": "desktop institution_admin /documents/locker: PASS 369ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:28:09.939Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-b19796b36def467d5c87",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] bureau_officer: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34525,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop bureau_officer /: PASS 427ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /login: PASS 211ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /dashboard: PASS 754ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /verify: PASS 396ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /my/consents: PASS 386ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /officer/manual-verification: PASS 324ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /officer/reveal-requests: PASS 411ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /dev/otp-inbox: PASS 398ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /institutions/lookup: PASS 380ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /institutions/:id: PASS 526ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /my/cases/:caseId: PASS 383ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /transfers: PASS 1565ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /sync/:institutionPid: PASS 447ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /sync: PASS 353ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /queries/:caseId: PASS 338ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /fieldwork/:caseId: PASS 353ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /leave: PASS 436ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /review: PASS 686ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /closure/:caseId: PASS 338ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /impact: PASS 727ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /cases/:caseId/redaction: PASS 356ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /integrity: PASS 366ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /judge: PASS 1092ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /walkthrough/compare: PASS 545ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /coverage: PASS 342ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /impact/cases: PASS 421ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /overlap-timeline/:pid: PASS 306ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /graph/institutions/:pid: PASS 402ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /cases: PASS 410ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /reports: PASS 638ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /notifications: PASS 551ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /requests/combined: PASS 306ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /documents/locker: PASS 324ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /reports/monthly: PASS 460ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /officer-workload: PASS 398ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /cases/search: PASS 402ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /coordination: PASS 379ms\n"
+                    },
+                    {
+                      "text": "desktop bureau_officer /cases/:caseId: PASS 538ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:28:22.481Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-68c055572349393afbc2",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] regional_officer: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 35913,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop regional_officer /: PASS 417ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /login: PASS 219ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /dashboard: PASS 1151ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /verify: PASS 555ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /my/consents: PASS 436ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /officer/manual-verification: PASS 308ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /officer/reveal-requests: PASS 385ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /dev/otp-inbox: PASS 338ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /institutions/lookup: PASS 465ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /institutions/:id: PASS 734ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /review/identity: PASS 398ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /my/cases/:caseId: PASS 438ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /transfers: PASS 426ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /sync/:institutionPid: PASS 444ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /sync: PASS 419ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /queries/:caseId: PASS 420ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /fieldwork/:caseId: PASS 364ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /leave: PASS 322ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /review: PASS 691ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /closure/:caseId: PASS 377ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /impact: PASS 786ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /cases/:caseId/redaction: PASS 408ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /integrity: PASS 462ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /judge: PASS 363ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /walkthrough/compare: PASS 414ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /coverage: PASS 382ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /impact/cases: PASS 359ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /overlap-timeline/:pid: PASS 381ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /graph/institutions/:pid: PASS 548ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /cases: PASS 443ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /reports: PASS 675ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /notifications: PASS 717ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /regional: PASS 536ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /requests/combined: PASS 317ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /documents/locker: PASS 355ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /reports/monthly: PASS 377ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /cases/search: PASS 324ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /coordination: PASS 332ms\n"
+                    },
+                    {
+                      "text": "desktop regional_officer /cases/:caseId: PASS 472ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:28:57.104Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-9296e427bec0fcf18987",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] supervisor: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 47294,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop supervisor /: PASS 448ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /login: PASS 208ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /dashboard: PASS 560ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /verify: PASS 287ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /my/consents: PASS 331ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /officer/reveal-requests: PASS 387ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /dev/otp-inbox: PASS 386ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /institutions/lookup: PASS 465ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /institutions/:id: PASS 1159ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /review/identity: PASS 360ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /my/cases/:caseId: PASS 344ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /rulebook: PASS 396ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /triage: PASS 402ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /transfers: PASS 359ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /sync/:institutionPid: PASS 393ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /sync: PASS 429ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /queries/:caseId: PASS 365ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /fieldwork/:caseId: PASS 395ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /insider/alerts: PASS 425ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /leave: PASS 323ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /review: PASS 885ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /closure/:caseId: PASS 362ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /review/appeals: PASS 386ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /rescue: PASS 429ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /impact: PASS 933ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /cases/:caseId/redaction: PASS 504ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /integrity: PASS 438ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /benchmark: PASS 489ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /judge: PASS 377ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /walkthrough/compare: PASS 473ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /coverage: PASS 537ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /impact/cases: PASS 359ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /overlap-timeline/:pid: PASS 440ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /graph/institutions/:pid: PASS 474ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /cases: PASS 416ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /reports: PASS 763ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /audit: PASS 801ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /notifications: PASS 669ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /regional: PASS 564ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /requests/combined: PASS 442ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /documents/locker: PASS 473ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /reports/monthly: PASS 465ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /officer-workload: PASS 407ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /cases/search: PASS 559ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /coordination: PASS 471ms\n"
+                    },
+                    {
+                      "text": "desktop supervisor /cases/:caseId: PASS 529ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:29:33.041Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-d6d5db996c32f20c0aba",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] competent_authority: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 40570,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop competent_authority /: PASS 422ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /login: PASS 213ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /dashboard: PASS 993ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /verify: PASS 416ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /my/consents: PASS 346ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /officer/reveal-requests: PASS 434ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /dev/otp-inbox: PASS 340ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /institutions/lookup: PASS 394ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /institutions/:id: PASS 499ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /my/cases/:caseId: PASS 359ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /rulebook: PASS 380ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /triage: PASS 390ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /transfers: PASS 391ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /sync/:institutionPid: PASS 425ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /sync: PASS 342ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /queries/:caseId: PASS 358ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /fieldwork/:caseId: PASS 356ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /insider/alerts: PASS 406ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /leave: PASS 399ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /review: PASS 711ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /closure/:caseId: PASS 383ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /review/appeals: PASS 371ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /rescue: PASS 302ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /impact: PASS 869ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /authority: PASS 455ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /integrity: PASS 360ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /judge: PASS 330ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /walkthrough/compare: PASS 297ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /coverage: PASS 373ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /impact/cases: PASS 314ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /overlap-timeline/:pid: PASS 362ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /graph/institutions/:pid: PASS 365ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /cases: PASS 366ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /reports: PASS 746ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /audit: PASS 368ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /notifications: PASS 529ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /regional: PASS 457ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /requests/combined: PASS 350ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /documents/locker: PASS 294ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /reports/monthly: PASS 390ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /cases/search: PASS 391ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /coordination: PASS 376ms\n"
+                    },
+                    {
+                      "text": "desktop competent_authority /cases/:caseId: PASS 393ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:30:20.371Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-372e5d550601ea346c3f",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] auditor: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24916,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop auditor /: PASS 356ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /login: PASS 186ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /dashboard: PASS 640ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /verify: PASS 363ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /my/consents: PASS 384ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /dev/otp-inbox: PASS 431ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /institutions/lookup: PASS 503ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /institutions/:id: PASS 624ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /my/cases/:caseId: PASS 429ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /rulebook: PASS 362ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /closure/:caseId: PASS 418ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /review/appeals: PASS 385ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /rescue: PASS 344ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /impact: PASS 1025ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /integrity: PASS 264ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /judge: PASS 395ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /walkthrough/compare: PASS 332ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /coverage: PASS 391ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /impact/cases: PASS 315ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /overlap-timeline/:pid: PASS 334ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /graph/institutions/:pid: PASS 406ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /reports: PASS 763ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /audit: PASS 396ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /notifications: PASS 326ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /reports/monthly: PASS 317ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /cases/search: PASS 273ms\n"
+                    },
+                    {
+                      "text": "desktop auditor /cases/:caseId: PASS 498ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:31:00.994Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-1c065bb020f0c8bb403b",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] system_admin: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33503,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "desktop system_admin /: PASS 426ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /login: PASS 199ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /dashboard: PASS 725ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /verify: PASS 374ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /my/consents: PASS 345ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /admin: PASS 755ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /dev/otp-inbox: PASS 402ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /institutions/lookup: PASS 482ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /admin/master/institutions: PASS 383ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /admin/master/categories: PASS 426ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /admin/master/regions: PASS 390ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /rulebook: PASS 416ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /transfers: PASS 495ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /sync/:institutionPid: PASS 399ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /sync: PASS 374ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /queries/:caseId: PASS 385ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /fieldwork/:caseId: PASS 385ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /insider/alerts: PASS 385ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /impact: PASS 892ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /admin/import: PASS 409ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /integrity: PASS 328ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /benchmark: PASS 483ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /judge: PASS 416ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /walkthrough/compare: PASS 439ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /coverage: PASS 391ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /impact/cases: PASS 1552ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /graph/institutions/:pid: PASS 584ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /reports: PASS 815ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /audit: PASS 626ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /notifications: PASS 436ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /admin/registry/import: PASS 392ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /reports/monthly: PASS 493ms\n"
+                    },
+                    {
+                      "text": "desktop system_admin /cases/:caseId: PASS 601ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:31:25.949Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-3b3c3f24079ef8d4c0ad",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] student: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13123,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile student /: PASS 429ms\n"
+                    },
+                    {
+                      "text": "mobile student /login: PASS 209ms\n"
+                    },
+                    {
+                      "text": "mobile student /dashboard: PASS 415ms\n"
+                    },
+                    {
+                      "text": "mobile student /verify: PASS 339ms\n"
+                    },
+                    {
+                      "text": "mobile student /my/consents: PASS 261ms\n"
+                    },
+                    {
+                      "text": "mobile student /dev/otp-inbox: PASS 316ms\n"
+                    },
+                    {
+                      "text": "mobile student /institutions/lookup: PASS 376ms\n"
+                    },
+                    {
+                      "text": "mobile student /institutions/:id: PASS 341ms\n"
+                    },
+                    {
+                      "text": "mobile student /grievances/new: PASS 271ms\n"
+                    },
+                    {
+                      "text": "mobile student /my/cases: PASS 326ms\n"
+                    },
+                    {
+                      "text": "mobile student /my/cases/:caseId: PASS 337ms\n"
+                    },
+                    {
+                      "text": "mobile student /queries/:caseId: PASS 231ms\n"
+                    },
+                    {
+                      "text": "mobile student /prevent/back: PASS 174ms\n"
+                    },
+                    {
+                      "text": "mobile student /track: PASS 268ms\n"
+                    },
+                    {
+                      "text": "mobile student /track/:caseId: PASS 217ms\n"
+                    },
+                    {
+                      "text": "mobile student /channels: PASS 189ms\n"
+                    },
+                    {
+                      "text": "mobile student /channels/email/:id: PASS 261ms\n"
+                    },
+                    {
+                      "text": "mobile student /my/email-drafts: PASS 204ms\n"
+                    },
+                    {
+                      "text": "mobile student /my/email-drafts/:id: PASS 234ms\n"
+                    },
+                    {
+                      "text": "mobile student /integrity: PASS 203ms\n"
+                    },
+                    {
+                      "text": "mobile student /judge: PASS 222ms\n"
+                    },
+                    {
+                      "text": "mobile student /notifications: PASS 223ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:32:01.938Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-ec6ebbb7f04f27cba2b4",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] faculty: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12867,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile faculty /: PASS 343ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /login: PASS 251ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /dashboard: PASS 314ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /verify: PASS 254ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /my/consents: PASS 218ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /dev/otp-inbox: PASS 281ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /institutions/lookup: PASS 350ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /institutions/:id: PASS 423ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /grievances/new: PASS 359ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /my/cases: PASS 384ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /my/cases/:caseId: PASS 364ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /queries/:caseId: PASS 327ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /track: PASS 259ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /track/:caseId: PASS 372ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /channels: PASS 302ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /channels/email/:id: PASS 318ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /my/email-drafts: PASS 309ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /my/email-drafts/:id: PASS 369ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /integrity: PASS 323ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /judge: PASS 354ms\n"
+                    },
+                    {
+                      "text": "mobile faculty /notifications: PASS 345ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:32:16.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-28b1ccd62738594ac89b",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] institution_admin: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10819,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile institution_admin /: PASS 473ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /login: PASS 216ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /dashboard: PASS 358ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /verify: PASS 260ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /my/consents: PASS 269ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /dev/otp-inbox: PASS 406ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /institutions/lookup: PASS 457ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /institutions/:id: PASS 524ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /my/cases/:caseId: PASS 413ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /queries/:caseId: PASS 341ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /institution: PASS 556ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /integrity: PASS 312ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /judge: PASS 352ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /notifications: PASS 319ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /requests/combined: PASS 308ms\n"
+                    },
+                    {
+                      "text": "mobile institution_admin /documents/locker: PASS 371ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:32:29.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-e0ed82b621cc395bfa1e",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] bureau_officer: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26097,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile bureau_officer /: PASS 385ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /login: PASS 194ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /dashboard: PASS 549ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /verify: PASS 403ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /my/consents: PASS 357ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /officer/manual-verification: PASS 335ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /officer/reveal-requests: PASS 353ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /dev/otp-inbox: PASS 298ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /institutions/lookup: PASS 381ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /institutions/:id: PASS 573ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /my/cases/:caseId: PASS 364ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /transfers: PASS 349ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /sync/:institutionPid: PASS 362ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /sync: PASS 317ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /queries/:caseId: PASS 386ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /fieldwork/:caseId: PASS 327ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /leave: PASS 293ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /review: PASS 426ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /closure/:caseId: PASS 333ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /impact: PASS 716ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /cases/:caseId/redaction: PASS 392ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /integrity: PASS 374ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /judge: PASS 364ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /walkthrough/compare: PASS 346ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /coverage: PASS 389ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /impact/cases: PASS 313ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /overlap-timeline/:pid: PASS 321ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /graph/institutions/:pid: PASS 349ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /cases: PASS 391ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /reports: PASS 713ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /notifications: PASS 490ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /requests/combined: PASS 339ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /documents/locker: PASS 283ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /reports/monthly: PASS 392ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /officer-workload: PASS 343ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /cases/search: PASS 455ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /coordination: PASS 344ms\n"
+                    },
+                    {
+                      "text": "mobile bureau_officer /cases/:caseId: PASS 519ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:32:40.288Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-57ee83f82ac1f1628bce",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] regional_officer: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26489,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile regional_officer /: PASS 427ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /login: PASS 203ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /dashboard: PASS 473ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /verify: PASS 217ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /my/consents: PASS 324ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /officer/manual-verification: PASS 340ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /officer/reveal-requests: PASS 318ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /dev/otp-inbox: PASS 375ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /institutions/lookup: PASS 329ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /institutions/:id: PASS 476ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /review/identity: PASS 312ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /my/cases/:caseId: PASS 444ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /transfers: PASS 412ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /sync/:institutionPid: PASS 364ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /sync: PASS 377ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /queries/:caseId: PASS 338ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /fieldwork/:caseId: PASS 337ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /leave: PASS 323ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /review: PASS 535ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /closure/:caseId: PASS 362ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /impact: PASS 722ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /cases/:caseId/redaction: PASS 300ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /integrity: PASS 321ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /judge: PASS 415ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /walkthrough/compare: PASS 320ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /coverage: PASS 313ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /impact/cases: PASS 326ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /overlap-timeline/:pid: PASS 393ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /graph/institutions/:pid: PASS 381ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /cases: PASS 388ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /reports: PASS 623ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /notifications: PASS 457ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /regional: PASS 448ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /requests/combined: PASS 374ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /documents/locker: PASS 380ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /reports/monthly: PASS 376ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /cases/search: PASS 412ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /coordination: PASS 346ms\n"
+                    },
+                    {
+                      "text": "mobile regional_officer /cases/:caseId: PASS 469ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:33:06.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-ffa9f3bca2f187835038",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] supervisor: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33821,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile supervisor /: PASS 318ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /login: PASS 194ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /dashboard: PASS 604ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /verify: PASS 263ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /my/consents: PASS 339ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /officer/reveal-requests: PASS 345ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /dev/otp-inbox: PASS 413ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /institutions/lookup: PASS 440ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /institutions/:id: PASS 525ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /review/identity: PASS 346ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /my/cases/:caseId: PASS 431ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /rulebook: PASS 430ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /triage: PASS 413ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /transfers: PASS 398ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /sync/:institutionPid: PASS 444ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /sync: PASS 310ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /queries/:caseId: PASS 319ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /fieldwork/:caseId: PASS 302ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /insider/alerts: PASS 343ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /leave: PASS 314ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /review: PASS 627ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /closure/:caseId: PASS 310ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /review/appeals: PASS 381ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /rescue: PASS 340ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /impact: PASS 847ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /cases/:caseId/redaction: PASS 287ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /integrity: PASS 263ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /benchmark: PASS 355ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /judge: PASS 356ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /walkthrough/compare: PASS 359ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /coverage: PASS 382ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /impact/cases: PASS 388ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /overlap-timeline/:pid: PASS 332ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /graph/institutions/:pid: PASS 410ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /cases: PASS 439ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /reports: PASS 768ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /audit: PASS 363ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /notifications: PASS 549ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /regional: PASS 563ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /requests/combined: PASS 262ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /documents/locker: PASS 304ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /reports/monthly: PASS 323ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /officer-workload: PASS 308ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /cases/search: PASS 308ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /coordination: PASS 355ms\n"
+                    },
+                    {
+                      "text": "mobile supervisor /cases/:caseId: PASS 523ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:33:32.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-a2d5956fcc7554367d53",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] competent_authority: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32578,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile competent_authority /: PASS 328ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /login: PASS 179ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /dashboard: PASS 477ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /verify: PASS 258ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /my/consents: PASS 285ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /officer/reveal-requests: PASS 344ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /dev/otp-inbox: PASS 501ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /institutions/lookup: PASS 430ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /institutions/:id: PASS 498ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /my/cases/:caseId: PASS 313ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /rulebook: PASS 430ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /triage: PASS 419ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /transfers: PASS 431ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /sync/:institutionPid: PASS 457ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /sync: PASS 337ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /queries/:caseId: PASS 327ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /fieldwork/:caseId: PASS 349ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /insider/alerts: PASS 315ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /leave: PASS 428ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /review: PASS 738ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /closure/:caseId: PASS 345ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /review/appeals: PASS 479ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /rescue: PASS 390ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /impact: PASS 681ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /authority: PASS 395ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /integrity: PASS 324ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /judge: PASS 378ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /walkthrough/compare: PASS 339ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /coverage: PASS 316ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /impact/cases: PASS 340ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /overlap-timeline/:pid: PASS 280ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /graph/institutions/:pid: PASS 340ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /cases: PASS 370ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /reports: PASS 691ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /audit: PASS 482ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /notifications: PASS 642ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /regional: PASS 432ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /requests/combined: PASS 328ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /documents/locker: PASS 292ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /reports/monthly: PASS 274ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /cases/search: PASS 416ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /coordination: PASS 407ms\n"
+                    },
+                    {
+                      "text": "mobile competent_authority /cases/:caseId: PASS 418ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:34:06.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-75b9cf6ff17170a7247f",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] auditor: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17755,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile auditor /: PASS 331ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /login: PASS 169ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /dashboard: PASS 344ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /verify: PASS 229ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /my/consents: PASS 204ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /dev/otp-inbox: PASS 253ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /institutions/lookup: PASS 471ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /institutions/:id: PASS 471ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /my/cases/:caseId: PASS 357ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /rulebook: PASS 345ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /closure/:caseId: PASS 310ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /review/appeals: PASS 340ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /rescue: PASS 315ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /impact: PASS 673ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /integrity: PASS 314ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /judge: PASS 326ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /walkthrough/compare: PASS 314ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /coverage: PASS 316ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /impact/cases: PASS 345ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /overlap-timeline/:pid: PASS 289ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /graph/institutions/:pid: PASS 332ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /reports: PASS 685ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /audit: PASS 359ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /notifications: PASS 317ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /reports/monthly: PASS 421ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /cases/search: PASS 439ms\n"
+                    },
+                    {
+                      "text": "mobile auditor /cases/:caseId: PASS 511ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:34:39.327Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-b8878ace3adb1631d1ab",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        },
+        {
+          "title": "[JURY-PAGE] system_admin: every allowed page has timely, readable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21735,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "mobile system_admin /: PASS 323ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /login: PASS 180ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /dashboard: PASS 248ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /verify: PASS 263ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /my/consents: PASS 237ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /admin: PASS 448ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /dev/otp-inbox: PASS 313ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /institutions/lookup: PASS 393ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /admin/master/institutions: PASS 352ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /admin/master/categories: PASS 290ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /admin/master/regions: PASS 306ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /rulebook: PASS 393ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /transfers: PASS 351ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /sync/:institutionPid: PASS 393ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /sync: PASS 359ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /queries/:caseId: PASS 329ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /fieldwork/:caseId: PASS 316ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /insider/alerts: PASS 351ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /impact: PASS 663ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /admin/import: PASS 328ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /integrity: PASS 377ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /benchmark: PASS 329ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /judge: PASS 384ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /walkthrough/compare: PASS 412ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /coverage: PASS 331ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /impact/cases: PASS 309ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /graph/institutions/:pid: PASS 332ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /reports: PASS 658ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /audit: PASS 452ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /notifications: PASS 416ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /admin/registry/import: PASS 364ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /reports/monthly: PASS 412ms\n"
+                    },
+                    {
+                      "text": "mobile system_admin /cases/:caseId: PASS 481ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:34:57.094Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8371d2775a4c341f727a-466000456995963eee3d",
+          "file": "page-audit.spec.js",
+          "line": 31,
+          "column": 39
+        }
+      ]
+    },
+    {
       "title": "privacy-guard.spec.js",
       "file": "privacy-guard.spec.js",
       "column": 0,
@@ -182,12 +2529,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1702,
+                  "duration": 301,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-26T10:23:43.683Z",
+                  "startTime": "2026-10-28T16:31:59.526Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -216,12 +2563,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 997,
+                  "duration": 280,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-26T10:23:50.170Z",
+                  "startTime": "2026-10-28T16:35:18.856Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -239,9 +2586,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-26T10:23:41.495Z",
-    "duration": 11701.528,
-    "expected": 2,
+    "startTime": "2026-10-28T16:27:36.004Z",
+    "duration": 464699.12899999996,
+    "expected": 20,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

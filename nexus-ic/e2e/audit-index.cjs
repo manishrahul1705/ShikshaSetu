@@ -18,7 +18,7 @@ const lines=['# Global Jury browser evidence','',
  '|---|---|---|---:|---|---|'];
 for(const row of records)lines.push(`| ${row.viewport} | ${row.role} | ${row.route} | ${row.readyMs} ms | ${row.errors.length?'FAIL: '+row.errors.join('; ').replaceAll('|',' / '):'PASS'} | [Open](${row.screenshot}) |`);
 lines.push('','Raw route metadata: [inventory](route-inventory.json). Current database counts: [showcase evidence](showcase-evidence.json). API timing measurements: [profile](api-profile.json).','',
- 'The source audit and subjective before/after assessments are in [JURY_PAGE_AUDIT_26OCT](../../../plans/JURY_PAGE_AUDIT_26OCT.md).');
+ 'The development audit notes and subjective before/after assessments are archived outside the repository. The route evidence and captures above remain available here.');
 fs.writeFileSync(path.join(root,'README.md'),lines.join('\n')+'\n');
 fs.writeFileSync(path.join(root,'summary.json'),JSON.stringify({recordedAt:new Date().toISOString(),pages:records.length,passed:records.length-failed.length,failed:failed.length,failures:failed.map(({viewport,role,route,errors})=>({viewport,role,route,errors})),dashboards:records.filter(row=>row.route==='/dashboard').map(({viewport,role,readyMs,errors})=>({viewport,role,readyMs,errors}))},null,2)+'\n');
 console.log(JSON.stringify({pages:records.length,passed:records.length-failed.length,failed:failed.length}));

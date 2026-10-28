@@ -1,15 +1,15 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:33:13.939Z",
+  "recordedAt": "2026-10-28T16:28:09.919Z",
   "records": [
     {
       "role": "faculty",
       "route": "/",
       "target": "/",
-      "readyMs": 914,
+      "readyMs": 431,
       "readiness": {
-        "characters": 4048,
+        "characters": 4060,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -25,9 +25,9 @@
       "role": "faculty",
       "route": "/login",
       "target": "/login",
-      "readyMs": 469,
+      "readyMs": 218,
       "readiness": {
-        "characters": 728,
+        "characters": 399,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -43,9 +43,9 @@
       "role": "faculty",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 636,
+      "readyMs": 248,
       "readiness": {
-        "characters": 1086,
+        "characters": 1084,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -61,9 +61,9 @@
       "role": "faculty",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 779,
+      "readyMs": 194,
       "readiness": {
-        "characters": 778,
+        "characters": 1031,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -79,9 +79,9 @@
       "role": "faculty",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 750,
+      "readyMs": 299,
       "readiness": {
-        "characters": 748,
+        "characters": 746,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -97,7 +97,7 @@
       "role": "faculty",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 990,
+      "readyMs": 355,
       "readiness": {
         "characters": 184,
         "loadingLines": [],
@@ -115,9 +115,9 @@
       "role": "faculty",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 1461,
+      "readyMs": 413,
       "readiness": {
-        "characters": 169,
+        "characters": 1389,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -133,23 +133,17 @@
       "role": "faculty",
       "route": "/institutions/:id",
       "target": "/institutions/1-7734299133",
-      "readyMs": 3238,
+      "readyMs": 357,
       "readiness": {
-        "characters": 41,
-        "loadingLines": [
-          "Loading Institution 360 composite view..."
-        ],
+        "characters": 951,
+        "loadingLines": [],
         "skeletons": 0
       },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
       },
-      "errors": [
-        "Content not ready within 3000 ms",
-        "Readiness: {\"characters\":41,\"loadingLines\":[\"Loading Institution 360 composite view...\"],\"skeletons\":0}; pending API paths: /api/v1/config/mode, /api/v1/institutions/1-7734299133/360",
-        "Content deadline exceeded: 3238 ms"
-      ],
+      "errors": [],
       "apiTimes": [],
       "screenshot": "desktop/faculty/institutions-id.png"
     },
@@ -157,9 +151,9 @@
       "role": "faculty",
       "route": "/grievances/new",
       "target": "/grievances/new",
-      "readyMs": 1181,
+      "readyMs": 293,
       "readiness": {
-        "characters": 695,
+        "characters": 926,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -175,9 +169,9 @@
       "role": "faculty",
       "route": "/my/cases",
       "target": "/my/cases",
-      "readyMs": 1984,
+      "readyMs": 406,
       "readiness": {
-        "characters": 2010,
+        "characters": 3225,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -193,9 +187,9 @@
       "role": "faculty",
       "route": "/my/cases/:caseId",
       "target": "/my/cases/NX-2026-000002",
-      "readyMs": 748,
+      "readyMs": 362,
       "readiness": {
-        "characters": 605,
+        "characters": 1212,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -211,7 +205,7 @@
       "role": "faculty",
       "route": "/queries/:caseId",
       "target": "/queries/NX-2026-000002",
-      "readyMs": 706,
+      "readyMs": 321,
       "readiness": {
         "characters": 136,
         "loadingLines": [],
@@ -229,9 +223,9 @@
       "role": "faculty",
       "route": "/track",
       "target": "/track",
-      "readyMs": 703,
+      "readyMs": 326,
       "readiness": {
-        "characters": 1843,
+        "characters": 243,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -247,9 +241,9 @@
       "role": "faculty",
       "route": "/track/:caseId",
       "target": "/track/NX-2026-000002",
-      "readyMs": 719,
+      "readyMs": 317,
       "readiness": {
-        "characters": 317,
+        "characters": 1139,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -265,7 +259,7 @@
       "role": "faculty",
       "route": "/channels",
       "target": "/channels",
-      "readyMs": 915,
+      "readyMs": 314,
       "readiness": {
         "characters": 809,
         "loadingLines": [],
@@ -282,10 +276,10 @@
     {
       "role": "faculty",
       "route": "/channels/email/:id",
-      "target": "/channels/email/6adf22ce745e37a3e88560c0",
-      "readyMs": 875,
+      "target": "/channels/email/6ae210e39565f7b1599df315",
+      "readyMs": 357,
       "readiness": {
-        "characters": 969,
+        "characters": 1173,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -301,9 +295,9 @@
       "role": "faculty",
       "route": "/my/email-drafts",
       "target": "/my/email-drafts",
-      "readyMs": 965,
+      "readyMs": 352,
       "readiness": {
-        "characters": 251,
+        "characters": 328,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -318,10 +312,10 @@
     {
       "role": "faculty",
       "route": "/my/email-drafts/:id",
-      "target": "/my/email-drafts/6adf22ce745e37a3e88560c0",
-      "readyMs": 1136,
+      "target": "/my/email-drafts/6ae210e39565f7b1599df315",
+      "readyMs": 364,
       "readiness": {
-        "characters": 969,
+        "characters": 1173,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -337,9 +331,9 @@
       "role": "faculty",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 802,
+      "readyMs": 482,
       "readiness": {
-        "characters": 5030,
+        "characters": 5216,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -355,9 +349,9 @@
       "role": "faculty",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 980,
+      "readyMs": 367,
       "readiness": {
-        "characters": 1001,
+        "characters": 1034,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -373,9 +367,9 @@
       "role": "faculty",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 1370,
+      "readyMs": 350,
       "readiness": {
-        "characters": 2736,
+        "characters": 2997,
         "loadingLines": [],
         "skeletons": 0
       },

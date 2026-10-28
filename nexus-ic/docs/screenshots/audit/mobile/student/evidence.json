@@ -1,13 +1,18 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:10:47.148Z",
+  "recordedAt": "2026-10-28T16:32:16.524Z",
   "records": [
     {
       "role": "student",
       "route": "/",
       "target": "/",
-      "readyMs": 900,
+      "readyMs": 429,
+      "readiness": {
+        "characters": 4060,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -20,7 +25,12 @@
       "role": "student",
       "route": "/login",
       "target": "/login",
-      "readyMs": 473,
+      "readyMs": 209,
+      "readiness": {
+        "characters": 96,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -33,7 +43,12 @@
       "role": "student",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 631,
+      "readyMs": 415,
+      "readiness": {
+        "characters": 1029,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -46,7 +61,12 @@
       "role": "student",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 670,
+      "readyMs": 339,
+      "readiness": {
+        "characters": 278,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -59,7 +79,12 @@
       "role": "student",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 379,
+      "readyMs": 261,
+      "readiness": {
+        "characters": 746,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -72,7 +97,12 @@
       "role": "student",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 394,
+      "readyMs": 316,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -85,7 +115,12 @@
       "role": "student",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 498,
+      "readyMs": 376,
+      "readiness": {
+        "characters": 1389,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -98,7 +133,12 @@
       "role": "student",
       "route": "/institutions/:id",
       "target": "/institutions/1-7734299133",
-      "readyMs": 715,
+      "readyMs": 341,
+      "readiness": {
+        "characters": 1085,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -111,7 +151,12 @@
       "role": "student",
       "route": "/grievances/new",
       "target": "/grievances/new",
-      "readyMs": 477,
+      "readyMs": 271,
+      "readiness": {
+        "characters": 926,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -124,7 +169,12 @@
       "role": "student",
       "route": "/my/cases",
       "target": "/my/cases",
-      "readyMs": 808,
+      "readyMs": 326,
+      "readiness": {
+        "characters": 3368,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -136,8 +186,13 @@
     {
       "role": "student",
       "route": "/my/cases/:caseId",
-      "target": "/my/cases/NX-2026-000001",
-      "readyMs": 667,
+      "target": "/my/cases/NX-2026-000031",
+      "readyMs": 337,
+      "readiness": {
+        "characters": 1187,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -149,8 +204,13 @@
     {
       "role": "student",
       "route": "/queries/:caseId",
-      "target": "/queries/NX-2026-000001",
-      "readyMs": 433,
+      "target": "/queries/NX-2026-000031",
+      "readyMs": 231,
+      "readiness": {
+        "characters": 136,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -163,7 +223,12 @@
       "role": "student",
       "route": "/prevent/back",
       "target": "/prevent/back",
-      "readyMs": 713,
+      "readyMs": 174,
+      "readiness": {
+        "characters": 47,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -176,7 +241,12 @@
       "role": "student",
       "route": "/track",
       "target": "/track",
-      "readyMs": 730,
+      "readyMs": 268,
+      "readiness": {
+        "characters": 3368,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -188,8 +258,13 @@
     {
       "role": "student",
       "route": "/track/:caseId",
-      "target": "/track/NX-2026-000001",
-      "readyMs": 614,
+      "target": "/track/NX-2026-000031",
+      "readyMs": 217,
+      "readiness": {
+        "characters": 1145,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -202,7 +277,12 @@
       "role": "student",
       "route": "/channels",
       "target": "/channels",
-      "readyMs": 716,
+      "readyMs": 189,
+      "readiness": {
+        "characters": 809,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -214,8 +294,13 @@
     {
       "role": "student",
       "route": "/channels/email/:id",
-      "target": "/channels/email/6adf22ce745e37a3e88560b4",
-      "readyMs": 584,
+      "target": "/channels/email/6ae210e39565f7b1599df309",
+      "readyMs": 261,
+      "readiness": {
+        "characters": 1173,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -228,7 +313,12 @@
       "role": "student",
       "route": "/my/email-drafts",
       "target": "/my/email-drafts",
-      "readyMs": 538,
+      "readyMs": 204,
+      "readiness": {
+        "characters": 328,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -240,8 +330,13 @@
     {
       "role": "student",
       "route": "/my/email-drafts/:id",
-      "target": "/my/email-drafts/6adf22ce745e37a3e88560b4",
-      "readyMs": 1024,
+      "target": "/my/email-drafts/6ae210e39565f7b1599df309",
+      "readyMs": 234,
+      "readiness": {
+        "characters": 1173,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -254,7 +349,12 @@
       "role": "student",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 968,
+      "readyMs": 203,
+      "readiness": {
+        "characters": 5216,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -267,7 +367,12 @@
       "role": "student",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 443,
+      "readyMs": 222,
+      "readiness": {
+        "characters": 1034,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -280,7 +385,12 @@
       "role": "student",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 489,
+      "readyMs": 223,
+      "readiness": {
+        "characters": 3503,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390

@@ -1,15 +1,15 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:37:51.219Z",
+  "recordedAt": "2026-10-28T16:31:00.945Z",
   "records": [
     {
       "role": "competent_authority",
       "route": "/",
       "target": "/",
-      "readyMs": 718,
+      "readyMs": 422,
       "readiness": {
-        "characters": 4060,
+        "characters": 4072,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -25,9 +25,9 @@
       "role": "competent_authority",
       "route": "/login",
       "target": "/login",
-      "readyMs": 480,
+      "readyMs": 213,
       "readiness": {
-        "characters": 728,
+        "characters": 399,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -43,9 +43,9 @@
       "role": "competent_authority",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 2559,
+      "readyMs": 993,
       "readiness": {
-        "characters": 7143,
+        "characters": 9469,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -57,11 +57,15 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 1830.05
+          "ms": 339.168
+        },
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 346.754
         },
         {
           "path": "/api/v1/impact/summary",
-          "ms": 2033.838
+          "ms": 390.132
         }
       ],
       "screenshot": "desktop/competent_authority/dashboard.png"
@@ -70,9 +74,9 @@
       "role": "competent_authority",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 672,
+      "readyMs": 416,
       "readiness": {
-        "characters": 696,
+        "characters": 751,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -88,7 +92,7 @@
       "role": "competent_authority",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 473,
+      "readyMs": 346,
       "readiness": {
         "characters": 378,
         "loadingLines": [],
@@ -106,9 +110,9 @@
       "role": "competent_authority",
       "route": "/officer/reveal-requests",
       "target": "/officer/reveal-requests",
-      "readyMs": 733,
+      "readyMs": 434,
       "readiness": {
-        "characters": 1168,
+        "characters": 1164,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -124,7 +128,7 @@
       "role": "competent_authority",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 568,
+      "readyMs": 340,
       "readiness": {
         "characters": 184,
         "loadingLines": [],
@@ -142,9 +146,9 @@
       "role": "competent_authority",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 556,
+      "readyMs": 394,
       "readiness": {
-        "characters": 169,
+        "characters": 1389,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -159,10 +163,10 @@
     {
       "role": "competent_authority",
       "route": "/institutions/:id",
-      "target": "/institutions/1-6342091611",
-      "readyMs": 829,
+      "target": "/institutions/1-3275979314",
+      "readyMs": 499,
       "readiness": {
-        "characters": 1700,
+        "characters": 1385,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -174,7 +178,11 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 94.635
+          "ms": 73.944
+        },
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 85.89
         }
       ],
       "screenshot": "desktop/competent_authority/institutions-id.png"
@@ -182,12 +190,12 @@
     {
       "role": "competent_authority",
       "route": "/my/cases/:caseId",
-      "target": "/my/cases/NX-2026-001535",
-      "readyMs": 619,
+      "target": "/my/cases/NX-2026-001325",
+      "readyMs": 359,
       "readiness": {
-        "characters": 603,
+        "characters": 1215,
         "loadingLines": [],
-        "skeletons": 0
+        "skeletons": 1
       },
       "layout": {
         "width": 1440,
@@ -201,9 +209,9 @@
       "role": "competent_authority",
       "route": "/rulebook",
       "target": "/rulebook",
-      "readyMs": 669,
+      "readyMs": 380,
       "readiness": {
-        "characters": 1432,
+        "characters": 2386,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -219,9 +227,9 @@
       "role": "competent_authority",
       "route": "/triage",
       "target": "/triage",
-      "readyMs": 749,
+      "readyMs": 390,
       "readiness": {
-        "characters": 3430,
+        "characters": 2029,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -237,9 +245,9 @@
       "role": "competent_authority",
       "route": "/transfers",
       "target": "/transfers",
-      "readyMs": 855,
+      "readyMs": 391,
       "readiness": {
-        "characters": 3648,
+        "characters": 3475,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -254,10 +262,10 @@
     {
       "role": "competent_authority",
       "route": "/sync/:institutionPid",
-      "target": "/sync/1-6342091611",
-      "readyMs": 417,
+      "target": "/sync/1-3275979314",
+      "readyMs": 425,
       "readiness": {
-        "characters": 985,
+        "characters": 1019,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -273,9 +281,9 @@
       "role": "competent_authority",
       "route": "/sync",
       "target": "/sync",
-      "readyMs": 475,
+      "readyMs": 342,
       "readiness": {
-        "characters": 146,
+        "characters": 1181,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -290,8 +298,8 @@
     {
       "role": "competent_authority",
       "route": "/queries/:caseId",
-      "target": "/queries/NX-2026-001535",
-      "readyMs": 461,
+      "target": "/queries/NX-2026-001325",
+      "readyMs": 358,
       "readiness": {
         "characters": 188,
         "loadingLines": [],
@@ -308,8 +316,8 @@
     {
       "role": "competent_authority",
       "route": "/fieldwork/:caseId",
-      "target": "/fieldwork/NX-2026-001535",
-      "readyMs": 621,
+      "target": "/fieldwork/NX-2026-001325",
+      "readyMs": 356,
       "readiness": {
         "characters": 280,
         "loadingLines": [],
@@ -327,9 +335,9 @@
       "role": "competent_authority",
       "route": "/insider/alerts",
       "target": "/insider/alerts",
-      "readyMs": 462,
+      "readyMs": 406,
       "readiness": {
-        "characters": 1928,
+        "characters": 1922,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -345,9 +353,9 @@
       "role": "competent_authority",
       "route": "/leave",
       "target": "/leave",
-      "readyMs": 440,
+      "readyMs": 399,
       "readiness": {
-        "characters": 291,
+        "characters": 372,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -363,9 +371,9 @@
       "role": "competent_authority",
       "route": "/review",
       "target": "/review",
-      "readyMs": 1889,
+      "readyMs": 711,
       "readiness": {
-        "characters": 4693,
+        "characters": 12933,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -377,7 +385,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 1173.559
+          "ms": 125.698
         }
       ],
       "screenshot": "desktop/competent_authority/review.png"
@@ -385,8 +393,8 @@
     {
       "role": "competent_authority",
       "route": "/closure/:caseId",
-      "target": "/closure/NX-2026-001535",
-      "readyMs": 582,
+      "target": "/closure/NX-2026-001325",
+      "readyMs": 383,
       "readiness": {
         "characters": 479,
         "loadingLines": [],
@@ -404,7 +412,7 @@
       "role": "competent_authority",
       "route": "/review/appeals",
       "target": "/review/appeals",
-      "readyMs": 463,
+      "readyMs": 371,
       "readiness": {
         "characters": 2536,
         "loadingLines": [],
@@ -422,9 +430,9 @@
       "role": "competent_authority",
       "route": "/rescue",
       "target": "/rescue",
-      "readyMs": 581,
+      "readyMs": 302,
       "readiness": {
-        "characters": 3349,
+        "characters": 3350,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -440,9 +448,9 @@
       "role": "competent_authority",
       "route": "/impact",
       "target": "/impact",
-      "readyMs": 904,
+      "readyMs": 869,
       "readiness": {
-        "characters": 11114,
+        "characters": 6847,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -454,7 +462,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 45.591
+          "ms": 12.332
         }
       ],
       "screenshot": "desktop/competent_authority/impact.png"
@@ -463,9 +471,9 @@
       "role": "competent_authority",
       "route": "/authority",
       "target": "/authority",
-      "readyMs": 848,
+      "readyMs": 455,
       "readiness": {
-        "characters": 4020,
+        "characters": 6734,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -481,9 +489,9 @@
       "role": "competent_authority",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 699,
+      "readyMs": 360,
       "readiness": {
-        "characters": 5030,
+        "characters": 5216,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -499,9 +507,9 @@
       "role": "competent_authority",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 956,
+      "readyMs": 330,
       "readiness": {
-        "characters": 1001,
+        "characters": 1034,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -517,9 +525,9 @@
       "role": "competent_authority",
       "route": "/walkthrough/compare",
       "target": "/walkthrough/compare",
-      "readyMs": 546,
+      "readyMs": 297,
       "readiness": {
-        "characters": 923,
+        "characters": 921,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -535,9 +543,9 @@
       "role": "competent_authority",
       "route": "/coverage",
       "target": "/coverage",
-      "readyMs": 1309,
+      "readyMs": 373,
       "readiness": {
-        "characters": 3954,
+        "characters": 5859,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -553,7 +561,7 @@
       "role": "competent_authority",
       "route": "/impact/cases",
       "target": "/impact/cases",
-      "readyMs": 700,
+      "readyMs": 314,
       "readiness": {
         "characters": 174,
         "loadingLines": [],
@@ -570,8 +578,8 @@
     {
       "role": "competent_authority",
       "route": "/overlap-timeline/:pid",
-      "target": "/overlap-timeline/1-6342091611",
-      "readyMs": 818,
+      "target": "/overlap-timeline/1-3275979314",
+      "readyMs": 362,
       "readiness": {
         "characters": 162,
         "loadingLines": [],
@@ -588,10 +596,10 @@
     {
       "role": "competent_authority",
       "route": "/graph/institutions/:pid",
-      "target": "/graph/institutions/1-6342091611",
-      "readyMs": 795,
+      "target": "/graph/institutions/1-3275979314",
+      "readyMs": 365,
       "readiness": {
-        "characters": 825,
+        "characters": 633,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -603,7 +611,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 274.588
+          "ms": 38.377
         }
       ],
       "screenshot": "desktop/competent_authority/graph-institutions-pid.png"
@@ -612,9 +620,9 @@
       "role": "competent_authority",
       "route": "/cases",
       "target": "/cases",
-      "readyMs": 1256,
+      "readyMs": 366,
       "readiness": {
-        "characters": 4466,
+        "characters": 4063,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -625,6 +633,196 @@
       "errors": [],
       "apiTimes": [],
       "screenshot": "desktop/competent_authority/cases.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/reports",
+      "target": "/reports",
+      "readyMs": 746,
+      "readiness": {
+        "characters": 4119,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 16.022
+        }
+      ],
+      "screenshot": "desktop/competent_authority/reports.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/audit",
+      "target": "/audit",
+      "readyMs": 368,
+      "readiness": {
+        "characters": 2877,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/audit.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/notifications",
+      "target": "/notifications",
+      "readyMs": 529,
+      "readiness": {
+        "characters": 15500,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/notifications.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/regional",
+      "target": "/regional",
+      "readyMs": 457,
+      "readiness": {
+        "characters": 9440,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [
+        {
+          "path": "/api/v1/impact/summary",
+          "ms": 27.028
+        }
+      ],
+      "screenshot": "desktop/competent_authority/regional.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/requests/combined",
+      "target": "/requests/combined",
+      "readyMs": 350,
+      "readiness": {
+        "characters": 141,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/requests-combined.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/documents/locker",
+      "target": "/documents/locker",
+      "readyMs": 294,
+      "readiness": {
+        "characters": 156,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/documents-locker.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/reports/monthly",
+      "target": "/reports/monthly",
+      "readyMs": 390,
+      "readiness": {
+        "characters": 1656,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/reports-monthly.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/cases/search",
+      "target": "/cases/search",
+      "readyMs": 391,
+      "readiness": {
+        "characters": 2877,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/cases-search.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/coordination",
+      "target": "/coordination",
+      "readyMs": 376,
+      "readiness": {
+        "characters": 2110,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/coordination.png"
+    },
+    {
+      "role": "competent_authority",
+      "route": "/cases/:caseId",
+      "target": "/cases/NX-2026-001325",
+      "readyMs": 393,
+      "readiness": {
+        "characters": 3980,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/competent_authority/cases-caseId.png"
     }
   ]
 }

@@ -504,6 +504,13 @@
     "source": "s7.jsx"
   },
   {
+    "path": "/admin/registry/import",
+    "roles": [
+      "system_admin"
+    ],
+    "source": "sfi.jsx"
+  },
+  {
     "path": "/requests/combined",
     "roles": [
       "bureau_officer",
@@ -544,6 +551,29 @@
       "bureau_officer"
     ],
     "source": "sps.jsx"
+  },
+  {
+    "path": "/cases/search",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority",
+      "auditor"
+    ],
+    "public": false,
+    "source": "spsalign.jsx"
+  },
+  {
+    "path": "/coordination",
+    "roles": [
+      "bureau_officer",
+      "regional_officer",
+      "supervisor",
+      "competent_authority"
+    ],
+    "public": false,
+    "source": "spsalign.jsx"
   },
   {
     "path": "/cases/:caseId",

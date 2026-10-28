@@ -1,15 +1,15 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:32:34.112Z",
+  "recordedAt": "2026-10-28T16:27:54.382Z",
   "records": [
     {
       "role": "student",
       "route": "/",
       "target": "/",
-      "readyMs": 2625,
+      "readyMs": 589,
       "readiness": {
-        "characters": 4048,
+        "characters": 4060,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -25,9 +25,9 @@
       "role": "student",
       "route": "/login",
       "target": "/login",
-      "readyMs": 1658,
+      "readyMs": 227,
       "readiness": {
-        "characters": 728,
+        "characters": 399,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -43,9 +43,9 @@
       "role": "student",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 1116,
+      "readyMs": 519,
       "readiness": {
-        "characters": 1063,
+        "characters": 1029,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -61,9 +61,9 @@
       "role": "student",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 691,
+      "readyMs": 304,
       "readiness": {
-        "characters": 782,
+        "characters": 278,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -79,9 +79,9 @@
       "role": "student",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 714,
+      "readyMs": 240,
       "readiness": {
-        "characters": 748,
+        "characters": 746,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -97,7 +97,7 @@
       "role": "student",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 516,
+      "readyMs": 253,
       "readiness": {
         "characters": 184,
         "loadingLines": [],
@@ -115,9 +115,9 @@
       "role": "student",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 589,
+      "readyMs": 413,
       "readiness": {
-        "characters": 169,
+        "characters": 1389,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -133,9 +133,9 @@
       "role": "student",
       "route": "/institutions/:id",
       "target": "/institutions/1-7734299133",
-      "readyMs": 893,
+      "readyMs": 276,
       "readiness": {
-        "characters": 1223,
+        "characters": 1085,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -151,9 +151,9 @@
       "role": "student",
       "route": "/grievances/new",
       "target": "/grievances/new",
-      "readyMs": 586,
+      "readyMs": 235,
       "readiness": {
-        "characters": 695,
+        "characters": 926,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -169,9 +169,9 @@
       "role": "student",
       "route": "/my/cases",
       "target": "/my/cases",
-      "readyMs": 1094,
+      "readyMs": 307,
       "readiness": {
-        "characters": 2001,
+        "characters": 3368,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -186,10 +186,10 @@
     {
       "role": "student",
       "route": "/my/cases/:caseId",
-      "target": "/my/cases/NX-2026-000001",
-      "readyMs": 637,
+      "target": "/my/cases/NX-2026-000031",
+      "readyMs": 365,
       "readiness": {
-        "characters": 578,
+        "characters": 1187,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -204,8 +204,8 @@
     {
       "role": "student",
       "route": "/queries/:caseId",
-      "target": "/queries/NX-2026-000001",
-      "readyMs": 692,
+      "target": "/queries/NX-2026-000031",
+      "readyMs": 217,
       "readiness": {
         "characters": 136,
         "loadingLines": [],
@@ -223,7 +223,7 @@
       "role": "student",
       "route": "/prevent/back",
       "target": "/prevent/back",
-      "readyMs": 656,
+      "readyMs": 206,
       "readiness": {
         "characters": 47,
         "loadingLines": [],
@@ -241,9 +241,9 @@
       "role": "student",
       "route": "/track",
       "target": "/track",
-      "readyMs": 622,
+      "readyMs": 203,
       "readiness": {
-        "characters": 243,
+        "characters": 3368,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -258,10 +258,10 @@
     {
       "role": "student",
       "route": "/track/:caseId",
-      "target": "/track/NX-2026-000001",
-      "readyMs": 819,
+      "target": "/track/NX-2026-000031",
+      "readyMs": 244,
       "readiness": {
-        "characters": 303,
+        "characters": 1145,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -277,7 +277,7 @@
       "role": "student",
       "route": "/channels",
       "target": "/channels",
-      "readyMs": 678,
+      "readyMs": 250,
       "readiness": {
         "characters": 809,
         "loadingLines": [],
@@ -294,10 +294,10 @@
     {
       "role": "student",
       "route": "/channels/email/:id",
-      "target": "/channels/email/6adf22ce745e37a3e88560b4",
-      "readyMs": 738,
+      "target": "/channels/email/6ae210e39565f7b1599df309",
+      "readyMs": 300,
       "readiness": {
-        "characters": 969,
+        "characters": 1173,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -313,9 +313,9 @@
       "role": "student",
       "route": "/my/email-drafts",
       "target": "/my/email-drafts",
-      "readyMs": 477,
+      "readyMs": 309,
       "readiness": {
-        "characters": 251,
+        "characters": 328,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -330,10 +330,10 @@
     {
       "role": "student",
       "route": "/my/email-drafts/:id",
-      "target": "/my/email-drafts/6adf22ce745e37a3e88560b4",
-      "readyMs": 645,
+      "target": "/my/email-drafts/6ae210e39565f7b1599df309",
+      "readyMs": 313,
       "readiness": {
-        "characters": 969,
+        "characters": 1173,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -349,9 +349,9 @@
       "role": "student",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 555,
+      "readyMs": 242,
       "readiness": {
-        "characters": 5030,
+        "characters": 5216,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -367,9 +367,9 @@
       "role": "student",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 677,
+      "readyMs": 223,
       "readiness": {
-        "characters": 1001,
+        "characters": 1034,
         "loadingLines": [],
         "skeletons": 0
       },
@@ -385,9 +385,9 @@
       "role": "student",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 603,
+      "readyMs": 217,
       "readiness": {
-        "characters": 3111,
+        "characters": 3503,
         "loadingLines": [],
         "skeletons": 0
       },

@@ -49,4 +49,4 @@ Latest per-page records: 40; passed 27; failed 13.
 
 Raw route metadata: [inventory](route-inventory.json). Current database counts: [showcase evidence](showcase-evidence.json). API timing measurements: [profile](api-profile.json).
 
-The source audit and subjective before/after assessments are in [JURY_PAGE_AUDIT_26OCT](../../../plans/JURY_PAGE_AUDIT_26OCT.md).
+The development audit notes and subjective before/after assessments are archived outside the repository. The route evidence and captures above remain available here.

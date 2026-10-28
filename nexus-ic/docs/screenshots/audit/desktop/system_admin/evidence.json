@@ -1,13 +1,18 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:10:17.655Z",
+  "recordedAt": "2026-10-28T16:31:59.449Z",
   "records": [
     {
       "role": "system_admin",
       "route": "/",
       "target": "/",
-      "readyMs": 2625,
+      "readyMs": 426,
+      "readiness": {
+        "characters": 4065,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -20,7 +25,12 @@
       "role": "system_admin",
       "route": "/login",
       "target": "/login",
-      "readyMs": 993,
+      "readyMs": 199,
+      "readiness": {
+        "characters": 399,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -33,7 +43,12 @@
       "role": "system_admin",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 2769,
+      "readyMs": 725,
+      "readiness": {
+        "characters": 2715,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -42,7 +57,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 1918.537
+          "ms": 285.709
         }
       ],
       "screenshot": "desktop/system_admin/dashboard.png"
@@ -51,7 +66,12 @@
       "role": "system_admin",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 812,
+      "readyMs": 374,
+      "readiness": {
+        "characters": 751,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -64,7 +84,12 @@
       "role": "system_admin",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 743,
+      "readyMs": 345,
+      "readiness": {
+        "characters": 378,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -77,7 +102,12 @@
       "role": "system_admin",
       "route": "/admin",
       "target": "/admin",
-      "readyMs": 1204,
+      "readyMs": 755,
+      "readiness": {
+        "characters": 9078,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -90,7 +120,12 @@
       "role": "system_admin",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 463,
+      "readyMs": 402,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -103,7 +138,12 @@
       "role": "system_admin",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 488,
+      "readyMs": 482,
+      "readiness": {
+        "characters": 1389,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -116,7 +156,12 @@
       "role": "system_admin",
       "route": "/admin/master/institutions",
       "target": "/admin/master/institutions",
-      "readyMs": 577,
+      "readyMs": 383,
+      "readiness": {
+        "characters": 1524,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -129,7 +174,12 @@
       "role": "system_admin",
       "route": "/admin/master/categories",
       "target": "/admin/master/categories",
-      "readyMs": 527,
+      "readyMs": 426,
+      "readiness": {
+        "characters": 1305,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -142,7 +192,12 @@
       "role": "system_admin",
       "route": "/admin/master/regions",
       "target": "/admin/master/regions",
-      "readyMs": 620,
+      "readyMs": 390,
+      "readiness": {
+        "characters": 832,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -155,7 +210,12 @@
       "role": "system_admin",
       "route": "/rulebook",
       "target": "/rulebook",
-      "readyMs": 704,
+      "readyMs": 416,
+      "readiness": {
+        "characters": 2386,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -168,7 +228,12 @@
       "role": "system_admin",
       "route": "/transfers",
       "target": "/transfers",
-      "readyMs": 298,
+      "readyMs": 495,
+      "readiness": {
+        "characters": 3475,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -181,7 +246,12 @@
       "role": "system_admin",
       "route": "/sync/:institutionPid",
       "target": "/sync/1-5794156983",
-      "readyMs": 531,
+      "readyMs": 399,
+      "readiness": {
+        "characters": 691,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -194,7 +264,12 @@
       "role": "system_admin",
       "route": "/sync",
       "target": "/sync",
-      "readyMs": 508,
+      "readyMs": 374,
+      "readiness": {
+        "characters": 1181,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -207,7 +282,12 @@
       "role": "system_admin",
       "route": "/queries/:caseId",
       "target": "/queries/NX-2026-001024",
-      "readyMs": 521,
+      "readyMs": 385,
+      "readiness": {
+        "characters": 188,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -220,7 +300,12 @@
       "role": "system_admin",
       "route": "/fieldwork/:caseId",
       "target": "/fieldwork/NX-2026-001024",
-      "readyMs": 533,
+      "readyMs": 385,
+      "readiness": {
+        "characters": 280,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -233,7 +318,12 @@
       "role": "system_admin",
       "route": "/insider/alerts",
       "target": "/insider/alerts",
-      "readyMs": 362,
+      "readyMs": 385,
+      "readiness": {
+        "characters": 1922,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -246,7 +336,12 @@
       "role": "system_admin",
       "route": "/impact",
       "target": "/impact",
-      "readyMs": 950,
+      "readyMs": 892,
+      "readiness": {
+        "characters": 6847,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -255,7 +350,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 44.084
+          "ms": 26.805
         }
       ],
       "screenshot": "desktop/system_admin/impact.png"
@@ -264,7 +359,12 @@
       "role": "system_admin",
       "route": "/admin/import",
       "target": "/admin/import",
-      "readyMs": 532,
+      "readyMs": 409,
+      "readiness": {
+        "characters": 353,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -277,7 +377,12 @@
       "role": "system_admin",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 422,
+      "readyMs": 328,
+      "readiness": {
+        "characters": 328,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -290,7 +395,12 @@
       "role": "system_admin",
       "route": "/benchmark",
       "target": "/benchmark",
-      "readyMs": 675,
+      "readyMs": 483,
+      "readiness": {
+        "characters": 2218,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -303,7 +413,12 @@
       "role": "system_admin",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 433,
+      "readyMs": 416,
+      "readiness": {
+        "characters": 1034,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -316,7 +431,12 @@
       "role": "system_admin",
       "route": "/walkthrough/compare",
       "target": "/walkthrough/compare",
-      "readyMs": 567,
+      "readyMs": 439,
+      "readiness": {
+        "characters": 921,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -329,7 +449,12 @@
       "role": "system_admin",
       "route": "/coverage",
       "target": "/coverage",
-      "readyMs": 700,
+      "readyMs": 391,
+      "readiness": {
+        "characters": 6158,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -342,7 +467,12 @@
       "role": "system_admin",
       "route": "/impact/cases",
       "target": "/impact/cases",
-      "readyMs": 520,
+      "readyMs": 1552,
+      "readiness": {
+        "characters": 174,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -355,27 +485,30 @@
       "role": "system_admin",
       "route": "/graph/institutions/:pid",
       "target": "/graph/institutions/1-5794156983",
-      "readyMs": 787,
+      "readyMs": 584,
+      "readiness": {
+        "characters": 622,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
       },
-      "errors": [
-        "Console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
-      ],
-      "apiTimes": [
-        {
-          "path": "/api/v1/prevent/overlaps",
-          "ms": 41.045
-        }
-      ],
+      "errors": [],
+      "apiTimes": [],
       "screenshot": "desktop/system_admin/graph-institutions-pid.png"
     },
     {
       "role": "system_admin",
       "route": "/reports",
       "target": "/reports",
-      "readyMs": 1562,
+      "readyMs": 815,
+      "readiness": {
+        "characters": 4119,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -384,7 +517,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 80.989
+          "ms": 21.107
         }
       ],
       "screenshot": "desktop/system_admin/reports.png"
@@ -393,7 +526,12 @@
       "role": "system_admin",
       "route": "/audit",
       "target": "/audit",
-      "readyMs": 1062,
+      "readyMs": 626,
+      "readiness": {
+        "characters": 2774,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -406,7 +544,12 @@
       "role": "system_admin",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 390,
+      "readyMs": 436,
+      "readiness": {
+        "characters": 284,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440
@@ -417,9 +560,50 @@
     },
     {
       "role": "system_admin",
+      "route": "/admin/registry/import",
+      "target": "/admin/registry/import",
+      "readyMs": 392,
+      "readiness": {
+        "characters": 661,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/admin-registry-import.png"
+    },
+    {
+      "role": "system_admin",
+      "route": "/reports/monthly",
+      "target": "/reports/monthly",
+      "readyMs": 493,
+      "readiness": {
+        "characters": 1656,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "desktop/system_admin/reports-monthly.png"
+    },
+    {
+      "role": "system_admin",
       "route": "/cases/:caseId",
       "target": "/cases/NX-2026-001024",
-      "readyMs": 640,
+      "readyMs": 601,
+      "readiness": {
+        "characters": 3699,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 1440,
         "scrollWidth": 1440

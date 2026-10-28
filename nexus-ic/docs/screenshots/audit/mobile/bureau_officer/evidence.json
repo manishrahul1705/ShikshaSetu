@@ -1,13 +1,18 @@
 {
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.48",
   "database": "awaaz_dastak_showcase",
-  "recordedAt": "2026-10-26T10:12:13.759Z",
+  "recordedAt": "2026-10-28T16:33:06.337Z",
   "records": [
     {
       "role": "bureau_officer",
       "route": "/",
       "target": "/",
-      "readyMs": 1710,
+      "readyMs": 385,
+      "readiness": {
+        "characters": 4067,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -20,7 +25,12 @@
       "role": "bureau_officer",
       "route": "/login",
       "target": "/login",
-      "readyMs": 591,
+      "readyMs": 194,
+      "readiness": {
+        "characters": 96,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -33,20 +43,29 @@
       "role": "bureau_officer",
       "route": "/dashboard",
       "target": "/dashboard",
-      "readyMs": 2062,
+      "readyMs": 549,
+      "readiness": {
+        "characters": 8820,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
-        "width": 391,
-        "scrollWidth": 391
+        "width": 390,
+        "scrollWidth": 390
       },
       "errors": [],
       "apiTimes": [
         {
-          "path": "/api/v1/prevent/overlaps",
-          "ms": 1274.155
+          "path": "/api/v1/impact/summary",
+          "ms": 65.466
         },
         {
-          "path": "/api/v1/impact/summary",
-          "ms": 1331.93
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 122.323
+        },
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 124.574
         }
       ],
       "screenshot": "mobile/bureau_officer/dashboard.png"
@@ -55,7 +74,12 @@
       "role": "bureau_officer",
       "route": "/verify",
       "target": "/verify",
-      "readyMs": 991,
+      "readyMs": 403,
+      "readiness": {
+        "characters": 751,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -68,7 +92,12 @@
       "role": "bureau_officer",
       "route": "/my/consents",
       "target": "/my/consents",
-      "readyMs": 943,
+      "readyMs": 357,
+      "readiness": {
+        "characters": 378,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -81,7 +110,12 @@
       "role": "bureau_officer",
       "route": "/officer/manual-verification",
       "target": "/officer/manual-verification",
-      "readyMs": 664,
+      "readyMs": 335,
+      "readiness": {
+        "characters": 354,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -94,7 +128,12 @@
       "role": "bureau_officer",
       "route": "/officer/reveal-requests",
       "target": "/officer/reveal-requests",
-      "readyMs": 681,
+      "readyMs": 353,
+      "readiness": {
+        "characters": 603,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -107,7 +146,12 @@
       "role": "bureau_officer",
       "route": "/dev/otp-inbox",
       "target": "/dev/otp-inbox",
-      "readyMs": 798,
+      "readyMs": 298,
+      "readiness": {
+        "characters": 184,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -120,7 +164,12 @@
       "role": "bureau_officer",
       "route": "/institutions/lookup",
       "target": "/institutions/lookup",
-      "readyMs": 815,
+      "readyMs": 381,
+      "readiness": {
+        "characters": 1009,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -133,7 +182,12 @@
       "role": "bureau_officer",
       "route": "/institutions/:id",
       "target": "/institutions/1-6042348167",
-      "readyMs": 1564,
+      "readyMs": 573,
+      "readiness": {
+        "characters": 1261,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -142,7 +196,11 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 94.958
+          "ms": 65.292
+        },
+        {
+          "path": "/api/v1/prevent/overlaps",
+          "ms": 84.085
         }
       ],
       "screenshot": "mobile/bureau_officer/institutions-id.png"
@@ -151,7 +209,12 @@
       "role": "bureau_officer",
       "route": "/my/cases/:caseId",
       "target": "/my/cases/NX-2026-001061",
-      "readyMs": 715,
+      "readyMs": 364,
+      "readiness": {
+        "characters": 1311,
+        "loadingLines": [],
+        "skeletons": 1
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -164,7 +227,12 @@
       "role": "bureau_officer",
       "route": "/transfers",
       "target": "/transfers",
-      "readyMs": 586,
+      "readyMs": 349,
+      "readiness": {
+        "characters": 2359,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -177,7 +245,12 @@
       "role": "bureau_officer",
       "route": "/sync/:institutionPid",
       "target": "/sync/1-6042348167",
-      "readyMs": 662,
+      "readyMs": 362,
+      "readiness": {
+        "characters": 1005,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -190,7 +263,12 @@
       "role": "bureau_officer",
       "route": "/sync",
       "target": "/sync",
-      "readyMs": 541,
+      "readyMs": 317,
+      "readiness": {
+        "characters": 1181,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -203,7 +281,12 @@
       "role": "bureau_officer",
       "route": "/queries/:caseId",
       "target": "/queries/NX-2026-001061",
-      "readyMs": 538,
+      "readyMs": 386,
+      "readiness": {
+        "characters": 188,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -216,7 +299,12 @@
       "role": "bureau_officer",
       "route": "/fieldwork/:caseId",
       "target": "/fieldwork/NX-2026-001061",
-      "readyMs": 649,
+      "readyMs": 327,
+      "readiness": {
+        "characters": 280,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -229,7 +317,12 @@
       "role": "bureau_officer",
       "route": "/leave",
       "target": "/leave",
-      "readyMs": 595,
+      "readyMs": 293,
+      "readiness": {
+        "characters": 247,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -242,7 +335,12 @@
       "role": "bureau_officer",
       "route": "/review",
       "target": "/review",
-      "readyMs": 1116,
+      "readyMs": 426,
+      "readiness": {
+        "characters": 2008,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -251,7 +349,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 708.743
+          "ms": 74.404
         }
       ],
       "screenshot": "mobile/bureau_officer/review.png"
@@ -260,7 +358,12 @@
       "role": "bureau_officer",
       "route": "/closure/:caseId",
       "target": "/closure/NX-2026-001061",
-      "readyMs": 564,
+      "readyMs": 333,
+      "readiness": {
+        "characters": 479,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -273,7 +376,12 @@
       "role": "bureau_officer",
       "route": "/impact",
       "target": "/impact",
-      "readyMs": 938,
+      "readyMs": 716,
+      "readiness": {
+        "characters": 5499,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -282,7 +390,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 58.443
+          "ms": 11.725
         }
       ],
       "screenshot": "mobile/bureau_officer/impact.png"
@@ -291,7 +399,12 @@
       "role": "bureau_officer",
       "route": "/cases/:caseId/redaction",
       "target": "/cases/NX-2026-001061/redaction",
-      "readyMs": 506,
+      "readyMs": 392,
+      "readiness": {
+        "characters": 127,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -304,7 +417,12 @@
       "role": "bureau_officer",
       "route": "/integrity",
       "target": "/integrity",
-      "readyMs": 483,
+      "readyMs": 374,
+      "readiness": {
+        "characters": 5216,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -317,7 +435,12 @@
       "role": "bureau_officer",
       "route": "/judge",
       "target": "/judge",
-      "readyMs": 452,
+      "readyMs": 364,
+      "readiness": {
+        "characters": 1034,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -330,7 +453,12 @@
       "role": "bureau_officer",
       "route": "/walkthrough/compare",
       "target": "/walkthrough/compare",
-      "readyMs": 559,
+      "readyMs": 346,
+      "readiness": {
+        "characters": 921,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -343,7 +471,12 @@
       "role": "bureau_officer",
       "route": "/coverage",
       "target": "/coverage",
-      "readyMs": 580,
+      "readyMs": 389,
+      "readiness": {
+        "characters": 5905,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -356,7 +489,12 @@
       "role": "bureau_officer",
       "route": "/impact/cases",
       "target": "/impact/cases",
-      "readyMs": 580,
+      "readyMs": 313,
+      "readiness": {
+        "characters": 174,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -369,7 +507,12 @@
       "role": "bureau_officer",
       "route": "/overlap-timeline/:pid",
       "target": "/overlap-timeline/1-6042348167",
-      "readyMs": 472,
+      "readyMs": 321,
+      "readiness": {
+        "characters": 162,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -382,7 +525,12 @@
       "role": "bureau_officer",
       "route": "/graph/institutions/:pid",
       "target": "/graph/institutions/1-6042348167",
-      "readyMs": 525,
+      "readyMs": 349,
+      "readiness": {
+        "characters": 553,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -391,7 +539,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/prevent/overlaps",
-          "ms": 115.832
+          "ms": 31.399
         }
       ],
       "screenshot": "mobile/bureau_officer/graph-institutions-pid.png"
@@ -400,7 +548,12 @@
       "role": "bureau_officer",
       "route": "/cases",
       "target": "/cases",
-      "readyMs": 544,
+      "readyMs": 391,
+      "readiness": {
+        "characters": 4695,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -413,7 +566,12 @@
       "role": "bureau_officer",
       "route": "/reports",
       "target": "/reports",
-      "readyMs": 850,
+      "readyMs": 713,
+      "readiness": {
+        "characters": 3856,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -422,7 +580,7 @@
       "apiTimes": [
         {
           "path": "/api/v1/impact/summary",
-          "ms": 84.672
+          "ms": 19.388
         }
       ],
       "screenshot": "mobile/bureau_officer/reports.png"
@@ -431,7 +589,12 @@
       "role": "bureau_officer",
       "route": "/notifications",
       "target": "/notifications",
-      "readyMs": 851,
+      "readyMs": 490,
+      "readiness": {
+        "characters": 3147,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
@@ -442,9 +605,122 @@
     },
     {
       "role": "bureau_officer",
+      "route": "/requests/combined",
+      "target": "/requests/combined",
+      "readyMs": 339,
+      "readiness": {
+        "characters": 141,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/requests-combined.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/documents/locker",
+      "target": "/documents/locker",
+      "readyMs": 283,
+      "readiness": {
+        "characters": 156,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/documents-locker.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/reports/monthly",
+      "target": "/reports/monthly",
+      "readyMs": 392,
+      "readiness": {
+        "characters": 1270,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/reports-monthly.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/officer-workload",
+      "target": "/officer-workload",
+      "readyMs": 343,
+      "readiness": {
+        "characters": 547,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/officer-workload.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/cases/search",
+      "target": "/cases/search",
+      "readyMs": 455,
+      "readiness": {
+        "characters": 2863,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/cases-search.png"
+    },
+    {
+      "role": "bureau_officer",
+      "route": "/coordination",
+      "target": "/coordination",
+      "readyMs": 344,
+      "readiness": {
+        "characters": 1648,
+        "loadingLines": [],
+        "skeletons": 0
+      },
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "errors": [],
+      "apiTimes": [],
+      "screenshot": "mobile/bureau_officer/coordination.png"
+    },
+    {
+      "role": "bureau_officer",
       "route": "/cases/:caseId",
       "target": "/cases/NX-2026-001061",
-      "readyMs": 604,
+      "readyMs": 519,
+      "readiness": {
+        "characters": 4337,
+        "loadingLines": [],
+        "skeletons": 0
+      },
       "layout": {
         "width": 390,
         "scrollWidth": 390
