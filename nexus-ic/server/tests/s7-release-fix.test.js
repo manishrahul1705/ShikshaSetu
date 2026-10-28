@@ -9,7 +9,7 @@ import { seedS3Fixtures } from '../src/modules/sync/seed.js';
 import { setupS5, agent, makeCase, addTransfer, closeThroughProof, approveRule, PID, NARRATIVE } from './s5-helpers.js';
 import Case from '../src/modules/cases/Case.js';
 
-/** S7 release fixes from plans/FINAL_AUDIT_REPORT.md. */
+/** S7 release regression checks for routing and consent fixes. */
 let ctx;
 beforeEach(async () => {
   ctx = await setupS5();

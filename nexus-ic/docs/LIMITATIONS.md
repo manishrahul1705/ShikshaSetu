@@ -43,7 +43,7 @@ Also synthetic: every DEMO-* RuleBook rule (DEMO-ROUTE-v1, DEMO-CASE-STANDARD-v1
 ## Known defects at release (25 Oct 2026, after the "rectify and correct all" round)
 
 - The latest completed server/client verification passed 307 of 307 tests. With TEST_MONGODB_URI pointing to local MongoDB, the supported Vitest 4 server command is `npm test --workspace=server -- --maxWorkers=2`, followed by `npm run test:client`, result merge and trace-check. The removed `--minWorkers` flag is not silently ignored. Client workers are bounded to two. A green suite does not establish absence of defects or deployment readiness.
-- Approved qrcode, Playwright, Recharts and React Flow packages are installed; real QR, chart and graph checks pass. Fresh npm audit reports zero vulnerabilities after the approved upgrades. ZAP was not approved or run. Final showcase browser evidence is tracked separately in plans/FINAL_POLISH_REPORT.md.
+- Approved qrcode, Playwright, Recharts and React Flow packages are installed; real QR, chart and graph checks pass. Fresh npm audit reports zero vulnerabilities after the approved upgrades. ZAP was not approved or run. Final showcase browser evidence is indexed in docs/screenshots/README.md.
 
 ## Rows not DONE
 

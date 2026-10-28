@@ -2,7 +2,7 @@
  * The only place S5 reads S3 (TRACE, SYNC). S3 is still being built, so every
  * call goes through here; a later S3 change touches this one file.
  *
- * Contract published by S3 (plans/S3.md): hasOpenTransfers(caseId),
+ * Transfer module contract: hasOpenTransfers(caseId),
  * hasPendingTasks(caseId), and the transfers / tasks collections.
  * If S3 cannot be loaded the answer is UNKNOWN, never "no transfers" (Rule 5).
  */

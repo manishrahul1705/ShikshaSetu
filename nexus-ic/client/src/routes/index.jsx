@@ -1,4 +1,4 @@
-// Phase route extension point (see PARALLEL_PLAN.md).
+// Phase route extension point; discovers each phase route module.
 // Each phase adds its own file here, named s<phase>.jsx (for example s1a.jsx),
 // that default-exports an array of { path, element, roles, public } objects.
 // Files are picked up automatically, so no phase edits this file or App.jsx.

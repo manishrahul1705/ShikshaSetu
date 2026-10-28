@@ -248,7 +248,7 @@ export async function submitGrievance({
     synthetic: true,
   });
 
-  // Link uploaded documents to case (plans/S1b_AUDIT.md #8)
+  // Link uploaded documents to case
   if (documentIds && documentIds.length > 0) {
     await Document.updateMany(
       { _id: { $in: documentIds } },

@@ -3,7 +3,7 @@
  *
  * Rules:
  * - Business days exclude Saturday (6) and Sunday (0).
- * - No holiday calendar is invented from source (noted per RULES.md).
+ * - No holiday calendar is invented from source.
  */
 
 export function isBusinessDay(date) {
