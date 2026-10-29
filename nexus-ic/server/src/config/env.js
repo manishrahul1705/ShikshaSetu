@@ -1,5 +1,6 @@
 import crypto from 'node:crypto';
 import dotenv from 'dotenv';
+import { parseClientOrigins, parseTrustProxyHops } from './hosting.js';
 dotenv.config();
 
 // No shared fallback secret (S7 hardening): production refuses to start without SESSION_SECRET;
@@ -18,5 +19,8 @@ const env = {
   PORT: parseInt(process.env.PORT, 10) || 3000,
   NODE_ENV: process.env.NODE_ENV || 'development',
 };
+
+env.CLIENT_ORIGINS = parseClientOrigins(process.env.CLIENT_ORIGINS, env.CLIENT_ORIGIN);
+env.TRUST_PROXY_HOPS = parseTrustProxyHops(process.env.TRUST_PROXY_HOPS);
 
 export default env;

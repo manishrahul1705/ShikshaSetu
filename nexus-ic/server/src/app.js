@@ -6,6 +6,7 @@ import routes from './routes.js';
 import env from './config/env.js';
 import logger from './config/logger.js';
 import csrfOrigin from './middleware/csrfOrigin.js';
+import { corsOrigin } from './middleware/clientOrigins.js';
 import { startReminderScheduler } from './modules/additions/n108-reminders/scheduler.js';
 
 /**
@@ -15,6 +16,8 @@ import { startReminderScheduler } from './modules/additions/n108-reminders/sched
 export function createApp(mongoUri) {
   startReminderScheduler();
   const app = express();
+  // Configure before sessions read req.secure; never trust every proxy.
+  app.set('trust proxy', env.TRUST_PROXY_HOPS);
 
   // Security headers
   app.use(helmet());
@@ -22,7 +25,7 @@ export function createApp(mongoUri) {
   // CORS
   app.use(
     cors({
-      origin: env.CLIENT_ORIGIN,
+      origin: corsOrigin,
       credentials: true,
     })
   );
@@ -44,6 +47,9 @@ export function createApp(mongoUri) {
 
   // Error handler
   app.use((err, req, res, _next) => {
+    if (err.status === 403 && err.message === 'CORS_ORIGIN_MISMATCH') {
+      return res.status(403).json({ error: err.message });
+    }
     logger.error({ action: 'unhandled_error', message: err.message });
     res.status(500).json({ error: 'Internal server error' });
   });
